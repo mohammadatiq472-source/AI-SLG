@@ -1,0 +1,641 @@
+{
+  "source": "C:\\Users\\26739\\.codex\\generated_images\\019e4be4-cd3b-7890-b344-25f6a1b2ad43\\ig_0559756e794a83ed016a11585697dc8194bd31359a66cfcbfb.png",
+  "background": "magenta_ff00ff",
+  "count": 17,
+  "items": [
+    {
+      "id": "city_lord_mansion",
+      "file": "maincity_facility_city_lord_mansion_v4.png",
+      "source_bbox": [
+        48,
+        40,
+        374,
+        297
+      ],
+      "size": [
+        470,
+        407
+      ],
+      "alpha_bbox": [
+        80,
+        60,
+        390,
+        301
+      ],
+      "margins": [
+        80,
+        60,
+        80,
+        106
+      ],
+      "baseline_y": 301,
+      "baseline_norm": 0.7396,
+      "component_count": 1,
+      "index": 0,
+      "label_zh": "城主府",
+      "purpose_line": "主干",
+      "purpose": "主城等级、建筑上限、队列容量",
+      "tree_anchor_mode": "baseline",
+      "recommended_label_offset_y": 18,
+      "recommended_node_scale": 1.0
+    },
+    {
+      "id": "recruit_office",
+      "file": "maincity_facility_recruit_office_v4.png",
+      "source_bbox": [
+        400,
+        65,
+        671,
+        279
+      ],
+      "size": [
+        415,
+        364
+      ],
+      "alpha_bbox": [
+        80,
+        60,
+        335,
+        258
+      ],
+      "margins": [
+        80,
+        60,
+        80,
+        106
+      ],
+      "baseline_y": 258,
+      "baseline_norm": 0.7088,
+      "component_count": 2,
+      "index": 1,
+      "label_zh": "募兵所",
+      "purpose_line": "军务线",
+      "purpose": "征募、预备兵、军务建筑前置",
+      "tree_anchor_mode": "baseline",
+      "recommended_label_offset_y": 18,
+      "recommended_node_scale": 1.0
+    },
+    {
+      "id": "granary",
+      "file": "maincity_facility_granary_v4.png",
+      "source_bbox": [
+        680,
+        67,
+        948,
+        276
+      ],
+      "size": [
+        412,
+        359
+      ],
+      "alpha_bbox": [
+        80,
+        60,
+        332,
+        253
+      ],
+      "margins": [
+        80,
+        60,
+        80,
+        106
+      ],
+      "baseline_y": 253,
+      "baseline_norm": 0.7047,
+      "component_count": 1,
+      "index": 2,
+      "label_zh": "粮仓",
+      "purpose_line": "资源线",
+      "purpose": "粮草储备、军需保障、容量",
+      "tree_anchor_mode": "baseline",
+      "recommended_label_offset_y": 18,
+      "recommended_node_scale": 1.0
+    },
+    {
+      "id": "drill_ground",
+      "file": "maincity_facility_drill_ground_v4.png",
+      "source_bbox": [
+        976,
+        51,
+        1273,
+        290
+      ],
+      "size": [
+        441,
+        389
+      ],
+      "alpha_bbox": [
+        80,
+        60,
+        361,
+        283
+      ],
+      "margins": [
+        80,
+        60,
+        80,
+        106
+      ],
+      "baseline_y": 283,
+      "baseline_norm": 0.7275,
+      "component_count": 1,
+      "index": 3,
+      "label_zh": "校场",
+      "purpose_line": "军务线",
+      "purpose": "操练效率、编组稳定",
+      "tree_anchor_mode": "baseline",
+      "recommended_label_offset_y": 18,
+      "recommended_node_scale": 1.0
+    },
+    {
+      "id": "barracks",
+      "file": "maincity_facility_barracks_v4.png",
+      "source_bbox": [
+        1311,
+        67,
+        1597,
+        286
+      ],
+      "size": [
+        430,
+        369
+      ],
+      "alpha_bbox": [
+        80,
+        60,
+        350,
+        263
+      ],
+      "margins": [
+        80,
+        60,
+        80,
+        106
+      ],
+      "baseline_y": 263,
+      "baseline_norm": 0.7127,
+      "component_count": 1,
+      "index": 4,
+      "label_zh": "军营",
+      "purpose_line": "军务线",
+      "purpose": "兵力承载、预备兵恢复",
+      "tree_anchor_mode": "baseline",
+      "recommended_label_offset_y": 18,
+      "recommended_node_scale": 1.0
+    },
+    {
+      "id": "grain_field",
+      "file": "maincity_facility_grain_field_v4.png",
+      "source_bbox": [
+        47,
+        304,
+        343,
+        510
+      ],
+      "size": [
+        440,
+        356
+      ],
+      "alpha_bbox": [
+        80,
+        60,
+        360,
+        250
+      ],
+      "margins": [
+        80,
+        60,
+        80,
+        106
+      ],
+      "baseline_y": 250,
+      "baseline_norm": 0.7022,
+      "component_count": 1,
+      "index": 5,
+      "label_zh": "屯田",
+      "purpose_line": "资源线",
+      "purpose": "粮食产出",
+      "tree_anchor_mode": "baseline",
+      "recommended_label_offset_y": 18,
+      "recommended_node_scale": 1.0
+    },
+    {
+      "id": "lumber_yard",
+      "file": "maincity_facility_lumber_yard_v4.png",
+      "source_bbox": [
+        358,
+        305,
+        653,
+        513
+      ],
+      "size": [
+        439,
+        358
+      ],
+      "alpha_bbox": [
+        80,
+        60,
+        359,
+        252
+      ],
+      "margins": [
+        80,
+        60,
+        80,
+        106
+      ],
+      "baseline_y": 252,
+      "baseline_norm": 0.7039,
+      "component_count": 1,
+      "index": 6,
+      "label_zh": "木场",
+      "purpose_line": "资源线",
+      "purpose": "木材产出、建筑维护",
+      "tree_anchor_mode": "baseline",
+      "recommended_label_offset_y": 18,
+      "recommended_node_scale": 1.0
+    },
+    {
+      "id": "city_wall",
+      "file": "maincity_facility_city_wall_v4.png",
+      "source_bbox": [
+        675,
+        289,
+        980,
+        524
+      ],
+      "size": [
+        449,
+        385
+      ],
+      "alpha_bbox": [
+        80,
+        60,
+        369,
+        287
+      ],
+      "margins": [
+        80,
+        60,
+        80,
+        98
+      ],
+      "baseline_y": 287,
+      "baseline_norm": 0.7455,
+      "component_count": 1,
+      "index": 7,
+      "label_zh": "城墙",
+      "purpose_line": "城防线",
+      "purpose": "主城耐久、驻防、防护",
+      "tree_anchor_mode": "baseline",
+      "recommended_label_offset_y": 18,
+      "recommended_node_scale": 1.0
+    },
+    {
+      "id": "armory",
+      "file": "maincity_facility_armory_v4.png",
+      "source_bbox": [
+        982,
+        295,
+        1275,
+        517
+      ],
+      "size": [
+        437,
+        372
+      ],
+      "alpha_bbox": [
+        80,
+        60,
+        357,
+        266
+      ],
+      "margins": [
+        80,
+        60,
+        80,
+        106
+      ],
+      "baseline_y": 266,
+      "baseline_norm": 0.7151,
+      "component_count": 2,
+      "index": 8,
+      "label_zh": "兵械坊",
+      "purpose_line": "军务线",
+      "purpose": "兵械、工事、战斗属性材料",
+      "tree_anchor_mode": "baseline",
+      "recommended_label_offset_y": 18,
+      "recommended_node_scale": 1.0
+    },
+    {
+      "id": "quarry",
+      "file": "maincity_facility_quarry_v4.png",
+      "source_bbox": [
+        1316,
+        299,
+        1589,
+        522
+      ],
+      "size": [
+        417,
+        373
+      ],
+      "alpha_bbox": [
+        80,
+        60,
+        337,
+        267
+      ],
+      "margins": [
+        80,
+        60,
+        80,
+        106
+      ],
+      "baseline_y": 267,
+      "baseline_norm": 0.7158,
+      "component_count": 1,
+      "index": 9,
+      "label_zh": "采石场",
+      "purpose_line": "资源线",
+      "purpose": "石料产出、城防工事",
+      "tree_anchor_mode": "baseline",
+      "recommended_label_offset_y": 18,
+      "recommended_node_scale": 1.0
+    },
+    {
+      "id": "ironworks",
+      "file": "maincity_facility_ironworks_v4.png",
+      "source_bbox": [
+        37,
+        519,
+        318,
+        739
+      ],
+      "size": [
+        425,
+        370
+      ],
+      "alpha_bbox": [
+        80,
+        60,
+        345,
+        272
+      ],
+      "margins": [
+        80,
+        60,
+        80,
+        98
+      ],
+      "baseline_y": 272,
+      "baseline_norm": 0.7351,
+      "component_count": 1,
+      "index": 10,
+      "label_zh": "冶铁所",
+      "purpose_line": "资源线",
+      "purpose": "铁料产出、兵械升级",
+      "tree_anchor_mode": "baseline",
+      "recommended_label_offset_y": 18,
+      "recommended_node_scale": 1.0
+    },
+    {
+      "id": "infirmary",
+      "file": "maincity_facility_infirmary_v4.png",
+      "source_bbox": [
+        336,
+        512,
+        637,
+        743
+      ],
+      "size": [
+        445,
+        381
+      ],
+      "alpha_bbox": [
+        80,
+        60,
+        365,
+        283
+      ],
+      "margins": [
+        80,
+        60,
+        80,
+        98
+      ],
+      "baseline_y": 283,
+      "baseline_norm": 0.7428,
+      "component_count": 1,
+      "index": 11,
+      "label_zh": "医舍",
+      "purpose_line": "后勤线",
+      "purpose": "伤兵处理、守军恢复",
+      "tree_anchor_mode": "baseline",
+      "recommended_label_offset_y": 18,
+      "recommended_node_scale": 1.0
+    },
+    {
+      "id": "academy",
+      "file": "maincity_facility_academy_v4.png",
+      "source_bbox": [
+        645,
+        505,
+        946,
+        737
+      ],
+      "size": [
+        445,
+        382
+      ],
+      "alpha_bbox": [
+        80,
+        52,
+        365,
+        276
+      ],
+      "margins": [
+        80,
+        52,
+        80,
+        106
+      ],
+      "baseline_y": 276,
+      "baseline_norm": 0.7225,
+      "component_count": 1,
+      "index": 12,
+      "label_zh": "太学",
+      "purpose_line": "培养线",
+      "purpose": "武将五项属性、内政研修",
+      "tree_anchor_mode": "baseline",
+      "recommended_label_offset_y": 18,
+      "recommended_node_scale": 1.0
+    },
+    {
+      "id": "market_plaza",
+      "file": "maincity_facility_market_plaza_v4.png",
+      "source_bbox": [
+        951,
+        510,
+        1248,
+        749
+      ],
+      "size": [
+        441,
+        389
+      ],
+      "alpha_bbox": [
+        80,
+        60,
+        361,
+        283
+      ],
+      "margins": [
+        80,
+        60,
+        80,
+        106
+      ],
+      "baseline_y": 283,
+      "baseline_norm": 0.7275,
+      "component_count": 1,
+      "index": 13,
+      "label_zh": "市井",
+      "purpose_line": "内政线",
+      "purpose": "经营、交易入口、基础收益",
+      "tree_anchor_mode": "baseline",
+      "recommended_label_offset_y": 18,
+      "recommended_node_scale": 1.0
+    },
+    {
+      "id": "warehouse",
+      "file": "maincity_facility_warehouse_v4.png",
+      "source_bbox": [
+        1269,
+        525,
+        1570,
+        741
+      ],
+      "size": [
+        445,
+        366
+      ],
+      "alpha_bbox": [
+        80,
+        60,
+        365,
+        260
+      ],
+      "margins": [
+        80,
+        60,
+        80,
+        106
+      ],
+      "baseline_y": 260,
+      "baseline_norm": 0.7104,
+      "component_count": 1,
+      "index": 14,
+      "label_zh": "仓廪",
+      "purpose_line": "后勤线",
+      "purpose": "资源库存、仓储效率",
+      "tree_anchor_mode": "baseline",
+      "recommended_label_offset_y": 18,
+      "recommended_node_scale": 1.0
+    },
+    {
+      "id": "tax_office",
+      "file": "maincity_facility_tax_office_v4.png",
+      "source_bbox": [
+        51,
+        713,
+        350,
+        949
+      ],
+      "size": [
+        443,
+        386
+      ],
+      "alpha_bbox": [
+        80,
+        52,
+        363,
+        280
+      ],
+      "margins": [
+        80,
+        52,
+        80,
+        106
+      ],
+      "baseline_y": 280,
+      "baseline_norm": 0.7254,
+      "component_count": 1,
+      "index": 15,
+      "label_zh": "税署",
+      "purpose_line": "内政线",
+      "purpose": "税收、入库、政务提交前置",
+      "tree_anchor_mode": "baseline",
+      "recommended_label_offset_y": 18,
+      "recommended_node_scale": 1.0
+    },
+    {
+      "id": "trade_post",
+      "file": "maincity_facility_trade_post_v4.png",
+      "source_bbox": [
+        401,
+        706,
+        706,
+        957
+      ],
+      "size": [
+        449,
+        401
+      ],
+      "alpha_bbox": [
+        80,
+        52,
+        369,
+        295
+      ],
+      "margins": [
+        80,
+        52,
+        80,
+        106
+      ],
+      "baseline_y": 295,
+      "baseline_norm": 0.7357,
+      "component_count": 1,
+      "index": 16,
+      "label_zh": "交易所",
+      "purpose_line": "内政线",
+      "purpose": "粮木石铁比例互换",
+      "tree_anchor_mode": "baseline",
+      "recommended_label_offset_y": 18,
+      "recommended_node_scale": 1.0
+    }
+  ],
+  "version": "v4",
+  "production_note": "Generated from magenta chroma contact sheet; crops use component bboxes with transparent safety padding; Godot placement uses baseline anchors.",
+  "layout_order": "left_to_right_top_to_bottom",
+  "building_order": [
+    "city_lord_mansion",
+    "recruit_office",
+    "granary",
+    "drill_ground",
+    "barracks",
+    "grain_field",
+    "lumber_yard",
+    "city_wall",
+    "armory",
+    "quarry",
+    "ironworks",
+    "infirmary",
+    "academy",
+    "market_plaza",
+    "warehouse",
+    "tax_office",
+    "trade_post"
+  ]
+}

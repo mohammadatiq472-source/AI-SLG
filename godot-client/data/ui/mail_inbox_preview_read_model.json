@@ -1,0 +1,112 @@
+{
+  "schema_id": "mail_inbox_preview_read_model_v1",
+  "source_mode": "external_ui_fixture_backend_ready_v1",
+  "future_backend_dynamic_inboxes": true,
+  "future_backend_contract": "backend_owned_per_player_inbox_read_model_v1",
+  "notes": [
+    "This file is a UI read-model fixture only. It mirrors the future per-player backend inbox payload shape.",
+    "Mail content, rewards, unread state, and organization kind/name must come from backend read models later."
+  ],
+  "items": [
+    {
+      "id": "mail_org_order",
+      "category": "organization",
+      "title": "{organization_label}令",
+      "value": "组织",
+      "sender": "{organization_name}",
+      "status": "unread",
+      "status_label": "未读",
+      "summary": "集结时间、驻防方向和成员安排。",
+      "time": "今日 08:30",
+      "tone": "red",
+      "body_lines": [
+        "前线斥候已回报敌军动向，主力请在城北驿站完成集结。",
+        "驻防队伍优先补足前锋兵力，器械队等待调令。",
+        "成员调度以组织频道最新指令为准。"
+      ],
+      "reward_lines": []
+    },
+    {
+      "id": "mail_org_policy",
+      "category": "organization",
+      "title": "组织告示",
+      "value": "{organization_label}",
+      "sender": "{organization_name}",
+      "status": "quiet",
+      "status_label": "已归档",
+      "summary": "{organization_label}政策、成员安排和组织告示。",
+      "time": "昨日 21:10",
+      "tone": "green",
+      "body_lines": [
+        "本入口只承载你当前所属{organization_label}的正式邮件。",
+        "政策变更、成员调度和组织公告会按当前身份进入这里。",
+        "成员只能同时属于一个组织，邮件不会混入其他组织消息。"
+      ],
+      "reward_lines": []
+    },
+    {
+      "id": "mail_system_notice",
+      "category": "system",
+      "title": "赛季通知",
+      "value": "系统",
+      "sender": "系统",
+      "status": "unread",
+      "status_label": "未读",
+      "summary": "赛季规则、维护和账号安全消息。",
+      "time": "今日 06:00",
+      "tone": "blue",
+      "body_lines": [
+        "赛季规则和维护消息会在这里保留，便于回看。",
+        "账号、安全和系统补偿类消息由系统发件人统一送达。",
+        "战斗详情仍从战报入口进入，邮件只保留通知与领取状态。"
+      ],
+      "reward_lines": []
+    },
+    {
+      "id": "mail_daily_welfare",
+      "category": "system",
+      "inbox_kind": "daily_welfare",
+      "title": "每日俸禄",
+      "value": "奖励",
+      "sender": "系统",
+      "status": "claimable",
+      "status_label": "可领取",
+      "summary": "今日资源和铜币已送达。",
+      "time": "今日 05:00",
+      "tone": "gold",
+      "body_lines": [
+        "今日俸禄已送达系统邮件，可在本页查看并处理领取状态。",
+        "资源将按确认领取结果入账，邮件页当前只展示可领取状态。",
+        "长期未处理的奖励邮件不再单独保留奖励分类。"
+      ],
+      "reward_lines": [
+        "粮食 +15000",
+        "木材 +12000",
+        "铜币 +800"
+      ]
+    },
+    {
+      "id": "mail_event_reward",
+      "category": "system",
+      "inbox_kind": "event_reward",
+      "title": "活动奖励",
+      "value": "奖励",
+      "sender": "活动",
+      "status": "claimable",
+      "status_label": "可领取",
+      "summary": "活动结算奖励集中发送到邮件。",
+      "time": "昨日 23:40",
+      "tone": "gold",
+      "body_lines": [
+        "精彩活动结算奖励已进入邮件。",
+        "奖励邮件并入系统页，和维护、补偿、活动结算一起处理。",
+        "具体入账以确认领取后的结果为准。"
+      ],
+      "reward_lines": [
+        "玉符 +120",
+        "加速 30 分钟",
+        "预备兵 +500"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "theme": "slgclient",
+  "manifestId": "world_label_chrome_manifest_v1",
+  "importedAt": "2026-06-19T00:00:00+08:00",
+  "authority": {
+    "lane": "main_world_tianxia_yutu_art",
+    "owner": "SlgUiComponentFactory + TianxiaYutu label chrome lane",
+    "status": "asset_ready_and_renderer_wired",
+    "scope": [
+      "city_label_chrome",
+      "region_name_hierarchy",
+      "strategic_node_caption"
+    ],
+    "playerVisibleCopyRule": "Use only Chinese place names, state words, and action words. Never show snake_case, ids, contracts, layer names, read model, authority, or tier."
+  },
+  "source": {
+    "reuseFirst": [
+      "res://assets/themes/slgclient/current/ui/native_shell_main_nav_button_base_v1.png",
+      "res://assets/themes/slgclient/current/overlays/frames/home_defend.png"
+    ],
+    "policy": "Define chrome/token semantics first; renderer hookup may continue later without changing copy rules."
+  },
+  "labelFamilies": {
+    "region_title": {
+      "textColor": "#F4E8C2",
+      "shadowColor": "#24160FAA",
+      "fontScale": 1.65,
+      "plateStyle": "text_only_large"
+    },
+    "county_title": {
+      "textColor": "#E8D7AA",
+      "shadowColor": "#24160FAA",
+      "fontScale": 1.35,
+      "plateStyle": "text_only_medium"
+    },
+    "city_plate": {
+      "textColor": "#F6F0DD",
+      "shadowColor": "#000000AA",
+      "fontScale": 1.18,
+      "plateStyle": "dark_capsule_small",
+      "backgroundColor": "#241A10F0",
+      "borderColor": "#D2B16FFF"
+    },
+    "strategic_node_caption": {
+      "textColor": "#F3E3A1",
+      "shadowColor": "#000000AA",
+      "fontScale": 1.08,
+      "plateStyle": "dark_capsule_micro",
+      "backgroundColor": "#1A1412E8",
+      "borderColor": "#D7B27FFF",
+      "iconTexturePath": "res://assets/themes/slgclient/current/overlays/frames/home_defend.png"
+    }
+  },
+  "copyLint": {
+    "forbiddenVisibleTerms": [
+      "read model",
+      "AI Activity",
+      "asset_ready",
+      "renderer_wired",
+      "authority",
+      "tier",
+      "contract",
+      "snake_case",
+      "schema",
+      "layer",
+      "world_cell",
+      "tianxia_yutu_overview"
+    ],
+    "shortCopyPolicy": "Top-level labels should be short Chinese names only; no engineering explanation inside the map surface."
+  },
+  "zoomSemantics": {
+    "overview": {
+      "show": [
+        "region_title",
+        "county_title"
+      ],
+      "hide": [
+        "city_plate",
+        "strategic_node_caption"
+      ]
+    },
+    "region": {
+      "show": [
+        "region_title",
+        "county_title",
+        "city_plate"
+      ],
+      "hide": [
+        "strategic_node_caption"
+      ]
+    },
+    "local": {
+      "show": [
+        "city_plate",
+        "strategic_node_caption"
+      ],
+      "hide": [
+        "region_title"
+      ]
+    }
+  }
+}

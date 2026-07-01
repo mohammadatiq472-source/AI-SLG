@@ -1,0 +1,481 @@
+{
+  "schemaVersion": "main_world_unit_visual_anchors_v1",
+  "theme": "slgclient",
+  "projection": "isometric_2_to_1",
+  "profileSelection": {
+    "matchOrder": [
+      "backendFootprintId",
+      "backendFootprintTileIds",
+      "tileIds",
+      "fallbackDefault"
+    ],
+    "runtimeContract": "UnitViewLayer resolves queue anchors from backend footprintId/footprintTileIds first. These local profiles are visual templates and only fall back to tileIds when backend footprint data is absent."
+  },
+  "mainWorldCityVisualFootprints": {
+    "scenario_home_city_v1": {
+      "footprintId": "scenario_home_city_local_fallback",
+      "description": "Local fallback for seed-scenario units when backend footprintId/footprintTileIds are unavailable. Runtime player-city queues should resolve through player_city_3x3_template_v1 from backend footprint data.",
+      "tileIds": [
+        "tile_01",
+        "tile_02",
+        "tile_03",
+        "tile_04",
+        "tile_05",
+        "tile_06",
+        "tile_07",
+        "tile_08",
+        "tile_09",
+        "tile_10",
+        "tile_11",
+        "tile_12",
+        "tile_13",
+        "tile_14",
+        "tile_15"
+      ],
+      "stagingOffset": {
+        "x": 0,
+        "y": 132
+      },
+      "queueAnchors": [
+        {
+          "id": "south_gate_queue",
+          "role": "march_start",
+          "directions": [
+            "south",
+            "southwest"
+          ],
+          "offset": {
+            "x": 0,
+            "y": 132
+          }
+        },
+        {
+          "id": "east_gate_queue",
+          "role": "reserved_exit",
+          "directions": [
+            "east",
+            "southeast"
+          ],
+          "offset": {
+            "x": 96,
+            "y": 98
+          }
+        },
+        {
+          "id": "northwest_gate_queue",
+          "role": "reserved_exit",
+          "directions": [
+            "north",
+            "northwest",
+            "west"
+          ],
+          "offset": {
+            "x": -96,
+            "y": 82
+          }
+        }
+      ],
+      "policy": {
+        "hideStationedUnitsInsideCity": true,
+        "applyToPathAndTargetAnchors": true,
+        "avoidBuildingCenter": true
+      }
+    },
+    "player_city_3x3_template_v1": {
+      "footprintId": "player_city_3x3_template",
+      "backendFootprintIds": [
+        "player_city_3x3_initial"
+      ],
+      "description": "Reusable player-city footprint profile for initial and future player-owned 3x3 city footprints. Backend footprintId/footprintTileIds are authoritative; local tile ids are fallback template ids.",
+      "tileIds": [
+        "player_city_01",
+        "player_city_02",
+        "player_city_03",
+        "player_city_04",
+        "player_city_05",
+        "player_city_06",
+        "player_city_07",
+        "player_city_08",
+        "player_city_09"
+      ],
+      "stagingOffset": {
+        "x": 0,
+        "y": 132
+      },
+      "queueAnchors": [
+        {
+          "id": "south_gate_queue",
+          "role": "march_start",
+          "directions": [
+            "south",
+            "southwest"
+          ],
+          "offset": {
+            "x": 0,
+            "y": 132
+          }
+        },
+        {
+          "id": "east_gate_queue",
+          "role": "reserved_exit",
+          "directions": [
+            "east",
+            "southeast"
+          ],
+          "offset": {
+            "x": 96,
+            "y": 98
+          }
+        },
+        {
+          "id": "northwest_gate_queue",
+          "role": "reserved_exit",
+          "directions": [
+            "north",
+            "northwest",
+            "west"
+          ],
+          "offset": {
+            "x": -96,
+            "y": 82
+          }
+        }
+      ],
+      "policy": {
+        "hideStationedUnitsInsideCity": true,
+        "applyToPathAndTargetAnchors": true,
+        "avoidBuildingCenter": true
+      }
+    },
+    "ai_city_3x3_template_v1": {
+      "footprintId": "ai_city_3x3_template",
+      "backendFootprintIds": [
+        "ai_city_3x3_initial"
+      ],
+      "description": "Reusable AI-city footprint profile so AI home-city queues do not depend on the single scenario home-city config.",
+      "tileIds": [
+        "ai_city_01",
+        "ai_city_02",
+        "ai_city_03",
+        "ai_city_04",
+        "ai_city_05",
+        "ai_city_06",
+        "ai_city_07",
+        "ai_city_08",
+        "ai_city_09"
+      ],
+      "stagingOffset": {
+        "x": 18,
+        "y": 126
+      },
+      "queueAnchors": [
+        {
+          "id": "south_gate_queue",
+          "role": "march_start",
+          "directions": [
+            "south",
+            "southwest"
+          ],
+          "offset": {
+            "x": 18,
+            "y": 126
+          }
+        },
+        {
+          "id": "east_gate_queue",
+          "role": "reserved_exit",
+          "directions": [
+            "east",
+            "southeast"
+          ],
+          "offset": {
+            "x": 114,
+            "y": 92
+          }
+        },
+        {
+          "id": "northwest_gate_queue",
+          "role": "reserved_exit",
+          "directions": [
+            "north",
+            "northwest",
+            "west"
+          ],
+          "offset": {
+            "x": -82,
+            "y": 78
+          }
+        }
+      ],
+      "policy": {
+        "hideStationedUnitsInsideCity": true,
+        "applyToPathAndTargetAnchors": true,
+        "avoidBuildingCenter": true
+      }
+    },
+    "neutral_city_3x3_template_v1": {
+      "footprintId": "neutral_city_3x3_template",
+      "backendFootprintIds": [
+        "system_city_l03_l04_3x3"
+      ],
+      "description": "Reusable neutral or NPC 3x3 city footprint profile.",
+      "tileIds": [
+        "neutral_city_01",
+        "neutral_city_02",
+        "neutral_city_03",
+        "neutral_city_04",
+        "neutral_city_05",
+        "neutral_city_06",
+        "neutral_city_07",
+        "neutral_city_08",
+        "neutral_city_09"
+      ],
+      "stagingOffset": {
+        "x": -18,
+        "y": 126
+      },
+      "queueAnchors": [
+        {
+          "id": "south_gate_queue",
+          "role": "march_start",
+          "directions": [
+            "south",
+            "southwest"
+          ],
+          "offset": {
+            "x": -18,
+            "y": 126
+          }
+        },
+        {
+          "id": "east_gate_queue",
+          "role": "reserved_exit",
+          "directions": [
+            "east",
+            "southeast"
+          ],
+          "offset": {
+            "x": 78,
+            "y": 92
+          }
+        },
+        {
+          "id": "northwest_gate_queue",
+          "role": "reserved_exit",
+          "directions": [
+            "north",
+            "northwest",
+            "west"
+          ],
+          "offset": {
+            "x": -114,
+            "y": 84
+          }
+        }
+      ],
+      "policy": {
+        "hideStationedUnitsInsideCity": true,
+        "applyToPathAndTargetAnchors": true,
+        "avoidBuildingCenter": true
+      }
+    },
+    "neutral_city_5x5_template_v1": {
+      "footprintId": "neutral_city_5x5_template",
+      "backendFootprintIds": [
+        "system_city_l05_l06_5x5"
+      ],
+      "description": "Reusable neutral or NPC 5x5 city footprint profile with a wider queue offset for larger county seats.",
+      "tileIds": [
+        "neutral_city_5x5_01",
+        "neutral_city_5x5_02",
+        "neutral_city_5x5_03",
+        "neutral_city_5x5_04",
+        "neutral_city_5x5_05",
+        "neutral_city_5x5_06",
+        "neutral_city_5x5_07",
+        "neutral_city_5x5_08",
+        "neutral_city_5x5_09"
+      ],
+      "stagingOffset": {
+        "x": -34,
+        "y": 154
+      },
+      "queueAnchors": [
+        {
+          "id": "south_gate_queue",
+          "role": "march_start",
+          "directions": [
+            "south",
+            "southwest"
+          ],
+          "offset": {
+            "x": -34,
+            "y": 154
+          }
+        },
+        {
+          "id": "east_gate_queue",
+          "role": "reserved_exit",
+          "directions": [
+            "east",
+            "southeast"
+          ],
+          "offset": {
+            "x": 92,
+            "y": 112
+          }
+        },
+        {
+          "id": "northwest_gate_queue",
+          "role": "reserved_exit",
+          "directions": [
+            "north",
+            "northwest",
+            "west"
+          ],
+          "offset": {
+            "x": -146,
+            "y": 104
+          }
+        }
+      ],
+      "policy": {
+        "hideStationedUnitsInsideCity": true,
+        "applyToPathAndTargetAnchors": true,
+        "avoidBuildingCenter": true
+      }
+    },
+    "neutral_city_7x7_template_v1": {
+      "footprintId": "neutral_city_7x7_template",
+      "backendFootprintIds": [
+        "system_city_l07_l08_7x7"
+      ],
+      "description": "Reusable neutral or NPC 7x7 city footprint profile with a deeper queue offset for commandery-scale cities.",
+      "tileIds": [
+        "neutral_city_7x7_01",
+        "neutral_city_7x7_02",
+        "neutral_city_7x7_03",
+        "neutral_city_7x7_04",
+        "neutral_city_7x7_05",
+        "neutral_city_7x7_06",
+        "neutral_city_7x7_07",
+        "neutral_city_7x7_08",
+        "neutral_city_7x7_09"
+      ],
+      "stagingOffset": {
+        "x": -54,
+        "y": 184
+      },
+      "queueAnchors": [
+        {
+          "id": "south_gate_queue",
+          "role": "march_start",
+          "directions": [
+            "south",
+            "southwest"
+          ],
+          "offset": {
+            "x": -54,
+            "y": 184
+          }
+        },
+        {
+          "id": "east_gate_queue",
+          "role": "reserved_exit",
+          "directions": [
+            "east",
+            "southeast"
+          ],
+          "offset": {
+            "x": 108,
+            "y": 132
+          }
+        },
+        {
+          "id": "northwest_gate_queue",
+          "role": "reserved_exit",
+          "directions": [
+            "north",
+            "northwest",
+            "west"
+          ],
+          "offset": {
+            "x": -184,
+            "y": 126
+          }
+        }
+      ],
+      "policy": {
+        "hideStationedUnitsInsideCity": true,
+        "applyToPathAndTargetAnchors": true,
+        "avoidBuildingCenter": true
+      }
+    },
+    "neutral_city_9x9_template_v1": {
+      "footprintId": "neutral_city_9x9_template",
+      "backendFootprintIds": [
+        "system_city_l09_9x9"
+      ],
+      "description": "Reusable neutral or NPC 9x9 city footprint profile with the widest queue offset for state-capital-scale cities.",
+      "tileIds": [
+        "neutral_city_9x9_01",
+        "neutral_city_9x9_02",
+        "neutral_city_9x9_03",
+        "neutral_city_9x9_04",
+        "neutral_city_9x9_05",
+        "neutral_city_9x9_06",
+        "neutral_city_9x9_07",
+        "neutral_city_9x9_08",
+        "neutral_city_9x9_09"
+      ],
+      "stagingOffset": {
+        "x": -74,
+        "y": 212
+      },
+      "queueAnchors": [
+        {
+          "id": "south_gate_queue",
+          "role": "march_start",
+          "directions": [
+            "south",
+            "southwest"
+          ],
+          "offset": {
+            "x": -74,
+            "y": 212
+          }
+        },
+        {
+          "id": "east_gate_queue",
+          "role": "reserved_exit",
+          "directions": [
+            "east",
+            "southeast"
+          ],
+          "offset": {
+            "x": 126,
+            "y": 152
+          }
+        },
+        {
+          "id": "northwest_gate_queue",
+          "role": "reserved_exit",
+          "directions": [
+            "north",
+            "northwest",
+            "west"
+          ],
+          "offset": {
+            "x": -222,
+            "y": 146
+          }
+        }
+      ],
+      "policy": {
+        "hideStationedUnitsInsideCity": true,
+        "applyToPathAndTargetAnchors": true,
+        "avoidBuildingCenter": true
+      }
+    }
+  }
+}

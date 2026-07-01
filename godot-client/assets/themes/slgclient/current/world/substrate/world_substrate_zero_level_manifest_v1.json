@@ -1,0 +1,34 @@
+{
+  "schema": "world_substrate_zero_level_manifest_v1",
+  "status": "runtime_seed_from_accepted_experiment_substrate",
+  "purpose": "Draw implicit zero-level 1km ground cells; zero-level land remains selectable/claimable/roadable but is not emitted as an object.",
+  "runtimeTileSize": [
+    200,
+    100
+  ],
+  "sourceArtifact": "map_substrate_gridlocked_detail_v0_1",
+  "sourceMaster": "experiments/east_asia_map_pipeline/generated/map_substrate_gridlocked_detail_v0_1/masters/map_substrate_master_32x32_2x_detail_v07_reference_texture.png",
+  "sourceCell": [
+    16,
+    16
+  ],
+  "sourceCropPx": [
+    6200,
+    3200,
+    400,
+    200
+  ],
+  "asset": "res://assets/themes/slgclient/current/world/substrate/world_cell_zero_level_substrate_v1.png",
+  "assetSizePx": [
+    400,
+    200
+  ],
+  "assetSha256": "a2ecbf489b4efb23d90db4793f1fe845b08bb46fe26f0a19624037badd6c92f6",
+  "policy": {
+    "zeroLevelGroundObjectMode": "implicit_base_map",
+    "objectUpsertCount": 0,
+    "resourceOverlayRule": "resources draw above this substrate only when eligible resource mask emits a resource object",
+    "cityFootprintBaseRule": "city footprints use this same neutral substrate instead of the obsolete gray city-ground base",
+    "selectionRule": "claim/release/road state is represented by cell_override_layer above the substrate"
+  }
+}

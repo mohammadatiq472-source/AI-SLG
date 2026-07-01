@@ -1,0 +1,1236 @@
+{
+  "schema_version": "main_world_mountain_boundary_assets_manifest_v0_46",
+  "runtime_copy_gate": "COPIED_TO_FORMAL_RUNTIME_RESOURCE_DIR",
+  "runtime_copy_gate_scope": "asset_manifest_only; v0.46 generator writes explicit formal Godot mountain assets, runtimeCopyGate remains audit-only",
+  "asset_root": "res://assets/themes/slgclient/current/world/mountains",
+  "asset_root_repo_path": "godot-client/assets/themes/slgclient/current/world/mountains",
+  "source_contract_artifact_id": "mountain_barrier_contested_chokepoint_contract_v0_31",
+  "source_contract_path": "experiments/east_asia_map_pipeline/generated/mountain_barrier_contested_chokepoint_contract_v0_31/mountain_barrier_contested_chokepoint_contract_v0_31.json",
+  "source_runtime_contract_artifact_id": "mountain_barrier_main_world_runtime_contract_v0_46",
+  "source_runtime_contract_path": "experiments/east_asia_map_pipeline/generated/mountain_barrier_main_world_runtime_contract_v0_46/mountain_barrier_main_world_runtime_contract_v0_46.json",
+  "render_policy": {
+    "activation": "main_world_only_not_tianxia_yutu",
+    "anchor_space": "real_map_data_1km.cell_1km translated from placement origin + piece offset + anchor_local_cell",
+    "scale_rule": "godot uses tile_width_px / source_cell_width_px times zoom; asset source cells are v0.31 normal 64x32 isometric cells",
+    "draw_order": "draw after resource and owner overlays, before frontline markers and city/pass world nodes"
+  },
+  "piece_asset_count": 26,
+  "frames": {
+    "bend_left_wide_5cell": {
+      "piece_id": "bend_left_wide_5cell",
+      "file": "main_world_mountain_boundary_bend_left_wide_5cell_v0_37.png",
+      "asset_path": "res://assets/themes/slgclient/current/world/mountains/main_world_mountain_boundary_bend_left_wide_5cell_v0_37.png",
+      "source_contract_piece_id": "bend_left_wide_5cell",
+      "source_review_path": "experiments/east_asia_map_pipeline/generated/mountain_barrier_contested_chokepoint_contract_v0_31/reviews/mountain_barrier_v0_31_common_piece_bend_left_wide_5cell_stitch_grid.png",
+      "source_primitive": "v0.31 pass_wall_compatible_ridge_tails normal transparent primitives",
+      "source_cell_width_px": 64,
+      "source_cell_height_px": 32,
+      "anchor_rule": "projected_piece_local_cell_center",
+      "anchor_local_cell": [
+        4,
+        5
+      ],
+      "source_anchor_px": [
+        147.0,
+        70.0
+      ],
+      "fit_footprint_cells": [
+        9,
+        10
+      ],
+      "local_bounds_cells": {
+        "min_x": 1,
+        "min_y": 1,
+        "max_x": 9,
+        "max_y": 10,
+        "width": 9,
+        "height": 10
+      },
+      "image_size_px": [
+        357,
+        216
+      ],
+      "alpha_bbox_px": [
+        4,
+        4,
+        353,
+        212
+      ],
+      "visual_fit_scale": 1.0,
+      "sha256": "759b6343921deb9ce3a4fee53d923cc8019124e2a093bb3e609862623041fbed"
+    },
+    "bend_right_wide_5cell": {
+      "piece_id": "bend_right_wide_5cell",
+      "file": "main_world_mountain_boundary_bend_right_wide_5cell_v0_37.png",
+      "asset_path": "res://assets/themes/slgclient/current/world/mountains/main_world_mountain_boundary_bend_right_wide_5cell_v0_37.png",
+      "source_contract_piece_id": "bend_right_wide_5cell",
+      "source_review_path": "experiments/east_asia_map_pipeline/generated/mountain_barrier_contested_chokepoint_contract_v0_31/reviews/mountain_barrier_v0_31_common_piece_bend_right_wide_5cell_stitch_grid.png",
+      "source_primitive": "v0.31 pass_wall_compatible_ridge_tails normal transparent primitives",
+      "source_cell_width_px": 64,
+      "source_cell_height_px": 32,
+      "anchor_rule": "projected_piece_local_cell_center",
+      "anchor_local_cell": [
+        7,
+        3
+      ],
+      "source_anchor_px": [
+        210.0,
+        131.0
+      ],
+      "fit_footprint_cells": [
+        13,
+        10
+      ],
+      "local_bounds_cells": {
+        "min_x": 3,
+        "min_y": -1,
+        "max_x": 15,
+        "max_y": 8,
+        "width": 13,
+        "height": 10
+      },
+      "image_size_px": [
+        410,
+        297
+      ],
+      "alpha_bbox_px": [
+        4,
+        4,
+        406,
+        293
+      ],
+      "visual_fit_scale": 1.0,
+      "sha256": "1ca953a08644eb07d086be9f5a7815f55c3c508a8e43c8dd8a5856c8deb66867"
+    },
+    "cross_large_4way": {
+      "piece_id": "cross_large_4way",
+      "file": "main_world_mountain_boundary_cross_large_4way_v0_37.png",
+      "asset_path": "res://assets/themes/slgclient/current/world/mountains/main_world_mountain_boundary_cross_large_4way_v0_37.png",
+      "source_contract_piece_id": "cross_large_4way",
+      "source_review_path": "experiments/east_asia_map_pipeline/generated/mountain_barrier_contested_chokepoint_contract_v0_31/reviews/mountain_barrier_v0_31_common_piece_cross_large_4way_stitch_grid.png",
+      "source_primitive": "v0.31 pass_wall_compatible_ridge_tails normal transparent primitives",
+      "source_cell_width_px": 64,
+      "source_cell_height_px": 32,
+      "anchor_rule": "projected_piece_local_cell_center",
+      "anchor_local_cell": [
+        4,
+        7
+      ],
+      "source_anchor_px": [
+        147.0,
+        115.0
+      ],
+      "fit_footprint_cells": [
+        13,
+        11
+      ],
+      "local_bounds_cells": {
+        "min_x": 1,
+        "min_y": 0,
+        "max_x": 13,
+        "max_y": 10,
+        "width": 13,
+        "height": 11
+      },
+      "image_size_px": [
+        518,
+        248
+      ],
+      "alpha_bbox_px": [
+        4,
+        4,
+        514,
+        244
+      ],
+      "visual_fit_scale": 1.0,
+      "sha256": "84a6150be0a943ddde26914e9f02f643868aef97fdfdbfc21e09ea68b32ae7fe"
+    },
+    "s_curve_left_to_right_6cell": {
+      "piece_id": "s_curve_left_to_right_6cell",
+      "file": "main_world_mountain_boundary_s_curve_left_to_right_6cell_v0_37.png",
+      "asset_path": "res://assets/themes/slgclient/current/world/mountains/main_world_mountain_boundary_s_curve_left_to_right_6cell_v0_37.png",
+      "source_contract_piece_id": "s_curve_left_to_right_6cell",
+      "source_review_path": "experiments/east_asia_map_pipeline/generated/mountain_barrier_contested_chokepoint_contract_v0_31/reviews/mountain_barrier_v0_31_common_piece_s_curve_left_to_right_6cell_stitch_grid.png",
+      "source_primitive": "v0.31 pass_wall_compatible_ridge_tails normal transparent primitives",
+      "source_cell_width_px": 64,
+      "source_cell_height_px": 32,
+      "anchor_rule": "projected_piece_local_cell_center",
+      "anchor_local_cell": [
+        4,
+        4
+      ],
+      "source_anchor_px": [
+        178.0,
+        76.0
+      ],
+      "fit_footprint_cells": [
+        12,
+        11
+      ],
+      "local_bounds_cells": {
+        "min_x": 1,
+        "min_y": 1,
+        "max_x": 12,
+        "max_y": 11,
+        "width": 12,
+        "height": 11
+      },
+      "image_size_px": [
+        388,
+        273
+      ],
+      "alpha_bbox_px": [
+        4,
+        4,
+        384,
+        269
+      ],
+      "visual_fit_scale": 1.0,
+      "sha256": "16d2b75737b5f370776ec5ff0dc738a7168b1289e15c79e6103966d36bf75802"
+    },
+    "s_curve_right_to_left_6cell": {
+      "piece_id": "s_curve_right_to_left_6cell",
+      "file": "main_world_mountain_boundary_s_curve_right_to_left_6cell_v0_37.png",
+      "asset_path": "res://assets/themes/slgclient/current/world/mountains/main_world_mountain_boundary_s_curve_right_to_left_6cell_v0_37.png",
+      "source_contract_piece_id": "s_curve_right_to_left_6cell",
+      "source_review_path": "experiments/east_asia_map_pipeline/generated/mountain_barrier_contested_chokepoint_contract_v0_31/reviews/mountain_barrier_v0_31_common_piece_s_curve_right_to_left_6cell_stitch_grid.png",
+      "source_primitive": "v0.31 pass_wall_compatible_ridge_tails normal transparent primitives",
+      "source_cell_width_px": 64,
+      "source_cell_height_px": 32,
+      "anchor_rule": "projected_piece_local_cell_center",
+      "anchor_local_cell": [
+        6,
+        3
+      ],
+      "source_anchor_px": [
+        210.0,
+        131.0
+      ],
+      "fit_footprint_cells": [
+        13,
+        11
+      ],
+      "local_bounds_cells": {
+        "min_x": 2,
+        "min_y": -1,
+        "max_x": 14,
+        "max_y": 9,
+        "width": 13,
+        "height": 11
+      },
+      "image_size_px": [
+        420,
+        341
+      ],
+      "alpha_bbox_px": [
+        4,
+        4,
+        416,
+        337
+      ],
+      "visual_fit_scale": 1.0,
+      "sha256": "1649ee44f5ca614d5c6f0f31d19c3d97f00db4a9e476636d6760a64dd8edcbf4"
+    },
+    "straight_extra_long_x_7cell": {
+      "piece_id": "straight_extra_long_x_7cell",
+      "file": "main_world_mountain_boundary_straight_extra_long_x_7cell_v0_37.png",
+      "asset_path": "res://assets/themes/slgclient/current/world/mountains/main_world_mountain_boundary_straight_extra_long_x_7cell_v0_37.png",
+      "source_contract_piece_id": "straight_extra_long_x_7cell",
+      "source_review_path": "experiments/east_asia_map_pipeline/generated/mountain_barrier_contested_chokepoint_contract_v0_31/reviews/mountain_barrier_v0_31_common_piece_straight_extra_long_x_7cell_stitch_grid.png",
+      "source_primitive": "v0.31 pass_wall_compatible_ridge_tails normal transparent primitives",
+      "source_cell_width_px": 64,
+      "source_cell_height_px": 32,
+      "anchor_rule": "projected_piece_local_cell_center",
+      "anchor_local_cell": [
+        2,
+        5
+      ],
+      "source_anchor_px": [
+        83.0,
+        89.0
+      ],
+      "fit_footprint_cells": [
+        17,
+        7
+      ],
+      "local_bounds_cells": {
+        "min_x": 0,
+        "min_y": 1,
+        "max_x": 16,
+        "max_y": 7,
+        "width": 17,
+        "height": 7
+      },
+      "image_size_px": [
+        558,
+        322
+      ],
+      "alpha_bbox_px": [
+        4,
+        4,
+        554,
+        318
+      ],
+      "visual_fit_scale": 1.0,
+      "sha256": "48baec5b0ae5544f519347c7fa927d8962e0fe2962aed8a356d6695a7017d828"
+    },
+    "straight_long_x_5cell": {
+      "piece_id": "straight_long_x_5cell",
+      "file": "main_world_mountain_boundary_straight_long_x_5cell_v0_37.png",
+      "asset_path": "res://assets/themes/slgclient/current/world/mountains/main_world_mountain_boundary_straight_long_x_5cell_v0_37.png",
+      "source_contract_piece_id": "straight_long_x_5cell",
+      "source_review_path": "experiments/east_asia_map_pipeline/generated/mountain_barrier_contested_chokepoint_contract_v0_31/reviews/mountain_barrier_v0_31_common_piece_straight_long_x_5cell_stitch_grid.png",
+      "source_primitive": "v0.31 pass_wall_compatible_ridge_tails normal transparent primitives",
+      "source_cell_width_px": 64,
+      "source_cell_height_px": 32,
+      "anchor_rule": "projected_piece_local_cell_center",
+      "anchor_local_cell": [
+        3,
+        5
+      ],
+      "source_anchor_px": [
+        72.0,
+        89.0
+      ],
+      "fit_footprint_cells": [
+        13,
+        7
+      ],
+      "local_bounds_cells": {
+        "min_x": 1,
+        "min_y": 1,
+        "max_x": 13,
+        "max_y": 7,
+        "width": 13,
+        "height": 7
+      },
+      "image_size_px": [
+        419,
+        258
+      ],
+      "alpha_bbox_px": [
+        4,
+        4,
+        415,
+        254
+      ],
+      "visual_fit_scale": 1.0,
+      "sha256": "53447271b6f06b261277636ef25217efda5a3a5dc764201f6aa5dd066da35b6c"
+    },
+    "straight_medium_x_3cell": {
+      "piece_id": "straight_medium_x_3cell",
+      "file": "main_world_mountain_boundary_straight_medium_x_3cell_v0_37.png",
+      "asset_path": "res://assets/themes/slgclient/current/world/mountains/main_world_mountain_boundary_straight_medium_x_3cell_v0_37.png",
+      "source_contract_piece_id": "straight_medium_x_3cell",
+      "source_review_path": "experiments/east_asia_map_pipeline/generated/mountain_barrier_contested_chokepoint_contract_v0_31/reviews/mountain_barrier_v0_31_common_piece_straight_medium_x_3cell_stitch_grid.png",
+      "source_primitive": "v0.31 pass_wall_compatible_ridge_tails normal transparent primitives",
+      "source_cell_width_px": 64,
+      "source_cell_height_px": 32,
+      "anchor_rule": "projected_piece_local_cell_center",
+      "anchor_local_cell": [
+        6,
+        5
+      ],
+      "source_anchor_px": [
+        147.0,
+        70.0
+      ],
+      "fit_footprint_cells": [
+        6,
+        7
+      ],
+      "local_bounds_cells": {
+        "min_x": 3,
+        "min_y": 1,
+        "max_x": 8,
+        "max_y": 7,
+        "width": 6,
+        "height": 7
+      },
+      "image_size_px": [
+        294,
+        91
+      ],
+      "alpha_bbox_px": [
+        4,
+        4,
+        290,
+        87
+      ],
+      "visual_fit_scale": 1.0,
+      "sha256": "717409f2704699536e89378b4a108d973075b0f10785fa8d8c03aee5738607e1"
+    },
+    "t_junction_east_stub_3way": {
+      "piece_id": "t_junction_east_stub_3way",
+      "file": "main_world_mountain_boundary_t_junction_east_stub_3way_v0_37.png",
+      "asset_path": "res://assets/themes/slgclient/current/world/mountains/main_world_mountain_boundary_t_junction_east_stub_3way_v0_37.png",
+      "source_contract_piece_id": "t_junction_east_stub_3way",
+      "source_review_path": "experiments/east_asia_map_pipeline/generated/mountain_barrier_contested_chokepoint_contract_v0_31/reviews/mountain_barrier_v0_31_common_piece_t_junction_east_stub_3way_stitch_grid.png",
+      "source_primitive": "v0.31 pass_wall_compatible_ridge_tails normal transparent primitives",
+      "source_cell_width_px": 64,
+      "source_cell_height_px": 32,
+      "anchor_rule": "projected_piece_local_cell_center",
+      "anchor_local_cell": [
+        8,
+        5
+      ],
+      "source_anchor_px": [
+        232.0,
+        131.0
+      ],
+      "fit_footprint_cells": [
+        10,
+        11
+      ],
+      "local_bounds_cells": {
+        "min_x": 4,
+        "min_y": 1,
+        "max_x": 13,
+        "max_y": 11,
+        "width": 10,
+        "height": 11
+      },
+      "image_size_px": [
+        304,
+        265
+      ],
+      "alpha_bbox_px": [
+        4,
+        4,
+        300,
+        261
+      ],
+      "visual_fit_scale": 1.0,
+      "sha256": "49004bbaca3a97fef4d1b9dcc03f4cb14ec4048789bf611b174301cdeb49321c"
+    },
+    "t_junction_west_stub_3way": {
+      "piece_id": "t_junction_west_stub_3way",
+      "file": "main_world_mountain_boundary_t_junction_west_stub_3way_v0_37.png",
+      "asset_path": "res://assets/themes/slgclient/current/world/mountains/main_world_mountain_boundary_t_junction_west_stub_3way_v0_37.png",
+      "source_contract_piece_id": "t_junction_west_stub_3way",
+      "source_review_path": "experiments/east_asia_map_pipeline/generated/mountain_barrier_contested_chokepoint_contract_v0_31/reviews/mountain_barrier_v0_31_common_piece_t_junction_west_stub_3way_stitch_grid.png",
+      "source_primitive": "v0.31 pass_wall_compatible_ridge_tails normal transparent primitives",
+      "source_cell_width_px": 64,
+      "source_cell_height_px": 32,
+      "anchor_rule": "projected_piece_local_cell_center",
+      "anchor_local_cell": [
+        8,
+        5
+      ],
+      "source_anchor_px": [
+        328.0,
+        131.0
+      ],
+      "fit_footprint_cells": [
+        8,
+        11
+      ],
+      "local_bounds_cells": {
+        "min_x": 2,
+        "min_y": 1,
+        "max_x": 9,
+        "max_y": 11,
+        "width": 8,
+        "height": 11
+      },
+      "image_size_px": [
+        378,
+        228
+      ],
+      "alpha_bbox_px": [
+        4,
+        4,
+        374,
+        224
+      ],
+      "visual_fit_scale": 1.0,
+      "sha256": "0bf8be9495cd8c3a7a8e4ba6cccebd18e62dd1b3080d0359cfff3621b6fee14f"
+    },
+    "vertical_extra_long_y_7cell": {
+      "piece_id": "vertical_extra_long_y_7cell",
+      "file": "main_world_mountain_boundary_vertical_extra_long_y_7cell_v0_37.png",
+      "asset_path": "res://assets/themes/slgclient/current/world/mountains/main_world_mountain_boundary_vertical_extra_long_y_7cell_v0_37.png",
+      "source_contract_piece_id": "vertical_extra_long_y_7cell",
+      "source_review_path": "experiments/east_asia_map_pipeline/generated/mountain_barrier_contested_chokepoint_contract_v0_31/reviews/mountain_barrier_v0_31_common_piece_vertical_extra_long_y_7cell_stitch_grid.png",
+      "source_primitive": "v0.31 pass_wall_compatible_ridge_tails normal transparent primitives",
+      "source_cell_width_px": 64,
+      "source_cell_height_px": 32,
+      "anchor_rule": "projected_piece_local_cell_center",
+      "anchor_local_cell": [
+        8,
+        2
+      ],
+      "source_anchor_px": [
+        306.0,
+        131.0
+      ],
+      "fit_footprint_cells": [
+        6,
+        14
+      ],
+      "local_bounds_cells": {
+        "min_x": 4,
+        "min_y": -2,
+        "max_x": 9,
+        "max_y": 11,
+        "width": 6,
+        "height": 14
+      },
+      "image_size_px": [
+        356,
+        293
+      ],
+      "alpha_bbox_px": [
+        4,
+        4,
+        352,
+        289
+      ],
+      "visual_fit_scale": 1.0,
+      "sha256": "e4c2ca377c039bff16d45363451616ff2f92247ba1bda394143911d4ef6fc0c7"
+    },
+    "vertical_long_y_5cell": {
+      "piece_id": "vertical_long_y_5cell",
+      "file": "main_world_mountain_boundary_vertical_long_y_5cell_v0_37.png",
+      "asset_path": "res://assets/themes/slgclient/current/world/mountains/main_world_mountain_boundary_vertical_long_y_5cell_v0_37.png",
+      "source_contract_piece_id": "vertical_long_y_5cell",
+      "source_review_path": "experiments/east_asia_map_pipeline/generated/mountain_barrier_contested_chokepoint_contract_v0_31/reviews/mountain_barrier_v0_31_common_piece_vertical_long_y_5cell_stitch_grid.png",
+      "source_primitive": "v0.31 pass_wall_compatible_ridge_tails normal transparent primitives",
+      "source_cell_width_px": 64,
+      "source_cell_height_px": 32,
+      "anchor_rule": "projected_piece_local_cell_center",
+      "anchor_local_cell": [
+        8,
+        3
+      ],
+      "source_anchor_px": [
+        242.0,
+        131.0
+      ],
+      "fit_footprint_cells": [
+        6,
+        12
+      ],
+      "local_bounds_cells": {
+        "min_x": 4,
+        "min_y": -1,
+        "max_x": 9,
+        "max_y": 10,
+        "width": 6,
+        "height": 12
+      },
+      "image_size_px": [
+        292,
+        261
+      ],
+      "alpha_bbox_px": [
+        4,
+        4,
+        288,
+        257
+      ],
+      "visual_fit_scale": 1.0,
+      "sha256": "f8049a01cf7a1de19e2433baafb35bc9f332d38d89cef745f33f73cc0a470535"
+    },
+    "outer_compact_bend_left_3cell": {
+      "piece_id": "outer_compact_bend_left_3cell",
+      "file": "main_world_mountain_boundary_outer_compact_bend_left_3cell_v0_39.png",
+      "asset_path": "res://assets/themes/slgclient/current/world/mountains/main_world_mountain_boundary_outer_compact_bend_left_3cell_v0_39.png",
+      "source_contract_piece_id": "bend_left_wide_5cell",
+      "source_review_path": "experiments/east_asia_map_pipeline/generated/mountain_barrier_contested_chokepoint_contract_v0_31/reviews/mountain_barrier_v0_31_common_piece_bend_left_wide_5cell_stitch_grid.png",
+      "source_primitive": "v0.39 compact outer-contact derivative from v0.37 formal mountain piece",
+      "source_cell_width_px": 64,
+      "source_cell_height_px": 32,
+      "anchor_rule": "compact_outer_contact_projected_piece_local_cell_center",
+      "anchor_local_cell": [
+        3,
+        4
+      ],
+      "source_anchor_px": [
+        105.84,
+        50.4
+      ],
+      "fit_footprint_cells": [
+        6,
+        7
+      ],
+      "local_bounds_cells": {
+        "min_x": 1,
+        "min_y": 1,
+        "max_x": 6,
+        "max_y": 7,
+        "width": 6,
+        "height": 7
+      },
+      "image_size_px": [
+        257,
+        156
+      ],
+      "alpha_bbox_px": [
+        2,
+        2,
+        255,
+        154
+      ],
+      "visual_fit_scale": 1.0,
+      "sha256": "8387f6941f08f882ea255770288e06240aea2083233a47c14e65784343d03b88",
+      "compact_outer_contact_review": {
+        "sourcePieceId": "bend_left_wide_5cell",
+        "scale": 0.72,
+        "axis": "compact_diagonal_left",
+        "purpose": "replace suppressed short southeast outer-contact four-piece chain with one compact runtime piece"
+      }
+    },
+    "outer_compact_vertical_3cell": {
+      "piece_id": "outer_compact_vertical_3cell",
+      "file": "main_world_mountain_boundary_outer_compact_vertical_3cell_v0_39.png",
+      "asset_path": "res://assets/themes/slgclient/current/world/mountains/main_world_mountain_boundary_outer_compact_vertical_3cell_v0_39.png",
+      "source_contract_piece_id": "vertical_long_y_5cell",
+      "source_review_path": "experiments/east_asia_map_pipeline/generated/mountain_barrier_contested_chokepoint_contract_v0_31/reviews/mountain_barrier_v0_31_common_piece_vertical_long_y_5cell_stitch_grid.png",
+      "source_primitive": "v0.39 compact outer-contact derivative from v0.37 formal mountain piece",
+      "source_cell_width_px": 64,
+      "source_cell_height_px": 32,
+      "anchor_rule": "compact_outer_contact_projected_piece_local_cell_center",
+      "anchor_local_cell": [
+        5,
+        2
+      ],
+      "source_anchor_px": [
+        179.08,
+        96.94
+      ],
+      "fit_footprint_cells": [
+        5,
+        8
+      ],
+      "local_bounds_cells": {
+        "min_x": 3,
+        "min_y": 0,
+        "max_x": 7,
+        "max_y": 7,
+        "width": 5,
+        "height": 8
+      },
+      "image_size_px": [
+        216,
+        193
+      ],
+      "alpha_bbox_px": [
+        2,
+        2,
+        214,
+        191
+      ],
+      "visual_fit_scale": 1.0,
+      "sha256": "48b88f5407eabcce85c407453b5a28163d081807f95692b9ce3f234394dc1414",
+      "compact_outer_contact_review": {
+        "sourcePieceId": "vertical_long_y_5cell",
+        "scale": 0.74,
+        "axis": "compact_vertical",
+        "purpose": "replace suppressed short southeast outer-contact four-piece chain with one compact runtime piece"
+      }
+    },
+    "outer_compact_straight_x_2cell": {
+      "piece_id": "outer_compact_straight_x_2cell",
+      "file": "main_world_mountain_boundary_outer_compact_straight_x_2cell_v0_39.png",
+      "asset_path": "res://assets/themes/slgclient/current/world/mountains/main_world_mountain_boundary_outer_compact_straight_x_2cell_v0_39.png",
+      "source_contract_piece_id": "straight_medium_x_3cell",
+      "source_review_path": "experiments/east_asia_map_pipeline/generated/mountain_barrier_contested_chokepoint_contract_v0_31/reviews/mountain_barrier_v0_31_common_piece_straight_medium_x_3cell_stitch_grid.png",
+      "source_primitive": "v0.39 compact outer-contact derivative from v0.37 formal mountain piece",
+      "source_cell_width_px": 64,
+      "source_cell_height_px": 32,
+      "anchor_rule": "compact_outer_contact_projected_piece_local_cell_center",
+      "anchor_local_cell": [
+        4,
+        4
+      ],
+      "source_anchor_px": [
+        111.72,
+        53.2
+      ],
+      "fit_footprint_cells": [
+        5,
+        5
+      ],
+      "local_bounds_cells": {
+        "min_x": 2,
+        "min_y": 2,
+        "max_x": 6,
+        "max_y": 6,
+        "width": 5,
+        "height": 5
+      },
+      "image_size_px": [
+        223,
+        69
+      ],
+      "alpha_bbox_px": [
+        3,
+        2,
+        220,
+        66
+      ],
+      "visual_fit_scale": 1.0,
+      "sha256": "4a65d87c8e727838e5ec785fd3eeb3425bba1935610c05d4a54fb43c8448ea94",
+      "compact_outer_contact_review": {
+        "sourcePieceId": "straight_medium_x_3cell",
+        "scale": 0.76,
+        "axis": "compact_horizontal",
+        "purpose": "replace suppressed short southeast outer-contact four-piece chain with one compact runtime piece"
+      }
+    },
+    "outer_compact_bend_right_3cell": {
+      "piece_id": "outer_compact_bend_right_3cell",
+      "file": "main_world_mountain_boundary_outer_compact_bend_right_3cell_v0_39.png",
+      "asset_path": "res://assets/themes/slgclient/current/world/mountains/main_world_mountain_boundary_outer_compact_bend_right_3cell_v0_39.png",
+      "source_contract_piece_id": "bend_right_wide_5cell",
+      "source_review_path": "experiments/east_asia_map_pipeline/generated/mountain_barrier_contested_chokepoint_contract_v0_31/reviews/mountain_barrier_v0_31_common_piece_bend_right_wide_5cell_stitch_grid.png",
+      "source_primitive": "v0.39 compact outer-contact derivative from v0.37 formal mountain piece",
+      "source_cell_width_px": 64,
+      "source_cell_height_px": 32,
+      "anchor_rule": "compact_outer_contact_projected_piece_local_cell_center",
+      "anchor_local_cell": [
+        5,
+        3
+      ],
+      "source_anchor_px": [
+        147.0,
+        91.7
+      ],
+      "fit_footprint_cells": [
+        7,
+        7
+      ],
+      "local_bounds_cells": {
+        "min_x": 3,
+        "min_y": 0,
+        "max_x": 9,
+        "max_y": 6,
+        "width": 7,
+        "height": 7
+      },
+      "image_size_px": [
+        287,
+        208
+      ],
+      "alpha_bbox_px": [
+        2,
+        2,
+        285,
+        206
+      ],
+      "visual_fit_scale": 1.0,
+      "sha256": "a4744869c91c79730e5d0f1003e3b271bdf2a45a29e2f1df86f3eba97946ea34",
+      "compact_outer_contact_review": {
+        "sourcePieceId": "bend_right_wide_5cell",
+        "scale": 0.7,
+        "axis": "compact_diagonal_right",
+        "purpose": "replace suppressed short southeast outer-contact four-piece chain with one compact runtime piece"
+      }
+    },
+    "fine_endcap_left_2cell": {
+      "piece_id": "fine_endcap_left_2cell",
+      "file": "main_world_mountain_boundary_fine_endcap_left_2cell_v0_46.png",
+      "asset_path": "res://assets/themes/slgclient/current/world/mountains/main_world_mountain_boundary_fine_endcap_left_2cell_v0_46.png",
+      "source_contract_piece_id": "endcap_left_2x2",
+      "source_primitive": "ridgeEndcapLeft2x2",
+      "anchor_rule": "v0.46 fine mountain piece local cell center",
+      "anchor_local_cell": [
+        0,
+        0
+      ],
+      "source_anchor_px": [
+        96.0,
+        105.0
+      ],
+      "source_cell_width_px": 64,
+      "source_cell_height_px": 32,
+      "fit_footprint_cells": [
+        4,
+        5
+      ],
+      "local_bounds_cells": {
+        "min_x": 4,
+        "min_y": 2,
+        "max_x": 7,
+        "max_y": 6,
+        "width": 4,
+        "height": 5
+      },
+      "image_size_px": [
+        192,
+        128
+      ],
+      "alpha_bbox_px": [
+        28,
+        20,
+        163,
+        126
+      ],
+      "visual_fit_scale": 1.0,
+      "sha256": "0b397a5e98725ff7a4bdbdae1efa1af5153042e7beb1e9231432e68524d006f9",
+      "fine_piece_library_v0_46": {
+        "category": "end_cap",
+        "purpose": "left terminal mountain cap for short province boundary runs",
+        "includesPassWall": false,
+        "reservedLocalCellCount": 14,
+        "visualOverhangOnlyCellCount": 1
+      }
+    },
+    "fine_endcap_right_2cell": {
+      "piece_id": "fine_endcap_right_2cell",
+      "file": "main_world_mountain_boundary_fine_endcap_right_2cell_v0_46.png",
+      "asset_path": "res://assets/themes/slgclient/current/world/mountains/main_world_mountain_boundary_fine_endcap_right_2cell_v0_46.png",
+      "source_contract_piece_id": "endcap_right_2x2",
+      "source_primitive": "ridgeEndcapRight2x2",
+      "anchor_rule": "v0.46 fine mountain piece local cell center",
+      "anchor_local_cell": [
+        0,
+        0
+      ],
+      "source_anchor_px": [
+        96.0,
+        105.0
+      ],
+      "source_cell_width_px": 64,
+      "source_cell_height_px": 32,
+      "fit_footprint_cells": [
+        5,
+        5
+      ],
+      "local_bounds_cells": {
+        "min_x": 3,
+        "min_y": 2,
+        "max_x": 7,
+        "max_y": 6,
+        "width": 5,
+        "height": 5
+      },
+      "image_size_px": [
+        192,
+        128
+      ],
+      "alpha_bbox_px": [
+        41,
+        18,
+        151,
+        126
+      ],
+      "visual_fit_scale": 1.0,
+      "sha256": "71c8fef98a7567db5a10678c1219ca1d37d139b38a08d16f9ec2527f00a76e08",
+      "fine_piece_library_v0_46": {
+        "category": "end_cap",
+        "purpose": "right terminal mountain cap for short province boundary runs",
+        "includesPassWall": false,
+        "reservedLocalCellCount": 14,
+        "visualOverhangOnlyCellCount": 3
+      }
+    },
+    "fine_straight_short_x_2cell": {
+      "piece_id": "fine_straight_short_x_2cell",
+      "file": "main_world_mountain_boundary_fine_straight_short_x_2cell_v0_46.png",
+      "asset_path": "res://assets/themes/slgclient/current/world/mountains/main_world_mountain_boundary_fine_straight_short_x_2cell_v0_46.png",
+      "source_contract_piece_id": "straight_short_x_2cell",
+      "source_primitive": "ridgeStraight3x2",
+      "anchor_rule": "v0.46 fine mountain piece local cell center",
+      "anchor_local_cell": [
+        0,
+        0
+      ],
+      "source_anchor_px": [
+        110.08,
+        90.3
+      ],
+      "source_cell_width_px": 64,
+      "source_cell_height_px": 32,
+      "fit_footprint_cells": [
+        6,
+        6
+      ],
+      "local_bounds_cells": {
+        "min_x": 3,
+        "min_y": 2,
+        "max_x": 8,
+        "max_y": 7,
+        "width": 6,
+        "height": 6
+      },
+      "image_size_px": [
+        220,
+        110
+      ],
+      "alpha_bbox_px": [
+        23,
+        28,
+        197,
+        106
+      ],
+      "visual_fit_scale": 1.0,
+      "sha256": "a9cba6aa493a75d0240a48717720c32a653484de660822c701637b89b0452d31",
+      "fine_piece_library_v0_46": {
+        "category": "short_straight",
+        "purpose": "short horizontal connector for commandery-scale border fragments",
+        "includesPassWall": false,
+        "reservedLocalCellCount": 18,
+        "visualOverhangOnlyCellCount": 4
+      }
+    },
+    "fine_vertical_short_y_2cell": {
+      "piece_id": "fine_vertical_short_y_2cell",
+      "file": "main_world_mountain_boundary_fine_vertical_short_y_2cell_v0_46.png",
+      "asset_path": "res://assets/themes/slgclient/current/world/mountains/main_world_mountain_boundary_fine_vertical_short_y_2cell_v0_46.png",
+      "source_contract_piece_id": "vertical_short_y_2cell",
+      "source_primitive": "ridgeVertical2x4",
+      "anchor_rule": "v0.46 fine mountain piece local cell center",
+      "anchor_local_cell": [
+        0,
+        0
+      ],
+      "source_anchor_px": [
+        67.2,
+        150.5
+      ],
+      "source_cell_width_px": 64,
+      "source_cell_height_px": 32,
+      "fit_footprint_cells": [
+        6,
+        6
+      ],
+      "local_bounds_cells": {
+        "min_x": 3,
+        "min_y": 1,
+        "max_x": 8,
+        "max_y": 6,
+        "width": 6,
+        "height": 6
+      },
+      "image_size_px": [
+        134,
+        179
+      ],
+      "alpha_bbox_px": [
+        34,
+        61,
+        100,
+        172
+      ],
+      "visual_fit_scale": 1.0,
+      "sha256": "611ace7c1cc2518ee5398f5188ecaecd86934ab0282c4fba9d743e0beeb0b82f",
+      "fine_piece_library_v0_46": {
+        "category": "short_straight",
+        "purpose": "short vertical connector for commandery-scale border fragments",
+        "includesPassWall": false,
+        "reservedLocalCellCount": 17,
+        "visualOverhangOnlyCellCount": 3
+      }
+    },
+    "fine_bend_left_3cell": {
+      "piece_id": "fine_bend_left_3cell",
+      "file": "main_world_mountain_boundary_fine_bend_left_3cell_v0_46.png",
+      "asset_path": "res://assets/themes/slgclient/current/world/mountains/main_world_mountain_boundary_fine_bend_left_3cell_v0_46.png",
+      "source_contract_piece_id": "bend_left_corner_3x3",
+      "source_primitive": "ridgeBendLeft3x3",
+      "anchor_rule": "v0.46 fine mountain piece local cell center",
+      "anchor_local_cell": [
+        0,
+        0
+      ],
+      "source_anchor_px": [
+        112.64,
+        128.48
+      ],
+      "source_cell_width_px": 64,
+      "source_cell_height_px": 32,
+      "fit_footprint_cells": [
+        9,
+        7
+      ],
+      "local_bounds_cells": {
+        "min_x": 2,
+        "min_y": 2,
+        "max_x": 10,
+        "max_y": 8,
+        "width": 9,
+        "height": 7
+      },
+      "image_size_px": [
+        225,
+        155
+      ],
+      "alpha_bbox_px": [
+        15,
+        34,
+        210,
+        152
+      ],
+      "visual_fit_scale": 1.0,
+      "sha256": "fc5604b08d351864d7c702d12074b22fdd8e41b2bb0fc3047dbb625e3f122ac8",
+      "fine_piece_library_v0_46": {
+        "category": "short_bend",
+        "purpose": "compact left bend for short cross-state commandery borders",
+        "includesPassWall": false,
+        "reservedLocalCellCount": 40,
+        "visualOverhangOnlyCellCount": 5
+      }
+    },
+    "fine_bend_right_3cell": {
+      "piece_id": "fine_bend_right_3cell",
+      "file": "main_world_mountain_boundary_fine_bend_right_3cell_v0_46.png",
+      "asset_path": "res://assets/themes/slgclient/current/world/mountains/main_world_mountain_boundary_fine_bend_right_3cell_v0_46.png",
+      "source_contract_piece_id": "bend_right_corner_3x3",
+      "source_primitive": "ridgeBendRight3x3",
+      "anchor_rule": "v0.46 fine mountain piece local cell center",
+      "anchor_local_cell": [
+        0,
+        0
+      ],
+      "source_anchor_px": [
+        112.64,
+        128.48
+      ],
+      "source_cell_width_px": 64,
+      "source_cell_height_px": 32,
+      "fit_footprint_cells": [
+        10,
+        10
+      ],
+      "local_bounds_cells": {
+        "min_x": 3,
+        "min_y": 0,
+        "max_x": 12,
+        "max_y": 9,
+        "width": 10,
+        "height": 10
+      },
+      "image_size_px": [
+        225,
+        155
+      ],
+      "alpha_bbox_px": [
+        15,
+        32,
+        210,
+        152
+      ],
+      "visual_fit_scale": 1.0,
+      "sha256": "2a615a7bcb02f8fbe42bfde3bca5cc6669487b9c915f86ac28fac953e7b74dcc",
+      "fine_piece_library_v0_46": {
+        "category": "short_bend",
+        "purpose": "compact right bend for short cross-state commandery borders",
+        "includesPassWall": false,
+        "reservedLocalCellCount": 48,
+        "visualOverhangOnlyCellCount": 6
+      }
+    },
+    "fine_t_junction_3way": {
+      "piece_id": "fine_t_junction_3way",
+      "file": "main_world_mountain_boundary_fine_t_junction_3way_v0_46.png",
+      "asset_path": "res://assets/themes/slgclient/current/world/mountains/main_world_mountain_boundary_fine_t_junction_3way_v0_46.png",
+      "source_contract_piece_id": "t_junction_3way",
+      "source_primitive": "t_junction_west_stub_3way",
+      "anchor_rule": "v0.46 fine mountain piece local cell center",
+      "anchor_local_cell": [
+        0,
+        0
+      ],
+      "source_anchor_px": [
+        242.72,
+        96.94
+      ],
+      "source_cell_width_px": 64,
+      "source_cell_height_px": 32,
+      "fit_footprint_cells": [
+        12,
+        8
+      ],
+      "local_bounds_cells": {
+        "min_x": 2,
+        "min_y": 2,
+        "max_x": 13,
+        "max_y": 9,
+        "width": 12,
+        "height": 8
+      },
+      "image_size_px": [
+        280,
+        169
+      ],
+      "alpha_bbox_px": [
+        2,
+        2,
+        278,
+        167
+      ],
+      "visual_fit_scale": 1.0,
+      "sha256": "ec789c859657217c82618fbe93f070c46f81eb95dc823423476139691eb0ba34",
+      "fine_piece_library_v0_46": {
+        "category": "t_junction",
+        "purpose": "compact T connector for dense state-border meeting points",
+        "includesPassWall": false,
+        "reservedLocalCellCount": 57,
+        "visualOverhangOnlyCellCount": 6
+      }
+    },
+    "fine_cross_junction_4way": {
+      "piece_id": "fine_cross_junction_4way",
+      "file": "main_world_mountain_boundary_fine_cross_junction_4way_v0_46.png",
+      "asset_path": "res://assets/themes/slgclient/current/world/mountains/main_world_mountain_boundary_fine_cross_junction_4way_v0_46.png",
+      "source_contract_piece_id": "cross_junction_4way",
+      "source_primitive": "cross_large_4way",
+      "anchor_rule": "v0.46 fine mountain piece local cell center",
+      "anchor_local_cell": [
+        0,
+        0
+      ],
+      "source_anchor_px": [
+        102.9,
+        80.5
+      ],
+      "source_cell_width_px": 64,
+      "source_cell_height_px": 32,
+      "fit_footprint_cells": [
+        12,
+        10
+      ],
+      "local_bounds_cells": {
+        "min_x": 2,
+        "min_y": 1,
+        "max_x": 13,
+        "max_y": 10,
+        "width": 12,
+        "height": 10
+      },
+      "image_size_px": [
+        363,
+        174
+      ],
+      "alpha_bbox_px": [
+        2,
+        2,
+        361,
+        172
+      ],
+      "visual_fit_scale": 1.0,
+      "sha256": "f8988dc8922a24d1b6e9bc4c28eefea5a0b1bedfc11d86ef6b9cebb782b92fb5",
+      "fine_piece_library_v0_46": {
+        "category": "cross_junction",
+        "purpose": "compact cross connector for dense state-border meeting points",
+        "includesPassWall": false,
+        "reservedLocalCellCount": 62,
+        "visualOverhangOnlyCellCount": 7
+      }
+    },
+    "fine_pass_left_connector": {
+      "piece_id": "fine_pass_left_connector",
+      "file": "main_world_mountain_boundary_fine_pass_left_connector_v0_46.png",
+      "asset_path": "res://assets/themes/slgclient/current/world/mountains/main_world_mountain_boundary_fine_pass_left_connector_v0_46.png",
+      "source_contract_piece_id": "pass_left_end_connector",
+      "source_primitive": "ridgeEndcapLeft2x2",
+      "anchor_rule": "v0.46 fine mountain piece local cell center",
+      "anchor_local_cell": [
+        0,
+        0
+      ],
+      "source_anchor_px": [
+        88.32,
+        96.6
+      ],
+      "source_cell_width_px": 64,
+      "source_cell_height_px": 32,
+      "fit_footprint_cells": [
+        11,
+        8
+      ],
+      "local_bounds_cells": {
+        "min_x": 0,
+        "min_y": 2,
+        "max_x": 10,
+        "max_y": 9,
+        "width": 11,
+        "height": 8
+      },
+      "image_size_px": [
+        177,
+        118
+      ],
+      "alpha_bbox_px": [
+        26,
+        18,
+        151,
+        116
+      ],
+      "visual_fit_scale": 1.0,
+      "sha256": "e51a999ccd757c4924c7cae97d509e17da15d26b849bf74a49aea567982ac0b9",
+      "fine_piece_library_v0_46": {
+        "category": "pass_connector",
+        "purpose": "left mountain-to-pass connector; no independent gate/chokepoint spawn",
+        "includesPassWall": true,
+        "reservedLocalCellCount": 42,
+        "visualOverhangOnlyCellCount": 3
+      }
+    },
+    "fine_pass_right_connector": {
+      "piece_id": "fine_pass_right_connector",
+      "file": "main_world_mountain_boundary_fine_pass_right_connector_v0_46.png",
+      "asset_path": "res://assets/themes/slgclient/current/world/mountains/main_world_mountain_boundary_fine_pass_right_connector_v0_46.png",
+      "source_contract_piece_id": "pass_right_end_connector",
+      "source_primitive": "ridgeEndcapRight2x2",
+      "anchor_rule": "v0.46 fine mountain piece local cell center",
+      "anchor_local_cell": [
+        0,
+        1
+      ],
+      "source_anchor_px": [
+        88.32,
+        96.6
+      ],
+      "source_cell_width_px": 64,
+      "source_cell_height_px": 32,
+      "fit_footprint_cells": [
+        12,
+        8
+      ],
+      "local_bounds_cells": {
+        "min_x": 2,
+        "min_y": -1,
+        "max_x": 13,
+        "max_y": 6,
+        "width": 12,
+        "height": 8
+      },
+      "image_size_px": [
+        177,
+        118
+      ],
+      "alpha_bbox_px": [
+        37,
+        16,
+        140,
+        117
+      ],
+      "visual_fit_scale": 1.0,
+      "sha256": "39c565966849cf9bc5e5a575edc3f605b07043da158eeca5ec2701c555f754d1",
+      "fine_piece_library_v0_46": {
+        "category": "pass_connector",
+        "purpose": "right mountain-to-pass connector; no independent gate/chokepoint spawn",
+        "includesPassWall": true,
+        "reservedLocalCellCount": 47,
+        "visualOverhangOnlyCellCount": 2
+      }
+    }
+  },
+  "compact_outer_contact_piece_count": 4,
+  "fine_piece_library_added_count": 10,
+  "fine_piece_ids": [
+    "fine_endcap_left_2cell",
+    "fine_endcap_right_2cell",
+    "fine_straight_short_x_2cell",
+    "fine_vertical_short_y_2cell",
+    "fine_bend_left_3cell",
+    "fine_bend_right_3cell",
+    "fine_t_junction_3way",
+    "fine_cross_junction_4way",
+    "fine_pass_left_connector",
+    "fine_pass_right_connector"
+  ]
+}

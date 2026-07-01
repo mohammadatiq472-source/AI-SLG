@@ -1,0 +1,610 @@
+{
+  "schema_version": "main_city_facility_tree_read_model_v2",
+  "scope": "Godot native UI read model fixture for main city facility tree.",
+  "asset_root": "res://data/ui/main_city_facility_tree_asset_drop/round_04",
+  "asset_manifest_path": "res://data/ui/main_city_facility_tree_asset_drop/round_04/maincity_facility_tree_asset_manifest_v4.json",
+  "buildings": [
+    {
+      "id": "city_lord_mansion",
+      "label": "城主府",
+      "iconText": "府",
+      "iconFile": "maincity_facility_city_lord_mansion_v4.png",
+      "treeTier": 0,
+      "treeSlot": 0,
+      "treeAnchorX": 750,
+      "treeAnchorY": 150,
+      "level": "6/8",
+      "status": "主干",
+      "body": "主城建筑树根节点，决定建筑等级上限与队列容量。",
+      "enabled": true,
+      "cost_items": [
+        {
+          "resource": "木",
+          "amount": 320
+        },
+        {
+          "resource": "石",
+          "amount": 320
+        },
+        {
+          "resource": "令",
+          "amount": 2
+        }
+      ],
+      "effect_items": [
+        {
+          "stat": "建筑等级上限",
+          "before": "+1",
+          "after": "+2"
+        }
+      ]
+    },
+    {
+      "id": "recruit_office",
+      "label": "募兵所",
+      "iconText": "兵",
+      "iconFile": "maincity_facility_recruit_office_v4.png",
+      "treeTier": 1,
+      "treeSlot": 0,
+      "treeAnchorX": 610,
+      "treeAnchorY": 380,
+      "level": "4/10",
+      "status": "军务线",
+      "body": "承接征募、预备兵与军务建筑前置。",
+      "enabled": true,
+      "cost_items": [
+        {
+          "resource": "粮",
+          "amount": 260
+        },
+        {
+          "resource": "木",
+          "amount": 140
+        },
+        {
+          "resource": "令",
+          "amount": 1
+        }
+      ],
+      "effect_items": [
+        {
+          "stat": "征募队列",
+          "before": "+1",
+          "after": "+2"
+        }
+      ]
+    },
+    {
+      "id": "granary",
+      "label": "粮仓",
+      "iconText": "粮",
+      "iconFile": "maincity_facility_granary_v4.png",
+      "treeTier": 1,
+      "treeSlot": 1,
+      "treeAnchorX": 890,
+      "treeAnchorY": 380,
+      "level": "4/20",
+      "status": "资源线",
+      "body": "粮草储备、军需保障与民生资源建筑前置。",
+      "enabled": true,
+      "cost_items": [
+        {
+          "resource": "木",
+          "amount": 160
+        },
+        {
+          "resource": "石",
+          "amount": 180
+        },
+        {
+          "resource": "令",
+          "amount": 1
+        }
+      ],
+      "effect_items": [
+        {
+          "stat": "粮仓容量",
+          "before": "+1",
+          "after": "+2"
+        }
+      ]
+    },
+    {
+      "id": "drill_ground",
+      "label": "校场",
+      "iconText": "校",
+      "iconFile": "maincity_facility_drill_ground_v4.png",
+      "treeTier": 2,
+      "treeSlot": 0,
+      "treeAnchorX": 330,
+      "treeAnchorY": 610,
+      "level": "4/5",
+      "status": "可升级",
+      "body": "提升部队操练效率和编组稳定度。",
+      "enabled": true,
+      "cost_items": [
+        {
+          "resource": "木",
+          "amount": 180
+        },
+        {
+          "resource": "石",
+          "amount": 120
+        },
+        {
+          "resource": "令",
+          "amount": 1
+        }
+      ],
+      "effect_items": [
+        {
+          "stat": "操练效率",
+          "before": "+1",
+          "after": "+2"
+        },
+        {
+          "stat": "编组稳定",
+          "before": "+1",
+          "after": "+2"
+        }
+      ]
+    },
+    {
+      "id": "barracks",
+      "label": "军营",
+      "iconText": "营",
+      "iconFile": "maincity_facility_barracks_v4.png",
+      "treeTier": 2,
+      "treeSlot": 1,
+      "treeAnchorX": 610,
+      "treeAnchorY": 610,
+      "level": "3/10",
+      "status": "募兵中",
+      "body": "提高预备兵处理和基础兵力承载。",
+      "enabled": true,
+      "cost_items": [
+        {
+          "resource": "粮",
+          "amount": 300
+        },
+        {
+          "resource": "木",
+          "amount": 180
+        },
+        {
+          "resource": "令",
+          "amount": 1
+        }
+      ],
+      "effect_items": [
+        {
+          "stat": "预备兵恢复",
+          "before": "+1",
+          "after": "+2"
+        }
+      ]
+    },
+    {
+      "id": "grain_field",
+      "label": "屯田",
+      "iconText": "田",
+      "iconFile": "maincity_facility_grain_field_v4.png",
+      "treeTier": 2,
+      "treeSlot": 2,
+      "treeAnchorX": 890,
+      "treeAnchorY": 610,
+      "level": "3/20",
+      "status": "耕作中",
+      "body": "粮食产出与军需供给的基础设施。",
+      "enabled": true,
+      "cost_items": [
+        {
+          "resource": "木",
+          "amount": 120
+        },
+        {
+          "resource": "石",
+          "amount": 80
+        },
+        {
+          "resource": "令",
+          "amount": 1
+        }
+      ],
+      "effect_items": [
+        {
+          "stat": "粮食产量",
+          "before": "+1",
+          "after": "+2"
+        }
+      ]
+    },
+    {
+      "id": "lumber_yard",
+      "label": "木场",
+      "iconText": "木",
+      "iconFile": "maincity_facility_lumber_yard_v4.png",
+      "treeTier": 2,
+      "treeSlot": 3,
+      "treeAnchorX": 1170,
+      "treeAnchorY": 610,
+      "level": "3/20",
+      "status": "采伐中",
+      "body": "木材产出与建筑维护基础设施。",
+      "enabled": true,
+      "cost_items": [
+        {
+          "resource": "粮",
+          "amount": 140
+        },
+        {
+          "resource": "石",
+          "amount": 100
+        },
+        {
+          "resource": "令",
+          "amount": 1
+        }
+      ],
+      "effect_items": [
+        {
+          "stat": "木材产量",
+          "before": "+1",
+          "after": "+2"
+        }
+      ]
+    },
+    {
+      "id": "city_wall",
+      "label": "城墙",
+      "iconText": "城",
+      "iconFile": "maincity_facility_city_wall_v4.png",
+      "treeTier": 3,
+      "treeSlot": 0,
+      "treeAnchorX": 330,
+      "treeAnchorY": 840,
+      "level": "0/5",
+      "status": "锁定",
+      "body": "提供主城耐久、守军驻防与被攻打时的基础防护。",
+      "enabled": false,
+      "cost_items": [
+        {
+          "resource": "石",
+          "amount": 360
+        },
+        {
+          "resource": "铁",
+          "amount": 120
+        },
+        {
+          "resource": "令",
+          "amount": 1
+        }
+      ],
+      "effect_items": [
+        {
+          "stat": "城防耐久",
+          "before": "+1",
+          "after": "+2"
+        }
+      ]
+    },
+    {
+      "id": "armory",
+      "label": "兵械坊",
+      "iconText": "械",
+      "iconFile": "maincity_facility_armory_v4.png",
+      "treeTier": 3,
+      "treeSlot": 1,
+      "treeAnchorX": 610,
+      "treeAnchorY": 840,
+      "level": "3/10",
+      "status": "锻造中",
+      "body": "承接兵械、工事与战斗属性材料。",
+      "enabled": true,
+      "cost_items": [
+        {
+          "resource": "木",
+          "amount": 180
+        },
+        {
+          "resource": "铁",
+          "amount": 160
+        },
+        {
+          "resource": "令",
+          "amount": 1
+        }
+      ],
+      "effect_items": [
+        {
+          "stat": "攻击整备",
+          "before": "+1",
+          "after": "+2"
+        }
+      ]
+    },
+    {
+      "id": "quarry",
+      "label": "采石场",
+      "iconText": "石",
+      "iconFile": "maincity_facility_quarry_v4.png",
+      "treeTier": 3,
+      "treeSlot": 2,
+      "treeAnchorX": 890,
+      "treeAnchorY": 840,
+      "level": "1/20",
+      "status": "开采中",
+      "body": "石料产出与城防工事基础设施。",
+      "enabled": true,
+      "cost_items": [
+        {
+          "resource": "粮",
+          "amount": 140
+        },
+        {
+          "resource": "木",
+          "amount": 100
+        },
+        {
+          "resource": "令",
+          "amount": 1
+        }
+      ],
+      "effect_items": [
+        {
+          "stat": "石料产量",
+          "before": "+1",
+          "after": "+2"
+        }
+      ]
+    },
+    {
+      "id": "ironworks",
+      "label": "冶铁所",
+      "iconText": "铁",
+      "iconFile": "maincity_facility_ironworks_v4.png",
+      "treeTier": 3,
+      "treeSlot": 3,
+      "treeAnchorX": 1170,
+      "treeAnchorY": 840,
+      "level": "1/20",
+      "status": "冶炼中",
+      "body": "铁料产出与兵械升级基础设施。",
+      "enabled": true,
+      "cost_items": [
+        {
+          "resource": "木",
+          "amount": 160
+        },
+        {
+          "resource": "石",
+          "amount": 160
+        },
+        {
+          "resource": "令",
+          "amount": 1
+        }
+      ],
+      "effect_items": [
+        {
+          "stat": "铁料产量",
+          "before": "+1",
+          "after": "+2"
+        }
+      ]
+    },
+    {
+      "id": "infirmary",
+      "label": "医舍",
+      "iconText": "医",
+      "iconFile": "maincity_facility_infirmary_v4.png",
+      "treeTier": 4,
+      "treeSlot": 0,
+      "treeAnchorX": 210,
+      "treeAnchorY": 1070,
+      "level": "0/10",
+      "status": "候建",
+      "body": "战后伤兵处理和守军恢复设施。",
+      "enabled": false,
+      "cost_items": [
+        {
+          "resource": "粮",
+          "amount": 220
+        },
+        {
+          "resource": "木",
+          "amount": 160
+        },
+        {
+          "resource": "令",
+          "amount": 1
+        }
+      ],
+      "effect_items": [
+        {
+          "stat": "伤兵恢复",
+          "before": "+1",
+          "after": "+2"
+        }
+      ]
+    },
+    {
+      "id": "academy",
+      "label": "太学",
+      "iconText": "学",
+      "iconFile": "maincity_facility_academy_v4.png",
+      "treeTier": 4,
+      "treeSlot": 1,
+      "treeAnchorX": 430,
+      "treeAnchorY": 1070,
+      "level": "0/10",
+      "status": "候建",
+      "body": "后续承接武将五项属性与内政研修。",
+      "enabled": false,
+      "cost_items": [
+        {
+          "resource": "木",
+          "amount": 220
+        },
+        {
+          "resource": "石",
+          "amount": 180
+        },
+        {
+          "resource": "令",
+          "amount": 1
+        }
+      ],
+      "effect_items": [
+        {
+          "stat": "研修位",
+          "before": "+1",
+          "after": "+2"
+        }
+      ]
+    },
+    {
+      "id": "market_plaza",
+      "label": "市井",
+      "iconText": "市",
+      "iconFile": "maincity_facility_market_plaza_v4.png",
+      "treeTier": 4,
+      "treeSlot": 2,
+      "treeAnchorX": 650,
+      "treeAnchorY": 1070,
+      "level": "5/6",
+      "status": "经营中",
+      "body": "主城经营、交易入口和基础收益锚点。",
+      "enabled": true,
+      "cost_items": [
+        {
+          "resource": "木",
+          "amount": 220
+        },
+        {
+          "resource": "石",
+          "amount": 140
+        },
+        {
+          "resource": "令",
+          "amount": 1
+        }
+      ],
+      "effect_items": [
+        {
+          "stat": "经营收益",
+          "before": "+1",
+          "after": "+2"
+        }
+      ]
+    },
+    {
+      "id": "warehouse",
+      "label": "仓廪",
+      "iconText": "仓",
+      "iconFile": "maincity_facility_warehouse_v4.png",
+      "treeTier": 4,
+      "treeSlot": 3,
+      "treeAnchorX": 870,
+      "treeAnchorY": 1070,
+      "level": "0/10",
+      "status": "候建",
+      "body": "四项资源安全库存与仓储效率。",
+      "enabled": false,
+      "cost_items": [
+        {
+          "resource": "木",
+          "amount": 180
+        },
+        {
+          "resource": "石",
+          "amount": 180
+        },
+        {
+          "resource": "令",
+          "amount": 1
+        }
+      ],
+      "effect_items": [
+        {
+          "stat": "资源上限",
+          "before": "+1",
+          "after": "+2"
+        }
+      ]
+    },
+    {
+      "id": "tax_office",
+      "label": "税署",
+      "iconText": "税",
+      "iconFile": "maincity_facility_tax_office_v4.png",
+      "treeTier": 4,
+      "treeSlot": 4,
+      "treeAnchorX": 1090,
+      "treeAnchorY": 1070,
+      "level": "0/5",
+      "status": "候建",
+      "body": "税收、入库与政务提交的建筑前置。",
+      "enabled": false,
+      "cost_items": [
+        {
+          "resource": "粮",
+          "amount": 180
+        },
+        {
+          "resource": "木",
+          "amount": 180
+        },
+        {
+          "resource": "令",
+          "amount": 1
+        }
+      ],
+      "effect_items": [
+        {
+          "stat": "税收效率",
+          "before": "+1",
+          "after": "+2"
+        }
+      ]
+    },
+    {
+      "id": "trade_post",
+      "label": "交易所",
+      "iconText": "贸",
+      "iconFile": "maincity_facility_trade_post_v4.png",
+      "treeTier": 4,
+      "treeSlot": 5,
+      "treeAnchorX": 1310,
+      "treeAnchorY": 1070,
+      "level": "0/5",
+      "status": "候建",
+      "body": "粮木石铁按比例互换的后续入口建筑。",
+      "enabled": false,
+      "cost_items": [
+        {
+          "resource": "木",
+          "amount": 180
+        },
+        {
+          "resource": "石",
+          "amount": 140
+        },
+        {
+          "resource": "令",
+          "amount": 1
+        }
+      ],
+      "effect_items": [
+        {
+          "stat": "交易折损",
+          "before": "-1",
+          "after": "-2"
+        }
+      ]
+    }
+  ],
+  "cost_mode": "structured_cost_items_v1",
+  "effect_mode": "structured_effect_items_v1"
+}

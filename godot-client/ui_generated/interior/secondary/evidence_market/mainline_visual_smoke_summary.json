@@ -1,0 +1,1123 @@
+{
+  "command": "run_mainline_visual_smoke",
+  "backendUrl": "http://127.0.0.1:8787",
+  "scene": "res://scenes/app/main.tscn",
+  "displayMode": "world",
+  "worldAction": "open_hub_panel",
+  "panelId": "interior",
+  "requestedPanelId": "interior",
+  "panelRequired": true,
+  "closeAfterOpen": false,
+  "clickAction": "world_open_main_city_interior_market",
+  "hideObservability": true,
+  "windowSize": {
+    "width": 0,
+    "height": 0
+  },
+  "evidenceDir": "C:\\Users\\26739\\Desktop\\8989\\godot-client\\ui_generated\\interior\\secondary\\evidence_market",
+  "steps": [
+    {
+      "name": "initial_health",
+      "ok": true,
+      "status": 200,
+      "durationMs": 74,
+      "url": "http://127.0.0.1:8787/api/health",
+      "data": {
+        "ok": true,
+        "service": "slg-backend",
+        "now": "2026-05-22T14:57:00.405Z",
+        "uptimeSec": 252416,
+        "runtime": {
+          "host": "127.0.0.1",
+          "port": 8787,
+          "gameClockEnabled": false
+        },
+        "world": {
+          "tick": 3,
+          "worldVersion": 64,
+          "factionCount": 2,
+          "unitCount": 15,
+          "reportCount": 12
+        },
+        "persistence": {
+          "worldState": {
+            "path": "C:\\Users\\26739\\Desktop\\8989\\tmp\\world_snapshot.json",
+            "exists": true,
+            "fileSizeBytes": 43698958,
+            "tick": 3,
+            "worldVersion": 64,
+            "resourceGeneration": {
+              "worldSeed": "initial_world_v1_resource_seed_2026_04",
+              "generationVersion": "world_resource_generation_v1",
+              "resourceTileDensityPermille": 480,
+              "levelWeightTable": [
+                {
+                  "level": 1,
+                  "weight": 360
+                },
+                {
+                  "level": 2,
+                  "weight": 250
+                },
+                {
+                  "level": 3,
+                  "weight": 170
+                },
+                {
+                  "level": 4,
+                  "weight": 110
+                },
+                {
+                  "level": 5,
+                  "weight": 60
+                },
+                {
+                  "level": 6,
+                  "weight": 30
+                },
+                {
+                  "level": 7,
+                  "weight": 12
+                },
+                {
+                  "level": 8,
+                  "weight": 6
+                },
+                {
+                  "level": 9,
+                  "weight": 2
+                }
+              ],
+              "kindWeightTable": [
+                {
+                  "kind": "food",
+                  "weight": 250
+                },
+                {
+                  "kind": "wood",
+                  "weight": 250
+                },
+                {
+                  "kind": "stone",
+                  "weight": 250
+                },
+                {
+                  "kind": "iron",
+                  "weight": 250
+                }
+              ],
+              "generatedResourceTileCount": 24218,
+              "levelCounts": {
+                "1": 8526,
+                "2": 6221,
+                "3": 4108,
+                "4": 2727,
+                "5": 1421,
+                "6": 723,
+                "7": 293,
+                "8": 152,
+                "9": 47
+              },
+              "kindCounts": {
+                "food": 6080,
+                "wood": 6152,
+                "stone": 5958,
+                "iron": 6028
+              }
+            }
+          },
+          "factionConfig": {
+            "path": "C:\\Users\\26739\\Desktop\\8989\\tmp\\faction_configs.json",
+            "loaded": true,
+            "entryCount": 0,
+            "persistDirty": false,
+            "persistInFlight": false,
+            "persistSuccessCount": 0,
+            "persistFailureCount": 0,
+            "lastPersistAt": null,
+            "lastPersistErrorAt": null,
+            "corruptQuarantineCount": 0,
+            "lastCorruptQuarantineAt": null,
+            "security": {
+              "secretPersistMode": "memory_only",
+              "encryptionKeyConfigured": false,
+              "allowPlaintextPersist": false
+            }
+          },
+          "aiConfig": {
+            "path": "C:\\Users\\26739\\Desktop\\8989\\tmp\\ai_hub_configs.json",
+            "loaded": false,
+            "factionCount": 0,
+            "persistDirty": false,
+            "persistInFlight": false,
+            "persistSuccessCount": 0,
+            "persistFailureCount": 0,
+            "lastPersistAt": null,
+            "lastPersistErrorAt": null,
+            "corruptQuarantineCount": 0,
+            "lastCorruptQuarantineAt": null
+          },
+          "aiPlayerGovernance": {
+            "path": "C:\\Users\\26739\\Desktop\\8989\\tmp\\ai_player_governance_state.json",
+            "enabled": true,
+            "loaded": true,
+            "playerCount": 1,
+            "pausedPlayerCount": 0,
+            "disabledPlayerCount": 0,
+            "proposalCount": 0,
+            "pendingProposalCount": 0,
+            "receiptCount": 0,
+            "persistDirty": false,
+            "persistInFlight": false,
+            "persistSuccessCount": 2223,
+            "persistFailureCount": 0,
+            "lastPersistAt": 1779460807522,
+            "lastPersistErrorAt": null,
+            "corruptQuarantineCount": 0,
+            "lastCorruptQuarantineAt": null,
+            "restoredPlayerCount": 1,
+            "restoredProposalCount": 0,
+            "restoredReceiptCount": 0,
+            "lastRestoreAt": 1779209414490,
+            "persistVersion": 1
+          },
+          "aiPlayerProviderAccounts": {
+            "path": "C:\\Users\\26739\\Desktop\\8989\\tmp\\ai_player_provider_accounts.json",
+            "loaded": true,
+            "playerKeyCount": 0,
+            "billingLedgerCount": 0,
+            "auditEventCount": 16,
+            "budgetWindowCount": 1,
+            "budgetReservationCount": 0,
+            "persistDirty": false,
+            "persistInFlight": false,
+            "persistSuccessCount": 0,
+            "persistFailureCount": 0,
+            "lastPersistAt": null,
+            "lastPersistErrorAt": null,
+            "corruptQuarantineCount": 0,
+            "lastCorruptQuarantineAt": null,
+            "security": {
+              "secretPersistMode": "memory_only",
+              "encryptionKeyConfigured": false,
+              "allowPlaintextPersist": false
+            },
+            "externalLedgerAuditDb": {
+              "configured": false,
+              "hmacConfigured": false,
+              "durableOutboxCount": 0,
+              "pendingBillingLedgerCount": 0,
+              "pendingAuditEventCount": 0,
+              "inFlight": false,
+              "successCount": 0,
+              "failureCount": 0,
+              "lastSuccessAt": null,
+              "lastFailureAt": null,
+              "lastError": null
+            },
+            "externalBudgetGate": {
+              "configured": false,
+              "hmacConfigured": false,
+              "failOpen": false,
+              "successCount": 0,
+              "failureCount": 0,
+              "lastSuccessAt": null,
+              "lastFailureAt": null,
+              "lastError": null
+            }
+          },
+          "v2Game": {
+            "path": "C:\\Users\\26739\\Desktop\\8989\\tmp\\v2_game_state.json",
+            "loaded": true,
+            "aiPlayerCount": 2,
+            "allianceCount": 0,
+            "humanPlayerCount": 0,
+            "persistDirty": false,
+            "persistInFlight": false,
+            "persistSuccessCount": 1,
+            "persistFailureCount": 0,
+            "lastPersistAt": 1779209415789,
+            "lastPersistErrorAt": null,
+            "corruptQuarantineCount": 0,
+            "lastCorruptQuarantineAt": null,
+            "persistVersion": 2
+          },
+          "session": {
+            "path": "C:\\Users\\26739\\Desktop\\8989\\tmp\\session_state.json",
+            "enabled": true,
+            "loaded": true,
+            "sessionCount": 8,
+            "factionCount": 1,
+            "persistDirty": false,
+            "persistInFlight": false,
+            "persistSuccessCount": 2349,
+            "persistFailureCount": 0,
+            "lastPersistAt": 1779460798726,
+            "lastPersistErrorAt": null,
+            "corruptQuarantineCount": 0,
+            "lastCorruptQuarantineAt": null,
+            "restoredSessionCount": 0,
+            "lastRestoreAt": 1779209405934,
+            "persistVersion": 1
+          },
+          "saveSlots": {
+            "path": "C:\\Users\\26739\\Desktop\\8989\\tmp\\world_save_slots.json",
+            "loaded": true,
+            "slotCount": 2,
+            "persistDirty": false,
+            "persistInFlight": false,
+            "persistSuccessCount": 0,
+            "persistFailureCount": 0,
+            "lastPersistAt": null,
+            "lastPersistErrorAt": null,
+            "corruptQuarantineCount": 0,
+            "lastCorruptQuarantineAt": null,
+            "restoredSlotCount": 2,
+            "lastRestoreAt": 1779209414207,
+            "persistVersion": 1,
+            "lockPath": "C:\\Users\\26739\\Desktop\\8989\\tmp\\world_save_slots.json.lock",
+            "lockStaleMs": 15000,
+            "lockContentionCount": 0,
+            "lockStealCount": 0,
+            "lockFailureCount": 0,
+            "archiveOnSoftLimit": true,
+            "archiveDir": "C:\\Users\\26739\\Desktop\\8989\\tmp\\world_save_slots_archive",
+            "archiveMaxFiles": 12,
+            "archiveFileCount": 12,
+            "archiveSuccessCount": 0,
+            "archiveFailureCount": 0,
+            "lastArchiveAt": null,
+            "lastArchiveErrorAt": null,
+            "lastArchivePath": null,
+            "restoreDrillSuccessCount": 0,
+            "restoreDrillFailureCount": 0,
+            "lastRestoreDrillAt": null,
+            "lastRestoreDrillErrorAt": null,
+            "lastRestoreDrillArchivePath": null,
+            "lastRestoreDrillSlotCount": null,
+            "lastRestoreDrillStatus": null,
+            "lastRestoreDrillMessage": null,
+            "restoreApplySuccessCount": 0,
+            "restoreApplyFailureCount": 0,
+            "lastRestoreApplyAt": null,
+            "lastRestoreApplyErrorAt": null,
+            "lastRestoreApplyArchivePath": null,
+            "lastRestoreApplyBackupPath": null,
+            "lastRestoreApplySlotCount": null,
+            "lastRestoreApplyStatus": null,
+            "lastRestoreApplyMessage": null,
+            "restoreRollbackDrillSuccessCount": 0,
+            "restoreRollbackDrillFailureCount": 0,
+            "lastRestoreRollbackDrillAt": null,
+            "lastRestoreRollbackDrillErrorAt": null,
+            "lastRestoreRollbackDrillArchivePath": null,
+            "lastRestoreRollbackDrillBackupPath": null,
+            "lastRestoreRollbackDrillStorePath": null,
+            "lastRestoreRollbackDrillSlotCount": null,
+            "lastRestoreRollbackDrillStatus": null,
+            "lastRestoreRollbackDrillMessage": null,
+            "lastRestoreRollbackDrillVerified": null,
+            "fileSizeBytes": 162424198,
+            "fileSizeLevel": "soft",
+            "softLimitBytes": 134217728,
+            "hardLimitBytes": 536870912
+          },
+          "alerts": [
+            {
+              "severity": "high",
+              "source": "factionConfig",
+              "code": "missing_encryption_key",
+              "message": "BYOK apiKey persistence is disabled because FACTION_APIKEY_ENCRYPTION_KEY is missing and plaintext persist is off."
+            },
+            {
+              "severity": "high",
+              "source": "aiPlayerProviderAccounts",
+              "code": "missing_encryption_key",
+              "message": "Player-level BYOK apiKey persistence is disabled because FACTION_APIKEY_ENCRYPTION_KEY is missing and plaintext persist is off."
+            },
+            {
+              "severity": "medium",
+              "source": "saveSlots",
+              "code": "save_slots_oversize_soft",
+              "message": "Save-slot store size 162424198 bytes reached soft limit 134217728 bytes."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "backend_start",
+      "ok": true,
+      "detail": "backend already healthy"
+    },
+    {
+      "name": "seed_ai_avatar_profile",
+      "ok": true,
+      "skipped": true,
+      "reason": "seed_ai_avatar_not_requested"
+    },
+    {
+      "name": "godot_start",
+      "ok": true,
+      "pid": 42836,
+      "command": [
+        "C:\\Godot_v4.6.2-stable_win64.exe",
+        "--path",
+        "C:\\Users\\26739\\Desktop\\8989\\godot-client",
+        "--scene",
+        "res://scenes/app/main.tscn"
+      ]
+    },
+    {
+      "name": "godot_exit",
+      "ok": true,
+      "returnCode": 0
+    }
+  ],
+  "artifacts": {
+    "godotReport": "C:\\Users\\26739\\Desktop\\8989\\godot-client\\ui_generated\\interior\\secondary\\evidence_market\\godot_visual_smoke_report.json",
+    "summaryReport": "C:\\Users\\26739\\Desktop\\8989\\godot-client\\ui_generated\\interior\\secondary\\evidence_market\\mainline_visual_smoke_summary.json",
+    "screenshot": "C:\\Users\\26739\\Desktop\\8989\\godot-client\\ui_generated\\interior\\secondary\\evidence_market\\01_after_world_open_main_city_interior_market.png",
+    "godotLog": "C:\\Users\\26739\\Desktop\\8989\\godot-client\\ui_generated\\interior\\secondary\\evidence_market\\godot.log"
+  },
+  "godotReport": {
+    "activePanelId": "interior",
+    "aiPanelRefresh": {
+      "attempted": false,
+      "budgetTier": "",
+      "fallbackEnabled": false,
+      "modelName": "",
+      "modelStatusVisible": false,
+      "playerRuntimeCount": 0,
+      "reason": "not_ai_panel",
+      "secretConfigured": false,
+      "source": ""
+    },
+    "backendHealthMessage": "runtime endpoint ok",
+    "backendHealthStatus": "ok",
+    "beforeCloseScreenshot": {
+      "attempted": false,
+      "ok": true,
+      "reason": "not_requested"
+    },
+    "clickAction": "world_open_main_city_interior_market",
+    "clickActionRequirementOk": true,
+    "clickActionResult": {
+      "activePageId": "market/overview",
+      "activePanelId": "interior",
+      "attempted": true,
+      "clicked": true,
+      "displayMode": "world",
+      "expectedPageId": "market/overview",
+      "expectedPanelId": "interior",
+      "ok": true,
+      "overlayPanelLayout": {
+        "activePageId": "market/overview",
+        "activePageOk": true,
+        "backButtonRect": {
+          "h": 72.0,
+          "w": 172.0,
+          "x": 16.0,
+          "y": 12.0
+        },
+        "backButtonText": "返回",
+        "backButtonTouchOk": true,
+        "backButtonVisible": true,
+        "chromeLabelOk": true,
+        "closeButtonRect": {
+          "h": 52.0,
+          "w": 112.0,
+          "x": 1472.0,
+          "y": 22.0
+        },
+        "closeButtonText": "关闭",
+        "closeButtonTouchOk": true,
+        "closeButtonVisible": true,
+        "enforced": false,
+        "expectedActivePageId": "",
+        "layoutOk": true,
+        "ok": true,
+        "panelId": "interior",
+        "panelInsideViewport": true,
+        "panelRect": {
+          "h": 900.0,
+          "w": 1600.0,
+          "x": 0.0,
+          "y": 0.0
+        },
+        "panelVisible": true,
+        "placeholderHits": [],
+        "scroll": {
+          "hasVisibleScroll": true,
+          "hasVisibleUsableScroll": true,
+          "maxUsableScrollHeight": 766.0,
+          "scrolls": [
+            {
+              "horizontalScrollMode": 3,
+              "insideViewport": true,
+              "name": "InteriorTabRoot_market",
+              "path": "/root/Main/UiLayer/InteriorPanel/InteriorHost/BodyMargin/BodyVBox/ContentFrame/ContentMargin/ContentVBox/ContentHost/InteriorTabRoot_market",
+              "rect": {
+                "h": 766.0,
+                "w": 1542.0,
+                "x": 29.0,
+                "y": 107.0
+              },
+              "scrollHorizontal": 0,
+              "scrollVertical": 0,
+              "usable": true,
+              "usableHeight": 766.0,
+              "verticalScrollMode": 3
+            }
+          ],
+          "usableScrollHeightOk": true,
+          "usableScrollMinHeight": 300.0,
+          "visibleScrollCount": 1,
+          "visibleUsableScrollCount": 1
+        },
+        "scrollHeightOk": true,
+        "scrollOk": true,
+        "scrollRequired": false,
+        "tabStripInsideViewport": true,
+        "tabStripRect": {},
+        "tabStripVisible": false,
+        "tabStripWidthOk": true,
+        "viewport": {
+          "h": 900.0,
+          "w": 1600.0
+        }
+      },
+      "overlayPanelLayoutOk": true,
+      "pageContentOk": true,
+      "pageContentSummary": {
+        "activeBuildingCount": 3,
+        "activePageId": "market/overview",
+        "activeSectionId": "overview",
+        "activeTopTabId": "market",
+        "affairsQueueCount": 6,
+        "authorityTriggered": false,
+        "buildingGroupCount": 3,
+        "contentBlockCount": 0,
+        "contentBlockKinds": [],
+        "contentBlockNodeNames": [],
+        "contentSurfaceCount": 6,
+        "expectedPageId": "market/overview",
+        "hasAffairsQueue": false,
+        "hasBuildingTree": false,
+        "hasSelectedBuilding": true,
+        "hasValidBuildingSelection": true,
+        "interiorButtonScaleMode": "tokens:v1",
+        "interiorFontScaleMode": "tokens:v1",
+        "interiorMarketOverviewCardCount": 6,
+        "interiorMarketOverviewCardMinHeight": 148,
+        "interiorMarketOverviewCardMinWidth": 278,
+        "interiorMarketOverviewIconMode": "large_symbol_badge_v1",
+        "interiorMarketOverviewMode": "consumer_resource_operation_cards_v1",
+        "interiorMarketOverviewOperationCardCount": 2,
+        "interiorMarketOverviewPrimaryFontSize": 26,
+        "interiorMarketOverviewResourceCardCount": 4,
+        "interiorMarketOverviewTextBlockCount": 0,
+        "interiorMarketOverviewToken": "interior_market_overview_cards_v1",
+        "interiorMarketOverviewValueFontSize": 28,
+        "interiorMarketRoutingSectionPresent": false,
+        "interiorMarketSectionIds": "overview/economy",
+        "interiorPageTokenState": "market/overview",
+        "interiorSecondaryBackTargetPageId": "home/lobby",
+        "interiorSecondaryEntryIds": "market/trade/tax/affairs",
+        "interiorSecondaryHasBuildingTree": false,
+        "interiorSecondaryHasFacilityNodeHub": false,
+        "interiorSecondaryHasUpgradeSheet": false,
+        "interiorSecondaryPage": true,
+        "interiorSecondaryPageMode": "home_entry_to_second_level_v1",
+        "interiorSecondaryPageToken": "interior_secondary_page_v1",
+        "interiorSecondarySummaryCardVisible": false,
+        "interiorSummaryVersion": "interior_summary_v2",
+        "interiorThemeTokenSet": "slg_gold_black_v1",
+        "interiorTopTabStripVisible": false,
+        "itemCardCount": 6,
+        "ok": true,
+        "panelId": "interior",
+        "preferredViewKind": "block_schema",
+        "reason": "interior_content_ready",
+        "requestedPageId": "market/overview",
+        "sectionCount": 2,
+        "sectionLabel": "总览",
+        "sectionTitle": "市井总览",
+        "selectedBuildingId": "market_plaza",
+        "snapshotKeyCount": 20,
+        "specializedAnchorPageId": "market/overview",
+        "topTabCount": 1,
+        "upgradeSheetHasPayload": false,
+        "usesAffairsQueueView": false,
+        "usesBuildingGroupView": false,
+        "usesInteriorHomeLobby": false,
+        "visualBaselineState": "candidate",
+        "visualButtonScale": "sm44_md56_lg72",
+        "visualColorRamp": "gold_black",
+        "visualComponentFamily": "interior_shell",
+        "visualDataMode": "preview_read_model_shell",
+        "visualDesignSystemId": "slg_gold_black_v1",
+        "visualDesignTokenSource": "slg_ui_component_factory",
+        "visualDesignTokenVersion": "tokens:v1",
+        "visualFontScale": "xs11_s13_m15_l18_xl24_xxl32",
+        "visualPanelChrome": "full_screen_panel_host_snapshot",
+        "visualProductionBaseline": false
+      },
+      "panelOpenResult": {
+        "activePageId": "home/lobby",
+        "activePanelId": "interior",
+        "attempted": true,
+        "clicked": true,
+        "expectedPanelId": "interior",
+        "mapClickResult": {
+          "attempted": true,
+          "clickContextPreview": {
+            "cityLevel": 6,
+            "factionId": "player",
+            "tileId": "tile_08",
+            "tileX": 152,
+            "tileY": 159,
+            "title": "青石城",
+            "tmxX": 98,
+            "tmxY": 99
+          },
+          "clickPosition": {
+            "x": 838.0,
+            "y": 4197.0
+          },
+          "clicked": true,
+          "mainCityHub": {
+            "activeContextTab": "overview",
+            "contextPanelVisible": true,
+            "expanded": true,
+            "formationSlots": {
+              "camp": "",
+              "front": "",
+              "mid": ""
+            },
+            "hasFacilityTree": false,
+            "hasUpgradeSheet": false,
+            "lastMapNodeClick": {
+              "cityLevel": 6,
+              "factionId": "player",
+              "status": "地图节点点击展开主城入口",
+              "subtitle": "地图主城节点 | Lv6 | player",
+              "tileId": "tile_08",
+              "tileX": 152,
+              "tileY": 159,
+              "title": "青石城",
+              "tmxX": 98,
+              "tmxY": 99
+            },
+            "templateAssignmentCount": 0,
+            "tileId": "tile_08",
+            "tileX": 152,
+            "tileY": 159,
+            "title": "青石城",
+            "visible": true
+          },
+          "mapNodeClickContext": {
+            "cityLevel": 6,
+            "factionId": "player",
+            "status": "地图节点点击展开主城入口",
+            "subtitle": "地图主城节点 | Lv6 | player",
+            "tileId": "tile_08",
+            "tileX": 152,
+            "tileY": 159,
+            "title": "青石城",
+            "tmxX": 98,
+            "tmxY": 99
+          },
+          "ok": true,
+          "reason": "main_city_map_node_clicked",
+          "selectedTilePreview": {
+            "anchorKey": "97:100",
+            "anchorTmxX": 97,
+            "anchorTmxY": 100,
+            "cellState": "active_building_cell",
+            "cityLevel": 4,
+            "compositeId": "world_node_system_city_3x3_v1",
+            "district": "sili",
+            "footprintId": "system_city_l03_l04_3x3",
+            "id": "grid_151_161",
+            "isReservedHit": true,
+            "landmarkId": "",
+            "moveCost": 1.0,
+            "name": "北线岔路",
+            "owner": "",
+            "scoutingDifficulty": 2.0,
+            "slotId": "slot_1_-1",
+            "terrain": "grassland",
+            "tileId": "grid_151_161",
+            "tmxX": 98,
+            "tmxY": 99,
+            "type": "city",
+            "x": 153,
+            "y": 159
+          },
+          "targetContext": {
+            "cityLevel": 6,
+            "factionId": "player",
+            "status": "地图节点点击展开主城入口",
+            "subtitle": "地图主城节点 | Lv6 | player",
+            "tileId": "tile_08",
+            "tileX": 152,
+            "tileY": 159,
+            "title": "青石城",
+            "tmxX": 98,
+            "tmxY": 99
+          },
+          "targetSource": "map_grid_home_city_overlay",
+          "tileId": "tile_08",
+          "tileX": 152,
+          "tileY": 159
+        },
+        "mapNodeClickContext": {
+          "cityLevel": 6,
+          "factionId": "player",
+          "status": "地图节点点击展开主城入口",
+          "subtitle": "地图主城节点 | Lv6 | player",
+          "tileId": "tile_08",
+          "tileX": 152,
+          "tileY": 159,
+          "title": "青石城",
+          "tmxX": 98,
+          "tmxY": 99
+        },
+        "ok": true,
+        "overlayPanelLayout": {
+          "activePageId": "home/lobby",
+          "activePageOk": true,
+          "backButtonRect": {
+            "h": 72.0,
+            "w": 172.0,
+            "x": 16.0,
+            "y": 12.0
+          },
+          "backButtonText": "返回",
+          "backButtonTouchOk": true,
+          "backButtonVisible": true,
+          "chromeLabelOk": true,
+          "closeButtonRect": {
+            "h": 52.0,
+            "w": 112.0,
+            "x": 1472.0,
+            "y": 22.0
+          },
+          "closeButtonText": "关闭",
+          "closeButtonTouchOk": true,
+          "closeButtonVisible": true,
+          "enforced": false,
+          "expectedActivePageId": "",
+          "layoutOk": true,
+          "ok": true,
+          "panelId": "interior",
+          "panelInsideViewport": true,
+          "panelRect": {
+            "h": 900.0,
+            "w": 1600.0,
+            "x": 0.0,
+            "y": 0.0
+          },
+          "panelVisible": true,
+          "placeholderHits": [],
+          "scroll": {
+            "hasVisibleScroll": false,
+            "hasVisibleUsableScroll": false,
+            "maxUsableScrollHeight": 0.0,
+            "scrolls": [],
+            "usableScrollHeightOk": false,
+            "usableScrollMinHeight": 300.0,
+            "visibleScrollCount": 0,
+            "visibleUsableScrollCount": 0
+          },
+          "scrollHeightOk": false,
+          "scrollOk": true,
+          "scrollRequired": false,
+          "tabStripInsideViewport": true,
+          "tabStripRect": {},
+          "tabStripVisible": false,
+          "tabStripWidthOk": true,
+          "viewport": {
+            "h": 900.0,
+            "w": 1600.0
+          }
+        },
+        "overlayPanelLayoutOk": true,
+        "pageContentOk": true,
+        "pageContentSummary": {
+          "activeBuildingCount": 0,
+          "activePageId": "home/lobby",
+          "activeSectionId": "lobby",
+          "activeTopTabId": "home",
+          "affairsQueueCount": 6,
+          "authorityTriggered": false,
+          "buildingGroupCount": 3,
+          "contentBlockCount": 0,
+          "contentBlockKinds": [],
+          "contentBlockNodeNames": [],
+          "contentSurfaceCount": 4,
+          "expectedPageId": "home/lobby",
+          "hasAffairsQueue": false,
+          "hasBuildingTree": false,
+          "hasSelectedBuilding": false,
+          "hasValidBuildingSelection": true,
+          "interiorButtonScaleMode": "tokens:v1",
+          "interiorFontScaleMode": "tokens:v1",
+          "interiorHomeBackgroundAssetPath": "res://ui_generated/interior/interior_lobby_bg.png",
+          "interiorHomeBackgroundLoaded": true,
+          "interiorHomeBackgroundStretchMode": "keep_aspect_covered",
+          "interiorHomeBackgroundToken": "interior_home_lobby_background_v1",
+          "interiorHomeEntryBadgeCount": 4,
+          "interiorHomeEntryBadgesLoaded": true,
+          "interiorHomeEntryButtonFontSize": 21,
+          "interiorHomeEntryButtonMinHeight": 96,
+          "interiorHomeEntryButtonMinWidth": 210,
+          "interiorHomeEntryButtonToken": "interior_home_entry_button_v1",
+          "interiorHomeEntryClickMode": "badge_and_scroll_shared_target",
+          "interiorHomeEntryCount": 4,
+          "interiorHomeEntryIds": "market/trade/tax/affairs",
+          "interiorHomeEntryPresentationMode": "standing_badge_scroll_plaque_v1",
+          "interiorHomeForbiddenEntryCount": 0,
+          "interiorHomeHasBuildingTree": false,
+          "interiorHomeHasFacilityNodeHub": false,
+          "interiorHomeHasUpgradeSheet": false,
+          "interiorHomeLobbyToken": "interior_home_lobby_v1",
+          "interiorHomeMode": "four_entry_mobile_lobby",
+          "interiorHomeResourceChipCount": 6,
+          "interiorHomeResourceChipFontSize": 16,
+          "interiorHomeResourceChipMinHeight": 44,
+          "interiorHomeResourceChipMinWidth": 150,
+          "interiorHomeResourceStripToken": "interior_home_resource_strip_v1",
+          "interiorPageTokenState": "home/lobby",
+          "interiorSecondarySummaryCardVisible": true,
+          "interiorSummaryVersion": "interior_summary_v2",
+          "interiorThemeTokenSet": "slg_gold_black_v1",
+          "interiorTopTabStripVisible": false,
+          "itemCardCount": 0,
+          "ok": true,
+          "panelId": "interior",
+          "preferredViewKind": "block_schema",
+          "reason": "interior_content_ready",
+          "requestedPageId": "home/lobby",
+          "sectionCount": 1,
+          "sectionLabel": "大厅",
+          "sectionTitle": "内政大厅",
+          "selectedBuildingId": "",
+          "snapshotKeyCount": 20,
+          "specializedAnchorPageId": "home/lobby",
+          "topTabCount": 1,
+          "upgradeSheetHasPayload": false,
+          "usesAffairsQueueView": false,
+          "usesBuildingGroupView": false,
+          "usesInteriorHomeLobby": true,
+          "visualBaselineState": "candidate",
+          "visualButtonScale": "sm44_md56_lg72",
+          "visualColorRamp": "gold_black",
+          "visualComponentFamily": "interior_shell",
+          "visualDataMode": "preview_read_model_shell",
+          "visualDesignSystemId": "slg_gold_black_v1",
+          "visualDesignTokenSource": "slg_ui_component_factory",
+          "visualDesignTokenVersion": "tokens:v1",
+          "visualFontScale": "xs11_s13_m15_l18_xl24_xxl32",
+          "visualPanelChrome": "full_screen_panel_host_snapshot",
+          "visualProductionBaseline": false
+        },
+        "reason": "main_city_overlay_panel_open"
+      },
+      "reason": "main_city_overlay_panel_page_open"
+    },
+    "closeAfterOpen": false,
+    "closeButtonResult": {
+      "attempted": false,
+      "reason": "not_requested"
+    },
+    "displayMode": "world",
+    "displayModeOk": true,
+    "expectedDisplayMode": "world",
+    "factionId": "player",
+    "mainCityHub": {
+      "activeContextTab": "overview",
+      "contextPanelVisible": true,
+      "expanded": true,
+      "formationSlots": {
+        "camp": "",
+        "front": "",
+        "mid": ""
+      },
+      "hasFacilityTree": false,
+      "hasUpgradeSheet": false,
+      "templateAssignmentCount": 0,
+      "tileId": "tile_08",
+      "tileX": 152,
+      "tileY": 159,
+      "title": "青石城",
+      "visible": true
+    },
+    "mainCityHubRequirementOk": true,
+    "mapRequirementOk": true,
+    "mapVisible": true,
+    "observabilityHidden": true,
+    "ok": true,
+    "overlayPanelLayout": {
+      "activePageId": "home/lobby",
+      "activePageOk": true,
+      "backButtonRect": {
+        "h": 72.0,
+        "w": 172.0,
+        "x": 16.0,
+        "y": 12.0
+      },
+      "backButtonText": "返回",
+      "backButtonTouchOk": true,
+      "backButtonVisible": true,
+      "chromeLabelOk": true,
+      "closeButtonRect": {
+        "h": 52.0,
+        "w": 112.0,
+        "x": 1472.0,
+        "y": 22.0
+      },
+      "closeButtonText": "关闭",
+      "closeButtonTouchOk": true,
+      "closeButtonVisible": true,
+      "enforced": false,
+      "expectedActivePageId": "",
+      "layoutOk": true,
+      "ok": true,
+      "panelId": "interior",
+      "panelInsideViewport": true,
+      "panelRect": {
+        "h": 900.0,
+        "w": 1600.0,
+        "x": 0.0,
+        "y": 0.0
+      },
+      "panelVisible": true,
+      "placeholderHits": [],
+      "scroll": {
+        "hasVisibleScroll": false,
+        "hasVisibleUsableScroll": false,
+        "maxUsableScrollHeight": 0.0,
+        "scrolls": [],
+        "usableScrollHeightOk": false,
+        "usableScrollMinHeight": 300.0,
+        "visibleScrollCount": 0,
+        "visibleUsableScrollCount": 0
+      },
+      "scrollHeightOk": false,
+      "scrollOk": true,
+      "scrollRequired": false,
+      "tabStripInsideViewport": true,
+      "tabStripRect": {},
+      "tabStripVisible": false,
+      "tabStripWidthOk": true,
+      "viewport": {
+        "h": 900.0,
+        "w": 1600.0
+      }
+    },
+    "panelClosedAfterClose": false,
+    "panelId": "interior",
+    "panelOpenOk": true,
+    "panelRequired": true,
+    "panelRequirementOk": true,
+    "runtimeBootstrapDiagnostic": "runtime endpoint ok",
+    "runtimeLabelOk": true,
+    "runtimeLabelText": "Runtime | view=world | status=ready | faction=player | mode=human_assigned | autonomy=L1_assigned | tick=3 | worldVersion=64 | mapScope=bootstrap | seats=0/0 | session=35b6d635-6401-404d-891f-dfffc325dfce | sessionMode=joined",
+    "runtimeReady": true,
+    "screenshot": {
+      "error": 0,
+      "height": 900,
+      "ok": true,
+      "path": "C:\\Users\\26739\\Desktop\\8989\\godot-client\\ui_generated\\interior\\secondary\\evidence_market\\01_after_world_open_main_city_interior_market.png",
+      "width": 1600
+    },
+    "shellNavLayout": {
+      "bottomNavRect": {
+        "h": 203.0,
+        "w": 744.0,
+        "x": 16.0,
+        "y": 681.0
+      },
+      "buttons": [
+        {
+          "disabled": false,
+          "exists": true,
+          "name": "ChatButton",
+          "rect": {
+            "h": 76.0,
+            "w": 80.0,
+            "x": 451.0,
+            "y": 783.0
+          },
+          "text": "聊天",
+          "visible": true
+        },
+        {
+          "disabled": false,
+          "exists": true,
+          "name": "RecruitButton",
+          "rect": {
+            "h": 76.0,
+            "w": 80.0,
+            "x": 536.0,
+            "y": 783.0
+          },
+          "text": "招募",
+          "visible": true
+        },
+        {
+          "disabled": false,
+          "exists": true,
+          "name": "GeneralsButton",
+          "rect": {
+            "h": 76.0,
+            "w": 80.0,
+            "x": 26.0,
+            "y": 783.0
+          },
+          "text": "武将",
+          "visible": true
+        },
+        {
+          "disabled": false,
+          "exists": true,
+          "name": "SkillLibraryButton",
+          "rect": {
+            "h": 76.0,
+            "w": 80.0,
+            "x": 111.0,
+            "y": 783.0
+          },
+          "text": "战法",
+          "visible": true
+        },
+        {
+          "disabled": false,
+          "exists": true,
+          "name": "AllianceButton",
+          "rect": {
+            "h": 76.0,
+            "w": 80.0,
+            "x": 281.0,
+            "y": 783.0
+          },
+          "text": "同盟",
+          "visible": true
+        },
+        {
+          "disabled": false,
+          "exists": true,
+          "name": "AiHubButton",
+          "rect": {
+            "h": 76.0,
+            "w": 80.0,
+            "x": 366.0,
+            "y": 783.0
+          },
+          "text": "AI",
+          "visible": true
+        },
+        {
+          "disabled": true,
+          "exists": true,
+          "name": "BagButton",
+          "rect": {
+            "h": 24.0,
+            "w": 110.0,
+            "x": 26.0,
+            "y": 783.0
+          },
+          "text": "背包",
+          "visible": false
+        },
+        {
+          "disabled": true,
+          "exists": true,
+          "name": "SettingsButton",
+          "rect": {
+            "h": 24.0,
+            "w": 110.0,
+            "x": 26.0,
+            "y": 783.0
+          },
+          "text": "设置",
+          "visible": false
+        },
+        {
+          "disabled": false,
+          "exists": true,
+          "name": "InteriorButton",
+          "rect": {
+            "h": 76.0,
+            "w": 80.0,
+            "x": 196.0,
+            "y": 783.0
+          },
+          "text": "内政",
+          "visible": true
+        },
+        {
+          "disabled": false,
+          "exists": true,
+          "name": "WarButton",
+          "rect": {
+            "h": 52.0,
+            "w": 110.0,
+            "x": 26.0,
+            "y": 783.0
+          },
+          "text": "国战\n开发中",
+          "visible": false
+        }
+      ],
+      "missingVisibleRequired": [],
+      "navButtonsRect": {
+        "h": 76.0,
+        "w": 724.0,
+        "x": 26.0,
+        "y": 783.0
+      },
+      "ok": true,
+      "overlaps": [],
+      "visibleButtonCount": 7
+    },
+    "statusMessage": "panel 内政 / market/overview",
+    "tick": "3",
+    "windowReady": true,
+    "worldAction": "open_hub_panel",
+    "worldVersion": "64"
+  },
+  "screenshotStats": {
+    "ok": true,
+    "path": "C:\\Users\\26739\\Desktop\\8989\\godot-client\\ui_generated\\interior\\secondary\\evidence_market\\01_after_world_open_main_city_interior_market.png",
+    "width": 1600,
+    "height": 900,
+    "extrema": [
+      [
+        6,
+        255
+      ],
+      [
+        5,
+        255
+      ],
+      [
+        4,
+        255
+      ]
+    ],
+    "mean": [
+      25.85,
+      20.07,
+      13.31
+    ],
+    "nonFlat": true
+  },
+  "beforeCloseScreenshotStats": {
+    "ok": true,
+    "requested": false
+  },
+  "ok": true
+}

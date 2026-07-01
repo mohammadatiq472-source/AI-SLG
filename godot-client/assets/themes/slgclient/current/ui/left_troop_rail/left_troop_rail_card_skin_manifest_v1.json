@@ -1,0 +1,81 @@
+{
+  "usageId": "left_troop_rail_card_skin_v1_2026_06_03",
+  "version": 1,
+  "generatedAt": "2026-06-03",
+  "assetRoot": "godot-client/assets/themes/slgclient/current/ui/left_troop_rail",
+  "outputSize": [
+    408,
+    152
+  ],
+  "displaySizeRecommendation": [
+    204,
+    76
+  ],
+  "sliceMargin": 32,
+  "style": {
+    "surface": "dedicated parchment slot card with portrait well and decorative metric lanes",
+    "runtimePolicy": "use as StyleBoxTexture nine-slice; no baked labels, no extra controls"
+  },
+  "cards": [
+    {
+      "id": "normal",
+      "name": "left_troop_rail_card_normal_v1.png",
+      "relativePath": "cards/left_troop_rail_card_normal_v1.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/left_troop_rail/cards/left_troop_rail_card_normal_v1.png",
+      "extension": ".png",
+      "width": 408,
+      "height": 152,
+      "sha256": "bb5f3021a5969295210bdca5b61856ac2686058a9f809a9dfd920833caad5688",
+      "usage": "left_troop_rail_card_skin_v1_2026_06_03",
+      "componentRole": "left_troop_rail_card_skin",
+      "textBaked": false,
+      "sliceMargin": 32,
+      "visualNotes": "dedicated parchment slot-card skin for StyleBoxTexture nine-slice use; labels and values remain real Godot UI text"
+    },
+    {
+      "id": "marching",
+      "name": "left_troop_rail_card_marching_v1.png",
+      "relativePath": "cards/left_troop_rail_card_marching_v1.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/left_troop_rail/cards/left_troop_rail_card_marching_v1.png",
+      "extension": ".png",
+      "width": 408,
+      "height": 152,
+      "sha256": "9dd6c25a54443453789f35ef57f564825d86f5ed26d48a185d0bd646f97bd38f",
+      "usage": "left_troop_rail_card_skin_v1_2026_06_03",
+      "componentRole": "left_troop_rail_card_skin",
+      "textBaked": false,
+      "sliceMargin": 32,
+      "visualNotes": "dedicated parchment slot-card skin for StyleBoxTexture nine-slice use; labels and values remain real Godot UI text"
+    },
+    {
+      "id": "selected",
+      "name": "left_troop_rail_card_selected_v1.png",
+      "relativePath": "cards/left_troop_rail_card_selected_v1.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/left_troop_rail/cards/left_troop_rail_card_selected_v1.png",
+      "extension": ".png",
+      "width": 408,
+      "height": 152,
+      "sha256": "710adcdabe4726eb09c52921c3b1f911d7bff7f79bf458bf5d601c3dc4969a59",
+      "usage": "left_troop_rail_card_skin_v1_2026_06_03",
+      "componentRole": "left_troop_rail_card_skin",
+      "textBaked": false,
+      "sliceMargin": 32,
+      "visualNotes": "dedicated parchment slot-card skin for StyleBoxTexture nine-slice use; labels and values remain real Godot UI text"
+    },
+    {
+      "id": "disabled",
+      "name": "left_troop_rail_card_disabled_v1.png",
+      "relativePath": "cards/left_troop_rail_card_disabled_v1.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/left_troop_rail/cards/left_troop_rail_card_disabled_v1.png",
+      "extension": ".png",
+      "width": 408,
+      "height": 152,
+      "sha256": "9fb47559c686c0bcb030564274c3771f092cd2fbc3b20283d4feae2349846908",
+      "usage": "left_troop_rail_card_skin_v1_2026_06_03",
+      "componentRole": "left_troop_rail_card_skin",
+      "textBaked": false,
+      "sliceMargin": 32,
+      "visualNotes": "dedicated parchment slot-card skin for StyleBoxTexture nine-slice use; labels and values remain real Godot UI text"
+    }
+  ]
+}

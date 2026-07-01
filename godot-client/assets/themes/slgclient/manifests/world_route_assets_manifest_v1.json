@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "theme": "slgclient",
+  "manifestId": "world_route_assets_manifest_v1",
+  "importedAt": "2026-06-19T00:00:00+08:00",
+  "authority": {
+    "lane": "main_world_tianxia_yutu_art",
+    "owner": "SlgUiComponentFactory + MainMapCellActionPanel + TianxiaYutu navigation lane",
+    "status": "asset_ready_and_renderer_wired",
+    "scope": [
+      "road_line",
+      "route_arrow",
+      "selected_path"
+    ],
+    "playerVisibleCopyRule": "Roads and routes are visual-only assets. Route text remains live Godot UI copy."
+  },
+  "source": {
+    "reuseFirst": [
+      "res://assets/themes/slgclient/current/ui/map_markers/ai_living_activity_main_world_route_arrow_v1.png",
+      "res://assets/themes/slgclient/current/ui/map_markers/tianxia_yutu_ai_hotspot_route_arrow_v1.png",
+      "res://assets/themes/slgclient/current/ui/map_markers/tianxia_yutu_ai_hotspot_route_arrow_queued_v1.png"
+    ],
+    "policy": "Do not generate heavy terrain art in this slice; define route families and attach existing arrow assets."
+  },
+  "routeFamilies": {
+    "main_road": {
+      "strokeColor": "#D8C08A",
+      "shadowColor": "#3A2414AA",
+      "widthPx": {
+        "overview": 2,
+        "region": 3,
+        "local": 4
+      },
+      "lineStyle": "solid"
+    },
+    "branch_road": {
+      "strokeColor": "#B89E70",
+      "shadowColor": "#2D1A10AA",
+      "widthPx": {
+        "overview": 2,
+        "region": 2,
+        "local": 3
+      },
+      "lineStyle": "solid"
+    },
+    "selected_route": {
+      "strokeColor": "#F0E3AA",
+      "shadowColor": "#6A4A1FA0",
+      "widthPx": {
+        "overview": 3.4,
+        "region": 4.8,
+        "local": 5.5
+      },
+      "lineStyle": "solid",
+      "pulseToken": "stage_a_shared_motion_feedback_chain_v1"
+    },
+    "queued_route": {
+      "strokeColor": "#E9C86F",
+      "shadowColor": "#5C431FAA",
+      "widthPx": {
+        "overview": 2,
+        "region": 3,
+        "local": 4
+      },
+      "lineStyle": "dashed",
+      "dashPattern": [
+        12,
+        8
+      ]
+    }
+  },
+  "arrowAssets": {
+    "main_world_active": {
+      "texturePath": "res://assets/themes/slgclient/current/ui/map_markers/ai_living_activity_main_world_route_arrow_v1.png",
+      "usage": "active route head",
+      "tintColor": "#F3E3A1"
+    },
+    "tianxia_active": {
+      "texturePath": "res://assets/themes/slgclient/current/ui/map_markers/tianxia_yutu_ai_hotspot_route_arrow_v1.png",
+      "usage": "overview route head",
+      "tintColor": "#F3E3A1"
+    },
+    "tianxia_queued": {
+      "texturePath": "res://assets/themes/slgclient/current/ui/map_markers/tianxia_yutu_ai_hotspot_route_arrow_queued_v1.png",
+      "usage": "queued route head",
+      "tintColor": "#E9C86F"
+    }
+  },
+  "zoomSemantics": {
+    "overview": {
+      "show": [
+        "main_road",
+        "selected_route"
+      ]
+    },
+    "region": {
+      "show": [
+        "main_road",
+        "branch_road",
+        "selected_route",
+        "queued_route"
+      ]
+    },
+    "local": {
+      "show": [
+        "main_road",
+        "branch_road",
+        "selected_route",
+        "queued_route"
+      ]
+    }
+  }
+}

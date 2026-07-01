@@ -1,0 +1,1415 @@
+{
+  "schemaVersion": 1,
+  "theme": "slgclient",
+  "importedAt": "2026-04-12T18:04:29+00:00",
+  "source": {
+    "repo": "https://github.com/llr104/slgclient",
+    "commit": "767065453e358abc1b463f9396079d8026d0baf4"
+  },
+  "framesRoot": "res://assets/themes/slgclient/current/overlays/frames",
+  "groups": {
+    "marker": [
+      "flag_blue_1.png",
+      "flag_blue_2.png",
+      "flag_blue_3.png",
+      "flag_blue_4.png",
+      "flag_blue_5.png",
+      "flag_green_1.png",
+      "flag_green_2.png",
+      "flag_green_3.png",
+      "flag_green_4.png",
+      "flag_green_5.png",
+      "flag_purple_1.png",
+      "flag_purple_2.png",
+      "flag_purple_3.png",
+      "flag_purple_4.png",
+      "flag_purple_5.png",
+      "flag_red_1.png",
+      "flag_red_2.png",
+      "flag_red_3.png",
+      "flag_red_4.png",
+      "flag_red_5.png",
+      "flag_yellow_1.png",
+      "flag_yellow_2.png",
+      "flag_yellow_3.png",
+      "flag_yellow_4.png",
+      "flag_yellow_5.png",
+      "home_defend.png",
+      "out_flag_blue_1.png",
+      "out_flag_blue_2.png",
+      "out_flag_blue_3.png",
+      "out_flag_blue_4.png",
+      "out_flag_blue_5.png",
+      "out_flag_green_1.png",
+      "out_flag_green_2.png",
+      "out_flag_green_3.png",
+      "out_flag_green_4.png",
+      "out_flag_green_5.png",
+      "out_flag_purple_1.png",
+      "out_flag_purple_2.png",
+      "out_flag_purple_3.png",
+      "out_flag_purple_4.png",
+      "out_flag_purple_5.png",
+      "out_flag_red_1.png",
+      "out_flag_red_2.png",
+      "out_flag_red_3.png",
+      "out_flag_red_4.png",
+      "out_flag_red_5.png",
+      "out_flag_yellow_1.png",
+      "out_flag_yellow_2.png",
+      "out_flag_yellow_3.png",
+      "out_flag_yellow_4.png",
+      "out_flag_yellow_5.png"
+    ],
+    "home": [
+      "flag_blue_1.png",
+      "flag_blue_2.png",
+      "flag_blue_3.png",
+      "flag_blue_4.png",
+      "flag_blue_5.png",
+      "flag_green_1.png",
+      "flag_green_2.png",
+      "flag_green_3.png",
+      "flag_green_4.png",
+      "flag_green_5.png",
+      "flag_purple_1.png",
+      "flag_purple_2.png",
+      "flag_purple_3.png",
+      "flag_purple_4.png",
+      "flag_purple_5.png",
+      "flag_red_1.png",
+      "flag_red_2.png",
+      "flag_red_3.png",
+      "flag_red_4.png",
+      "flag_red_5.png",
+      "flag_yellow_1.png",
+      "flag_yellow_2.png",
+      "flag_yellow_3.png",
+      "flag_yellow_4.png",
+      "flag_yellow_5.png",
+      "home_defend.png",
+      "out_flag_blue_1.png",
+      "out_flag_blue_2.png",
+      "out_flag_blue_3.png",
+      "out_flag_blue_4.png",
+      "out_flag_blue_5.png",
+      "out_flag_green_1.png",
+      "out_flag_green_2.png",
+      "out_flag_green_3.png",
+      "out_flag_green_4.png",
+      "out_flag_green_5.png",
+      "out_flag_purple_1.png",
+      "out_flag_purple_2.png",
+      "out_flag_purple_3.png",
+      "out_flag_purple_4.png",
+      "out_flag_purple_5.png",
+      "out_flag_red_1.png",
+      "out_flag_red_2.png",
+      "out_flag_red_3.png",
+      "out_flag_red_4.png",
+      "out_flag_red_5.png",
+      "out_flag_yellow_1.png",
+      "out_flag_yellow_2.png",
+      "out_flag_yellow_3.png",
+      "out_flag_yellow_4.png",
+      "out_flag_yellow_5.png"
+    ]
+  },
+  "atlases": [
+    {
+      "name": "city_component",
+      "plist": "cityComponent.plist",
+      "png": "cityComponent.png",
+      "category": "marker",
+      "sourceFrameCount": 142,
+      "selectedFrameCount": 26,
+      "extractedFrameCount": 26
+    },
+    {
+      "name": "component_outside",
+      "plist": "component_outside.plist",
+      "png": "component_outside.png",
+      "category": "marker",
+      "sourceFrameCount": 55,
+      "selectedFrameCount": 25,
+      "extractedFrameCount": 25
+    }
+  ],
+  "frames": {
+    "flag_blue_1.png": {
+      "name": "flag_blue_1.png",
+      "atlas": "city_component",
+      "category": "marker",
+      "sourcePng": "cityComponent.png",
+      "sourcePlist": "cityComponent.plist",
+      "texturePath": "res://assets/themes/slgclient/current/overlays/frames/flag_blue_1.png",
+      "sourceFrame": {
+        "x": 579,
+        "y": 1876,
+        "w": 50,
+        "h": 50,
+        "rotated": false
+      },
+      "sourceCanvasRect": {
+        "x": 0,
+        "y": 0,
+        "w": 50,
+        "h": 50
+      },
+      "size": {
+        "w": 50,
+        "h": 50
+      }
+    },
+    "flag_blue_2.png": {
+      "name": "flag_blue_2.png",
+      "atlas": "city_component",
+      "category": "marker",
+      "sourcePng": "cityComponent.png",
+      "sourcePlist": "cityComponent.plist",
+      "texturePath": "res://assets/themes/slgclient/current/overlays/frames/flag_blue_2.png",
+      "sourceFrame": {
+        "x": 527,
+        "y": 1876,
+        "w": 50,
+        "h": 50,
+        "rotated": false
+      },
+      "sourceCanvasRect": {
+        "x": 0,
+        "y": 0,
+        "w": 50,
+        "h": 50
+      },
+      "size": {
+        "w": 50,
+        "h": 50
+      }
+    },
+    "flag_blue_3.png": {
+      "name": "flag_blue_3.png",
+      "atlas": "city_component",
+      "category": "marker",
+      "sourcePng": "cityComponent.png",
+      "sourcePlist": "cityComponent.plist",
+      "texturePath": "res://assets/themes/slgclient/current/overlays/frames/flag_blue_3.png",
+      "sourceFrame": {
+        "x": 475,
+        "y": 1876,
+        "w": 50,
+        "h": 50,
+        "rotated": false
+      },
+      "sourceCanvasRect": {
+        "x": 0,
+        "y": 0,
+        "w": 50,
+        "h": 50
+      },
+      "size": {
+        "w": 50,
+        "h": 50
+      }
+    },
+    "flag_blue_4.png": {
+      "name": "flag_blue_4.png",
+      "atlas": "city_component",
+      "category": "marker",
+      "sourcePng": "cityComponent.png",
+      "sourcePlist": "cityComponent.plist",
+      "texturePath": "res://assets/themes/slgclient/current/overlays/frames/flag_blue_4.png",
+      "sourceFrame": {
+        "x": 423,
+        "y": 1876,
+        "w": 50,
+        "h": 50,
+        "rotated": false
+      },
+      "sourceCanvasRect": {
+        "x": 0,
+        "y": 0,
+        "w": 50,
+        "h": 50
+      },
+      "size": {
+        "w": 50,
+        "h": 50
+      }
+    },
+    "flag_blue_5.png": {
+      "name": "flag_blue_5.png",
+      "atlas": "city_component",
+      "category": "marker",
+      "sourcePng": "cityComponent.png",
+      "sourcePlist": "cityComponent.plist",
+      "texturePath": "res://assets/themes/slgclient/current/overlays/frames/flag_blue_5.png",
+      "sourceFrame": {
+        "x": 371,
+        "y": 1876,
+        "w": 50,
+        "h": 50,
+        "rotated": false
+      },
+      "sourceCanvasRect": {
+        "x": 0,
+        "y": 0,
+        "w": 50,
+        "h": 50
+      },
+      "size": {
+        "w": 50,
+        "h": 50
+      }
+    },
+    "flag_green_1.png": {
+      "name": "flag_green_1.png",
+      "atlas": "city_component",
+      "category": "marker",
+      "sourcePng": "cityComponent.png",
+      "sourcePlist": "cityComponent.plist",
+      "texturePath": "res://assets/themes/slgclient/current/overlays/frames/flag_green_1.png",
+      "sourceFrame": {
+        "x": 319,
+        "y": 1876,
+        "w": 50,
+        "h": 50,
+        "rotated": false
+      },
+      "sourceCanvasRect": {
+        "x": 0,
+        "y": 0,
+        "w": 50,
+        "h": 50
+      },
+      "size": {
+        "w": 50,
+        "h": 50
+      }
+    },
+    "flag_green_2.png": {
+      "name": "flag_green_2.png",
+      "atlas": "city_component",
+      "category": "marker",
+      "sourcePng": "cityComponent.png",
+      "sourcePlist": "cityComponent.plist",
+      "texturePath": "res://assets/themes/slgclient/current/overlays/frames/flag_green_2.png",
+      "sourceFrame": {
+        "x": 267,
+        "y": 1876,
+        "w": 50,
+        "h": 50,
+        "rotated": false
+      },
+      "sourceCanvasRect": {
+        "x": 0,
+        "y": 0,
+        "w": 50,
+        "h": 50
+      },
+      "size": {
+        "w": 50,
+        "h": 50
+      }
+    },
+    "flag_green_3.png": {
+      "name": "flag_green_3.png",
+      "atlas": "city_component",
+      "category": "marker",
+      "sourcePng": "cityComponent.png",
+      "sourcePlist": "cityComponent.plist",
+      "texturePath": "res://assets/themes/slgclient/current/overlays/frames/flag_green_3.png",
+      "sourceFrame": {
+        "x": 215,
+        "y": 1876,
+        "w": 50,
+        "h": 50,
+        "rotated": false
+      },
+      "sourceCanvasRect": {
+        "x": 0,
+        "y": 0,
+        "w": 50,
+        "h": 50
+      },
+      "size": {
+        "w": 50,
+        "h": 50
+      }
+    },
+    "flag_green_4.png": {
+      "name": "flag_green_4.png",
+      "atlas": "city_component",
+      "category": "marker",
+      "sourcePng": "cityComponent.png",
+      "sourcePlist": "cityComponent.plist",
+      "texturePath": "res://assets/themes/slgclient/current/overlays/frames/flag_green_4.png",
+      "sourceFrame": {
+        "x": 163,
+        "y": 1876,
+        "w": 50,
+        "h": 50,
+        "rotated": false
+      },
+      "sourceCanvasRect": {
+        "x": 0,
+        "y": 0,
+        "w": 50,
+        "h": 50
+      },
+      "size": {
+        "w": 50,
+        "h": 50
+      }
+    },
+    "flag_green_5.png": {
+      "name": "flag_green_5.png",
+      "atlas": "city_component",
+      "category": "marker",
+      "sourcePng": "cityComponent.png",
+      "sourcePlist": "cityComponent.plist",
+      "texturePath": "res://assets/themes/slgclient/current/overlays/frames/flag_green_5.png",
+      "sourceFrame": {
+        "x": 111,
+        "y": 1876,
+        "w": 50,
+        "h": 50,
+        "rotated": false
+      },
+      "sourceCanvasRect": {
+        "x": 0,
+        "y": 0,
+        "w": 50,
+        "h": 50
+      },
+      "size": {
+        "w": 50,
+        "h": 50
+      }
+    },
+    "flag_purple_1.png": {
+      "name": "flag_purple_1.png",
+      "atlas": "city_component",
+      "category": "marker",
+      "sourcePng": "cityComponent.png",
+      "sourcePlist": "cityComponent.plist",
+      "texturePath": "res://assets/themes/slgclient/current/overlays/frames/flag_purple_1.png",
+      "sourceFrame": {
+        "x": 59,
+        "y": 1876,
+        "w": 50,
+        "h": 50,
+        "rotated": false
+      },
+      "sourceCanvasRect": {
+        "x": 0,
+        "y": 0,
+        "w": 50,
+        "h": 50
+      },
+      "size": {
+        "w": 50,
+        "h": 50
+      }
+    },
+    "flag_purple_2.png": {
+      "name": "flag_purple_2.png",
+      "atlas": "city_component",
+      "category": "marker",
+      "sourcePng": "cityComponent.png",
+      "sourcePlist": "cityComponent.plist",
+      "texturePath": "res://assets/themes/slgclient/current/overlays/frames/flag_purple_2.png",
+      "sourceFrame": {
+        "x": 735,
+        "y": 1824,
+        "w": 50,
+        "h": 50,
+        "rotated": false
+      },
+      "sourceCanvasRect": {
+        "x": 0,
+        "y": 0,
+        "w": 50,
+        "h": 50
+      },
+      "size": {
+        "w": 50,
+        "h": 50
+      }
+    },
+    "flag_purple_3.png": {
+      "name": "flag_purple_3.png",
+      "atlas": "city_component",
+      "category": "marker",
+      "sourcePng": "cityComponent.png",
+      "sourcePlist": "cityComponent.plist",
+      "texturePath": "res://assets/themes/slgclient/current/overlays/frames/flag_purple_3.png",
+      "sourceFrame": {
+        "x": 683,
+        "y": 1824,
+        "w": 50,
+        "h": 50,
+        "rotated": false
+      },
+      "sourceCanvasRect": {
+        "x": 0,
+        "y": 0,
+        "w": 50,
+        "h": 50
+      },
+      "size": {
+        "w": 50,
+        "h": 50
+      }
+    },
+    "flag_purple_4.png": {
+      "name": "flag_purple_4.png",
+      "atlas": "city_component",
+      "category": "marker",
+      "sourcePng": "cityComponent.png",
+      "sourcePlist": "cityComponent.plist",
+      "texturePath": "res://assets/themes/slgclient/current/overlays/frames/flag_purple_4.png",
+      "sourceFrame": {
+        "x": 631,
+        "y": 1824,
+        "w": 50,
+        "h": 50,
+        "rotated": false
+      },
+      "sourceCanvasRect": {
+        "x": 0,
+        "y": 0,
+        "w": 50,
+        "h": 50
+      },
+      "size": {
+        "w": 50,
+        "h": 50
+      }
+    },
+    "flag_purple_5.png": {
+      "name": "flag_purple_5.png",
+      "atlas": "city_component",
+      "category": "marker",
+      "sourcePng": "cityComponent.png",
+      "sourcePlist": "cityComponent.plist",
+      "texturePath": "res://assets/themes/slgclient/current/overlays/frames/flag_purple_5.png",
+      "sourceFrame": {
+        "x": 579,
+        "y": 1824,
+        "w": 50,
+        "h": 50,
+        "rotated": false
+      },
+      "sourceCanvasRect": {
+        "x": 0,
+        "y": 0,
+        "w": 50,
+        "h": 50
+      },
+      "size": {
+        "w": 50,
+        "h": 50
+      }
+    },
+    "flag_red_1.png": {
+      "name": "flag_red_1.png",
+      "atlas": "city_component",
+      "category": "marker",
+      "sourcePng": "cityComponent.png",
+      "sourcePlist": "cityComponent.plist",
+      "texturePath": "res://assets/themes/slgclient/current/overlays/frames/flag_red_1.png",
+      "sourceFrame": {
+        "x": 527,
+        "y": 1824,
+        "w": 50,
+        "h": 50,
+        "rotated": false
+      },
+      "sourceCanvasRect": {
+        "x": 0,
+        "y": 0,
+        "w": 50,
+        "h": 50
+      },
+      "size": {
+        "w": 50,
+        "h": 50
+      }
+    },
+    "flag_red_2.png": {
+      "name": "flag_red_2.png",
+      "atlas": "city_component",
+      "category": "marker",
+      "sourcePng": "cityComponent.png",
+      "sourcePlist": "cityComponent.plist",
+      "texturePath": "res://assets/themes/slgclient/current/overlays/frames/flag_red_2.png",
+      "sourceFrame": {
+        "x": 475,
+        "y": 1824,
+        "w": 50,
+        "h": 50,
+        "rotated": false
+      },
+      "sourceCanvasRect": {
+        "x": 0,
+        "y": 0,
+        "w": 50,
+        "h": 50
+      },
+      "size": {
+        "w": 50,
+        "h": 50
+      }
+    },
+    "flag_red_3.png": {
+      "name": "flag_red_3.png",
+      "atlas": "city_component",
+      "category": "marker",
+      "sourcePng": "cityComponent.png",
+      "sourcePlist": "cityComponent.plist",
+      "texturePath": "res://assets/themes/slgclient/current/overlays/frames/flag_red_3.png",
+      "sourceFrame": {
+        "x": 423,
+        "y": 1824,
+        "w": 50,
+        "h": 50,
+        "rotated": false
+      },
+      "sourceCanvasRect": {
+        "x": 0,
+        "y": 0,
+        "w": 50,
+        "h": 50
+      },
+      "size": {
+        "w": 50,
+        "h": 50
+      }
+    },
+    "flag_red_4.png": {
+      "name": "flag_red_4.png",
+      "atlas": "city_component",
+      "category": "marker",
+      "sourcePng": "cityComponent.png",
+      "sourcePlist": "cityComponent.plist",
+      "texturePath": "res://assets/themes/slgclient/current/overlays/frames/flag_red_4.png",
+      "sourceFrame": {
+        "x": 371,
+        "y": 1824,
+        "w": 50,
+        "h": 50,
+        "rotated": false
+      },
+      "sourceCanvasRect": {
+        "x": 0,
+        "y": 0,
+        "w": 50,
+        "h": 50
+      },
+      "size": {
+        "w": 50,
+        "h": 50
+      }
+    },
+    "flag_red_5.png": {
+      "name": "flag_red_5.png",
+      "atlas": "city_component",
+      "category": "marker",
+      "sourcePng": "cityComponent.png",
+      "sourcePlist": "cityComponent.plist",
+      "texturePath": "res://assets/themes/slgclient/current/overlays/frames/flag_red_5.png",
+      "sourceFrame": {
+        "x": 319,
+        "y": 1824,
+        "w": 50,
+        "h": 50,
+        "rotated": false
+      },
+      "sourceCanvasRect": {
+        "x": 0,
+        "y": 0,
+        "w": 50,
+        "h": 50
+      },
+      "size": {
+        "w": 50,
+        "h": 50
+      }
+    },
+    "flag_yellow_1.png": {
+      "name": "flag_yellow_1.png",
+      "atlas": "city_component",
+      "category": "marker",
+      "sourcePng": "cityComponent.png",
+      "sourcePlist": "cityComponent.plist",
+      "texturePath": "res://assets/themes/slgclient/current/overlays/frames/flag_yellow_1.png",
+      "sourceFrame": {
+        "x": 267,
+        "y": 1824,
+        "w": 50,
+        "h": 50,
+        "rotated": false
+      },
+      "sourceCanvasRect": {
+        "x": 0,
+        "y": 0,
+        "w": 50,
+        "h": 50
+      },
+      "size": {
+        "w": 50,
+        "h": 50
+      }
+    },
+    "flag_yellow_2.png": {
+      "name": "flag_yellow_2.png",
+      "atlas": "city_component",
+      "category": "marker",
+      "sourcePng": "cityComponent.png",
+      "sourcePlist": "cityComponent.plist",
+      "texturePath": "res://assets/themes/slgclient/current/overlays/frames/flag_yellow_2.png",
+      "sourceFrame": {
+        "x": 215,
+        "y": 1824,
+        "w": 50,
+        "h": 50,
+        "rotated": false
+      },
+      "sourceCanvasRect": {
+        "x": 0,
+        "y": 0,
+        "w": 50,
+        "h": 50
+      },
+      "size": {
+        "w": 50,
+        "h": 50
+      }
+    },
+    "flag_yellow_3.png": {
+      "name": "flag_yellow_3.png",
+      "atlas": "city_component",
+      "category": "marker",
+      "sourcePng": "cityComponent.png",
+      "sourcePlist": "cityComponent.plist",
+      "texturePath": "res://assets/themes/slgclient/current/overlays/frames/flag_yellow_3.png",
+      "sourceFrame": {
+        "x": 163,
+        "y": 1824,
+        "w": 50,
+        "h": 50,
+        "rotated": false
+      },
+      "sourceCanvasRect": {
+        "x": 0,
+        "y": 0,
+        "w": 50,
+        "h": 50
+      },
+      "size": {
+        "w": 50,
+        "h": 50
+      }
+    },
+    "flag_yellow_4.png": {
+      "name": "flag_yellow_4.png",
+      "atlas": "city_component",
+      "category": "marker",
+      "sourcePng": "cityComponent.png",
+      "sourcePlist": "cityComponent.plist",
+      "texturePath": "res://assets/themes/slgclient/current/overlays/frames/flag_yellow_4.png",
+      "sourceFrame": {
+        "x": 111,
+        "y": 1824,
+        "w": 50,
+        "h": 50,
+        "rotated": false
+      },
+      "sourceCanvasRect": {
+        "x": 0,
+        "y": 0,
+        "w": 50,
+        "h": 50
+      },
+      "size": {
+        "w": 50,
+        "h": 50
+      }
+    },
+    "flag_yellow_5.png": {
+      "name": "flag_yellow_5.png",
+      "atlas": "city_component",
+      "category": "marker",
+      "sourcePng": "cityComponent.png",
+      "sourcePlist": "cityComponent.plist",
+      "texturePath": "res://assets/themes/slgclient/current/overlays/frames/flag_yellow_5.png",
+      "sourceFrame": {
+        "x": 59,
+        "y": 1824,
+        "w": 50,
+        "h": 50,
+        "rotated": false
+      },
+      "sourceCanvasRect": {
+        "x": 0,
+        "y": 0,
+        "w": 50,
+        "h": 50
+      },
+      "size": {
+        "w": 50,
+        "h": 50
+      }
+    },
+    "home_defend.png": {
+      "name": "home_defend.png",
+      "atlas": "city_component",
+      "category": "marker",
+      "sourcePng": "cityComponent.png",
+      "sourcePlist": "cityComponent.plist",
+      "texturePath": "res://assets/themes/slgclient/current/overlays/frames/home_defend.png",
+      "sourceFrame": {
+        "x": 2,
+        "y": 1824,
+        "w": 55,
+        "h": 57,
+        "rotated": false
+      },
+      "sourceCanvasRect": {
+        "x": 0,
+        "y": 0,
+        "w": 55,
+        "h": 57
+      },
+      "size": {
+        "w": 55,
+        "h": 57
+      }
+    },
+    "out_flag_blue_1.png": {
+      "name": "out_flag_blue_1.png",
+      "atlas": "component_outside",
+      "category": "marker",
+      "sourcePng": "component_outside.png",
+      "sourcePlist": "component_outside.plist",
+      "texturePath": "res://assets/themes/slgclient/current/overlays/frames/out_flag_blue_1.png",
+      "sourceFrame": {
+        "x": 180,
+        "y": 1816,
+        "w": 30,
+        "h": 42,
+        "rotated": true
+      },
+      "sourceCanvasRect": {
+        "x": 10,
+        "y": 4,
+        "w": 30,
+        "h": 42
+      },
+      "size": {
+        "w": 50,
+        "h": 50
+      }
+    },
+    "out_flag_blue_2.png": {
+      "name": "out_flag_blue_2.png",
+      "atlas": "component_outside",
+      "category": "marker",
+      "sourcePng": "component_outside.png",
+      "sourcePlist": "component_outside.plist",
+      "texturePath": "res://assets/themes/slgclient/current/overlays/frames/out_flag_blue_2.png",
+      "sourceFrame": {
+        "x": 744,
+        "y": 1944,
+        "w": 32,
+        "h": 42,
+        "rotated": false
+      },
+      "sourceCanvasRect": {
+        "x": 11,
+        "y": 4,
+        "w": 32,
+        "h": 42
+      },
+      "size": {
+        "w": 50,
+        "h": 50
+      }
+    },
+    "out_flag_blue_3.png": {
+      "name": "out_flag_blue_3.png",
+      "atlas": "component_outside",
+      "category": "marker",
+      "sourcePng": "component_outside.png",
+      "sourcePlist": "component_outside.plist",
+      "texturePath": "res://assets/themes/slgclient/current/overlays/frames/out_flag_blue_3.png",
+      "sourceFrame": {
+        "x": 214,
+        "y": 1772,
+        "w": 30,
+        "h": 42,
+        "rotated": false
+      },
+      "sourceCanvasRect": {
+        "x": 10,
+        "y": 4,
+        "w": 30,
+        "h": 42
+      },
+      "size": {
+        "w": 50,
+        "h": 50
+      }
+    },
+    "out_flag_blue_4.png": {
+      "name": "out_flag_blue_4.png",
+      "atlas": "component_outside",
+      "category": "marker",
+      "sourcePng": "component_outside.png",
+      "sourcePlist": "component_outside.plist",
+      "texturePath": "res://assets/themes/slgclient/current/overlays/frames/out_flag_blue_4.png",
+      "sourceFrame": {
+        "x": 910,
+        "y": 1528,
+        "w": 26,
+        "h": 42,
+        "rotated": false
+      },
+      "sourceCanvasRect": {
+        "x": 11,
+        "y": 4,
+        "w": 26,
+        "h": 42
+      },
+      "size": {
+        "w": 50,
+        "h": 50
+      }
+    },
+    "out_flag_blue_5.png": {
+      "name": "out_flag_blue_5.png",
+      "atlas": "component_outside",
+      "category": "marker",
+      "sourcePng": "component_outside.png",
+      "sourcePlist": "component_outside.plist",
+      "texturePath": "res://assets/themes/slgclient/current/overlays/frames/out_flag_blue_5.png",
+      "sourceFrame": {
+        "x": 458,
+        "y": 1368,
+        "w": 26,
+        "h": 42,
+        "rotated": false
+      },
+      "sourceCanvasRect": {
+        "x": 10,
+        "y": 4,
+        "w": 26,
+        "h": 42
+      },
+      "size": {
+        "w": 50,
+        "h": 50
+      }
+    },
+    "out_flag_green_1.png": {
+      "name": "out_flag_green_1.png",
+      "atlas": "component_outside",
+      "category": "marker",
+      "sourcePng": "component_outside.png",
+      "sourcePlist": "component_outside.plist",
+      "texturePath": "res://assets/themes/slgclient/current/overlays/frames/out_flag_green_1.png",
+      "sourceFrame": {
+        "x": 878,
+        "y": 1528,
+        "w": 30,
+        "h": 42,
+        "rotated": false
+      },
+      "sourceCanvasRect": {
+        "x": 10,
+        "y": 4,
+        "w": 30,
+        "h": 42
+      },
+      "size": {
+        "w": 50,
+        "h": 50
+      }
+    },
+    "out_flag_green_2.png": {
+      "name": "out_flag_green_2.png",
+      "atlas": "component_outside",
+      "category": "marker",
+      "sourcePng": "component_outside.png",
+      "sourcePlist": "component_outside.plist",
+      "texturePath": "res://assets/themes/slgclient/current/overlays/frames/out_flag_green_2.png",
+      "sourceFrame": {
+        "x": 480,
+        "y": 1994,
+        "w": 32,
+        "h": 42,
+        "rotated": false
+      },
+      "sourceCanvasRect": {
+        "x": 11,
+        "y": 4,
+        "w": 32,
+        "h": 42
+      },
+      "size": {
+        "w": 50,
+        "h": 50
+      }
+    },
+    "out_flag_green_3.png": {
+      "name": "out_flag_green_3.png",
+      "atlas": "component_outside",
+      "category": "marker",
+      "sourcePng": "component_outside.png",
+      "sourcePlist": "component_outside.plist",
+      "texturePath": "res://assets/themes/slgclient/current/overlays/frames/out_flag_green_3.png",
+      "sourceFrame": {
+        "x": 492,
+        "y": 1324,
+        "w": 30,
+        "h": 42,
+        "rotated": false
+      },
+      "sourceCanvasRect": {
+        "x": 10,
+        "y": 4,
+        "w": 30,
+        "h": 42
+      },
+      "size": {
+        "w": 50,
+        "h": 50
+      }
+    },
+    "out_flag_green_4.png": {
+      "name": "out_flag_green_4.png",
+      "atlas": "component_outside",
+      "category": "marker",
+      "sourcePng": "component_outside.png",
+      "sourcePlist": "component_outside.plist",
+      "texturePath": "res://assets/themes/slgclient/current/overlays/frames/out_flag_green_4.png",
+      "sourceFrame": {
+        "x": 778,
+        "y": 1944,
+        "w": 26,
+        "h": 42,
+        "rotated": false
+      },
+      "sourceCanvasRect": {
+        "x": 11,
+        "y": 4,
+        "w": 26,
+        "h": 42
+      },
+      "size": {
+        "w": 50,
+        "h": 50
+      }
+    },
+    "out_flag_green_5.png": {
+      "name": "out_flag_green_5.png",
+      "atlas": "component_outside",
+      "category": "marker",
+      "sourcePng": "component_outside.png",
+      "sourcePlist": "component_outside.plist",
+      "texturePath": "res://assets/themes/slgclient/current/overlays/frames/out_flag_green_5.png",
+      "sourceFrame": {
+        "x": 514,
+        "y": 1994,
+        "w": 26,
+        "h": 42,
+        "rotated": false
+      },
+      "sourceCanvasRect": {
+        "x": 10,
+        "y": 4,
+        "w": 26,
+        "h": 42
+      },
+      "size": {
+        "w": 50,
+        "h": 50
+      }
+    },
+    "out_flag_purple_1.png": {
+      "name": "out_flag_purple_1.png",
+      "atlas": "component_outside",
+      "category": "marker",
+      "sourcePng": "component_outside.png",
+      "sourcePlist": "component_outside.plist",
+      "texturePath": "res://assets/themes/slgclient/current/overlays/frames/out_flag_purple_1.png",
+      "sourceFrame": {
+        "x": 460,
+        "y": 1324,
+        "w": 30,
+        "h": 42,
+        "rotated": false
+      },
+      "sourceCanvasRect": {
+        "x": 10,
+        "y": 4,
+        "w": 30,
+        "h": 42
+      },
+      "size": {
+        "w": 50,
+        "h": 50
+      }
+    },
+    "out_flag_purple_2.png": {
+      "name": "out_flag_purple_2.png",
+      "atlas": "component_outside",
+      "category": "marker",
+      "sourcePng": "component_outside.png",
+      "sourcePlist": "component_outside.plist",
+      "texturePath": "res://assets/themes/slgclient/current/overlays/frames/out_flag_purple_2.png",
+      "sourceFrame": {
+        "x": 180,
+        "y": 1772,
+        "w": 32,
+        "h": 42,
+        "rotated": false
+      },
+      "sourceCanvasRect": {
+        "x": 11,
+        "y": 4,
+        "w": 32,
+        "h": 42
+      },
+      "size": {
+        "w": 50,
+        "h": 50
+      }
+    },
+    "out_flag_purple_3.png": {
+      "name": "out_flag_purple_3.png",
+      "atlas": "component_outside",
+      "category": "marker",
+      "sourcePng": "component_outside.png",
+      "sourcePlist": "component_outside.plist",
+      "texturePath": "res://assets/themes/slgclient/current/overlays/frames/out_flag_purple_3.png",
+      "sourceFrame": {
+        "x": 426,
+        "y": 1368,
+        "w": 30,
+        "h": 42,
+        "rotated": false
+      },
+      "sourceCanvasRect": {
+        "x": 10,
+        "y": 4,
+        "w": 30,
+        "h": 42
+      },
+      "size": {
+        "w": 50,
+        "h": 50
+      }
+    },
+    "out_flag_purple_4.png": {
+      "name": "out_flag_purple_4.png",
+      "atlas": "component_outside",
+      "category": "marker",
+      "sourcePng": "component_outside.png",
+      "sourcePlist": "component_outside.plist",
+      "texturePath": "res://assets/themes/slgclient/current/overlays/frames/out_flag_purple_4.png",
+      "sourceFrame": {
+        "x": 698,
+        "y": 1576,
+        "w": 26,
+        "h": 42,
+        "rotated": true
+      },
+      "sourceCanvasRect": {
+        "x": 11,
+        "y": 4,
+        "w": 26,
+        "h": 42
+      },
+      "size": {
+        "w": 50,
+        "h": 50
+      }
+    },
+    "out_flag_purple_5.png": {
+      "name": "out_flag_purple_5.png",
+      "atlas": "component_outside",
+      "category": "marker",
+      "sourcePng": "component_outside.png",
+      "sourcePlist": "component_outside.plist",
+      "texturePath": "res://assets/themes/slgclient/current/overlays/frames/out_flag_purple_5.png",
+      "sourceFrame": {
+        "x": 480,
+        "y": 1772,
+        "w": 26,
+        "h": 42,
+        "rotated": true
+      },
+      "sourceCanvasRect": {
+        "x": 10,
+        "y": 4,
+        "w": 26,
+        "h": 42
+      },
+      "size": {
+        "w": 50,
+        "h": 50
+      }
+    },
+    "out_flag_red_1.png": {
+      "name": "out_flag_red_1.png",
+      "atlas": "component_outside",
+      "category": "marker",
+      "sourcePng": "component_outside.png",
+      "sourcePlist": "component_outside.plist",
+      "texturePath": "res://assets/themes/slgclient/current/overlays/frames/out_flag_red_1.png",
+      "sourceFrame": {
+        "x": 472,
+        "y": 1740,
+        "w": 30,
+        "h": 42,
+        "rotated": true
+      },
+      "sourceCanvasRect": {
+        "x": 10,
+        "y": 4,
+        "w": 30,
+        "h": 42
+      },
+      "size": {
+        "w": 50,
+        "h": 50
+      }
+    },
+    "out_flag_red_2.png": {
+      "name": "out_flag_red_2.png",
+      "atlas": "component_outside",
+      "category": "marker",
+      "sourcePng": "component_outside.png",
+      "sourcePlist": "component_outside.plist",
+      "texturePath": "res://assets/themes/slgclient/current/overlays/frames/out_flag_red_2.png",
+      "sourceFrame": {
+        "x": 844,
+        "y": 1528,
+        "w": 32,
+        "h": 42,
+        "rotated": false
+      },
+      "sourceCanvasRect": {
+        "x": 10,
+        "y": 4,
+        "w": 32,
+        "h": 42
+      },
+      "size": {
+        "w": 50,
+        "h": 50
+      }
+    },
+    "out_flag_red_3.png": {
+      "name": "out_flag_red_3.png",
+      "atlas": "component_outside",
+      "category": "marker",
+      "sourcePng": "component_outside.png",
+      "sourcePlist": "component_outside.plist",
+      "texturePath": "res://assets/themes/slgclient/current/overlays/frames/out_flag_red_3.png",
+      "sourceFrame": {
+        "x": 428,
+        "y": 1740,
+        "w": 30,
+        "h": 42,
+        "rotated": true
+      },
+      "sourceCanvasRect": {
+        "x": 10,
+        "y": 4,
+        "w": 30,
+        "h": 42
+      },
+      "size": {
+        "w": 50,
+        "h": 50
+      }
+    },
+    "out_flag_red_4.png": {
+      "name": "out_flag_red_4.png",
+      "atlas": "component_outside",
+      "category": "marker",
+      "sourcePng": "component_outside.png",
+      "sourcePlist": "component_outside.plist",
+      "texturePath": "res://assets/themes/slgclient/current/overlays/frames/out_flag_red_4.png",
+      "sourceFrame": {
+        "x": 292,
+        "y": 1422,
+        "w": 26,
+        "h": 42,
+        "rotated": true
+      },
+      "sourceCanvasRect": {
+        "x": 10,
+        "y": 4,
+        "w": 26,
+        "h": 42
+      },
+      "size": {
+        "w": 50,
+        "h": 50
+      }
+    },
+    "out_flag_red_5.png": {
+      "name": "out_flag_red_5.png",
+      "atlas": "component_outside",
+      "category": "marker",
+      "sourcePng": "component_outside.png",
+      "sourcePlist": "component_outside.plist",
+      "texturePath": "res://assets/themes/slgclient/current/overlays/frames/out_flag_red_5.png",
+      "sourceFrame": {
+        "x": 248,
+        "y": 1422,
+        "w": 26,
+        "h": 42,
+        "rotated": true
+      },
+      "sourceCanvasRect": {
+        "x": 10,
+        "y": 4,
+        "w": 26,
+        "h": 42
+      },
+      "size": {
+        "w": 50,
+        "h": 50
+      }
+    },
+    "out_flag_yellow_1.png": {
+      "name": "out_flag_yellow_1.png",
+      "atlas": "component_outside",
+      "category": "marker",
+      "sourcePng": "component_outside.png",
+      "sourcePlist": "component_outside.plist",
+      "texturePath": "res://assets/themes/slgclient/current/overlays/frames/out_flag_yellow_1.png",
+      "sourceFrame": {
+        "x": 384,
+        "y": 1740,
+        "w": 30,
+        "h": 42,
+        "rotated": true
+      },
+      "sourceCanvasRect": {
+        "x": 10,
+        "y": 4,
+        "w": 30,
+        "h": 42
+      },
+      "size": {
+        "w": 50,
+        "h": 50
+      }
+    },
+    "out_flag_yellow_2.png": {
+      "name": "out_flag_yellow_2.png",
+      "atlas": "component_outside",
+      "category": "marker",
+      "sourcePng": "component_outside.png",
+      "sourcePlist": "component_outside.plist",
+      "texturePath": "res://assets/themes/slgclient/current/overlays/frames/out_flag_yellow_2.png",
+      "sourceFrame": {
+        "x": 426,
+        "y": 1324,
+        "w": 32,
+        "h": 42,
+        "rotated": false
+      },
+      "sourceCanvasRect": {
+        "x": 11,
+        "y": 4,
+        "w": 32,
+        "h": 42
+      },
+      "size": {
+        "w": 50,
+        "h": 50
+      }
+    },
+    "out_flag_yellow_3.png": {
+      "name": "out_flag_yellow_3.png",
+      "atlas": "component_outside",
+      "category": "marker",
+      "sourcePng": "component_outside.png",
+      "sourcePlist": "component_outside.plist",
+      "texturePath": "res://assets/themes/slgclient/current/overlays/frames/out_flag_yellow_3.png",
+      "sourceFrame": {
+        "x": 340,
+        "y": 1740,
+        "w": 30,
+        "h": 42,
+        "rotated": true
+      },
+      "sourceCanvasRect": {
+        "x": 10,
+        "y": 4,
+        "w": 30,
+        "h": 42
+      },
+      "size": {
+        "w": 50,
+        "h": 50
+      }
+    },
+    "out_flag_yellow_4.png": {
+      "name": "out_flag_yellow_4.png",
+      "atlas": "component_outside",
+      "category": "marker",
+      "sourcePng": "component_outside.png",
+      "sourcePlist": "component_outside.plist",
+      "texturePath": "res://assets/themes/slgclient/current/overlays/frames/out_flag_yellow_4.png",
+      "sourceFrame": {
+        "x": 204,
+        "y": 1422,
+        "w": 26,
+        "h": 42,
+        "rotated": true
+      },
+      "sourceCanvasRect": {
+        "x": 11,
+        "y": 4,
+        "w": 26,
+        "h": 42
+      },
+      "size": {
+        "w": 50,
+        "h": 50
+      }
+    },
+    "out_flag_yellow_5.png": {
+      "name": "out_flag_yellow_5.png",
+      "atlas": "component_outside",
+      "category": "marker",
+      "sourcePng": "component_outside.png",
+      "sourcePlist": "component_outside.plist",
+      "texturePath": "res://assets/themes/slgclient/current/overlays/frames/out_flag_yellow_5.png",
+      "sourceFrame": {
+        "x": 768,
+        "y": 254,
+        "w": 26,
+        "h": 42,
+        "rotated": false
+      },
+      "sourceCanvasRect": {
+        "x": 10,
+        "y": 4,
+        "w": 26,
+        "h": 42
+      },
+      "size": {
+        "w": 50,
+        "h": 50
+      }
+    }
+  }
+}

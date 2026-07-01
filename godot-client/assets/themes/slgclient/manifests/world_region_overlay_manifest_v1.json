@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "theme": "slgclient",
+  "manifestId": "world_region_overlay_manifest_v1",
+  "importedAt": "2026-06-19T00:00:00+08:00",
+  "authority": {
+    "lane": "main_world_tianxia_yutu_art",
+    "owner": "SlgUiComponentFactory + TianxiaYutu world map art lane",
+    "status": "asset_ready_and_renderer_wired",
+    "scope": [
+      "region_overlay",
+      "border_line",
+      "territory_tint"
+    ],
+    "playerVisibleCopyRule": "Map overlay may show only place, state, and action semantics. Never expose layer ids, contract ids, schema names, or engineering field names."
+  },
+  "source": {
+    "policy": "Reuse current runtime palette and overlay marker families before new heavy map art generation.",
+    "referenceDocs": [
+      "docs/PRODUCT_AUTHORITY_WORLD_MAP_SUBSTRATE_CURRENT_2026_06_11.md",
+      "docs/UI_ART_BIBLE_LANDSCAPE_SLG_CURRENT_2026_06_08.md"
+    ]
+  },
+  "target": {
+    "runtimeSurface": [
+      "tianxia_yutu_overview",
+      "main_world_cells"
+    ],
+    "nonGoals": [
+      "no heavy renderer rewrite in this slice",
+      "no baked player-facing copy inside overlays"
+    ]
+  },
+  "paletteTokens": {
+    "friendly": {
+      "fill": "#4F8F67AA",
+      "border": "#CFE7B8CC",
+      "emphasis": "#F3E3A1CC"
+    },
+    "hostile": {
+      "fill": "#7F2C2CAA",
+      "border": "#F1B1A2CC",
+      "emphasis": "#F4D37BCC"
+    },
+    "neutral": {
+      "fill": "#7A5C3AAA",
+      "border": "#E0C895CC",
+      "emphasis": "#F4E7B3CC"
+    },
+    "ally": {
+      "fill": "#5E4F91AA",
+      "border": "#D7CCFFCC",
+      "emphasis": "#F3E3A1CC"
+    }
+  },
+  "overlayFamilies": {
+    "territory_fill": {
+      "blendMode": "alpha_multiply",
+    "opacityRange": [
+        0.48,
+        0.76
+      ],
+      "zoomPolicy": "visible_from_overview_to_region"
+    },
+    "region_border_line": {
+      "blendMode": "alpha",
+      "widthPx": {
+        "overview": 2,
+        "region": 6,
+        "local": 7
+      },
+      "edgeSoftnessPx": 1
+    },
+    "contested_border_line": {
+      "blendMode": "alpha_add",
+      "widthPx": {
+        "overview": 2,
+        "region": 6,
+        "local": 7
+      },
+      "dashPattern": [
+        10,
+        6
+      ],
+      "pulseToken": "stage_a_shared_motion_feedback_chain_v1"
+    }
+  },
+  "zoomSemantics": {
+    "overview": {
+      "show": [
+        "territory_fill",
+        "region_border_line"
+      ],
+      "hide": [
+        "county_subdivisions",
+        "micro_textures"
+      ]
+    },
+    "region": {
+      "show": [
+        "territory_fill",
+        "region_border_line",
+        "contested_border_line"
+      ],
+      "hide": [
+        "micro_textures"
+      ]
+    },
+    "local": {
+      "show": [
+        "region_border_line",
+        "contested_border_line"
+      ],
+      "hide": [
+        "broad_territory_fill"
+      ]
+    }
+  },
+  "states": {
+    "owned": {
+      "overlayFamily": "territory_fill",
+      "borderFamily": "region_border_line"
+    },
+    "contested": {
+      "overlayFamily": "territory_fill",
+      "borderFamily": "contested_border_line"
+    },
+    "fogged": {
+      "overlayFamily": "territory_fill",
+      "fillOpacityMultiplier": 0.55,
+      "borderOpacityMultiplier": 0.7
+    }
+  }
+}

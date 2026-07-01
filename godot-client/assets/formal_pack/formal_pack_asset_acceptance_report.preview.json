@@ -1,0 +1,437 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-04-30T00:56:13Z",
+  "window": "Window 12 Formal Pack asset handoff acceptance",
+  "scope": {
+    "modifiedRoots": [
+      "godot-client/assets/formal_pack/**",
+      "tmp/screenshots/formal_pack/assets_review/**",
+      "docs/FORMAL_PACK_ASSET_HANDOFF_2026_04_30.md"
+    ],
+    "forbiddenRootsChecked": [
+      "godot-client/scenes/**"
+    ],
+    "notes": "Scripts diff exists in the dirty worktree from other work, but this asset lane did not edit scripts/scenes during this acceptance pass."
+  },
+  "sourcePortraitDirectories": [
+    "portrait_assets/display_images/programmatic_1265x1402",
+    "portrait_assets/locked_images",
+    "godot-client/assets/themes/slgclient/current/generalpic/locked_preview",
+    "godot-client/assets/themes/slgclient/current/generalpic"
+  ],
+  "assetManifests": {
+    "heroPortraitManifest": "godot-client/assets/formal_pack/hero_portrait_manifest.preview.json",
+    "heroPortraitCropAudit": "godot-client/assets/formal_pack/hero_portrait_crop_audit.preview.json",
+    "heroPortraitCropReview": "godot-client/assets/formal_pack/hero_portrait_crop_review.preview.json",
+    "heroPortraitFilterManifest": "godot-client/assets/formal_pack/hero_portrait_filter_manifest.preview.json",
+    "recruitPackCoverManifest": "godot-client/assets/formal_pack/recruit_pack_cover_manifest.preview.json",
+    "recruitPackCoverFilterManifest": "godot-client/assets/formal_pack/recruit_pack_cover_filter_manifest.preview.json",
+    "assetIntegrity": "godot-client/assets/formal_pack/formal_pack_asset_integrity.preview.json",
+    "window8bSamplePayload": "godot-client/assets/formal_pack/formal_pack_window8b_sample_payload.preview.json",
+    "postprocessedPortraitHandoffManifest": "godot-client/assets/formal_pack/portraits/card/postprocessed/formal_pack_card_portraits_postprocessed_handoff.preview.json",
+    "postprocessedPortraitHandoffReadme": "godot-client/assets/formal_pack/portraits/card/postprocessed/FORMAL_PACK_CARD_PORTRAITS_HANDOFF.preview.md"
+  },
+  "runtimeLookupPath": "godot-client/assets/formal_pack/formal_pack_asset_runtime_lookup.preview.json",
+  "summary": {
+    "coverAssetKeysReady": [
+      "formal_pack.cover.wangzuo_fengyan",
+      "formal_pack.cover.jiangdong_zhangu",
+      "formal_pack.cover.xiliang_tieqi",
+      "formal_pack.cover.mouchen_yeyi"
+    ],
+    "portraitCount": 27,
+    "portraitReadyCount": 24,
+    "portraitWatchCount": 2,
+    "portraitReviewCount": 1,
+    "cardSize": {
+      "width": 512,
+      "height": 704
+    },
+    "coverCount": 4,
+    "qaSummary": {
+      "itemCount": 27,
+      "readyCount": 24,
+      "watchCount": 2,
+      "reviewCount": 1
+    }
+  },
+  "imageCounts": {
+    "cardRaw": {
+      "count": 27,
+      "files": [
+        "godot-client/assets/formal_pack/portraits/card/cai_wenji_fate_frontier_qin_v1_card.png",
+        "godot-client/assets/formal_pack/portraits/card/cao_cao_fate_v1_card.png",
+        "godot-client/assets/formal_pack/portraits/card/cao_pi_mature_shanrang_v1_card.png",
+        "godot-client/assets/formal_pack/portraits/card/dian_wei_mature_huzhu_v1_card.png",
+        "godot-client/assets/formal_pack/portraits/card/dong_zhuo_early_xiliang_campaign_v1_card.png",
+        "godot-client/assets/formal_pack/portraits/card/gan_ning_mature_jinfan_raid_v1_card.png",
+        "godot-client/assets/formal_pack/portraits/card/guan_yu_mature_mounted_jingzhou_v1_card.png",
+        "godot-client/assets/formal_pack/portraits/card/guo_jia_mature_fate_liaodong_v1_card.png",
+        "godot-client/assets/formal_pack/portraits/card/han_xiandi_disempowered_v1_card.png",
+        "godot-client/assets/formal_pack/portraits/card/jia_xu_mature_duoshi_v1_card.png",
+        "godot-client/assets/formal_pack/portraits/card/liu_bei_mature_hanzhong_sworddance_face_smile_v2_card.png",
+        "godot-client/assets/formal_pack/portraits/card/lu_bu_mature_wenhou_v1_card.png",
+        "godot-client/assets/formal_pack/portraits/card/ma_chao_mature_xiliang_retreat_v1_card.png",
+        "godot-client/assets/formal_pack/portraits/card/sima_yi_fate_gaopingling_v1_card.png",
+        "godot-client/assets/formal_pack/portraits/card/sun_ce_young_founder_v1_card.png",
+        "godot-client/assets/formal_pack/portraits/card/sun_quan_mature_successor_v1_card.png",
+        "godot-client/assets/formal_pack/portraits/card/sun_quan_succession_entrustment_v1_card.png",
+        "godot-client/assets/formal_pack/portraits/card/tai_shi_ci_mature_yishi_v1_card.png",
+        "godot-client/assets/formal_pack/portraits/card/xiahou_dun_mature_duyan_v1_card.png",
+        "godot-client/assets/formal_pack/portraits/card/xun_yu_youth_wangzuo_v1_card.png",
+        "godot-client/assets/formal_pack/portraits/card/yuan_shao_mature_coalition_oath_v1_card.png",
+        "godot-client/assets/formal_pack/portraits/card/zhang_fei_mature_baxi_v1_card.png",
+        "godot-client/assets/formal_pack/portraits/card/zhang_liao_mature_hefei_v1_card.png",
+        "godot-client/assets/formal_pack/portraits/card/zhao_yun_youth_changban_rescue_v1_card.png",
+        "godot-client/assets/formal_pack/portraits/card/zhou_tai_mature_victory_shout_v1_card.png",
+        "godot-client/assets/formal_pack/portraits/card/zhou_yu_mature_chibi_v1_card.png",
+        "godot-client/assets/formal_pack/portraits/card/zhuge_liang_mature_beifa_v1_card.png"
+      ]
+    },
+    "cardPostprocessed": {
+      "count": 27,
+      "files": [
+        "godot-client/assets/formal_pack/portraits/card/postprocessed/cai_wenji_fate_frontier_qin_v1_card_film_matte_v1.png",
+        "godot-client/assets/formal_pack/portraits/card/postprocessed/cao_cao_fate_v1_card_film_matte_v1.png",
+        "godot-client/assets/formal_pack/portraits/card/postprocessed/cao_pi_mature_shanrang_v1_card_film_matte_v1.png",
+        "godot-client/assets/formal_pack/portraits/card/postprocessed/dian_wei_mature_huzhu_v1_card_film_matte_v1.png",
+        "godot-client/assets/formal_pack/portraits/card/postprocessed/dong_zhuo_early_xiliang_campaign_v1_card_film_matte_v1.png",
+        "godot-client/assets/formal_pack/portraits/card/postprocessed/gan_ning_mature_jinfan_raid_v1_card_film_matte_v1.png",
+        "godot-client/assets/formal_pack/portraits/card/postprocessed/guan_yu_mature_mounted_jingzhou_v1_card_film_matte_v1.png",
+        "godot-client/assets/formal_pack/portraits/card/postprocessed/guo_jia_mature_fate_liaodong_v1_card_film_matte_v1.png",
+        "godot-client/assets/formal_pack/portraits/card/postprocessed/han_xiandi_disempowered_v1_card_film_matte_v1.png",
+        "godot-client/assets/formal_pack/portraits/card/postprocessed/jia_xu_mature_duoshi_v1_card_film_matte_v1.png",
+        "godot-client/assets/formal_pack/portraits/card/postprocessed/liu_bei_mature_hanzhong_sworddance_face_smile_v2_card_film_matte_v1.png",
+        "godot-client/assets/formal_pack/portraits/card/postprocessed/lu_bu_mature_wenhou_v1_card_film_matte_v1.png",
+        "godot-client/assets/formal_pack/portraits/card/postprocessed/ma_chao_mature_xiliang_retreat_v1_card_film_matte_v1.png",
+        "godot-client/assets/formal_pack/portraits/card/postprocessed/sima_yi_fate_gaopingling_v1_card_film_matte_v1.png",
+        "godot-client/assets/formal_pack/portraits/card/postprocessed/sun_ce_young_founder_v1_card_film_matte_v1.png",
+        "godot-client/assets/formal_pack/portraits/card/postprocessed/sun_quan_mature_successor_v1_card_film_matte_v1.png",
+        "godot-client/assets/formal_pack/portraits/card/postprocessed/sun_quan_succession_entrustment_v1_card_film_matte_v1.png",
+        "godot-client/assets/formal_pack/portraits/card/postprocessed/tai_shi_ci_mature_yishi_v1_card_film_matte_v1.png",
+        "godot-client/assets/formal_pack/portraits/card/postprocessed/xiahou_dun_mature_duyan_v1_card_film_matte_v1.png",
+        "godot-client/assets/formal_pack/portraits/card/postprocessed/xun_yu_youth_wangzuo_v1_card_film_matte_v1.png",
+        "godot-client/assets/formal_pack/portraits/card/postprocessed/yuan_shao_mature_coalition_oath_v1_card_film_matte_v1.png",
+        "godot-client/assets/formal_pack/portraits/card/postprocessed/zhang_fei_mature_baxi_v1_card_film_matte_v1.png",
+        "godot-client/assets/formal_pack/portraits/card/postprocessed/zhang_liao_mature_hefei_v1_card_film_matte_v1.png",
+        "godot-client/assets/formal_pack/portraits/card/postprocessed/zhao_yun_youth_changban_rescue_v1_card_film_matte_v1.png",
+        "godot-client/assets/formal_pack/portraits/card/postprocessed/zhou_tai_mature_victory_shout_v1_card_film_matte_v1.png",
+        "godot-client/assets/formal_pack/portraits/card/postprocessed/zhou_yu_mature_chibi_v1_card_film_matte_v1.png",
+        "godot-client/assets/formal_pack/portraits/card/postprocessed/zhuge_liang_mature_beifa_v1_card_film_matte_v1.png"
+      ]
+    },
+    "coverRaw": {
+      "count": 4,
+      "files": [
+        "godot-client/assets/formal_pack/recruit_packs/jiangdong_zhangu_cover.png",
+        "godot-client/assets/formal_pack/recruit_packs/mouchen_yeyi_cover.png",
+        "godot-client/assets/formal_pack/recruit_packs/wangzuo_fengyan_cover.png",
+        "godot-client/assets/formal_pack/recruit_packs/xiliang_tieqi_cover.png"
+      ]
+    },
+    "coverPostprocessed": {
+      "count": 4,
+      "files": [
+        "godot-client/assets/formal_pack/recruit_packs/postprocessed/jiangdong_zhangu_cover_film_matte_v1.png",
+        "godot-client/assets/formal_pack/recruit_packs/postprocessed/mouchen_yeyi_cover_film_matte_v1.png",
+        "godot-client/assets/formal_pack/recruit_packs/postprocessed/wangzuo_fengyan_cover_film_matte_v1.png",
+        "godot-client/assets/formal_pack/recruit_packs/postprocessed/xiliang_tieqi_cover_film_matte_v1.png"
+      ]
+    },
+    "sourceGenerated": {
+      "count": 7,
+      "files": [
+        "godot-client/assets/formal_pack/recruit_packs/source_generated/jiangdong_zhangu_imagegen_source.png",
+        "godot-client/assets/formal_pack/recruit_packs/source_generated/jiangdong_zhangu_imagegen_source_v2.png",
+        "godot-client/assets/formal_pack/recruit_packs/source_generated/mouchen_yeyi_imagegen_source.png",
+        "godot-client/assets/formal_pack/recruit_packs/source_generated/mouchen_yeyi_imagegen_source_v2.png",
+        "godot-client/assets/formal_pack/recruit_packs/source_generated/wangzuo_fengyan_imagegen_source.png",
+        "godot-client/assets/formal_pack/recruit_packs/source_generated/wangzuo_fengyan_imagegen_source_v2.png",
+        "godot-client/assets/formal_pack/recruit_packs/source_generated/xiliang_tieqi_imagegen_source.png"
+      ]
+    }
+  },
+  "pngDimensionChecks": [
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/postprocessed/cai_wenji_fate_frontier_qin_v1_card_film_matte_v1.png",
+      "width": 512,
+      "height": 704,
+      "bytes": 666861
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/postprocessed/cao_cao_fate_v1_card_film_matte_v1.png",
+      "width": 512,
+      "height": 704,
+      "bytes": 624581
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/postprocessed/cao_pi_mature_shanrang_v1_card_film_matte_v1.png",
+      "width": 512,
+      "height": 704,
+      "bytes": 638002
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/postprocessed/dian_wei_mature_huzhu_v1_card_film_matte_v1.png",
+      "width": 512,
+      "height": 704,
+      "bytes": 627550
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/postprocessed/dong_zhuo_early_xiliang_campaign_v1_card_film_matte_v1.png",
+      "width": 512,
+      "height": 704,
+      "bytes": 631399
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/postprocessed/gan_ning_mature_jinfan_raid_v1_card_film_matte_v1.png",
+      "width": 512,
+      "height": 704,
+      "bytes": 619394
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/postprocessed/guan_yu_mature_mounted_jingzhou_v1_card_film_matte_v1.png",
+      "width": 512,
+      "height": 704,
+      "bytes": 661061
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/postprocessed/guo_jia_mature_fate_liaodong_v1_card_film_matte_v1.png",
+      "width": 512,
+      "height": 704,
+      "bytes": 565731
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/postprocessed/han_xiandi_disempowered_v1_card_film_matte_v1.png",
+      "width": 512,
+      "height": 704,
+      "bytes": 604785
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/postprocessed/jia_xu_mature_duoshi_v1_card_film_matte_v1.png",
+      "width": 512,
+      "height": 704,
+      "bytes": 582627
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/postprocessed/liu_bei_mature_hanzhong_sworddance_face_smile_v2_card_film_matte_v1.png",
+      "width": 512,
+      "height": 704,
+      "bytes": 680213
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/postprocessed/lu_bu_mature_wenhou_v1_card_film_matte_v1.png",
+      "width": 512,
+      "height": 704,
+      "bytes": 696839
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/postprocessed/ma_chao_mature_xiliang_retreat_v1_card_film_matte_v1.png",
+      "width": 512,
+      "height": 704,
+      "bytes": 734027
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/postprocessed/sima_yi_fate_gaopingling_v1_card_film_matte_v1.png",
+      "width": 512,
+      "height": 704,
+      "bytes": 588073
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/postprocessed/sun_ce_young_founder_v1_card_film_matte_v1.png",
+      "width": 512,
+      "height": 704,
+      "bytes": 698265
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/postprocessed/sun_quan_mature_successor_v1_card_film_matte_v1.png",
+      "width": 512,
+      "height": 704,
+      "bytes": 599663
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/postprocessed/sun_quan_succession_entrustment_v1_card_film_matte_v1.png",
+      "width": 512,
+      "height": 704,
+      "bytes": 595304
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/postprocessed/tai_shi_ci_mature_yishi_v1_card_film_matte_v1.png",
+      "width": 512,
+      "height": 704,
+      "bytes": 654263
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/postprocessed/xiahou_dun_mature_duyan_v1_card_film_matte_v1.png",
+      "width": 512,
+      "height": 704,
+      "bytes": 665126
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/postprocessed/xun_yu_youth_wangzuo_v1_card_film_matte_v1.png",
+      "width": 512,
+      "height": 704,
+      "bytes": 589222
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/postprocessed/yuan_shao_mature_coalition_oath_v1_card_film_matte_v1.png",
+      "width": 512,
+      "height": 704,
+      "bytes": 692813
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/postprocessed/zhang_fei_mature_baxi_v1_card_film_matte_v1.png",
+      "width": 512,
+      "height": 704,
+      "bytes": 683671
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/postprocessed/zhang_liao_mature_hefei_v1_card_film_matte_v1.png",
+      "width": 512,
+      "height": 704,
+      "bytes": 607231
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/postprocessed/zhao_yun_youth_changban_rescue_v1_card_film_matte_v1.png",
+      "width": 512,
+      "height": 704,
+      "bytes": 757834
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/postprocessed/zhou_tai_mature_victory_shout_v1_card_film_matte_v1.png",
+      "width": 512,
+      "height": 704,
+      "bytes": 632945
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/postprocessed/zhou_yu_mature_chibi_v1_card_film_matte_v1.png",
+      "width": 512,
+      "height": 704,
+      "bytes": 644702
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/postprocessed/zhuge_liang_mature_beifa_v1_card_film_matte_v1.png",
+      "width": 512,
+      "height": 704,
+      "bytes": 618716
+    },
+    {
+      "path": "tmp/screenshots/formal_pack/assets_review/hero_portrait_contact_sheet.png",
+      "width": 1238,
+      "height": 1112,
+      "bytes": 1678311
+    },
+    {
+      "path": "tmp/screenshots/formal_pack/assets_review/zhou_yu_crop_shift_down2_before_after_2026_04_30.png",
+      "width": 720,
+      "height": 470,
+      "bytes": 359983
+    },
+    {
+      "path": "tmp/screenshots/formal_pack/assets_review/recruit_pack_cover_contact_sheet.png",
+      "width": 836,
+      "height": 376,
+      "bytes": 386777
+    }
+  ],
+  "utf8ReadbackChecks": [
+    {
+      "path": "godot-client/assets/formal_pack/formal_pack_asset_handoff_index.preview.json",
+      "chars": 43519,
+      "replacementCount": 0,
+      "questionQuadCount": 0
+    },
+    {
+      "path": "godot-client/assets/formal_pack/formal_pack_asset_runtime_lookup.preview.json",
+      "chars": 30357,
+      "replacementCount": 0,
+      "questionQuadCount": 0
+    },
+    {
+      "path": "godot-client/assets/formal_pack/hero_portrait_manifest.preview.json",
+      "chars": 53915,
+      "replacementCount": 0,
+      "questionQuadCount": 0
+    },
+    {
+      "path": "godot-client/assets/formal_pack/hero_portrait_crop_audit.preview.json",
+      "chars": 15734,
+      "replacementCount": 0,
+      "questionQuadCount": 0
+    },
+    {
+      "path": "godot-client/assets/formal_pack/hero_portrait_crop_review.preview.json",
+      "chars": 23924,
+      "replacementCount": 0,
+      "questionQuadCount": 0
+    },
+    {
+      "path": "godot-client/assets/formal_pack/hero_portrait_filter_manifest.preview.json",
+      "chars": 13025,
+      "replacementCount": 0,
+      "questionQuadCount": 0
+    },
+    {
+      "path": "godot-client/assets/formal_pack/recruit_pack_cover_manifest.preview.json",
+      "chars": 16372,
+      "replacementCount": 0,
+      "questionQuadCount": 0
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/postprocessed/formal_pack_card_portraits_postprocessed_handoff.preview.json",
+      "chars": 18324,
+      "replacementCount": 0,
+      "questionQuadCount": 0
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/postprocessed/FORMAL_PACK_CARD_PORTRAITS_HANDOFF.preview.md",
+      "chars": 5274,
+      "replacementCount": 0,
+      "questionQuadCount": 0
+    },
+    {
+      "path": "godot-client/assets/formal_pack/formal_pack_asset_integrity.preview.json",
+      "chars": 22633,
+      "replacementCount": 0,
+      "questionQuadCount": 0
+    },
+    {
+      "path": "docs/FORMAL_PACK_ASSET_HANDOFF_2026_04_30.md",
+      "chars": 14157,
+      "replacementCount": 0,
+      "questionQuadCount": 0
+    }
+  ],
+  "validation": {
+    "gitDiffCheck": {
+      "cmd": "git diff --check -- godot-client/assets/formal_pack docs tmp/screenshots/formal_pack",
+      "exitCode": 0,
+      "stdout": [],
+      "stderr": []
+    },
+    "scenesDiffNameOnly": {
+      "cmd": "git diff --name-only -- godot-client/scenes",
+      "exitCode": 0,
+      "stdout": [],
+      "stderr": []
+    },
+    "scopedStatus": {
+      "cmd": "git status --short -- godot-client/assets/formal_pack docs/FORMAL_PACK_ASSET_HANDOFF_2026_04_30.md tmp/screenshots/formal_pack/assets_review",
+      "exitCode": 0,
+      "stdout": [
+        "?? docs/FORMAL_PACK_ASSET_HANDOFF_2026_04_30.md",
+        "?? godot-client/assets/formal_pack/"
+      ],
+      "stderr": []
+    },
+    "pass": true,
+    "latestAssetTweak": "zhou_yu_crop_shift_down2_2026_04_30"
+  },
+  "handoffDecision": {
+    "window8bCanUseRuntimeLookup": true,
+    "window8bCanUseCoverAssetKeysDirectly": true,
+    "window8bCanUsePortraitAssetKeysDirectly": true,
+    "reviewBeforePrimaryUse": [
+      "formal_pack.portrait.sun_quan_succession_entrustment_v1"
+    ]
+  }
+}

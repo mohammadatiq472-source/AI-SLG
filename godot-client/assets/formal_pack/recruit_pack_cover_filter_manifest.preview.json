@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-04-29T17:50:34Z",
+  "mode": "deterministic_non_generative_film_matte_v1",
+  "intent": "Reduce obvious AI / digital sharpness while preserving composition, identity, and native generated pixels as raw sources.",
+  "operations": [
+    {
+      "name": "micro_detail_soften",
+      "method": "blend original with GaussianBlur radius 0.35 at 12 percent"
+    },
+    {
+      "name": "tone_curve",
+      "method": "slight black lift, subtle highlight compression, midtone contrast reduction"
+    },
+    {
+      "name": "saturation",
+      "method": "global saturation 0.90 with minor red/blue balance restraint"
+    },
+    {
+      "name": "film_grain",
+      "method": "deterministic monochrome fine grain, sigma around 2.2 RGB levels, stronger in shadows/midtones"
+    },
+    {
+      "name": "vignette",
+      "method": "very light edge density to seat the subjects in scene lighting"
+    }
+  ],
+  "items": [
+    {
+      "coverAssetKey": "formal_pack.cover.wangzuo_fengyan",
+      "rawCoverPath": "godot-client/assets/formal_pack/recruit_packs/wangzuo_fengyan_cover.png",
+      "postprocessedCoverPath": "godot-client/assets/formal_pack/recruit_packs/postprocessed/wangzuo_fengyan_cover_film_matte_v1.png",
+      "sourceSize": {
+        "width": 1023,
+        "height": 1537
+      },
+      "outputSize": {
+        "width": 1023,
+        "height": 1537
+      },
+      "bytes": 2753252,
+      "notes": "Non-generative postprocess only; raw cover PNG remains unchanged."
+    },
+    {
+      "coverAssetKey": "formal_pack.cover.jiangdong_zhangu",
+      "rawCoverPath": "godot-client/assets/formal_pack/recruit_packs/jiangdong_zhangu_cover.png",
+      "postprocessedCoverPath": "godot-client/assets/formal_pack/recruit_packs/postprocessed/jiangdong_zhangu_cover_film_matte_v1.png",
+      "sourceSize": {
+        "width": 1023,
+        "height": 1537
+      },
+      "outputSize": {
+        "width": 1023,
+        "height": 1537
+      },
+      "bytes": 2846746,
+      "notes": "Non-generative postprocess only; raw cover PNG remains unchanged."
+    },
+    {
+      "coverAssetKey": "formal_pack.cover.xiliang_tieqi",
+      "rawCoverPath": "godot-client/assets/formal_pack/recruit_packs/xiliang_tieqi_cover.png",
+      "postprocessedCoverPath": "godot-client/assets/formal_pack/recruit_packs/postprocessed/xiliang_tieqi_cover_film_matte_v1.png",
+      "sourceSize": {
+        "width": 1024,
+        "height": 1536
+      },
+      "outputSize": {
+        "width": 1024,
+        "height": 1536
+      },
+      "bytes": 2864037,
+      "notes": "Non-generative postprocess only; raw cover PNG remains unchanged."
+    },
+    {
+      "coverAssetKey": "formal_pack.cover.mouchen_yeyi",
+      "rawCoverPath": "godot-client/assets/formal_pack/recruit_packs/mouchen_yeyi_cover.png",
+      "postprocessedCoverPath": "godot-client/assets/formal_pack/recruit_packs/postprocessed/mouchen_yeyi_cover_film_matte_v1.png",
+      "sourceSize": {
+        "width": 1024,
+        "height": 1536
+      },
+      "outputSize": {
+        "width": 1024,
+        "height": 1536
+      },
+      "bytes": 2500800,
+      "notes": "Non-generative postprocess only; raw cover PNG remains unchanged."
+    }
+  ]
+}

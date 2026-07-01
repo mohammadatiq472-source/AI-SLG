@@ -1,0 +1,319 @@
+{
+  "schema_version": "main_city_interior_read_model_v1",
+  "player_id": "player_preview",
+  "city_state_id": "primary_city",
+  "generated_at": "2026-05-24T00:00:00.000Z",
+  "asset_catalog_version": "main_city_assets_round_04",
+  "asset_ref_mode": "asset_ref_with_fallback_path_v1",
+  "tax_runtime": {
+    "mode": "tax_schedule_runtime_v1",
+    "title": "今日税课",
+    "city_label": "主城",
+    "collectable_now": true,
+    "next_collect_at": "2026-05-24T15:00:00.000Z",
+    "next_collect_label": "申课 15:00",
+    "remaining_sec": 0,
+    "remaining_label": "现在可收",
+    "state_label": "可征收",
+    "hero_asset_ref": {
+      "asset_id": "tax_office",
+      "fallback_path": "res://data/ui/main_city_facility_tree_asset_drop/round_04/maincity_facility_tax_office_v4.png",
+      "version": "round_04"
+    },
+    "primary_action": {
+      "action_id": "collect_tax",
+      "label": "征收",
+      "enabled": true
+    },
+    "schedule_slots": [
+      {
+        "slot_id": "dawn_market",
+        "id": "dawn_market",
+        "label": "晨课",
+        "time_label": "06:00",
+        "title": "晨市税",
+        "state": "collected",
+        "state_label": "已收",
+        "collectable_now": false,
+        "collected_today": true,
+        "remaining_sec": 0,
+        "remaining_label": "已入库",
+        "reward_label": "市井经营",
+        "asset_ref": {
+          "asset_id": "market_plaza",
+          "fallback_path": "res://data/ui/main_city_facility_tree_asset_drop/round_04/maincity_facility_market_plaza_v4.png",
+          "version": "round_04"
+        }
+      },
+      {
+        "slot_id": "morning_tax",
+        "id": "morning_tax",
+        "label": "早课",
+        "time_label": "09:00",
+        "title": "门市税",
+        "state": "collected",
+        "state_label": "已收",
+        "collectable_now": false,
+        "collected_today": true,
+        "remaining_sec": 0,
+        "remaining_label": "已入库",
+        "reward_label": "商旅税入",
+        "asset_ref": {
+          "asset_id": "tax_office",
+          "fallback_path": "res://data/ui/main_city_facility_tree_asset_drop/round_04/maincity_facility_tax_office_v4.png",
+          "version": "round_04"
+        }
+      },
+      {
+        "slot_id": "noon_tax",
+        "id": "noon_tax",
+        "label": "午课",
+        "time_label": "12:00",
+        "title": "税署税",
+        "state": "collectable",
+        "state_label": "可征收",
+        "collectable_now": true,
+        "collected_today": false,
+        "remaining_sec": 0,
+        "remaining_label": "现在可收",
+        "reward_label": "府库税入",
+        "asset_ref": {
+          "asset_id": "tax_office",
+          "fallback_path": "res://data/ui/main_city_facility_tree_asset_drop/round_04/maincity_facility_tax_office_v4.png",
+          "version": "round_04"
+        },
+        "emphasized": true
+      },
+      {
+        "slot_id": "afternoon_patrol",
+        "id": "afternoon_patrol",
+        "label": "申课",
+        "time_label": "15:00",
+        "title": "巡检税",
+        "state": "upcoming",
+        "state_label": "未到",
+        "collectable_now": false,
+        "collected_today": false,
+        "remaining_sec": 10800,
+        "remaining_label": "下午可收",
+        "reward_label": "城门税入",
+        "asset_ref": {
+          "asset_id": "tax_office",
+          "fallback_path": "res://data/ui/main_city_facility_tree_asset_drop/round_04/maincity_facility_tax_office_v4.png",
+          "version": "round_04"
+        }
+      },
+      {
+        "slot_id": "evening_granary",
+        "id": "evening_granary",
+        "label": "酉课",
+        "time_label": "18:00",
+        "title": "粮台税",
+        "state": "upcoming",
+        "state_label": "未到",
+        "collectable_now": false,
+        "collected_today": false,
+        "remaining_sec": 21600,
+        "remaining_label": "傍晚可收",
+        "reward_label": "粮秣入库",
+        "asset_ref": {
+          "asset_id": "warehouse",
+          "fallback_path": "res://data/ui/main_city_facility_tree_asset_drop/round_04/maincity_facility_warehouse_v4.png",
+          "version": "round_04"
+        }
+      },
+      {
+        "slot_id": "night_warehouse",
+        "id": "night_warehouse",
+        "label": "夜课",
+        "time_label": "21:00",
+        "title": "仓廪结算",
+        "state": "upcoming",
+        "state_label": "未到",
+        "collectable_now": false,
+        "collected_today": false,
+        "remaining_sec": 32400,
+        "remaining_label": "夜间可收",
+        "reward_label": "府库结算",
+        "asset_ref": {
+          "asset_id": "warehouse",
+          "fallback_path": "res://data/ui/main_city_facility_tree_asset_drop/round_04/maincity_facility_warehouse_v4.png",
+          "version": "round_04"
+        }
+      }
+    ]
+  },
+  "construction_queues": {
+    "mode": "construction_work_orders_v1",
+    "city_inner": [
+      {
+        "queue_item_id": "city_tax_office_upgrade",
+        "id": "city_tax_office_upgrade",
+        "domain": "city_inner",
+        "queue_item_type": "facility_upgrade",
+        "title": "税署 Lv0 -> Lv1",
+        "target_name": "税署",
+        "location_label": "主城",
+        "state": "running",
+        "state_label": "升级中",
+        "display_state_label": "进行中",
+        "state_group": "running",
+        "state_group_label": "进行中",
+        "start_at": "2026-05-24T07:00:00.000Z",
+        "end_at": "2026-05-24T07:12:00.000Z",
+        "remaining_sec": 500,
+        "remaining_label": "剩余 08:20",
+        "progress_percent": 46,
+        "primary_action": {
+          "action_id": "open_work_order",
+          "label": "查看",
+          "enabled": true
+        },
+        "asset_ref": {
+          "asset_id": "tax_office",
+          "fallback_path": "res://data/ui/main_city_facility_tree_asset_drop/round_04/maincity_facility_tax_office_v4.png",
+          "version": "round_04"
+        }
+      },
+      {
+        "queue_item_id": "city_market_upgrade",
+        "id": "city_market_upgrade",
+        "domain": "city_inner",
+        "queue_item_type": "facility_upgrade",
+        "title": "市井 Lv5 -> Lv6",
+        "target_name": "市井",
+        "location_label": "主城",
+        "state": "running",
+        "state_label": "施工中",
+        "display_state_label": "进行中",
+        "state_group": "running",
+        "state_group_label": "进行中",
+        "start_at": "2026-05-24T06:40:00.000Z",
+        "end_at": "2026-05-24T07:40:00.000Z",
+        "remaining_sec": 1120,
+        "remaining_label": "剩余 18:40",
+        "progress_percent": 31,
+        "primary_action": {
+          "action_id": "open_work_order",
+          "label": "查看",
+          "enabled": true
+        },
+        "asset_ref": {
+          "asset_id": "market_plaza",
+          "fallback_path": "res://data/ui/main_city_facility_tree_asset_drop/round_04/maincity_facility_market_plaza_v4.png",
+          "version": "round_04"
+        }
+      }
+    ],
+    "world_outer": [
+      {
+        "queue_item_id": "outer_fort_wall",
+        "id": "outer_fort_wall",
+        "domain": "world_outer",
+        "queue_item_type": "fortress_build",
+        "title": "前哨要塞",
+        "target_name": "前哨要塞",
+        "location_label": "城外据点",
+        "target_coord": {
+          "x": 224,
+          "y": 152
+        },
+        "state": "running",
+        "state_label": "修筑中",
+        "display_state_label": "进行中",
+        "state_group": "running",
+        "state_group_label": "进行中",
+        "start_at": "2026-05-24T06:50:00.000Z",
+        "end_at": "2026-05-24T07:20:00.000Z",
+        "remaining_sec": 825,
+        "remaining_label": "剩余 13:45",
+        "progress_percent": 28,
+        "primary_action": {
+          "action_id": "focus_world_target",
+          "label": "定位",
+          "enabled": true
+        },
+        "asset_ref": {
+          "asset_id": "city_wall",
+          "fallback_path": "res://data/ui/main_city_facility_tree_asset_drop/round_04/maincity_facility_city_wall_v4.png",
+          "version": "round_04"
+        }
+      },
+      {
+        "queue_item_id": "outer_recruit_camp",
+        "id": "outer_recruit_camp",
+        "domain": "world_outer",
+        "queue_item_type": "camp_ready",
+        "title": "营地整备",
+        "target_name": "城外营地",
+        "location_label": "城外据点",
+        "target_coord": {
+          "x": 226,
+          "y": 154
+        },
+        "state": "running",
+        "state_label": "整备中",
+        "display_state_label": "进行中",
+        "state_group": "running",
+        "state_group_label": "进行中",
+        "start_at": "2026-05-24T06:58:00.000Z",
+        "end_at": "2026-05-24T07:08:00.000Z",
+        "remaining_sec": 310,
+        "remaining_label": "剩余 05:10",
+        "progress_percent": 62,
+        "primary_action": {
+          "action_id": "focus_world_target",
+          "label": "定位",
+          "enabled": true
+        },
+        "asset_ref": {
+          "asset_id": "barracks",
+          "fallback_path": "res://data/ui/main_city_facility_tree_asset_drop/round_04/maincity_facility_barracks_v4.png",
+          "version": "round_04"
+        }
+      }
+    ]
+  },
+  "asset_catalog": [
+    {
+      "asset_id": "tax_office",
+      "asset_kind": "facility",
+      "display_name": "税署",
+      "res_path": "res://data/ui/main_city_facility_tree_asset_drop/round_04/maincity_facility_tax_office_v4.png",
+      "fallback_path": "res://data/ui/main_city_facility_tree_asset_drop/round_04/maincity_facility_tax_office_v4.png",
+      "version": "round_04"
+    },
+    {
+      "asset_id": "market_plaza",
+      "asset_kind": "facility",
+      "display_name": "市井",
+      "res_path": "res://data/ui/main_city_facility_tree_asset_drop/round_04/maincity_facility_market_plaza_v4.png",
+      "fallback_path": "res://data/ui/main_city_facility_tree_asset_drop/round_04/maincity_facility_market_plaza_v4.png",
+      "version": "round_04"
+    },
+    {
+      "asset_id": "warehouse",
+      "asset_kind": "facility",
+      "display_name": "仓廪",
+      "res_path": "res://data/ui/main_city_facility_tree_asset_drop/round_04/maincity_facility_warehouse_v4.png",
+      "fallback_path": "res://data/ui/main_city_facility_tree_asset_drop/round_04/maincity_facility_warehouse_v4.png",
+      "version": "round_04"
+    },
+    {
+      "asset_id": "city_wall",
+      "asset_kind": "world_structure",
+      "display_name": "前哨要塞",
+      "res_path": "res://data/ui/main_city_facility_tree_asset_drop/round_04/maincity_facility_city_wall_v4.png",
+      "fallback_path": "res://data/ui/main_city_facility_tree_asset_drop/round_04/maincity_facility_city_wall_v4.png",
+      "version": "round_04"
+    },
+    {
+      "asset_id": "barracks",
+      "asset_kind": "world_structure",
+      "display_name": "营地",
+      "res_path": "res://data/ui/main_city_facility_tree_asset_drop/round_04/maincity_facility_barracks_v4.png",
+      "fallback_path": "res://data/ui/main_city_facility_tree_asset_drop/round_04/maincity_facility_barracks_v4.png",
+      "version": "round_04"
+    }
+  ]
+}

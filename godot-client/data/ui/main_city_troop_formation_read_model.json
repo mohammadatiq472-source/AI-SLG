@@ -1,0 +1,563 @@
+{
+  "schema_version": "main_city_troop_formation_read_model_v4",
+  "data_source": "read_model",
+  "asset_ref_mode": "structured_asset_ref_v1",
+  "portrait_asset_source": "locked_preview_or_display_preview",
+  "team_list_orientation": "horizontal",
+  "team_pool_placement": "bottom_strip",
+  "roster_card_text_mode": "portrait_current_soldiers_only_v1",
+  "roster_card_visual_density": "larger_portrait_raised_pool_v3",
+  "roster_portrait_scale_mode": "contained_safe",
+  "navigation_mode": "city_space_team_pool_to_team_detail_v2",
+  "background_asset_ref": {
+    "kind": "image",
+    "path": "res://data/ui/world_event_activity_fixtures/world_affairs_battlefield_fixture.png"
+  },
+  "teams": [
+    {
+      "id": "team_01",
+      "name": "第一队",
+      "title": "第一队",
+      "owner_type": "human",
+      "faction_id": "player",
+      "status": "待出征",
+      "location": "青石城",
+      "power": 19680,
+      "soldiers_current": 3000,
+      "soldiers_max": 3600,
+      "morale": "待命",
+      "slots": [
+        {
+          "slot": "camp",
+          "label": "大营",
+          "hero_id": "100017",
+          "general_name": "诸葛亮",
+          "level": 30,
+          "troop_type": "步兵",
+          "soldiers_current": 1000,
+          "soldiers_max": 1200,
+          "portrait_asset_key": "formal_pack.portrait.zhuge_liang_mature_beifa_v1",
+          "asset_ref": {
+            "assetKind": "hero_portrait",
+            "heroId": "100017",
+            "portraitAssetKey": "formal_pack.portrait.zhuge_liang_mature_beifa_v1",
+            "displayStrategy": {
+              "fit": "contained_safe",
+              "stageAspect": "4:5",
+              "safeMargin": "portrait_safe_margin_medium",
+              "assetSource": "locked_preview_or_display_preview"
+            }
+          },
+          "unit_asset_ref": {
+            "kind": "unit_frame_manifest_frame",
+            "path": "res://assets/themes/slgclient/current/units/infantry_ai_frames/r_07_infantry_ai_sheet_v1.png",
+            "manifest": "res://assets/themes/slgclient/manifests/unit_frames_manifest.json",
+            "direction": "r",
+            "sequence": 7
+          },
+          "recruit_step": 200,
+          "can_recruit": true
+        },
+        {
+          "slot": "mid",
+          "label": "中军",
+          "hero_id": "100013",
+          "general_name": "马超",
+          "level": 30,
+          "troop_type": "骑兵",
+          "soldiers_current": 1000,
+          "soldiers_max": 1200,
+          "portrait_asset_key": "formal_pack.portrait.ma_chao_mature_xiliang_retreat_v1",
+          "asset_ref": {
+            "assetKind": "hero_portrait",
+            "heroId": "100013",
+            "portraitAssetKey": "formal_pack.portrait.ma_chao_mature_xiliang_retreat_v1",
+            "displayStrategy": {
+              "fit": "contained_safe",
+              "stageAspect": "4:5",
+              "safeMargin": "portrait_safe_margin_medium",
+              "assetSource": "locked_preview_or_display_preview"
+            }
+          },
+          "unit_asset_ref": {
+            "kind": "unit_frame_manifest_frame",
+            "path": "res://assets/themes/slgclient/current/units/qibing_frames/r_07_map_qibing_0_7.png",
+            "manifest": "res://assets/themes/slgclient/manifests/unit_frames_manifest.json",
+            "direction": "r",
+            "sequence": 7
+          },
+          "recruit_step": 200,
+          "can_recruit": true
+        },
+        {
+          "slot": "front",
+          "label": "前锋",
+          "hero_id": "100031",
+          "general_name": "周瑜",
+          "level": 30,
+          "troop_type": "弓兵",
+          "soldiers_current": 1000,
+          "soldiers_max": 1200,
+          "portrait_asset_key": "formal_pack.portrait.zhou_yu_mature_chibi_v1",
+          "asset_ref": {
+            "assetKind": "hero_portrait",
+            "heroId": "100031",
+            "portraitAssetKey": "formal_pack.portrait.zhou_yu_mature_chibi_v1",
+            "displayStrategy": {
+              "fit": "contained_safe",
+              "stageAspect": "4:5",
+              "safeMargin": "portrait_safe_margin_medium",
+              "assetSource": "locked_preview_or_display_preview"
+            }
+          },
+          "unit_asset_ref": {
+            "kind": "unit_frame_manifest_frame",
+            "path": "res://assets/themes/slgclient/current/units/archer_ai_frames/r_07_archer_ai_sheet_v1.png",
+            "manifest": "res://assets/themes/slgclient/manifests/unit_frames_manifest.json",
+            "direction": "r",
+            "sequence": 7
+          },
+          "recruit_step": 200,
+          "can_recruit": true
+        }
+      ],
+      "siege": 72,
+      "speed": 68,
+      "bonus_summary": "兵种协同 +8%\n前锋压制 +5%",
+      "duplicate_name_rule": "block_same_general_name_v1",
+      "duplicate_name_blocked": false
+    },
+    {
+      "id": "team_02",
+      "name": "第二队",
+      "title": "季汉先锋",
+      "status": "征兵",
+      "location": "校场",
+      "power": 18420,
+      "soldiers_current": 1798,
+      "soldiers_max": 3300,
+      "morale": "整备中",
+      "slots": [
+        {
+          "slot": "camp",
+          "label": "大营",
+          "general_name": "刘备",
+          "level": 36,
+          "troop_type": "步兵",
+          "soldiers_current": 640,
+          "soldiers_max": 1100,
+          "portrait_asset_key": "formal_pack.portrait.liu_bei_mature_hanzhong_sworddance_face_smile_v2",
+          "asset_ref": {
+            "assetKind": "hero_portrait",
+            "portraitAssetKey": "formal_pack.portrait.liu_bei_mature_hanzhong_sworddance_face_smile_v2",
+            "displayStrategy": {
+              "fit": "contained_safe",
+              "stageAspect": "4:5",
+              "safeMargin": "portrait_safe_margin_medium",
+              "assetSource": "locked_preview_or_display_preview"
+            }
+          },
+          "unit_asset_ref": {
+            "kind": "unit_frame_manifest_frame",
+            "path": "res://assets/themes/slgclient/current/units/infantry_ai_frames/r_07_infantry_ai_sheet_v1.png",
+            "manifest": "res://assets/themes/slgclient/manifests/unit_frames_manifest.json",
+            "direction": "r",
+            "sequence": 7
+          },
+          "recruit_step": 200,
+          "can_recruit": true
+        },
+        {
+          "slot": "mid",
+          "label": "中军",
+          "general_name": "关羽",
+          "level": 35,
+          "troop_type": "骑兵",
+          "soldiers_current": 590,
+          "soldiers_max": 1100,
+          "portrait_asset_key": "formal_pack.portrait.guan_yu_mature_mounted_jingzhou_v1",
+          "asset_ref": {
+            "assetKind": "hero_portrait",
+            "portraitAssetKey": "formal_pack.portrait.guan_yu_mature_mounted_jingzhou_v1",
+            "displayStrategy": {
+              "fit": "contained_safe",
+              "stageAspect": "4:5",
+              "safeMargin": "portrait_safe_margin_medium",
+              "assetSource": "locked_preview_or_display_preview"
+            }
+          },
+          "unit_asset_ref": {
+            "kind": "unit_frame_manifest_frame",
+            "path": "res://assets/themes/slgclient/current/units/qibing_frames/r_07_map_qibing_0_7.png",
+            "manifest": "res://assets/themes/slgclient/manifests/unit_frames_manifest.json",
+            "direction": "r",
+            "sequence": 7
+          },
+          "recruit_step": 200,
+          "can_recruit": true
+        },
+        {
+          "slot": "front",
+          "label": "前锋",
+          "general_name": "张飞",
+          "level": 34,
+          "troop_type": "枪兵",
+          "soldiers_current": 568,
+          "soldiers_max": 1100,
+          "portrait_asset_key": "formal_pack.portrait.zhang_fei_mature_baxi_v1",
+          "asset_ref": {
+            "assetKind": "hero_portrait",
+            "portraitAssetKey": "formal_pack.portrait.zhang_fei_mature_baxi_v1",
+            "displayStrategy": {
+              "fit": "contained_safe",
+              "stageAspect": "4:5",
+              "safeMargin": "portrait_safe_margin_medium",
+              "assetSource": "locked_preview_or_display_preview"
+            }
+          },
+          "unit_asset_ref": {
+            "kind": "unit_frame_manifest_frame",
+            "path": "res://assets/themes/slgclient/current/units/infantry_ai_frames/r_07_infantry_ai_sheet_v1.png",
+            "manifest": "res://assets/themes/slgclient/manifests/unit_frames_manifest.json",
+            "direction": "r",
+            "sequence": 7
+          },
+          "recruit_step": 200,
+          "can_recruit": true
+        }
+      ],
+      "siege": 80,
+      "speed": 73,
+      "bonus_summary": "兵种协同 +8%\n前锋压制 +5%",
+      "duplicate_name_rule": "block_same_general_name_v1",
+      "duplicate_name_blocked": false,
+      "owner_type": "ai",
+      "ai_player_id": "ai_player_jihan_vanguard",
+      "faction_id": "ai_jihan"
+    },
+    {
+      "id": "team_03",
+      "name": "第三队",
+      "title": "江东水师",
+      "status": "待命",
+      "location": "主城",
+      "power": 12680,
+      "soldiers_current": 1500,
+      "soldiers_max": 3000,
+      "morale": "可出征",
+      "slots": [
+        {
+          "slot": "camp",
+          "label": "大营",
+          "general_name": "周瑜",
+          "level": 31,
+          "troop_type": "弓兵",
+          "soldiers_current": 520,
+          "soldiers_max": 1000,
+          "portrait_asset_key": "formal_pack.portrait.zhou_yu_mature_chibi_v1",
+          "asset_ref": {
+            "assetKind": "hero_portrait",
+            "portraitAssetKey": "formal_pack.portrait.zhou_yu_mature_chibi_v1",
+            "displayStrategy": {
+              "fit": "contained_safe",
+              "stageAspect": "4:5",
+              "safeMargin": "portrait_safe_margin_medium",
+              "assetSource": "locked_preview_or_display_preview"
+            }
+          },
+          "unit_asset_ref": {
+            "kind": "unit_frame_manifest_frame",
+            "path": "res://assets/themes/slgclient/current/units/archer_ai_frames/r_07_archer_ai_sheet_v1.png",
+            "manifest": "res://assets/themes/slgclient/manifests/unit_frames_manifest.json",
+            "direction": "r",
+            "sequence": 7
+          },
+          "recruit_step": 200,
+          "can_recruit": true
+        },
+        {
+          "slot": "mid",
+          "label": "中军",
+          "general_name": "孙策",
+          "level": 30,
+          "troop_type": "枪兵",
+          "soldiers_current": 500,
+          "soldiers_max": 1000,
+          "portrait_asset_key": "formal_pack.portrait.sun_ce_young_founder_v1",
+          "asset_ref": {
+            "assetKind": "hero_portrait",
+            "portraitAssetKey": "formal_pack.portrait.sun_ce_young_founder_v1",
+            "displayStrategy": {
+              "fit": "contained_safe",
+              "stageAspect": "4:5",
+              "safeMargin": "portrait_safe_margin_medium",
+              "assetSource": "locked_preview_or_display_preview"
+            }
+          },
+          "unit_asset_ref": {
+            "kind": "unit_frame_manifest_frame",
+            "path": "res://assets/themes/slgclient/current/units/infantry_ai_frames/r_07_infantry_ai_sheet_v1.png",
+            "manifest": "res://assets/themes/slgclient/manifests/unit_frames_manifest.json",
+            "direction": "r",
+            "sequence": 7
+          },
+          "recruit_step": 200,
+          "can_recruit": true
+        },
+        {
+          "slot": "front",
+          "label": "前锋",
+          "general_name": "太史慈",
+          "level": 30,
+          "troop_type": "骑兵",
+          "soldiers_current": 480,
+          "soldiers_max": 1000,
+          "portrait_asset_key": "formal_pack.portrait.tai_shi_ci_mature_yishi_v1",
+          "asset_ref": {
+            "assetKind": "hero_portrait",
+            "portraitAssetKey": "formal_pack.portrait.tai_shi_ci_mature_yishi_v1",
+            "displayStrategy": {
+              "fit": "contained_safe",
+              "stageAspect": "4:5",
+              "safeMargin": "portrait_safe_margin_medium",
+              "assetSource": "locked_preview_or_display_preview"
+            }
+          },
+          "unit_asset_ref": {
+            "kind": "unit_frame_manifest_frame",
+            "path": "res://assets/themes/slgclient/current/units/qibing_frames/r_07_map_qibing_0_7.png",
+            "manifest": "res://assets/themes/slgclient/manifests/unit_frames_manifest.json",
+            "direction": "r",
+            "sequence": 7
+          },
+          "recruit_step": 200,
+          "can_recruit": true
+        }
+      ],
+      "siege": 88,
+      "speed": 78,
+      "bonus_summary": "兵种协同 +8%\n前锋压制 +5%",
+      "duplicate_name_rule": "block_same_general_name_v1",
+      "duplicate_name_blocked": false,
+      "owner_type": "ai",
+      "ai_player_id": "ai_player_jiangdong_staff",
+      "faction_id": "ai_jiangdong",
+      "aiPlayerName": "江东参谋AI"
+    },
+    {
+      "id": "team_04",
+      "name": "第四队",
+      "title": "西凉铁骑",
+      "status": "行军",
+      "location": "九原要塞",
+      "power": 20110,
+      "soldiers_current": 2470,
+      "soldiers_max": 3600,
+      "morale": "途中",
+      "slots": [
+        {
+          "slot": "camp",
+          "label": "大营",
+          "general_name": "马超",
+          "level": 37,
+          "troop_type": "骑兵",
+          "soldiers_current": 870,
+          "soldiers_max": 1200,
+          "portrait_asset_key": "formal_pack.portrait.ma_chao_mature_xiliang_retreat_v1",
+          "asset_ref": {
+            "assetKind": "hero_portrait",
+            "portraitAssetKey": "formal_pack.portrait.ma_chao_mature_xiliang_retreat_v1",
+            "displayStrategy": {
+              "fit": "contained_safe",
+              "stageAspect": "4:5",
+              "safeMargin": "portrait_safe_margin_medium",
+              "assetSource": "locked_preview_or_display_preview"
+            }
+          },
+          "unit_asset_ref": {
+            "kind": "unit_frame_manifest_frame",
+            "path": "res://assets/themes/slgclient/current/units/qibing_frames/r_07_map_qibing_0_7.png",
+            "manifest": "res://assets/themes/slgclient/manifests/unit_frames_manifest.json",
+            "direction": "r",
+            "sequence": 7
+          },
+          "recruit_step": 200,
+          "can_recruit": true
+        },
+        {
+          "slot": "mid",
+          "label": "中军",
+          "general_name": "吕布",
+          "level": 36,
+          "troop_type": "骑兵",
+          "soldiers_current": 810,
+          "soldiers_max": 1200,
+          "portrait_asset_key": "formal_pack.portrait.lu_bu_mature_wenhou_v1",
+          "asset_ref": {
+            "assetKind": "hero_portrait",
+            "portraitAssetKey": "formal_pack.portrait.lu_bu_mature_wenhou_v1",
+            "displayStrategy": {
+              "fit": "contained_safe",
+              "stageAspect": "4:5",
+              "safeMargin": "portrait_safe_margin_medium",
+              "assetSource": "locked_preview_or_display_preview"
+            }
+          },
+          "unit_asset_ref": {
+            "kind": "unit_frame_manifest_frame",
+            "path": "res://assets/themes/slgclient/current/units/qibing_frames/r_07_map_qibing_0_7.png",
+            "manifest": "res://assets/themes/slgclient/manifests/unit_frames_manifest.json",
+            "direction": "r",
+            "sequence": 7
+          },
+          "recruit_step": 200,
+          "can_recruit": true
+        },
+        {
+          "slot": "front",
+          "label": "前锋",
+          "general_name": "赵云",
+          "level": 35,
+          "troop_type": "枪兵",
+          "soldiers_current": 790,
+          "soldiers_max": 1200,
+          "portrait_asset_key": "formal_pack.portrait.zhao_yun_youth_changban_rescue_v1",
+          "asset_ref": {
+            "assetKind": "hero_portrait",
+            "portraitAssetKey": "formal_pack.portrait.zhao_yun_youth_changban_rescue_v1",
+            "displayStrategy": {
+              "fit": "contained_safe",
+              "stageAspect": "4:5",
+              "safeMargin": "portrait_safe_margin_medium",
+              "assetSource": "locked_preview_or_display_preview"
+            }
+          },
+          "unit_asset_ref": {
+            "kind": "unit_frame_manifest_frame",
+            "path": "res://assets/themes/slgclient/current/units/infantry_ai_frames/r_07_infantry_ai_sheet_v1.png",
+            "manifest": "res://assets/themes/slgclient/manifests/unit_frames_manifest.json",
+            "direction": "r",
+            "sequence": 7
+          },
+          "recruit_step": 200,
+          "can_recruit": true
+        }
+      ],
+      "siege": 96,
+      "speed": 83,
+      "bonus_summary": "兵种协同 +8%\n前锋压制 +5%",
+      "duplicate_name_rule": "block_same_general_name_v1",
+      "duplicate_name_blocked": false
+    },
+    {
+      "id": "team_05",
+      "name": "第五队",
+      "title": "谋臣护军",
+      "status": "疲劳",
+      "location": "城门",
+      "power": 9820,
+      "soldiers_current": 920,
+      "soldiers_max": 2400,
+      "morale": "需休整",
+      "slots": [
+        {
+          "slot": "camp",
+          "label": "大营",
+          "general_name": "司马懿",
+          "level": 28,
+          "troop_type": "谋略",
+          "soldiers_current": 350,
+          "soldiers_max": 800,
+          "portrait_asset_key": "formal_pack.portrait.sima_yi_fate_gaopingling_v1",
+          "asset_ref": {
+            "assetKind": "hero_portrait",
+            "portraitAssetKey": "formal_pack.portrait.sima_yi_fate_gaopingling_v1",
+            "displayStrategy": {
+              "fit": "contained_safe",
+              "stageAspect": "4:5",
+              "safeMargin": "portrait_safe_margin_medium",
+              "assetSource": "locked_preview_or_display_preview"
+            }
+          },
+          "unit_asset_ref": {
+            "kind": "unit_frame_manifest_frame",
+            "path": "res://assets/themes/slgclient/current/units/archer_ai_frames/r_07_archer_ai_sheet_v1.png",
+            "manifest": "res://assets/themes/slgclient/manifests/unit_frames_manifest.json",
+            "direction": "r",
+            "sequence": 7
+          },
+          "recruit_step": 200,
+          "can_recruit": true
+        },
+        {
+          "slot": "mid",
+          "label": "中军",
+          "general_name": "郭嘉",
+          "level": 27,
+          "troop_type": "谋略",
+          "soldiers_current": 300,
+          "soldiers_max": 800,
+          "portrait_asset_key": "formal_pack.portrait.guo_jia_mature_fate_liaodong_v1",
+          "asset_ref": {
+            "assetKind": "hero_portrait",
+            "portraitAssetKey": "formal_pack.portrait.guo_jia_mature_fate_liaodong_v1",
+            "displayStrategy": {
+              "fit": "contained_safe",
+              "stageAspect": "4:5",
+              "safeMargin": "portrait_safe_margin_medium",
+              "assetSource": "locked_preview_or_display_preview"
+            }
+          },
+          "unit_asset_ref": {
+            "kind": "unit_frame_manifest_frame",
+            "path": "res://assets/themes/slgclient/current/units/archer_ai_frames/r_07_archer_ai_sheet_v1.png",
+            "manifest": "res://assets/themes/slgclient/manifests/unit_frames_manifest.json",
+            "direction": "r",
+            "sequence": 7
+          },
+          "recruit_step": 200,
+          "can_recruit": true
+        },
+        {
+          "slot": "front",
+          "label": "前锋",
+          "general_name": "荀彧",
+          "level": 26,
+          "troop_type": "谋略",
+          "soldiers_current": 270,
+          "soldiers_max": 800,
+          "portrait_asset_key": "formal_pack.portrait.xun_yu_youth_wangzuo_v1",
+          "asset_ref": {
+            "assetKind": "hero_portrait",
+            "portraitAssetKey": "formal_pack.portrait.xun_yu_youth_wangzuo_v1",
+            "displayStrategy": {
+              "fit": "contained_safe",
+              "stageAspect": "4:5",
+              "safeMargin": "portrait_safe_margin_medium",
+              "assetSource": "locked_preview_or_display_preview"
+            }
+          },
+          "unit_asset_ref": {
+            "kind": "unit_frame_manifest_frame",
+            "path": "res://assets/themes/slgclient/current/units/archer_ai_frames/r_07_archer_ai_sheet_v1.png",
+            "manifest": "res://assets/themes/slgclient/manifests/unit_frames_manifest.json",
+            "direction": "r",
+            "sequence": 7
+          },
+          "recruit_step": 200,
+          "can_recruit": true
+        }
+      ],
+      "siege": 104,
+      "speed": 88,
+      "bonus_summary": "兵种协同 +8%\n前锋压制 +5%",
+      "duplicate_name_rule": "block_same_general_name_v1",
+      "duplicate_name_blocked": false
+    }
+  ],
+  "commercial_layout_version": "drill_ground_fullscreen_reused_hero_cards_manifest_unit_frames_v8",
+  "detail_layout_token": "fullscreen_scene_background_three_hero_cards_units_under_cards_2x1_v8",
+  "scene_background_path": "res://assets/themes/slgclient/current/ui/drill_ground/drill_ground_empty_yard_bg_v2_2x1.png",
+  "unit_preview_asset_source": "unit_frames_manifest_v2_visual_types_direction_r_sequence_07",
+  "unit_frames_manifest_path": "res://assets/themes/slgclient/manifests/unit_frames_manifest.json"
+}

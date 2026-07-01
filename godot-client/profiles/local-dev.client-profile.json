@@ -1,0 +1,23 @@
+{
+  "profileId": "local-dev",
+  "profileLabel": "Local Development",
+  "apiBaseUrl": "http://127.0.0.1:8787",
+  "assetManifestUrl": "http://127.0.0.1:8787/assets/client-manifest.json",
+  "minimumServerBuild": "2026.06.16-stage791",
+  "clientBuildChannel": "dev",
+  "capabilities": {
+    "playerHistory": true,
+    "saveLoadList": true,
+    "aiActivitySummary": true,
+    "inbox": true,
+    "nationReadModels": true
+  },
+  "cachePolicy": {
+    "readModels": "read_through_presentation_cache",
+    "offlineAuthority": false
+  },
+  "timeoutsMs": {
+    "read": 10000,
+    "write": 15000
+  }
+}

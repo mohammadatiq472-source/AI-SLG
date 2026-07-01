@@ -1,0 +1,157 @@
+{
+  "schemaVersion": "sea_overseas_naval_unit_frames_manifest_v1",
+  "contractId": "sea_overseas_naval_battle_report_and_unit_frame_w13",
+  "status": "frame_batch_ready_pending_runtime_adapter",
+  "updatedAt": "2026-06-07",
+  "scope": "W13 naval battle-report reuse policy and naval moving-body frame batch asset preparation",
+  "sourceAuthority": {
+    "w6RouteId": "east_han_coastal_dock_to_wa_contact",
+    "sourceDockId": "east_han_coastal_dock_quanzhou",
+    "overseasContactId": "wa_contact_scoutable",
+    "w8Action": "seaPatrolScout",
+    "w9Fixture": "world_sea_patrol_report_fixture"
+  },
+  "battleReportReusePolicy": {
+    "reuseExistingBattleReportSurface": true,
+    "noSeparateNavalBattleReportPage": true,
+    "requiredExistingSurface": "battle_report_panel/list/detail",
+    "listMarkerChipId": "maritime_report_result_chip_v1",
+    "detailResultChipId": "maritime_report_result_chip_v1",
+    "listMarkerTarget": "battle_report_list_item_badge",
+    "detailChipTarget": "BattleReportMaritimeResultChip",
+    "notes": [
+      "Naval results should enter the same battle report list and detail hierarchy as land combat.",
+      "The list layer should add a maritime marker/icon; it should not create a separate naval-report page.",
+      "W9 already proves the detail result chip path; the list marker remains a next UI enhancement."
+    ]
+  },
+  "movingBodyFramePolicy": {
+    "frameContract": "naval_moving_body_frame_batch_v1",
+    "directionCount": 8,
+    "framesPerDirection": 10,
+    "requiredFrameCountPerBody": 80,
+    "directions": ["r", "rd", "d", "ld", "l", "lu", "u", "ru"],
+    "animationMode": "manifest_direction_8x10_subtle_bob_highlight_water_shadow_cycle_v1",
+    "targetNamespace": "res://assets/themes/slgclient/current/units/naval/",
+    "connectionStatus": "brief_only_not_connected_to_runtime_unit_marker",
+    "integrationBoundary": "Do not inject naval frames into the existing land unit frame manifest until a dedicated runtime adapter and generated 80-frame batch both exist."
+  },
+  "requiredMovingBodies": [
+    {
+      "slotId": "naval_light_patrol_warship_v1",
+      "label": "轻巡战船",
+      "role": "fast_low_cost_single_team_scout",
+      "assetStatus": "pending_runtime_adapter",
+      "carriedUnitCapacity": 1,
+      "combatBonusPercent": 0,
+      "speedTier": "fast",
+      "buildCostTier": "low",
+      "visualScaleTier": "small",
+      "directionCount": 8,
+      "framesPerDirection": 10,
+      "requiredFrameCount": 80,
+      "directions": ["r", "rd", "d", "ld", "l", "lu", "u", "ru"],
+      "frameSizePx": {
+        "width": 128,
+        "height": 128
+      },
+      "generatedFrameCount": 80,
+      "generatedAt": "2026-06-07",
+      "sourceMode": "built_in_imagegen_source_sheet_local_background_removal",
+      "sourceSheetPath": "res://assets/themes/slgclient/current/units/naval/source_sheets/naval_light_patrol_warship_v1_builtin_source_sheet.png",
+      "generatorEntrypoint": "scripts\\run_python.cmd godot-client\\tools\\generate_sea_overseas_naval_warship_frame_assets.py",
+      "targetRoot": "res://assets/themes/slgclient/current/units/naval/light_patrol_warship_frames",
+      "frameNamingPattern": "{direction}_{frameIndex}_naval_light_patrol_warship_v1.png",
+      "spriteSheetTargetPath": "res://assets/themes/slgclient/current/units/naval/naval_light_patrol_warship_v1_sheet.png",
+      "prompt": "Top-down isometric late Han light patrol warship moving body for horizontal mobile SLG map, smallest hull class, fast low-cost single-team scout feel, dark teal sail, warm wooden hull, compact readable silhouette, 8-direction sprite frame batch, transparent background, no readable text, no logo."
+    },
+    {
+      "slotId": "naval_interceptor_warship_v1",
+      "label": "拦截战船",
+      "role": "single_team_combat_bonus_interceptor",
+      "assetStatus": "pending_runtime_adapter",
+      "carriedUnitCapacity": 1,
+      "combatBonusPercent": 20,
+      "speedTier": "normal",
+      "buildCostTier": "medium",
+      "visualScaleTier": "medium",
+      "directionCount": 8,
+      "framesPerDirection": 10,
+      "requiredFrameCount": 80,
+      "directions": ["r", "rd", "d", "ld", "l", "lu", "u", "ru"],
+      "frameSizePx": {
+        "width": 128,
+        "height": 128
+      },
+      "generatedFrameCount": 80,
+      "generatedAt": "2026-06-07",
+      "sourceMode": "built_in_imagegen_source_sheet_local_background_removal",
+      "sourceSheetPath": "res://assets/themes/slgclient/current/units/naval/source_sheets/naval_interceptor_warship_v1_builtin_source_sheet.png",
+      "generatorEntrypoint": "scripts\\run_python.cmd godot-client\\tools\\generate_sea_overseas_naval_warship_frame_assets.py",
+      "targetRoot": "res://assets/themes/slgclient/current/units/naval/interceptor_warship_frames",
+      "frameNamingPattern": "{direction}_{frameIndex}_naval_interceptor_warship_v1.png",
+      "spriteSheetTargetPath": "res://assets/themes/slgclient/current/units/naval/naval_interceptor_warship_v1_sheet.png",
+      "prompt": "Top-down isometric late Han interceptor warship moving body for horizontal mobile SLG map, medium hull class, reinforced prow, combat-ready deck, single carried team with strong 20 percent battle bonus feel, dark teal and bronze accents, 8-direction sprite frame batch, transparent background, no readable text, no logo."
+    },
+    {
+      "slotId": "naval_transport_warship_v1",
+      "label": "运输战船",
+      "role": "large_three_team_transport_warship",
+      "assetStatus": "pending_runtime_adapter",
+      "carriedUnitCapacity": 3,
+      "combatBonusPercent": 0,
+      "speedTier": "slow",
+      "buildCostTier": "high",
+      "visualScaleTier": "large",
+      "directionCount": 8,
+      "framesPerDirection": 10,
+      "requiredFrameCount": 80,
+      "directions": ["r", "rd", "d", "ld", "l", "lu", "u", "ru"],
+      "frameSizePx": {
+        "width": 128,
+        "height": 128
+      },
+      "generatedFrameCount": 80,
+      "generatedAt": "2026-06-07",
+      "sourceMode": "built_in_imagegen_source_sheet_local_background_removal",
+      "sourceSheetPath": "res://assets/themes/slgclient/current/units/naval/source_sheets/naval_transport_warship_v1_builtin_source_sheet.png",
+      "generatorEntrypoint": "scripts\\run_python.cmd godot-client\\tools\\generate_sea_overseas_naval_warship_frame_assets.py",
+      "targetRoot": "res://assets/themes/slgclient/current/units/naval/transport_warship_frames",
+      "frameNamingPattern": "{direction}_{frameIndex}_naval_transport_warship_v1.png",
+      "spriteSheetTargetPath": "res://assets/themes/slgclient/current/units/naval/naval_transport_warship_v1_sheet.png",
+      "prompt": "Top-down isometric late Han transport warship moving body for horizontal mobile SLG map, largest hull class, carries three teams, broader deck and troop transport silhouette, heavier and slower than patrol ships, 8-direction sprite frame batch, transparent background, no readable text, no logo."
+    }
+  ],
+  "firstPlayableNavalCombatSlice": {
+    "sliceId": "sea_patrol_intercept_battle_report_v1",
+    "reusesBattleReportSurface": true,
+    "minimumLoop": [
+      "openSeaRoute",
+      "seaPatrolScout",
+      "seaPatrolIntercept",
+      "battle_report_maritime_result_chip_v1"
+    ],
+    "requiredContracts": [
+      "world_sea_patrol_intercept_authority_contract",
+      "godot_battle_report_maritime_reuse_contract",
+      "godot_sea_overseas_naval_vessel_type_manifest_contract",
+      "godot_naval_moving_body_frame_manifest_contract"
+    ],
+    "notInScope": [
+      "full fleet inventory",
+      "full naval combat tactics",
+      "free ocean traversal",
+      "full Japan conquest",
+      "full India conquest",
+      "full Southeast Asia conquest",
+      "full overseas conquest"
+    ]
+  },
+  "hardBoundaries": {
+    "doesNotImplementFullNavalCombat": true,
+    "doesNotImplementFleetInventory": true,
+    "doesNotImplementFullOverseasConquest": true,
+    "doesNotModifyLandUnitFrameManifest": true,
+    "doesNotModifyPausedCavalryImagegenLane": true
+  }
+}

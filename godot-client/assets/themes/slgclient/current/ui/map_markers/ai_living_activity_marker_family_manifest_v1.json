@@ -1,0 +1,65 @@
+{
+  "schemaVersion": "slgclient_ai_living_activity_marker_family_manifest_v1",
+  "contractId": "ai_living_activity_marker_family_v1",
+  "styleDirection": "ai_player_living_world_tactical_beacon_family",
+  "assets": {
+    "mainWorldFrame": {
+      "role": "ai_activity_main_world_marker_frame",
+      "path": "res://assets/themes/slgclient/current/ui/map_markers/ai_living_activity_main_world_marker_frame_v1.png",
+      "sizePx": [
+        96,
+        96
+      ],
+      "safeAvatarPx": [
+        27,
+        27,
+        69,
+        69
+      ]
+    },
+    "mainWorldRouteArrow": {
+      "role": "ai_activity_main_world_route_arrow",
+      "path": "res://assets/themes/slgclient/current/ui/map_markers/ai_living_activity_main_world_route_arrow_v1.png",
+      "sizePx": [
+        72,
+        24
+      ],
+      "safeDrawPx": [
+        5,
+        3,
+        69,
+        21
+      ]
+    },
+    "mainWorldClusterBadge": {
+      "role": "ai_activity_main_world_cluster_badge",
+      "path": "res://assets/themes/slgclient/current/ui/map_markers/ai_living_activity_main_world_cluster_badge_v1.png",
+      "sizePx": [
+        42,
+        30
+      ],
+      "safeNumberPx": [
+        13,
+        7,
+        29,
+        23
+      ]
+    },
+    "tianxiaHotspotBeacon": {
+      "role": "ai_activity_tianxia_hotspot_beacon",
+      "path": "res://assets/themes/slgclient/current/ui/map_markers/tianxia_yutu_ai_hotspot_beacon_v1.png",
+      "sizePx": [
+        64,
+        64
+      ]
+    },
+    "tianxiaHotspotLabelPlate": {
+      "role": "ai_activity_tianxia_hotspot_label_plate",
+      "path": "res://assets/themes/slgclient/current/ui/map_markers/tianxia_yutu_ai_hotspot_label_plate_v1.png",
+      "sizePx": [
+        192,
+        42
+      ]
+    }
+  }
+}

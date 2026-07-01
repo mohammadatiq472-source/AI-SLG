@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "theme": "slgclient",
+  "manifestId": "world_event_marker_manifest_v1",
+  "importedAt": "2026-06-19T00:00:00+08:00",
+  "authority": {
+    "lane": "main_world_tianxia_yutu_art",
+    "owner": "SlgUiComponentFactory + AI living activity marker lane",
+    "status": "asset_ready_and_renderer_wired",
+    "scope": [
+      "event_marker",
+      "goal_marker",
+      "selection_halo"
+    ],
+    "playerVisibleCopyRule": "Markers may reinforce battle, event, and target states, but all labels remain live short Chinese UI copy."
+  },
+  "source": {
+    "reuseFirst": [
+      "res://assets/themes/slgclient/current/ui/map_markers/ai_living_activity_main_world_marker_frame_v1.png",
+      "res://assets/themes/slgclient/current/overlays/frames/flag_red_1.png",
+      "res://assets/themes/slgclient/current/overlays/frames/flag_yellow_1.png",
+      "res://assets/themes/slgclient/current/overlays/frames/flag_green_1.png"
+    ],
+    "policy": "Reuse current overlay and map marker families; add semantic grouping without generating new heavy sprites."
+  },
+  "markerFamilies": {
+    "battle_hot": {
+      "frameTexturePath": "res://assets/themes/slgclient/current/ui/map_markers/ai_living_activity_main_world_marker_frame_v1.png",
+      "accentColor": "#B63A32",
+      "badgeTexturePath": "res://assets/themes/slgclient/current/overlays/frames/flag_red_1.png",
+      "priority": 100
+    },
+    "objective": {
+      "frameTexturePath": "res://assets/themes/slgclient/current/ui/map_markers/ai_living_activity_main_world_marker_frame_v1.png",
+      "accentColor": "#D3A84A",
+      "badgeTexturePath": "res://assets/themes/slgclient/current/overlays/frames/flag_yellow_1.png",
+      "priority": 80
+    },
+    "support": {
+      "frameTexturePath": "res://assets/themes/slgclient/current/ui/map_markers/ai_living_activity_main_world_marker_frame_v1.png",
+      "accentColor": "#5A8F68",
+      "badgeTexturePath": "res://assets/themes/slgclient/current/overlays/frames/flag_green_1.png",
+      "priority": 60
+    }
+  },
+  "selectionStates": {
+    "hover": {
+      "haloColor": "#F3E3A1CC",
+      "ringWidthPx": 6,
+      "radiusPx": 34,
+      "pulseToken": "mainline_ui_motion_system_v1"
+    },
+    "selected": {
+      "haloColor": "#F3E3A1DD",
+      "ringWidthPx": 9,
+      "radiusPx": 46,
+      "pulseToken": "stage_a_shared_motion_feedback_chain_v1"
+    },
+    "disabled": {
+      "haloColor": "#7C6B4E88",
+      "ringWidthPx": 3,
+      "radiusPx": 24,
+      "pulseToken": "none"
+    }
+  },
+  "zoomSemantics": {
+    "overview": {
+      "show": [
+        "battle_hot",
+        "objective"
+      ]
+    },
+    "region": {
+      "show": [
+        "battle_hot",
+        "objective",
+        "support"
+      ]
+    },
+    "local": {
+      "show": [
+        "battle_hot",
+        "objective",
+        "support",
+        "hover",
+        "selected"
+      ]
+    }
+  }
+}

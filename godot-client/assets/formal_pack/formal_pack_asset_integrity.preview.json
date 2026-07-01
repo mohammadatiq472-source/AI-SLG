@@ -1,0 +1,605 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-04-30T00:56:13Z",
+  "generatedFor": "Formal Pack asset handoff drift/integrity verification",
+  "sourceLookup": "godot-client/assets/formal_pack/formal_pack_asset_runtime_lookup.preview.json",
+  "sourceIndex": "godot-client/assets/formal_pack/formal_pack_asset_handoff_index.preview.json",
+  "summary": {
+    "fileCount": 84,
+    "imageCount": 69,
+    "textCount": 15,
+    "missingCount": 0,
+    "badUtf8MarkerCount": 0
+  },
+  "files": [
+    {
+      "path": "docs/FORMAL_PACK_ASSET_HANDOFF_2026_04_30.md",
+      "bytes": 14345,
+      "sha256": "1391d185e36e9b17b716411d4d54f80114894f9b8214532d1a1a93f9e0c1b39f",
+      "utf8Chars": 14157,
+      "badUtf8Marker": false
+    },
+    {
+      "path": "godot-client/assets/formal_pack/formal_pack_asset_acceptance_report.preview.json",
+      "bytes": 20295,
+      "sha256": "bec4243d50fa3d549ac4f474ff8188ac16d53006d56efb2ae2287a3c2d107a96",
+      "utf8Chars": 19858,
+      "badUtf8Marker": false
+    },
+    {
+      "path": "godot-client/assets/formal_pack/formal_pack_asset_handoff_index.preview.json",
+      "bytes": 44406,
+      "sha256": "b25a7dc97f54eaad9635e4fc211fe3d1fe373d2c3b2b485e27270a894e0defc9",
+      "utf8Chars": 43519,
+      "badUtf8Marker": false
+    },
+    {
+      "path": "godot-client/assets/formal_pack/formal_pack_asset_integrity.preview.json",
+      "bytes": 23217,
+      "sha256": "65e4829c91487d2902e3f472435cb55a80e495ae99e40084af8bd0145d8c5e5f",
+      "utf8Chars": 22633,
+      "badUtf8Marker": false
+    },
+    {
+      "path": "godot-client/assets/formal_pack/formal_pack_asset_runtime_lookup.preview.json",
+      "bytes": 30961,
+      "sha256": "70c0f052236392376478508c3f5695a92076fd2d9adc6673e05c0ff9456ec759",
+      "utf8Chars": 30357,
+      "badUtf8Marker": false
+    },
+    {
+      "path": "godot-client/assets/formal_pack/formal_pack_window8b_quickstart.preview.md",
+      "bytes": 8095,
+      "sha256": "be293264882361d53645f5e05f7ca4ba368e82c83f4f340c8d98e1ca72147bc6",
+      "utf8Chars": 7987,
+      "badUtf8Marker": false
+    },
+    {
+      "path": "godot-client/assets/formal_pack/formal_pack_window8b_sample_payload.preview.json",
+      "bytes": 42001,
+      "sha256": "db536927ba4c1497dd4ccb6716aa6c8f9dfcc1cd5b923c30bbcba4e7d6f79b5e",
+      "utf8Chars": 40941,
+      "badUtf8Marker": false
+    },
+    {
+      "path": "godot-client/assets/formal_pack/hero_portrait_crop_audit.preview.json",
+      "bytes": 16206,
+      "sha256": "a61d06c450ee716f73b58e68656adee2f3e27d03f30903d354ff9eb9fed5e10f",
+      "utf8Chars": 15734,
+      "badUtf8Marker": false
+    },
+    {
+      "path": "godot-client/assets/formal_pack/hero_portrait_crop_review.preview.json",
+      "bytes": 24612,
+      "sha256": "c2f20f96631bc8d7dc1a28bd1bddff3292075d2184afa86b317df96294eb75a2",
+      "utf8Chars": 23924,
+      "badUtf8Marker": false
+    },
+    {
+      "path": "godot-client/assets/formal_pack/hero_portrait_filter_manifest.preview.json",
+      "bytes": 13304,
+      "sha256": "04d47c32d34eefd3ffbcd4178023016bbb7b64c97456dda2df1967235e861202",
+      "utf8Chars": 13025,
+      "badUtf8Marker": false
+    },
+    {
+      "path": "godot-client/assets/formal_pack/hero_portrait_manifest.preview.json",
+      "bytes": 55093,
+      "sha256": "8bd5f6e3fde437f2c225d9b717d6543d05a2a720f0de633e939c951422c9196b",
+      "utf8Chars": 53915,
+      "badUtf8Marker": false
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/cai_wenji_fate_frontier_qin_v1_card.png",
+      "bytes": 652622,
+      "sha256": "fde5fa152e4693716d1337e9652027df3db26190a39d8a4b0aa7c0e244c95a25",
+      "width": 512,
+      "height": 704
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/cao_cao_fate_v1_card.png",
+      "bytes": 583714,
+      "sha256": "115d44e3eab4a067dff539051f89beb02fd092643b58359278ddc6af8205eddd",
+      "width": 512,
+      "height": 704
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/cao_pi_mature_shanrang_v1_card.png",
+      "bytes": 593053,
+      "sha256": "cf38cd8210b2f369429576e8c670c1f4dc46cec9b61924157b3b1078dc1fc414",
+      "width": 512,
+      "height": 704
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/dian_wei_mature_huzhu_v1_card.png",
+      "bytes": 595197,
+      "sha256": "5176c299cdcd4d0e1eddd73b3217ce884d68d40e20701634a5b67f89bc41f220",
+      "width": 512,
+      "height": 704
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/dong_zhuo_early_xiliang_campaign_v1_card.png",
+      "bytes": 596806,
+      "sha256": "b818c278ab475243e652eb6f7a5e3b955701ff4d23ad47960beb85c6e39b6414",
+      "width": 512,
+      "height": 704
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/gan_ning_mature_jinfan_raid_v1_card.png",
+      "bytes": 576656,
+      "sha256": "4812988affd2128bae7083de775bf8f0824880ae24f3b334158d103e5e4d7f5a",
+      "width": 512,
+      "height": 704
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/guan_yu_mature_mounted_jingzhou_v1_card.png",
+      "bytes": 637926,
+      "sha256": "0b4c2b95853d73095272c9aec9691f884fa6a3432fd6a2dd074e0e04897642de",
+      "width": 512,
+      "height": 704
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/guo_jia_mature_fate_liaodong_v1_card.png",
+      "bytes": 517934,
+      "sha256": "fecb854250b86def0dba753b329fe5b2c1eee48b4fbc462a8a41c3a42224d979",
+      "width": 512,
+      "height": 704
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/han_xiandi_disempowered_v1_card.png",
+      "bytes": 559931,
+      "sha256": "f4823f188e25089aca05d47429056092fbff47082b8a1277ecbb3cdaee1c2c85",
+      "width": 512,
+      "height": 704
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/jia_xu_mature_duoshi_v1_card.png",
+      "bytes": 535893,
+      "sha256": "87e735ef712d051a2942645f1b6d7336b45c070dc9d495f4902f89328f7ff730",
+      "width": 512,
+      "height": 704
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/liu_bei_mature_hanzhong_sworddance_face_smile_v2_card.png",
+      "bytes": 665147,
+      "sha256": "26929d1894d654860a9298ceaf24128d89ce8971a20b64965a14c6c9cbbeee82",
+      "width": 512,
+      "height": 704
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/lu_bu_mature_wenhou_v1_card.png",
+      "bytes": 671036,
+      "sha256": "4e8a80f28bfa3617f6a5e91906adf672a3a4e615dc99ce986d090dd6f0b65c59",
+      "width": 512,
+      "height": 704
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/ma_chao_mature_xiliang_retreat_v1_card.png",
+      "bytes": 731002,
+      "sha256": "5fb6711b084527ce46155e3bd36cf6acc25d53fdf129bf9d29ec49bdcc24de4b",
+      "width": 512,
+      "height": 704
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/postprocessed/cai_wenji_fate_frontier_qin_v1_card_film_matte_v1.png",
+      "bytes": 666861,
+      "sha256": "91d5c2d433074381e28f4446e09061814b8090ac960a003720818b1805324763",
+      "width": 512,
+      "height": 704
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/postprocessed/cao_cao_fate_v1_card_film_matte_v1.png",
+      "bytes": 624581,
+      "sha256": "0794496009abe6957e73904aefb7ffca7504547a04d60ec7d0c269da6ff78e96",
+      "width": 512,
+      "height": 704
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/postprocessed/cao_pi_mature_shanrang_v1_card_film_matte_v1.png",
+      "bytes": 638002,
+      "sha256": "7083a7d58d0f43652255e4365478010106be89e8f2532fba734b89c3d21a17d4",
+      "width": 512,
+      "height": 704
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/postprocessed/dian_wei_mature_huzhu_v1_card_film_matte_v1.png",
+      "bytes": 627550,
+      "sha256": "fc2bd06cd561b6b38ab43c557c7d41e13c4859c5560e3fa64f3a4b5cba7485eb",
+      "width": 512,
+      "height": 704
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/postprocessed/dong_zhuo_early_xiliang_campaign_v1_card_film_matte_v1.png",
+      "bytes": 631399,
+      "sha256": "da7ed12abf490f9ea69631ade9d97aaae2059d5d016055e9a0b89b5091c4df73",
+      "width": 512,
+      "height": 704
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/postprocessed/gan_ning_mature_jinfan_raid_v1_card_film_matte_v1.png",
+      "bytes": 619394,
+      "sha256": "c33ea9796a6a87e23077568e6c79a491d100e76734e992c7ef5f8a4ccba17b23",
+      "width": 512,
+      "height": 704
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/postprocessed/guan_yu_mature_mounted_jingzhou_v1_card_film_matte_v1.png",
+      "bytes": 661061,
+      "sha256": "4d3dfc6d032f476a4b53ea464ee8eabe4b2c25c7af503c0027565cb74ae56bd6",
+      "width": 512,
+      "height": 704
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/postprocessed/guo_jia_mature_fate_liaodong_v1_card_film_matte_v1.png",
+      "bytes": 565731,
+      "sha256": "39f179b8dc34e8f201056706cfbc68c027fcfccf724608a41eb9ed9def58151e",
+      "width": 512,
+      "height": 704
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/postprocessed/han_xiandi_disempowered_v1_card_film_matte_v1.png",
+      "bytes": 604785,
+      "sha256": "e3ffadd5cd7a4de24b8fe2600fab06d21bbf9e51c0a619b911a6e57a8baa350c",
+      "width": 512,
+      "height": 704
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/postprocessed/jia_xu_mature_duoshi_v1_card_film_matte_v1.png",
+      "bytes": 582627,
+      "sha256": "e964a186ddacca57b6ab265cdd4734db45896b7db8c1302ec9d8956e559dc4ac",
+      "width": 512,
+      "height": 704
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/postprocessed/liu_bei_mature_hanzhong_sworddance_face_smile_v2_card_film_matte_v1.png",
+      "bytes": 680213,
+      "sha256": "c562f5c4d5f1f347a91c24db523171ea07de843587df66b1248b035836c9aae2",
+      "width": 512,
+      "height": 704
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/postprocessed/lu_bu_mature_wenhou_v1_card_film_matte_v1.png",
+      "bytes": 696839,
+      "sha256": "4424c3cbe88c8c65d8c13157331b2a6dc7fce0d7c8c106ed74901ca558d5d2e3",
+      "width": 512,
+      "height": 704
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/postprocessed/ma_chao_mature_xiliang_retreat_v1_card_film_matte_v1.png",
+      "bytes": 734027,
+      "sha256": "66dfba85c72980cb0dae7ad7b3ef80479a8c3a80d250324405772565b2fb7623",
+      "width": 512,
+      "height": 704
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/postprocessed/sima_yi_fate_gaopingling_v1_card_film_matte_v1.png",
+      "bytes": 588073,
+      "sha256": "e0cc70004ea210024f69064a88a3a8d6b1118aadc52b163f3484aac866fc81eb",
+      "width": 512,
+      "height": 704
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/postprocessed/sun_ce_young_founder_v1_card_film_matte_v1.png",
+      "bytes": 698265,
+      "sha256": "bd9eeb2d65da1444098aae35976ee90a3a1c7aa2a3317c5f8be615125b5e0656",
+      "width": 512,
+      "height": 704
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/postprocessed/sun_quan_mature_successor_v1_card_film_matte_v1.png",
+      "bytes": 599663,
+      "sha256": "a12b6e1dbf157df6ae6ed822292736233afabcd9a34891c8cebb1bd0dc15ca7d",
+      "width": 512,
+      "height": 704
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/postprocessed/sun_quan_succession_entrustment_v1_card_film_matte_v1.png",
+      "bytes": 595304,
+      "sha256": "3c4198c62dc8c4bcabd1eadc4a2ccadca9ba2eb6de77c0d0bdf5dcba7dbbc27a",
+      "width": 512,
+      "height": 704
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/postprocessed/tai_shi_ci_mature_yishi_v1_card_film_matte_v1.png",
+      "bytes": 654263,
+      "sha256": "52a02a00f958da5b03468907b8a92926c6201e8abf0eaf2502901b7872ae30cd",
+      "width": 512,
+      "height": 704
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/postprocessed/xiahou_dun_mature_duyan_v1_card_film_matte_v1.png",
+      "bytes": 665126,
+      "sha256": "feeb33cdb8640c44c89b35e4c6d7906d6fef4797f484c2cffca631f0ad7b1413",
+      "width": 512,
+      "height": 704
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/postprocessed/xun_yu_youth_wangzuo_v1_card_film_matte_v1.png",
+      "bytes": 589222,
+      "sha256": "2ed2e0c95410f92a6241a34c07706b4f2ae1dafc36d9667cdd468856812d1452",
+      "width": 512,
+      "height": 704
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/postprocessed/yuan_shao_mature_coalition_oath_v1_card_film_matte_v1.png",
+      "bytes": 692813,
+      "sha256": "ebc184bba0eff9d1c1beae4c631fa35aeee079144c29b236261fd9e3fa41f844",
+      "width": 512,
+      "height": 704
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/postprocessed/zhang_fei_mature_baxi_v1_card_film_matte_v1.png",
+      "bytes": 683671,
+      "sha256": "a563c43d3ef953b73e2fbf413be89ff26f49beba4ea75b76e28fb5fcfaeda32b",
+      "width": 512,
+      "height": 704
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/postprocessed/zhang_liao_mature_hefei_v1_card_film_matte_v1.png",
+      "bytes": 607231,
+      "sha256": "5940a878e72860d7ed3e032bdbd1da425725cfe6e92ba297243e7891727c94d3",
+      "width": 512,
+      "height": 704
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/postprocessed/zhao_yun_youth_changban_rescue_v1_card_film_matte_v1.png",
+      "bytes": 757834,
+      "sha256": "ba6f1c10fea3920b79720d11405f5fd7e8f4f416f91d26212c4a80fb06c127b5",
+      "width": 512,
+      "height": 704
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/postprocessed/zhou_tai_mature_victory_shout_v1_card_film_matte_v1.png",
+      "bytes": 632945,
+      "sha256": "46d6c6b3bb920d9fceaaab58bd99ac3d8149a95ac9bf8983532176d5c1b2478d",
+      "width": 512,
+      "height": 704
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/postprocessed/zhou_yu_mature_chibi_v1_card_film_matte_v1.png",
+      "bytes": 644702,
+      "sha256": "82e69517dbdf993db58f586d1cf529876ceacccc668799d9deaba75f24b560a4",
+      "width": 512,
+      "height": 704
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/postprocessed/zhuge_liang_mature_beifa_v1_card_film_matte_v1.png",
+      "bytes": 618716,
+      "sha256": "8db87e575cfbe1c6107a6b49443e152f448e759e5ba22ae2a79c331c9311595a",
+      "width": 512,
+      "height": 704
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/sima_yi_fate_gaopingling_v1_card.png",
+      "bytes": 540673,
+      "sha256": "ad40b58887c35f5861a61f103b2fc802ceef885fbe8373caabcfb6203978db58",
+      "width": 512,
+      "height": 704
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/sun_ce_young_founder_v1_card.png",
+      "bytes": 680722,
+      "sha256": "69213e005cd4045273192940b2d20c2bb0787a2fe1203e1094af90893fe40580",
+      "width": 512,
+      "height": 704
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/sun_quan_mature_successor_v1_card.png",
+      "bytes": 559183,
+      "sha256": "fc07d01030c119ba767c507f6edaa3075de84c0e8face8f989fc47afc4cf5009",
+      "width": 512,
+      "height": 704
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/sun_quan_succession_entrustment_v1_card.png",
+      "bytes": 549497,
+      "sha256": "89b20040b7f1e37ebf6bc8a1b30fcc84ab1c4757cb5af07c59a9671663b6a766",
+      "width": 512,
+      "height": 704
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/tai_shi_ci_mature_yishi_v1_card.png",
+      "bytes": 629145,
+      "sha256": "d1cfaa4510b27df43451d1c6f48c5b47117d3cc457aea89a8af872decc2156e0",
+      "width": 512,
+      "height": 704
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/xiahou_dun_mature_duyan_v1_card.png",
+      "bytes": 630336,
+      "sha256": "2f9eec62421d6e7a2bf81b1e6cd9d20cd46a2070fe011dfbced7143b03042dfb",
+      "width": 512,
+      "height": 704
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/xun_yu_youth_wangzuo_v1_card.png",
+      "bytes": 547340,
+      "sha256": "b44ddc93faa6ca019e2825f5d7911f8fd390c3f5fab273ddf0e3379feada4209",
+      "width": 512,
+      "height": 704
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/yuan_shao_mature_coalition_oath_v1_card.png",
+      "bytes": 665302,
+      "sha256": "d200d2c7c1414fbb5091b529bf4623b2d295368179ca1e996a6e9961e8033c09",
+      "width": 512,
+      "height": 704
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/zhang_fei_mature_baxi_v1_card.png",
+      "bytes": 666731,
+      "sha256": "29148ae8ec9b505a799876f9a71b18c85abeb696edf910af87990c09def8bc08",
+      "width": 512,
+      "height": 704
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/zhang_liao_mature_hefei_v1_card.png",
+      "bytes": 580873,
+      "sha256": "f134b7b17c2f2ed4a7adc923b8fec5ca23f0db81798fd31edb2dd56ceb55ccbe",
+      "width": 512,
+      "height": 704
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/zhao_yun_youth_changban_rescue_v1_card.png",
+      "bytes": 751475,
+      "sha256": "58e565cbbcf6e27210c42bc55710eb6f7af4847a9cdde5e539b32ebbb149f819",
+      "width": 512,
+      "height": 704
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/zhou_tai_mature_victory_shout_v1_card.png",
+      "bytes": 601274,
+      "sha256": "aeff4bc2bfdfd815d71fdc6846cc52f0e7629b9e090daac12a5579829aae33c7",
+      "width": 512,
+      "height": 704
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/zhou_yu_mature_chibi_v1_card.png",
+      "bytes": 630759,
+      "sha256": "6f2d27bf6c3a8ce200e0fc8979e0c15ed37dfaa98ee8492cc31cce5dc123fc2e",
+      "width": 512,
+      "height": 704
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/zhuge_liang_mature_beifa_v1_card.png",
+      "bytes": 572369,
+      "sha256": "3e2fa28e00243c3f01338b0bf341cf880d5c2d0fa7604ff22f083b02204f3325",
+      "width": 512,
+      "height": 704
+    },
+    {
+      "path": "godot-client/assets/formal_pack/recruit_pack_cover_filter_manifest.preview.json",
+      "bytes": 3296,
+      "sha256": "c3006c21f3f6f921b9c9e21267fef45b04e70e8342a641f62b02bccfd6c9eca2",
+      "utf8Chars": 3206,
+      "badUtf8Marker": false
+    },
+    {
+      "path": "godot-client/assets/formal_pack/recruit_pack_cover_manifest.preview.json",
+      "bytes": 16718,
+      "sha256": "66cb776d7a313ff34ebbc97b7875cbe083d367a84cc5530a3911c825f76e146d",
+      "utf8Chars": 16372,
+      "badUtf8Marker": false
+    },
+    {
+      "path": "godot-client/assets/formal_pack/recruit_packs/jiangdong_zhangu_cover.png",
+      "bytes": 2806526,
+      "sha256": "0cc62b238f8da31b05f371a43604d04d643eedd86e7cfbef620362fb32884244",
+      "width": 1023,
+      "height": 1537
+    },
+    {
+      "path": "godot-client/assets/formal_pack/recruit_packs/mouchen_yeyi_cover.png",
+      "bytes": 2496262,
+      "sha256": "6b9e6bd1db1f428df7164baa20431d37e103d6b43812dacec9d17053a50d99a7",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "path": "godot-client/assets/formal_pack/recruit_packs/postprocessed/jiangdong_zhangu_cover_film_matte_v1.png",
+      "bytes": 2846746,
+      "sha256": "bc1cdb9ddbb49ba7d27b9e874e547a30d30539cc070777b2ae02f3b5525c2e18",
+      "width": 1023,
+      "height": 1537
+    },
+    {
+      "path": "godot-client/assets/formal_pack/recruit_packs/postprocessed/mouchen_yeyi_cover_film_matte_v1.png",
+      "bytes": 2500800,
+      "sha256": "f0a96202442d0a069320fc47273b557c28a46378ec065f43c27b72677bdf0527",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "path": "godot-client/assets/formal_pack/recruit_packs/postprocessed/wangzuo_fengyan_cover_film_matte_v1.png",
+      "bytes": 2753252,
+      "sha256": "ff2be4ac03ec556e394d5ad651b6f8750387b5c3f585637d304d1256d342c2d0",
+      "width": 1023,
+      "height": 1537
+    },
+    {
+      "path": "godot-client/assets/formal_pack/recruit_packs/postprocessed/xiliang_tieqi_cover_film_matte_v1.png",
+      "bytes": 2864037,
+      "sha256": "fcb97940d742fbcb0ce894211cefc2c01add4396fe9285ee045a2b3144361971",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "path": "godot-client/assets/formal_pack/recruit_packs/wangzuo_fengyan_cover.png",
+      "bytes": 2679050,
+      "sha256": "586ea5789e8a521a7f5af35fd48b042e8b6a51669e56310e7d35a9f8f9960235",
+      "width": 1023,
+      "height": 1537
+    },
+    {
+      "path": "godot-client/assets/formal_pack/recruit_packs/xiliang_tieqi_cover.png",
+      "bytes": 3059264,
+      "sha256": "e48ab9c5cc10aba56504a52f0256401249e9232f05320df8416ae177e897fc16",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "path": "tmp/screenshots/formal_pack/assets_review/hero_portrait_contact_sheet.png",
+      "bytes": 1678311,
+      "sha256": "a2badfab85d2e660dbc5d671ef2896ed7b4fe659bbcbc010aa39a6a136fab622",
+      "width": 1238,
+      "height": 1112
+    },
+    {
+      "path": "tmp/screenshots/formal_pack/assets_review/hero_portrait_crop_compare_contact_sheet.png",
+      "bytes": 2433459,
+      "sha256": "63f60570819b102161117c98379716808a6d90bad57e6927c787cad292ca0522",
+      "width": 866,
+      "height": 2107
+    },
+    {
+      "path": "tmp/screenshots/formal_pack/assets_review/hero_portrait_filter_compare_contact_sheet.png",
+      "bytes": 2387265,
+      "sha256": "bd3ef2d35e7eeaf7376ca9f99b17b0738a8c875a680a064fb80ea9fd1688caca",
+      "width": 860,
+      "height": 2125
+    },
+    {
+      "path": "tmp/screenshots/formal_pack/assets_review/recruit_pack_cover_contact_sheet.png",
+      "bytes": 386777,
+      "sha256": "78e645c58b07dddd819f43729d2ea2a692967db0bcbdefe54720fe6cfdd6c4e5",
+      "width": 836,
+      "height": 376
+    },
+    {
+      "path": "tmp/screenshots/formal_pack/assets_review/recruit_pack_cover_filter_compare_contact_sheet.png",
+      "bytes": 522515,
+      "sha256": "8161190f917999fcdb091c67508a14848f61c464f1c6fbd3f0d0d45b07921f0a",
+      "width": 1300,
+      "height": 348
+    },
+    {
+      "path": "tmp/screenshots/formal_pack/assets_review/zhou_yu_crop_shift_before_after_2026_04_30.png",
+      "bytes": 360582,
+      "sha256": "bb746779ce9bed1b20ddb8425fb54a2ca5112847658bf3842b88092f3cd8cb84",
+      "width": 720,
+      "height": 470
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/postprocessed/formal_pack_card_portraits_postprocessed_handoff.preview.json",
+      "bytes": 18667,
+      "sha256": "854b4f212914c4705b3962fa49d04d43c05f80fad7fea515911b92a0fb159bf5",
+      "utf8Chars": 18324,
+      "badUtf8Marker": false
+    },
+    {
+      "path": "godot-client/assets/formal_pack/portraits/card/postprocessed/FORMAL_PACK_CARD_PORTRAITS_HANDOFF.preview.md",
+      "bytes": 5317,
+      "sha256": "dba6b3523126beb9d71676de1fe6d5a9e6cd39810b2d61533e75ba1d2647f416",
+      "utf8Chars": 5274,
+      "badUtf8Marker": false
+    },
+    {
+      "path": "tmp/screenshots/formal_pack/assets_review/zhou_yu_crop_shift_down2_before_after_2026_04_30.png",
+      "bytes": 359983,
+      "sha256": "a8189853101516cec03f0f844bee7bb217a6302a29067954b3b319faf2ca7ccf",
+      "width": 720,
+      "height": 470
+    }
+  ],
+  "notes": "Refreshed after Zhou Yu pass-2 card crop adjustment and postprocessed portrait handoff manifest creation."
+}

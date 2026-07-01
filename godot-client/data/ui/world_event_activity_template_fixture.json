@@ -1,0 +1,960 @@
+{
+  "season_label": "赛季 S1",
+  "season_phase": "立业月",
+  "template_scope": "正式二级页模板",
+  "activity_status": "精彩活动模板",
+  "world_affairs_status": "天下大势模板",
+  "task_status": "章节任务模板",
+  "faction_status_label": "势力状态模板",
+  "faction_status": {
+    "headline": "势力状态",
+    "subtitle": "复用主界面左下状态位语义。",
+    "state": "等待 territories[]，当前不接地图跳转。",
+    "summary_lines": [
+      "空数组只显示状态壳，不放静态领地或地图占位。",
+      "后续复用主界面左下角状态 UI 尺寸和按钮语义。"
+    ],
+    "data_contract": {
+      "source": "territories[]",
+      "empty_policy": "empty_shell",
+      "future_ui_reuse": "main_hud_bottom_left_status",
+      "no_static_samples": true,
+      "no_map_jump": true
+    },
+    "category_cards": [
+      {
+        "title": "领地",
+        "value": "动态载入",
+        "meta": "等待 territories[]",
+        "description": "有结果后再显示列表。",
+        "tone": "green"
+      },
+      {
+        "title": "沃土",
+        "value": "占领后显示",
+        "meta": "不放假样本",
+        "description": "资源地同样走动态结构。",
+        "tone": "gold"
+      },
+      {
+        "title": "城市",
+        "value": "摘要保留",
+        "meta": "不接详情页",
+        "description": "保留摘要，不补静态地块。",
+        "tone": "blue"
+      },
+      {
+        "title": "军事 / 建设",
+        "value": "后续接入",
+        "meta": "结构保留",
+        "description": "等真实数据域准备好再展开。",
+        "tone": "neutral"
+      }
+    ],
+    "state_semantics": [
+      {
+        "badge": "空",
+        "title": "空态",
+        "value": "暂无领地",
+        "meta": "列表为空时仍保留返回 / 关闭",
+        "description": "只展示无领地提示，不创建默认领地、不补写地图数据。",
+        "tone": "neutral"
+      },
+      {
+        "badge": "锁",
+        "title": "锁定态",
+        "value": "功能未开放",
+        "meta": "城市 / 军事 / 建设可禁用",
+        "description": "锁定只影响按钮可读状态，不接开放条件或后端 authority。",
+        "tone": "gold"
+      },
+      {
+        "badge": "建",
+        "title": "开发中态",
+        "value": "占位展示",
+        "meta": "后续玩法未完成",
+        "description": "开发中内容只保留模板说明，避免误导为已完成玩法。",
+        "tone": "blue"
+      }
+    ],
+    "territories": [],
+    "development_cards": [
+      {
+        "title": "城市",
+        "value": "主城",
+        "meta": "治理 / 仓储 / 市井",
+        "description": "城市状态只做摘要展示。",
+        "tone": "blue"
+      },
+      {
+        "title": "军事",
+        "value": "待整备",
+        "meta": "部队 / 征兵",
+        "description": "军事区块后续再接部队域。",
+        "tone": "gold"
+      },
+      {
+        "title": "建设",
+        "value": "开发中",
+        "meta": "城建 / 设施",
+        "description": "建设区块保留为模板。",
+        "tone": "neutral"
+      }
+    ]
+  },
+  "jade_currency_label": "玉符",
+  "resource_reward_label": "粮草 / 木材 / 石料 / 铁矿 / 铜钱",
+  "authority_binding": "未接后端 authority",
+  "entry_configs": {
+    "activities": {
+      "page_id": "activities",
+      "panel_title": "精彩活动",
+      "panel_subtitle": "活动卡模板",
+      "hide_tab_strip": true,
+      "entry_panel_ids": [
+        "activity"
+      ],
+      "asset_slots": [
+        "activity_login_reward",
+        "activity_inherit",
+        "activity_shop"
+      ],
+      "asset_contract": {
+        "contract_id": "world_event_activity_card_asset_roots_v1",
+        "allowed_roots": [
+          "res://data/ui/world_event_activity_asset_drop/"
+        ],
+        "recommended_size": {
+          "width": 1280,
+          "height": 720
+        },
+        "minimum_size": {
+          "width": 640,
+          "height": 360
+        },
+        "aspect_ratio": "16:9",
+        "layout_mode": "original_showcase",
+        "required_cover_mode": "asset_drop_cover",
+        "missing_asset_policy": "empty_slot_placeholder"
+      }
+    },
+    "world_affairs": {
+      "page_id": "world_affairs",
+      "panel_title": "天下大势",
+      "panel_subtitle": "赛季目标线模板",
+      "hide_tab_strip": true,
+      "entry_panel_ids": [
+        "event",
+        "world_event",
+        "world_affairs"
+      ],
+      "asset_slots": [
+        "world_affairs_scene",
+        "world_affairs_node_01",
+        "world_affairs_node_02",
+        "world_affairs_node_03",
+        "world_affairs_node_04",
+        "world_affairs_node_05",
+        "world_affairs_node_06",
+        "world_affairs_node_07",
+        "world_affairs_node_08",
+        "world_affairs_node_09",
+        "world_affairs_node_10"
+      ]
+    },
+    "tasks": {
+      "page_id": "tasks",
+      "panel_title": "任务",
+      "panel_subtitle": "章节任务模板",
+      "hide_tab_strip": true,
+      "entry_panel_ids": [
+        "tasks"
+      ],
+      "asset_slots": [
+        "task_chapter_scene"
+      ]
+    },
+    "faction_status": {
+      "page_id": "faction_status",
+      "panel_title": "势力状态",
+      "panel_subtitle": "领地动态模板",
+      "hide_tab_strip": true,
+      "entry_panel_ids": [
+        "faction_status"
+      ],
+      "asset_slots": []
+    }
+  },
+  "activities": {
+    "headline": "精彩活动",
+    "subtitle": "登录奖励、武将传承、外观商店。",
+    "state": "玉符为展示奖励，不写库存。",
+    "summary_lines": [
+      "三张主卡保留，其余占位。"
+    ],
+    "cards": [
+      {
+        "title": "登录奖励",
+        "image_path": "res://data/ui/world_event_activity_asset_drop/round_01/activity/activity_login_reward_cover.png",
+        "asset_slot": "activity_login_reward",
+        "cover_mode": "asset_drop_cover",
+        "value": "每日可领",
+        "meta": "登录",
+        "description": "每日登录领玉符。",
+        "status_label": "可领",
+        "tone": "gold",
+        "red_dot": true
+      },
+      {
+        "title": "武将传承",
+        "image_path": "res://data/ui/world_event_activity_asset_drop/round_01/activity/activity_inherit_cover.png",
+        "asset_slot": "activity_inherit",
+        "cover_mode": "asset_drop_cover",
+        "value": "传承入口",
+        "meta": "养成",
+        "description": "入口展示。",
+        "status_label": "进行",
+        "tone": "blue"
+      },
+      {
+        "title": "外观商店",
+        "image_path": "res://data/ui/world_event_activity_asset_drop/round_01/activity/activity_shop_cover.png",
+        "asset_slot": "activity_shop",
+        "cover_mode": "asset_drop_cover",
+        "value": "外观入口",
+        "meta": "皮肤",
+        "description": "入口展示。",
+        "status_label": "可浏览",
+        "tone": "green"
+      },
+      {
+        "title": "预留活动位",
+        "value": "待定",
+        "meta": "空位",
+        "description": "后续补位。",
+        "status_label": "未开放",
+        "tone": "neutral",
+        "empty": true
+      },
+      {
+        "title": "预留活动位",
+        "value": "待定",
+        "meta": "空位",
+        "description": "继续预留。",
+        "status_label": "未开放",
+        "tone": "neutral",
+        "empty": true
+      },
+      {
+        "title": "预留活动位",
+        "value": "待定",
+        "meta": "空位",
+        "description": "仅占位。",
+        "status_label": "未开放",
+        "tone": "neutral",
+        "empty": true
+      },
+      {
+        "title": "预留活动位",
+        "value": "待定",
+        "meta": "空位",
+        "description": "后续替换。",
+        "status_label": "未开放",
+        "tone": "neutral",
+        "empty": true
+      }
+    ],
+    "status_items": [
+      {
+        "badge": "1",
+        "title": "可领取",
+        "value": "登录奖励",
+        "meta": "按钮占位",
+        "description": "领取只发页面 action，不写真实奖励。",
+        "tone": "green"
+      },
+      {
+        "badge": "2",
+        "title": "可查看",
+        "value": "武将传承 / 外观商店",
+        "meta": "入口占位",
+        "description": "只作为二级页入口卡展示。",
+        "tone": "blue"
+      },
+      {
+        "badge": "3",
+        "title": "未开放",
+        "value": "预留活动位",
+        "meta": "空位",
+        "description": "不放暂时无关的外部活动内容。",
+        "tone": "neutral"
+      }
+    ]
+  },
+  "world_affairs": {
+    "headline": "黄天当立",
+    "asset_slot": "world_affairs_scene",
+    "scene_image_path": "res://data/ui/world_event_activity_asset_drop/round_01/world_affairs/world_affairs_scene.png",
+    "subtitle": "太平道灭，黄天熄息，汉室倾颓，遗患未止",
+    "state": "天下线当前节点：黄天当立。",
+    "summary_lines": [
+      "天下大势不是国战规则页，而是一个月内玩家需要完成的赛季目标线。",
+      "参考横向节点串联：节点展示目标、进度、是否达成和玉符奖励预览，不开启真实新玩法。"
+    ],
+    "mode_cards": [
+      {
+        "title": "天下",
+        "value": "目标线",
+        "meta": "当前先做",
+        "description": "展示本月目标和达成奖励。",
+        "tone": "gold"
+      },
+      {
+        "title": "局势",
+        "value": "局势线",
+        "meta": "当前先做",
+        "description": "展示天下进度、开放节点和局势说明。",
+        "tone": "blue"
+      },
+      {
+        "title": "赛季",
+        "value": "预留",
+        "meta": "后续扩展",
+        "description": "赛季页签先不展开真实规则。",
+        "tone": "neutral",
+        "empty": true
+      }
+    ],
+    "timeline": [
+      {
+        "badge": "达成",
+        "title": "黄天当立",
+        "state": "全地图8000格4级或以上土地被占领",
+        "progress": "8000/8000",
+        "reward": "玉符 100",
+        "asset_slot": "world_affairs_node_01",
+        "image_path": "res://data/ui/world_event_activity_asset_drop/round_01/world_affairs/world_affairs_node_01.png",
+        "tone": "gold",
+        "completed": true
+      },
+      {
+        "badge": "2",
+        "title": "汉室衰微",
+        "state": "汉室威望下降",
+        "progress": "进行中",
+        "reward": "玉符 100",
+        "asset_slot": "world_affairs_node_02",
+        "image_path": "res://data/ui/world_event_activity_asset_drop/round_01/world_affairs/world_affairs_node_02.png",
+        "tone": "blue",
+        "current": true
+      },
+      {
+        "badge": "3",
+        "title": "天下大乱",
+        "state": "各州局势动荡",
+        "progress": "锁定",
+        "reward": "玉符 120",
+        "asset_slot": "world_affairs_node_03",
+        "image_path": "res://data/ui/world_event_activity_asset_drop/round_01/world_affairs/world_affairs_node_03.png",
+        "tone": "neutral"
+      },
+      {
+        "badge": "4",
+        "title": "厉兵秣马",
+        "state": "主力整备达标",
+        "progress": "锁定",
+        "reward": "玉符 120",
+        "asset_slot": "world_affairs_node_04",
+        "image_path": "res://data/ui/world_event_activity_asset_drop/round_01/world_affairs/world_affairs_node_04.png",
+        "tone": "neutral"
+      },
+      {
+        "badge": "5",
+        "title": "群雄割据",
+        "state": "势力范围扩张",
+        "progress": "锁定",
+        "reward": "玉符 120",
+        "asset_slot": "world_affairs_node_05",
+        "image_path": "res://data/ui/world_event_activity_asset_drop/round_01/world_affairs/world_affairs_node_05.png",
+        "tone": "neutral"
+      },
+      {
+        "badge": "6",
+        "title": "厉兵秣马Ⅱ",
+        "state": "二线部队成型",
+        "progress": "锁定",
+        "reward": "玉符 150",
+        "asset_slot": "world_affairs_node_06",
+        "image_path": "res://data/ui/world_event_activity_asset_drop/round_01/world_affairs/world_affairs_node_06.png",
+        "tone": "blue"
+      },
+      {
+        "badge": "7",
+        "title": "诸国并起",
+        "state": "州郡入口预留",
+        "progress": "锁定",
+        "reward": "玉符 150",
+        "asset_slot": "world_affairs_node_07",
+        "image_path": "res://data/ui/world_event_activity_asset_drop/round_01/world_affairs/world_affairs_node_07.png",
+        "tone": "blue"
+      },
+      {
+        "badge": "8",
+        "title": "七国争锋",
+        "state": "同盟争锋预留",
+        "progress": "锁定",
+        "reward": "玉符 160",
+        "asset_slot": "world_affairs_node_08",
+        "image_path": "res://data/ui/world_event_activity_asset_drop/round_01/world_affairs/world_affairs_node_08.png",
+        "tone": "neutral"
+      },
+      {
+        "badge": "9",
+        "title": "平乱定国",
+        "state": "平定乱局预留",
+        "progress": "锁定",
+        "reward": "玉符 180",
+        "asset_slot": "world_affairs_node_09",
+        "image_path": "res://data/ui/world_event_activity_asset_drop/round_01/world_affairs/world_affairs_node_09.png",
+        "tone": "gold"
+      },
+      {
+        "badge": "10",
+        "title": "势不可挡",
+        "state": "赛季中段预留",
+        "progress": "锁定",
+        "reward": "玉符 180",
+        "asset_slot": "world_affairs_node_10",
+        "image_path": "res://data/ui/world_event_activity_asset_drop/round_01/world_affairs/world_affairs_node_10.png",
+        "tone": "gold"
+      },
+      {
+        "badge": "11",
+        "title": "入主中原",
+        "state": "中原目标预留",
+        "progress": "锁定",
+        "reward": "玉符 200",
+        "asset_slot": "world_affairs_node_10",
+        "image_path": "res://data/ui/world_event_activity_asset_drop/round_01/world_affairs/world_affairs_node_10.png",
+        "tone": "gold"
+      },
+      {
+        "badge": "12",
+        "title": "席卷天下",
+        "state": "末期目标预留",
+        "progress": "锁定",
+        "reward": "玉符 220",
+        "asset_slot": "world_affairs_node_10",
+        "image_path": "res://data/ui/world_event_activity_asset_drop/round_01/world_affairs/world_affairs_node_10.png",
+        "tone": "gold"
+      },
+      {
+        "badge": "13",
+        "title": "三分归一",
+        "state": "终局目标预留",
+        "progress": "锁定",
+        "reward": "玉符 240",
+        "asset_slot": "world_affairs_node_10",
+        "image_path": "res://data/ui/world_event_activity_asset_drop/round_01/world_affairs/world_affairs_node_10.png",
+        "tone": "gold"
+      }
+    ],
+    "situation_cards": [
+      {
+        "title": "天下线",
+        "value": "1 达成 / 1 推进中",
+        "meta": "模板进度",
+        "description": "只展示进度样式，不计算真实赛季。",
+        "tone": "gold"
+      },
+      {
+        "title": "局势线",
+        "value": "开荒期",
+        "meta": "局势说明",
+        "description": "局势文字用于引导玩家下一步。",
+        "tone": "blue"
+      },
+      {
+        "title": "主要奖励",
+        "value": "玉符",
+        "meta": "不写库存",
+        "description": "天下大势和精彩活动展示玉符奖励预览。",
+        "tone": "green"
+      }
+    ],
+    "active_scenario_id": "scenario_s1_yellow_sky",
+    "scenario_storage_contract": {
+      "selection_key": "runtime_context.world_affairs_scenario_id",
+      "scenario_id_path": "world_affairs.scenario_catalog[].scenario_id",
+      "timeline_owner": "template_fixture_now_future_scenario_service",
+      "asset_rule": "each scenario owns scene_image_path and timeline[].asset_slot/image_path",
+      "no_runtime_effect": true,
+      "no_backend_authority": true
+    },
+    "scenario_catalog": [
+      {
+        "scenario_id": "scenario_s1_yellow_sky",
+        "script_id": "script_s1_yellow_sky_month",
+        "season_id": "s1",
+        "label": "S1 黄天当立",
+        "default": true,
+        "headline": "黄天当立",
+        "subtitle": "太平道灭，黄天熄息，汉室倾颓，遗患未止",
+        "state": "天下线当前节点：黄天当立。",
+        "scene_image_path": "res://data/ui/world_event_activity_asset_drop/round_01/world_affairs/world_affairs_scene.png",
+        "summary_lines": [
+          "天下大势不是国战规则页，而是一个月内玩家需要完成的赛季目标线。",
+          "参考横向节点串联：节点展示目标、进度、是否达成和玉符奖励预览，不开启真实新玩法。"
+        ],
+        "timeline": [
+          {
+            "badge": "达成",
+            "title": "黄天当立",
+            "state": "全地图8000格4级或以上土地被占领",
+            "progress": "8000/8000",
+            "reward": "玉符 100",
+            "asset_slot": "world_affairs_node_01",
+            "image_path": "res://data/ui/world_event_activity_asset_drop/round_01/world_affairs/world_affairs_node_01.png",
+            "tone": "gold",
+            "completed": true
+          },
+          {
+            "badge": "2",
+            "title": "汉室衰微",
+            "state": "汉室威望下降",
+            "progress": "进行中",
+            "reward": "玉符 100",
+            "asset_slot": "world_affairs_node_02",
+            "image_path": "res://data/ui/world_event_activity_asset_drop/round_01/world_affairs/world_affairs_node_02.png",
+            "tone": "blue",
+            "current": true
+          },
+          {
+            "badge": "3",
+            "title": "天下大乱",
+            "state": "各州局势动荡",
+            "progress": "锁定",
+            "reward": "玉符 120",
+            "asset_slot": "world_affairs_node_03",
+            "image_path": "res://data/ui/world_event_activity_asset_drop/round_01/world_affairs/world_affairs_node_03.png",
+            "tone": "neutral"
+          },
+          {
+            "badge": "4",
+            "title": "厉兵秣马",
+            "state": "主力整备达标",
+            "progress": "锁定",
+            "reward": "玉符 120",
+            "asset_slot": "world_affairs_node_04",
+            "image_path": "res://data/ui/world_event_activity_asset_drop/round_01/world_affairs/world_affairs_node_04.png",
+            "tone": "neutral"
+          },
+          {
+            "badge": "5",
+            "title": "群雄割据",
+            "state": "势力范围扩张",
+            "progress": "锁定",
+            "reward": "玉符 120",
+            "asset_slot": "world_affairs_node_05",
+            "image_path": "res://data/ui/world_event_activity_asset_drop/round_01/world_affairs/world_affairs_node_05.png",
+            "tone": "neutral"
+          },
+          {
+            "badge": "6",
+            "title": "厉兵秣马Ⅱ",
+            "state": "二线部队成型",
+            "progress": "锁定",
+            "reward": "玉符 150",
+            "asset_slot": "world_affairs_node_06",
+            "image_path": "res://data/ui/world_event_activity_asset_drop/round_01/world_affairs/world_affairs_node_06.png",
+            "tone": "blue"
+          },
+          {
+            "badge": "7",
+            "title": "诸国并起",
+            "state": "州郡入口预留",
+            "progress": "锁定",
+            "reward": "玉符 150",
+            "asset_slot": "world_affairs_node_07",
+            "image_path": "res://data/ui/world_event_activity_asset_drop/round_01/world_affairs/world_affairs_node_07.png",
+            "tone": "blue"
+          },
+          {
+            "badge": "8",
+            "title": "七国争锋",
+            "state": "同盟争锋预留",
+            "progress": "锁定",
+            "reward": "玉符 160",
+            "asset_slot": "world_affairs_node_08",
+            "image_path": "res://data/ui/world_event_activity_asset_drop/round_01/world_affairs/world_affairs_node_08.png",
+            "tone": "neutral"
+          },
+          {
+            "badge": "9",
+            "title": "平乱定国",
+            "state": "平定乱局预留",
+            "progress": "锁定",
+            "reward": "玉符 180",
+            "asset_slot": "world_affairs_node_09",
+            "image_path": "res://data/ui/world_event_activity_asset_drop/round_01/world_affairs/world_affairs_node_09.png",
+            "tone": "gold"
+          },
+          {
+            "badge": "10",
+            "title": "势不可挡",
+            "state": "赛季中段预留",
+            "progress": "锁定",
+            "reward": "玉符 180",
+            "asset_slot": "world_affairs_node_10",
+            "image_path": "res://data/ui/world_event_activity_asset_drop/round_01/world_affairs/world_affairs_node_10.png",
+            "tone": "gold"
+          },
+          {
+            "badge": "11",
+            "title": "入主中原",
+            "state": "中原目标预留",
+            "progress": "锁定",
+            "reward": "玉符 200",
+            "asset_slot": "world_affairs_node_10",
+            "image_path": "res://data/ui/world_event_activity_asset_drop/round_01/world_affairs/world_affairs_node_10.png",
+            "tone": "gold"
+          },
+          {
+            "badge": "12",
+            "title": "席卷天下",
+            "state": "末期目标预留",
+            "progress": "锁定",
+            "reward": "玉符 220",
+            "asset_slot": "world_affairs_node_10",
+            "image_path": "res://data/ui/world_event_activity_asset_drop/round_01/world_affairs/world_affairs_node_10.png",
+            "tone": "gold"
+          },
+          {
+            "badge": "13",
+            "title": "三分归一",
+            "state": "终局目标预留",
+            "progress": "锁定",
+            "reward": "玉符 240",
+            "asset_slot": "world_affairs_node_10",
+            "image_path": "res://data/ui/world_event_activity_asset_drop/round_01/world_affairs/world_affairs_node_10.png",
+            "tone": "gold"
+          }
+        ],
+        "target": "全地图8000格4级或以上土地被占领",
+        "achieved_at": "2026-03-21 16:09:42达成",
+        "unlocks": [
+          "玉符 100",
+          "局势开启",
+          "赛季预留",
+          "经验占位"
+        ]
+      },
+      {
+        "scenario_id": "scenario_s1_border_pressure_preview",
+        "script_id": "script_s1_border_pressure",
+        "season_id": "s1",
+        "label": "边境告急（预留）",
+        "locked": true,
+        "headline": "边境告急",
+        "subtitle": "预留剧本配置示例：不同剧本可以替换标题、目标线、节点名称和节点资产。",
+        "state": "预留配置，不进入当前模板。",
+        "scene_image_path": "",
+        "summary_lines": [
+          "这里只定义未来剧本如何存放，不开启真实剧本切换。",
+          "后续接入时按 scenario_id 选中对应 timeline 和 asset_slot。"
+        ],
+        "timeline": [
+          {
+            "badge": "1",
+            "title": "边城烽火",
+            "state": "预留节点",
+            "progress": "锁定",
+            "reward": "玉符 100",
+            "asset_slot": "world_affairs_node_border_01",
+            "image_path": "",
+            "tone": "neutral"
+          },
+          {
+            "badge": "2",
+            "title": "援军集结",
+            "state": "预留节点",
+            "progress": "锁定",
+            "reward": "玉符 120",
+            "asset_slot": "world_affairs_node_border_02",
+            "image_path": "",
+            "tone": "neutral"
+          }
+        ]
+      }
+    ],
+    "target": "全地图8000格4级或以上土地被占领",
+    "achieved_at": "2026-03-21 16:09:42达成",
+    "unlocks": [
+      "玉符 100",
+      "局势开启",
+      "赛季预留",
+      "经验占位"
+    ]
+  },
+  "tasks": {
+    "headline": "任务",
+    "asset_slot": "task_chapter_scene",
+    "scene_image_path": "res://data/ui/world_event_activity_asset_drop/round_01/tasks/task_chapter_scene.png",
+    "subtitle": "任务页从第一章到第十五章，像新手教程一样逐章推进。",
+    "state": "任务奖励以粮草、木材、石料、铁矿、铜钱为主。",
+    "summary_lines": [
+      "任务页展示第一章到第十五章，当前只显示本章任务。",
+      "任务奖励使用粮草、木材、石料、铁矿、铜钱；不接真实背包，不结算真实奖励。"
+    ],
+    "chapters": [
+      {
+        "chapter_id": "chapter_01",
+        "title": "第1章",
+        "value": "初入乱世",
+        "meta": "3/4",
+        "description": "当前展示章节任务。",
+        "tone": "gold",
+        "empty": false
+      },
+      {
+        "chapter_id": "chapter_02",
+        "title": "第2章",
+        "value": "开荒立足",
+        "meta": "1/4",
+        "description": "占领土地并完成资源生产。",
+        "tone": "blue",
+        "empty": false
+      },
+      {
+        "chapter_id": "chapter_03",
+        "title": "第3章",
+        "value": "整备军伍",
+        "meta": "未开启",
+        "description": "预留章节模板，不提前写死玩法。",
+        "tone": "neutral",
+        "empty": true
+      },
+      {
+        "chapter_id": "chapter_04",
+        "title": "第4章",
+        "value": "扩张边界",
+        "meta": "未开启",
+        "description": "预留章节模板，不提前写死玩法。",
+        "tone": "neutral",
+        "empty": true
+      },
+      {
+        "chapter_id": "chapter_05",
+        "title": "第5章",
+        "value": "屯田兴业",
+        "meta": "未开启",
+        "description": "预留章节模板，不提前写死玩法。",
+        "tone": "neutral",
+        "empty": true
+      },
+      {
+        "chapter_id": "chapter_06",
+        "title": "第6章",
+        "value": "筑城固本",
+        "meta": "未开启",
+        "description": "预留章节模板，不提前写死玩法。",
+        "tone": "neutral",
+        "empty": true
+      },
+      {
+        "chapter_id": "chapter_07",
+        "title": "第7章",
+        "value": "演武成军",
+        "meta": "未开启",
+        "description": "预留章节模板，不提前写死玩法。",
+        "tone": "neutral",
+        "empty": true
+      },
+      {
+        "chapter_id": "chapter_08",
+        "title": "第8章",
+        "value": "远征试炼",
+        "meta": "未开启",
+        "description": "预留章节模板，不提前写死玩法。",
+        "tone": "neutral",
+        "empty": true
+      },
+      {
+        "chapter_id": "chapter_09",
+        "title": "第9章",
+        "value": "同盟初会",
+        "meta": "未开启",
+        "description": "预留章节模板，不提前写死玩法。",
+        "tone": "neutral",
+        "empty": true
+      },
+      {
+        "chapter_id": "chapter_10",
+        "title": "第10章",
+        "value": "州郡通达",
+        "meta": "未开启",
+        "description": "预留章节模板，不提前写死玩法。",
+        "tone": "neutral",
+        "empty": true
+      },
+      {
+        "chapter_id": "chapter_11",
+        "title": "第11章",
+        "value": "势力整备",
+        "meta": "未开启",
+        "description": "预留章节模板，不提前写死玩法。",
+        "tone": "neutral",
+        "empty": true
+      },
+      {
+        "chapter_id": "chapter_12",
+        "title": "第12章",
+        "value": "边防巡守",
+        "meta": "未开启",
+        "description": "预留章节模板，不提前写死玩法。",
+        "tone": "neutral",
+        "empty": true
+      },
+      {
+        "chapter_id": "chapter_13",
+        "title": "第13章",
+        "value": "资源调度",
+        "meta": "未开启",
+        "description": "预留章节模板，不提前写死玩法。",
+        "tone": "neutral",
+        "empty": true
+      },
+      {
+        "chapter_id": "chapter_14",
+        "title": "第14章",
+        "value": "中原问鼎",
+        "meta": "未开启",
+        "description": "预留章节模板，不提前写死玩法。",
+        "tone": "neutral",
+        "empty": true
+      },
+      {
+        "chapter_id": "chapter_15",
+        "title": "第15章",
+        "value": "逐鹿终局",
+        "meta": "未开启",
+        "description": "预留章节模板，不提前写死玩法。",
+        "tone": "neutral",
+        "empty": true
+      }
+    ],
+    "task_items": [
+      {
+        "badge": "1",
+        "title": "建造主城设施",
+        "value": "0/1",
+        "meta": "奖励：木材 500 / 石料 500 / 铜钱 200",
+        "rewards": [
+          {
+            "label": "木材",
+            "amount": "500",
+            "tone": "green"
+          },
+          {
+            "label": "石料",
+            "amount": "500",
+            "tone": "neutral"
+          },
+          {
+            "label": "铜钱",
+            "amount": "200",
+            "tone": "gold"
+          }
+        ],
+        "description": "按钮可跳转到对应入口，当前只发模板 action。",
+        "action_label": "前往",
+        "action_id": "template_task_go:build_main_facility",
+        "tone": "gold"
+      },
+      {
+        "badge": "2",
+        "title": "占领任意土地",
+        "value": "2/3",
+        "meta": "奖励：粮草 600 / 木材 300",
+        "rewards": [
+          {
+            "label": "粮草",
+            "amount": "600",
+            "tone": "gold"
+          },
+          {
+            "label": "木材",
+            "amount": "300",
+            "tone": "green"
+          }
+        ],
+        "description": "用于展示章节任务进度。",
+        "action_label": "前往",
+        "action_id": "template_task_go:occupy_any_land",
+        "tone": "blue"
+      },
+      {
+        "badge": "3",
+        "title": "征兵一次",
+        "value": "未完成",
+        "meta": "奖励：铁矿 400 / 铜钱 150",
+        "rewards": [
+          {
+            "label": "铁矿",
+            "amount": "400",
+            "tone": "blue"
+          },
+          {
+            "label": "铜钱",
+            "amount": "150",
+            "tone": "gold"
+          }
+        ],
+        "description": "只保留任务条和前往按钮样式。",
+        "action_label": "前往",
+        "action_id": "template_task_go:recruit_once",
+        "tone": "neutral"
+      },
+      {
+        "badge": "4",
+        "title": "章节奖励",
+        "value": "3/4",
+        "meta": "奖励：粮草 / 木材 / 石料 / 铁矿 各 1000",
+        "rewards": [
+          {
+            "label": "粮草",
+            "amount": "1000",
+            "tone": "gold"
+          },
+          {
+            "label": "木材",
+            "amount": "1000",
+            "tone": "green"
+          },
+          {
+            "label": "石料",
+            "amount": "1000",
+            "tone": "neutral"
+          },
+          {
+            "label": "铁矿",
+            "amount": "1000",
+            "tone": "blue"
+          }
+        ],
+        "description": "章节总奖励展示为基础资源，不使用玉符。",
+        "action_label": "领取",
+        "action_id": "",
+        "disabled": true,
+        "tone": "green"
+      }
+    ],
+    "chapter_contract": {
+      "max_chapters": 15,
+      "active_chapter_id": "chapter_01",
+      "selection_key": "runtime_context.task_chapter_id",
+      "items_owner": "template_fixture_now_future_task_service",
+      "no_reward_settlement": true
+    }
+  }
+}

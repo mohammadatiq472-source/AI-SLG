@@ -1,0 +1,246 @@
+{
+  "schemaVersion": "sea_overseas_naval_art_manifest_v1",
+  "contractId": "sea_overseas_naval_art_manifest_v1",
+  "status": "asset_brief_ready_pending_imagegen",
+  "updatedAt": "2026-06-07",
+  "scope": "W7 naval art and next playable slice preparation",
+  "sourceAuthority": {
+    "w6RouteId": "east_han_coastal_dock_to_wa_contact",
+    "sourceDockId": "east_han_coastal_dock_quanzhou",
+    "overseasContactId": "wa_contact_scoutable",
+    "routeStatus": "route_open",
+    "travelCost": {
+      "actionPoints": 1,
+      "food": 2
+    },
+    "maritimeMaskAuthority": "read_only_mask_not_playable_authority"
+  },
+  "hardBoundaries": {
+    "doesNotImplementFullNavalCombat": true,
+    "doesNotImplementFleetSystem": true,
+    "doesNotImplementFullOverseasConquest": true,
+    "doesNotModifyCavalryImagegenManifest": true,
+    "doesNotDeleteQibingFrames": true
+  },
+  "existingAssets": [
+    {
+      "slotId": "dock_node_base_v1",
+      "role": "dock_node_existing_context",
+      "assetStatus": "existing_formal_world_node",
+      "path": "res://assets/themes/slgclient/current/world/dock_base_v1.png",
+      "manifestPath": "res://assets/themes/slgclient/current/world/world_cell_assets_manifest_v1.json",
+      "usage": [
+        "world_map_dock_node",
+        "sea_route_source_dock_context"
+      ]
+    }
+  ],
+  "requiredImagegenSlots": [
+    {
+      "slotId": "fleet_icon_light_patrol_v1",
+      "category": "fleet_icon",
+      "role": "light_patrol_fleet",
+      "sizePx": [128, 128],
+      "assetStatus": "imagegen_required",
+      "targetPath": "res://assets/themes/slgclient/current/ui/sea_overseas/fleet_icon_light_patrol_v1.png",
+      "prompt": "Horizontal mobile SLG UI icon, late Han coastal patrol fleet with two small wooden war junks, clean silhouette, brass and dark teal palette, top-down isometric angle, readable at 128px, transparent background, no text, no logo."
+    },
+    {
+      "slotId": "fleet_icon_transport_junk_v1",
+      "category": "fleet_icon",
+      "role": "transport_junk",
+      "sizePx": [128, 128],
+      "assetStatus": "imagegen_required",
+      "targetPath": "res://assets/themes/slgclient/current/ui/sea_overseas/fleet_icon_transport_junk_v1.png",
+      "prompt": "Horizontal mobile SLG UI icon, Han dynasty coastal transport junk with bundled supplies and folded sails, readable silhouette, warm wood and muted gold accents, transparent background, no text, no logo."
+    },
+    {
+      "slotId": "sea_route_state_open_v1",
+      "category": "route_state",
+      "role": "route_open",
+      "sizePx": [192, 64],
+      "assetStatus": "imagegen_required",
+      "targetPath": "res://assets/themes/slgclient/current/ui/sea_overseas/sea_route_state_open_v1.png",
+      "prompt": "Compact horizontal SLG route status badge, open coastal sea lane with bright navigation wake and small dock beacon, dark jade sea, gold rim, no readable text, no logo, UI-safe transparent background."
+    },
+    {
+      "slotId": "sea_route_state_blocked_v1",
+      "category": "route_state",
+      "role": "route_blocked",
+      "sizePx": [192, 64],
+      "assetStatus": "imagegen_required",
+      "targetPath": "res://assets/themes/slgclient/current/ui/sea_overseas/sea_route_state_blocked_v1.png",
+      "prompt": "Compact horizontal SLG route status badge, blocked sea lane with storm-dark water, broken route line, muted red warning seal, no readable text, no logo, UI-safe transparent background."
+    },
+    {
+      "slotId": "port_dock_card_quanzhou_v1",
+      "category": "port_card",
+      "role": "source_dock_card",
+      "sizePx": [512, 288],
+      "assetStatus": "imagegen_required",
+      "targetPath": "res://assets/themes/slgclient/current/ui/sea_overseas/port_dock_card_quanzhou_v1.png",
+      "prompt": "Wide horizontal mobile SLG card art, late Han coastal dock near Quanzhou, wooden pier, moored junks, signal brazier, distant coastline, usable behind UI panels, no text, no logo, not photorealistic."
+    },
+    {
+      "slotId": "overseas_contact_card_wa_scoutable_v1",
+      "category": "overseas_contact_card",
+      "role": "wa_contact_scoutable",
+      "sizePx": [512, 288],
+      "assetStatus": "imagegen_required",
+      "targetPath": "res://assets/themes/slgclient/current/ui/sea_overseas/overseas_contact_card_wa_scoutable_v1.png",
+      "prompt": "Wide horizontal mobile SLG card art, early contact with Wa islands across misty sea, small island fort, fishing boats, scoutable but not conquered, East Asian historical fantasy tone, no text, no logo."
+    },
+    {
+      "slotId": "overseas_contact_card_nanyang_locked_v1",
+      "category": "overseas_contact_card",
+      "role": "nanyang_locked",
+      "sizePx": [512, 288],
+      "assetStatus": "imagegen_required",
+      "targetPath": "res://assets/themes/slgclient/current/ui/sea_overseas/overseas_contact_card_nanyang_locked_v1.png",
+      "prompt": "Wide horizontal mobile SLG card art, distant Southeast Asian island trade coast seen beyond storm haze, locked route mood, tropical silhouettes, dark teal and gold UI palette, no text, no logo."
+    },
+    {
+      "slotId": "overseas_contact_card_india_locked_v1",
+      "category": "overseas_contact_card",
+      "role": "india_locked",
+      "sizePx": [512, 288],
+      "assetStatus": "imagegen_required",
+      "targetPath": "res://assets/themes/slgclient/current/ui/sea_overseas/overseas_contact_card_india_locked_v1.png",
+      "prompt": "Wide horizontal mobile SLG card art, far western sea trade contact toward India, distant harbor silhouettes, locked long-range expedition mood, dark sea, amber horizon, no text, no logo."
+    },
+    {
+      "slotId": "region_token_wa_v1",
+      "category": "region_token",
+      "role": "wa_region",
+      "sizePx": [96, 96],
+      "assetStatus": "imagegen_required",
+      "targetPath": "res://assets/themes/slgclient/current/ui/sea_overseas/region_token_wa_v1.png",
+      "prompt": "Small SLG region token for Wa islands, island silhouette, coastal beacon, wave ring, gold and teal, transparent background, no text."
+    },
+    {
+      "slotId": "region_token_nanyang_v1",
+      "category": "region_token",
+      "role": "nanyang_region",
+      "sizePx": [96, 96],
+      "assetStatus": "imagegen_required",
+      "targetPath": "res://assets/themes/slgclient/current/ui/sea_overseas/region_token_nanyang_v1.png",
+      "prompt": "Small SLG region token for Southeast Asian islands, palm coast silhouette, monsoon cloud and wave ring, gold and teal, transparent background, no text."
+    },
+    {
+      "slotId": "region_token_india_v1",
+      "category": "region_token",
+      "role": "india_region",
+      "sizePx": [96, 96],
+      "assetStatus": "imagegen_required",
+      "targetPath": "res://assets/themes/slgclient/current/ui/sea_overseas/region_token_india_v1.png",
+      "prompt": "Small SLG region token for India trade direction, far harbor silhouette, star navigation mark, gold and deep sea green, transparent background, no text."
+    },
+    {
+      "slotId": "region_token_xiyu_v1",
+      "category": "region_token",
+      "role": "xiyu_region",
+      "sizePx": [96, 96],
+      "assetStatus": "imagegen_required",
+      "targetPath": "res://assets/themes/slgclient/current/ui/sea_overseas/region_token_xiyu_v1.png",
+      "prompt": "Small SLG region token for western regions, desert pass and caravan mark with wave-frame variant for overseas menu consistency, gold and muted blue, transparent background, no text."
+    },
+    {
+      "slotId": "maritime_activity_chip_v1",
+      "category": "maritime_chip",
+      "role": "ai_activity_maritime_chip",
+      "sizePx": [256, 96],
+      "assetStatus": "imagegen_required",
+      "targetPath": "res://assets/themes/slgclient/current/ui/sea_overseas/maritime_activity_chip_v1.png",
+      "prompt": "Horizontal SLG AI activity chip art, small fleet marker plus wave route line, designed for AI activity card badge background, dark lacquer panel, gold edge, no text, no logo."
+    },
+    {
+      "slotId": "maritime_report_result_chip_v1",
+      "category": "maritime_chip",
+      "role": "battle_report_maritime_result_chip",
+      "sizePx": [256, 96],
+      "assetStatus": "imagegen_required",
+      "targetPath": "res://assets/themes/slgclient/current/ui/sea_overseas/maritime_report_result_chip_v1.png",
+      "prompt": "Horizontal SLG battle report maritime result chip art, crossed wake lines, small sail silhouette, bronze seal frame, readable at card scale, no text, no logo."
+    },
+    {
+      "slotId": "naval_battle_banner_patrol_v1",
+      "category": "naval_battle_banner",
+      "role": "sea_patrol_scout_banner",
+      "sizePx": [768, 320],
+      "assetStatus": "imagegen_required",
+      "targetPath": "res://assets/themes/slgclient/current/ui/sea_overseas/naval_battle_banner_patrol_v1.png",
+      "prompt": "Wide horizontal mobile SLG banner for first sea patrol scout encounter, two small fleets at distance, wave spray, no large battle explosions, UI-safe lower contrast center, no text, no logo."
+    }
+  ],
+  "regionStateTokens": [
+    {
+      "regionId": "wa_islands",
+      "label": "倭地",
+      "state": "route_open",
+      "tokenSlotId": "region_token_wa_v1",
+      "contactCardSlotId": "overseas_contact_card_wa_scoutable_v1"
+    },
+    {
+      "regionId": "nanyang_islands",
+      "label": "南洋",
+      "state": "locked",
+      "tokenSlotId": "region_token_nanyang_v1",
+      "contactCardSlotId": "overseas_contact_card_nanyang_locked_v1"
+    },
+    {
+      "regionId": "india_trade_direction",
+      "label": "天竺方向",
+      "state": "locked",
+      "tokenSlotId": "region_token_india_v1",
+      "contactCardSlotId": "overseas_contact_card_india_locked_v1"
+    },
+    {
+      "regionId": "western_regions",
+      "label": "西域",
+      "state": "locked",
+      "tokenSlotId": "region_token_xiyu_v1",
+      "contactCardSlotId": ""
+    }
+  ],
+  "candidateEvidence": [
+    {
+      "slotId": "fleet_icon_light_patrol_v1",
+      "candidateStatus": "generated_candidate_not_formal_manifest_asset",
+      "sourcePath": "tmp/imagegen/w9_maritime_patrol/fleet_icon_light_patrol_v1_source.png",
+      "alphaCandidatePath": "tmp/imagegen/w9_maritime_patrol/fleet_icon_light_patrol_v1_candidate.png",
+      "generatedAt": "2026-06-07",
+      "connectedToFormalTarget": false
+    },
+    {
+      "slotId": "sea_route_state_open_v1",
+      "candidateStatus": "generated_candidate_not_formal_manifest_asset",
+      "sourcePath": "tmp/imagegen/w9_maritime_patrol/sea_route_state_open_v1_source.png",
+      "alphaCandidatePath": "tmp/imagegen/w9_maritime_patrol/sea_route_state_open_v1_candidate.png",
+      "generatedAt": "2026-06-07",
+      "connectedToFormalTarget": false
+    }
+  ],
+  "nextPlayableSlice": {
+    "sliceId": "sea_patrol_scout_report_v1",
+    "goal": "dock -> sea patrol/scout -> maritime report -> AI activity card maritime chip -> battle report maritime result",
+    "notInScope": [
+      "full naval combat",
+      "fleet inventory system",
+      "full Japan conquest",
+      "full India conquest",
+      "full Southeast Asia conquest"
+    ],
+    "requiredContracts": [
+      "world_sea_patrol_scout_authority_contract",
+      "ai_player_maritime_activity_chip_contract",
+      "battle_report_maritime_result_chip_contract",
+      "godot_sea_patrol_report_visual_smoke"
+    ],
+    "requiredUiSurfaces": [
+      "main_world_sea_route_status",
+      "ai_activity_card_maritime_chip",
+      "battle_report_maritime_result",
+      "overseas_contact_card"
+    ]
+  }
+}

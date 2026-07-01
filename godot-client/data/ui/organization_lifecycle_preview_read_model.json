@@ -1,0 +1,1640 @@
+{
+  "schemaVersion": "organization_lifecycle_preview_read_model_v1",
+  "sourceMode": "ui_fixture_backend_ready_v1",
+  "contract": "organization_lifecycle_ui_fixture_v1",
+  "notes": [
+    "仅用于 UI 生命周期候选验证。",
+    "后续正式数据应按玩家所属组织动态返回。",
+    "不包含立国执行、国家政策结算、市井购买或地图染色规则。"
+  ],
+  "fixtures": {
+    "ordinary_alliance": {
+      "label": "普通同盟",
+      "snapshot": {
+        "alliance_name": "青州义盟",
+        "organization_kind": "alliance",
+        "organization_lifecycle_stage": "alliance",
+        "organization_state_name": "青州",
+        "organization_level": 6,
+        "organization_exp": 18200,
+        "organization_exp_required": 42000,
+        "organization_power": 93600,
+        "owned_commandery_count": 0,
+        "owned_city_count": 2,
+        "territory_count": 2,
+        "goal_count": 3,
+        "member_count": 38,
+        "online_count": 12,
+        "announcement_title": "同盟公告",
+        "announcement_body": "青州义盟仍处于同盟阶段，当前优先扩展城池并维护组织成员。",
+        "recent_log_lines": [
+          "成员 北海守备 加入同盟。",
+          "AI 玩家 青州后勤官 进入组织名册候选。",
+          "官员调整：前线指挥接管北线目标。"
+        ],
+        "recent_report_lines": [
+          "北海外围巡查完成。",
+          "粮道协同目标进入推进状态。"
+        ],
+        "found_nation_visible": false,
+        "found_nation_can_found": false,
+        "found_nation_requirement_lines": [
+          "王国条件：同盟等级 6 / 20",
+          "占有郡：0 / 1",
+          "成员：38 人（按总成员，不按在线人数）",
+          "权限：盟主或授权官员才可发起立国。",
+          "状态：未满足王国条件"
+        ],
+        "section_payloads": {
+          "governance": {
+            "founding": {
+              "summary_lines": [
+                "普通同盟尚未占有完整郡，立国入口只展示条件清单。",
+                "当前状态用于展示立国条件，正式资格后续由组织数据提供。"
+              ],
+              "item_cards": [
+                {
+                  "title": "占有郡",
+                  "value": "0 / 1",
+                  "meta": "未满足",
+                  "description": "继续扩展领地后可进入可立国阶段。"
+                },
+                {
+                  "title": "权限",
+                  "value": "盟主/授权官员",
+                  "meta": "后端判定",
+                  "description": "UI 不本地授予立国权限。"
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    "eligible_alliance": {
+      "label": "可立国同盟",
+      "snapshot": {
+        "alliance_name": "青州同盟",
+        "organization_kind": "alliance",
+        "organization_lifecycle_stage": "eligible_to_found_nation",
+        "organization_state_name": "青州",
+        "organization_level": 24,
+        "organization_exp": 48600,
+        "organization_exp_required": 52000,
+        "organization_power": 158200,
+        "owned_commandery_count": 1,
+        "owned_city_count": 6,
+        "territory_count": 6,
+        "goal_count": 4,
+        "member_count": 53,
+        "online_count": 18,
+        "announcement_title": "同盟公告",
+        "announcement_body": "青州同盟已满足立国基础条件，可进入治理页查看立国清单；协同目标继续由军团推进。",
+        "recent_log_lines": [
+          "成员 春秋初 率 AI 玩家加入同盟。",
+          "官员任免：任命 青州后勤官 为后勤官。",
+          "立国条件更新：占有郡已满足。"
+        ],
+        "recent_report_lines": [
+          "济南郡外围交战胜利。",
+          "资源州抢点战报已归档。"
+        ],
+        "report_count": 3,
+        "battle_report_raw_world_report_count": 0,
+        "battle_report_raw_battle_record_count": 4,
+        "battle_report_real_source_count": 4,
+        "organization_battle_report_source_filter_mode": "organization_battle_report_source_filter_v1",
+        "found_nation_visible": true,
+        "found_nation_can_found": true,
+        "found_nation_requirement_lines": [
+          "王国条件：同盟等级 24 / 20（已满足）",
+          "占有郡：1 / 1（已满足）",
+          "成员：53 人（按总成员，不按在线人数）",
+          "权限：盟主或授权官员才可发起立国。",
+          "状态：可立王国"
+        ],
+        "nation_profile_draft": {
+          "nation_name": "齐国",
+          "color_hex": "#c95f32",
+          "capital_tile_id": "tile_08",
+          "capital_name": "青石城",
+          "source_page": "governance/founding"
+        },
+        "section_payloads": {
+          "governance": {
+            "officers": {
+              "summary_lines": [
+                "官员页使用可缩放层级画布，适配未来数千人组织。",
+                "最高位、丞相、军务、后勤、外交和军团席位后续均由组织 read model 输出。"
+              ],
+              "content_blocks": [
+                {
+                  "kind": "hierarchy_canvas",
+                  "title": "官员层级",
+                  "node_name": "OrganizationOfficerHierarchyCanvasBlock",
+                  "nodes": [
+                    {
+                      "id": "ruler",
+                      "title": "盟主",
+                      "name": "玩家主控",
+                      "seal": "盟",
+                      "meta": "最高权限 / 可自定义尊号",
+                      "description": "最高位命名后续由盟主或国家 ruler profile 决定。",
+                      "tier": 0,
+                      "x": 650,
+                      "y": 24,
+                      "width": 260,
+                      "height": 96
+                    },
+                    {
+                      "id": "chancellor",
+                      "parent": "ruler",
+                      "title": "丞相",
+                      "name": "青州后勤官",
+                      "seal": "丞",
+                      "meta": "治理中枢",
+                      "description": "承接任免、审批与资源调度。",
+                      "tier": 1,
+                      "x": 510,
+                      "y": 165,
+                      "width": 230,
+                      "height": 88
+                    },
+                    {
+                      "id": "marshal",
+                      "parent": "ruler",
+                      "title": "大将军",
+                      "name": "前线统帅",
+                      "seal": "军",
+                      "meta": "军务中枢",
+                      "description": "承接军团、战区和战报调度。",
+                      "tier": 1,
+                      "x": 820,
+                      "y": 165,
+                      "width": 230,
+                      "height": 88
+                    },
+                    {
+                      "id": "front",
+                      "parent": "marshal",
+                      "title": "前线指挥",
+                      "name": "河东盟军",
+                      "seal": "前",
+                      "meta": "军团管理候选",
+                      "description": "负责主战军团与进攻目标。",
+                      "tier": 2,
+                      "x": 190,
+                      "y": 310,
+                      "width": 240,
+                      "height": 92
+                    },
+                    {
+                      "id": "recon",
+                      "parent": "marshal",
+                      "title": "侦察官",
+                      "name": "山麓游骑",
+                      "seal": "侦",
+                      "meta": "视野与斥候",
+                      "description": "负责侦查、前哨和战区情报。",
+                      "tier": 2,
+                      "x": 500,
+                      "y": 310,
+                      "width": 240,
+                      "height": 92
+                    },
+                    {
+                      "id": "logistics",
+                      "parent": "chancellor",
+                      "title": "后勤官",
+                      "name": "青州后勤官",
+                      "seal": "粮",
+                      "meta": "资源与补给",
+                      "description": "负责供给、奖励和补给节奏。",
+                      "tier": 2,
+                      "x": 810,
+                      "y": 310,
+                      "width": 240,
+                      "height": 92
+                    },
+                    {
+                      "id": "diplomat",
+                      "parent": "chancellor",
+                      "title": "外交官",
+                      "name": "使节",
+                      "seal": "外",
+                      "meta": "组织关系",
+                      "description": "负责友好、敌对和中立关系。",
+                      "tier": 2,
+                      "x": 1120,
+                      "y": 310,
+                      "width": 240,
+                      "height": 92
+                    },
+                    {
+                      "id": "corps_a",
+                      "parent": "front",
+                      "title": "第一军团",
+                      "name": "主攻席",
+                      "seal": "一",
+                      "meta": "可继续展开",
+                      "description": "未来承接数百成员分组。",
+                      "tier": 3,
+                      "x": 120,
+                      "y": 470,
+                      "width": 220,
+                      "height": 82
+                    },
+                    {
+                      "id": "corps_b",
+                      "parent": "front",
+                      "title": "第二军团",
+                      "name": "驻守席",
+                      "seal": "二",
+                      "meta": "可继续展开",
+                      "description": "面向大型组织的折叠层。",
+                      "tier": 3,
+                      "x": 380,
+                      "y": 470,
+                      "width": 220,
+                      "height": 82
+                    },
+                    {
+                      "id": "corps_c",
+                      "parent": "logistics",
+                      "title": "粮草署",
+                      "name": "供给席",
+                      "seal": "粮",
+                      "meta": "可继续展开",
+                      "description": "补给官与资源官下钻。",
+                      "tier": 3,
+                      "x": 750,
+                      "y": 470,
+                      "width": 220,
+                      "height": 82
+                    },
+                    {
+                      "id": "corps_d",
+                      "parent": "diplomat",
+                      "title": "使节署",
+                      "name": "关系席",
+                      "seal": "使",
+                      "meta": "可继续展开",
+                      "description": "外交与同盟关系下钻。",
+                      "tier": 3,
+                      "x": 1010,
+                      "y": 470,
+                      "width": 220,
+                      "height": 82
+                    }
+                  ]
+                }
+              ]
+            },
+            "founding": {
+              "summary_lines": [
+                "同盟已具备立国条件。"
+              ],
+              "item_cards": [
+                {
+                  "title": "占有郡",
+                  "value": "1 / 1",
+                  "meta": "已满足",
+                  "description": "进入可立国阶段。"
+                },
+                {
+                  "title": "国号",
+                  "value": "齐国",
+                  "meta": "同盟-立国配置",
+                  "description": "玩家在立国确认入口配置国号。"
+                },
+                {
+                  "title": "势力色",
+                  "value": "#c95f32",
+                  "meta": "天下舆图运行时颜色",
+                  "description": "立国后用于天下舆图势力色图层。"
+                },
+                {
+                  "title": "成员规模",
+                  "value": "53",
+                  "meta": "当前规模",
+                  "description": "当前展示组织成员规模。"
+                },
+                {
+                  "title": "权限",
+                  "value": "盟主/授权官员",
+                  "meta": "职责判定",
+                  "description": "UI 不本地完成立国。"
+                }
+              ]
+            }
+          },
+          "battle_reports": {
+            "latest": {
+              "summary_lines": [
+                "组织战报复用独立战报页的列表到详情交互。",
+                "本页只筛出同盟/国家战情，不修改个人战报页结构。"
+              ],
+              "content_blocks": [
+                {
+                  "kind": "battle_report_list",
+                  "title": "组织战报",
+                  "node_name": "OrganizationBattleReportListBlock",
+                  "navigation_contract": "organization_battle_report_list_then_detail_route_v1",
+                  "reports": [],
+                  "battleRecords": [
+                    {
+                      "id": "org_real_human_jinan_win",
+                      "tick": 121,
+                      "reportKind": "resource_guard",
+                      "attacker": "玩家主控",
+                      "defender": "济南郡外围守军",
+                      "region": "济南郡",
+                      "result": "胜",
+                      "time": "第121刻",
+                      "location": "济南郡外围",
+                      "summary": "玩家主控完成济南郡外围据点清理，战报来自真实 battleRecords 字段。",
+                      "attackerFaction": "player",
+                      "attackerFactionId": "player",
+                      "defenderFactionId": "neutral",
+                      "ownerFactionId": "player",
+                      "attackerUnitId": "unit_player_main",
+                      "attackerTroops": 10400,
+                      "attackerMaxTroops": 12000,
+                      "attackerLoss": 1600,
+                      "defenderLoss": 4600,
+                      "tileId": "jining_resource_guard_001",
+                      "tileX": 4300,
+                      "tileY": 2538,
+                      "resourceTileLevel": 6,
+                      "rewards": [
+                        {
+                          "resource": "粮食",
+                          "amount": 15000
+                        },
+                        {
+                          "resource": "木材",
+                          "amount": 8000
+                        },
+                        {
+                          "resource": "铜币",
+                          "amount": 1200
+                        }
+                      ],
+                      "attackerUnit": {
+                        "unitId": "unit_player_main",
+                        "name": "玩家主控",
+                        "strength": 104,
+                        "currentTroops": 10400,
+                        "maxTroops": 12000,
+                        "lossTroops": 1600,
+                        "hero": {
+                          "heroId": "100451",
+                          "name": "关羽",
+                          "level": 43,
+                          "stars": 5,
+                          "currentTroops": 3600,
+                          "maxTroops": 4000,
+                          "lossTroops": 400,
+                          "portraitAssetKey": "formal_pack.portrait.guan_yu_mature_mounted_jingzhou_v1"
+                        },
+                        "coHeroes": [
+                          {
+                            "heroId": "100090",
+                            "name": "太史慈",
+                            "level": 42,
+                            "stars": 5,
+                            "currentTroops": 3400,
+                            "maxTroops": 4000,
+                            "lossTroops": 600,
+                            "portraitAssetKey": "formal_pack.portrait.tai_shi_ci_mature_yishi_v1"
+                          },
+                          {
+                            "heroId": "100017",
+                            "name": "诸葛亮",
+                            "level": 41,
+                            "stars": 5,
+                            "currentTroops": 3400,
+                            "maxTroops": 4000,
+                            "lossTroops": 600,
+                            "portraitAssetKey": "formal_pack.portrait.zhuge_liang_mature_beifa_v1"
+                          }
+                        ]
+                      },
+                      "defenderTroops": 5200,
+                      "defenderMaxTroops": 9800,
+                      "alliedSupport": 6
+                    },
+                    {
+                      "id": "org_real_ai_supply_line",
+                      "tick": 122,
+                      "reportKind": "resource_guard",
+                      "attacker": "青州后勤官",
+                      "defender": "资源州敌对先遣",
+                      "region": "资源州",
+                      "result": "胜",
+                      "time": "第122刻",
+                      "location": "资源州粮道",
+                      "summary": "AI 玩家青州后勤官完成资源点护送战，归属玩家组织战报来源。",
+                      "attackerFaction": "player",
+                      "attackerFactionId": "player",
+                      "defenderFactionId": "enemy",
+                      "ownerFactionId": "player",
+                      "attackerUnitId": "unit_ai_logistics",
+                      "aiPlayerId": "ai_player_backend_report_alpha",
+                      "attackerAiPlayerId": "ai_player_backend_report_alpha",
+                      "attackerTroops": 8800,
+                      "attackerMaxTroops": 11800,
+                      "attackerUnit": {
+                        "unitId": "unit_ai_logistics",
+                        "name": "青州后勤官",
+                        "strength": 88,
+                        "hero": {
+                          "heroId": "100016",
+                          "name": "刘备",
+                          "level": 38,
+                          "stars": 5,
+                          "portraitAssetKey": "formal_pack.portrait.liu_bei_mature_hanzhong_sworddance_face_smile_v2"
+                        },
+                        "coHeroes": [
+                          {
+                            "heroId": "100021",
+                            "name": "赵云",
+                            "level": 37,
+                            "stars": 5,
+                            "portraitAssetKey": "formal_pack.portrait.zhao_yun_youth_changban_rescue_v1"
+                          },
+                          {
+                            "heroId": "100716",
+                            "name": "张飞",
+                            "level": 36,
+                            "stars": 5,
+                            "portraitAssetKey": "formal_pack.portrait.zhang_fei_mature_baxi_v1"
+                          }
+                        ]
+                      },
+                      "defenderTroops": 7600,
+                      "defenderMaxTroops": 10500,
+                      "alliedSupport": 4
+                    },
+                    {
+                      "id": "org_real_alliance_commandery",
+                      "tick": 123,
+                      "reportKind": "field_battle",
+                      "attacker": "青州同盟",
+                      "defender": "济南守军",
+                      "region": "济南郡",
+                      "result": "胜",
+                      "time": "第123刻",
+                      "location": "济南郡治外围",
+                      "summary": "同盟主力军团接敌获胜，明确携带 organizationId 供同盟/国家战报过滤。",
+                      "attackerFaction": "player",
+                      "attackerFactionId": "player",
+                      "defenderFactionId": "enemy",
+                      "ownerFactionId": "player",
+                      "organizationId": "player",
+                      "organizationName": "青州同盟",
+                      "organizationKind": "alliance",
+                      "attackerUnitId": "unit_alliance_main",
+                      "attackerTroops": 13200,
+                      "attackerMaxTroops": 15000,
+                      "attackerUnit": {
+                        "unitId": "unit_alliance_main",
+                        "name": "青州同盟主力",
+                        "strength": 132,
+                        "hero": {
+                          "heroId": "100001",
+                          "name": "曹操",
+                          "level": 45,
+                          "stars": 5,
+                          "portraitAssetKey": "formal_pack.portrait.cao_cao_fate_v1"
+                        },
+                        "coHeroes": [
+                          {
+                            "heroId": "100060",
+                            "name": "张辽",
+                            "level": 43,
+                            "stars": 5,
+                            "portraitAssetKey": "formal_pack.portrait.zhang_liao_mature_hefei_v1"
+                          },
+                          {
+                            "heroId": "100714",
+                            "name": "夏侯惇",
+                            "level": 42,
+                            "stars": 5,
+                            "portraitAssetKey": "formal_pack.portrait.xiahou_dun_mature_duyan_v1"
+                          }
+                        ]
+                      },
+                      "defenderTroops": 6400,
+                      "defenderMaxTroops": 11000,
+                      "alliedSupport": 8
+                    },
+                    {
+                      "id": "org_real_foreign_filtered",
+                      "tick": 124,
+                      "reportKind": "field_battle",
+                      "attacker": "赤垒国",
+                      "defender": "外围斥候",
+                      "region": "兖州边境",
+                      "result": "胜",
+                      "time": "第124刻",
+                      "location": "兖州边境",
+                      "summary": "外部国家来袭样本用于验证敌对涉我战报仍进入当前同盟/国家战报列表。",
+                      "attackerFaction": "enemy",
+                      "attackerFactionId": "enemy",
+                      "defenderFactionId": "player",
+                      "ownerFactionId": "enemy",
+                      "organizationId": "org_enemy_nation_01",
+                      "organizationName": "赤垒国",
+                      "organizationKind": "nation",
+                      "attackerUnitId": "unit_enemy_nation",
+                      "attackerTroops": 9600,
+                      "attackerMaxTroops": 12000,
+                      "attackerUnit": {
+                        "unitId": "unit_enemy_nation",
+                        "name": "赤垒国先遣",
+                        "strength": 96,
+                        "hero": {
+                          "heroId": "100023",
+                          "name": "曹操",
+                          "level": 40,
+                          "stars": 5,
+                          "portraitAssetKey": "formal_pack.portrait.cao_cao_fate_v1"
+                        },
+                        "coHeroes": [
+                          {
+                            "heroId": "100027",
+                            "name": "张辽",
+                            "level": 39,
+                            "stars": 5,
+                            "portraitAssetKey": "formal_pack.portrait.zhang_liao_mature_hefei_v1"
+                          },
+                          {
+                            "heroId": "100713",
+                            "name": "夏侯惇",
+                            "level": 38,
+                            "stars": 5,
+                            "portraitAssetKey": "formal_pack.portrait.xiahou_dun_mature_duyan_v1"
+                          }
+                        ]
+                      },
+                      "defenderTroops": 7000,
+                      "defenderMaxTroops": 10800,
+                      "alliedSupport": 2
+                    }
+                  ],
+                  "filter_contract": "battle_report_core_data_filter_no_visible_extra_strip_v1",
+                  "source_filter_contract": "organization_battle_report_source_filter_v1"
+                }
+              ]
+            },
+            "log": {
+              "summary_lines": [
+                "组织日志汇总成员、官员、外交和战报事件。",
+                "日志只展示 read model，不修改后端 authority。"
+              ],
+              "item_cards": [
+                {
+                  "title": "成员变动",
+                  "value": "1",
+                  "meta": "玩家/AI 加入",
+                  "description": "记录玩家与 AI 玩家进入组织。"
+                },
+                {
+                  "title": "官员任命",
+                  "value": "1",
+                  "meta": "官员调整",
+                  "description": "记录官员席位变更。"
+                },
+                {
+                  "title": "外交事件",
+                  "value": "1",
+                  "meta": "关系变更",
+                  "description": "记录外交关系调整。"
+                },
+                {
+                  "title": "战报归档",
+                  "value": "1",
+                  "meta": "战情同步",
+                  "description": "记录组织战报产生。"
+                }
+              ],
+              "content_blocks": [
+                {
+                  "kind": "timeline_cards",
+                  "title": "组织日志",
+                  "node_name": "OrganizationLogFilterTimelineBlock",
+                  "filter_contract": "organization_log_report_filter_strip_v1",
+                  "source_mode": "organization_log_read_model_or_feedback_actions_v1",
+                  "filters": [
+                    {
+                      "label": "全部",
+                      "value": "4",
+                      "active": true
+                    },
+                    {
+                      "label": "成员",
+                      "value": "1"
+                    },
+                    {
+                      "label": "官员",
+                      "value": "1"
+                    },
+                    {
+                      "label": "外交",
+                      "value": "1"
+                    },
+                    {
+                      "label": "战报",
+                      "value": "1"
+                    }
+                  ],
+                  "rows": [
+                    {
+                      "time": "今日 08:00",
+                      "type": "成员",
+                      "actor": "系统",
+                      "event": "玩家与 AI 玩家加入",
+                      "detail": "玩家携 AI 玩家进入青州同盟。"
+                    },
+                    {
+                      "time": "今日 08:20",
+                      "type": "官员",
+                      "actor": "盟主",
+                      "event": "任命前线指挥",
+                      "detail": "河东盟军进入前线指挥候选。"
+                    },
+                    {
+                      "time": "今日 09:10",
+                      "type": "外交",
+                      "actor": "外交官",
+                      "event": "标记敌对关系",
+                      "detail": "黄巾余部已标记为敌对。"
+                    },
+                    {
+                      "time": "今日 09:40",
+                      "type": "战报",
+                      "actor": "战报系统",
+                      "event": "归档同盟战报",
+                      "detail": "济南郡外围战报已归档。"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "diplomacy": {
+            "relations": {
+              "summary_lines": [
+                "外交关系以友好、敌对、中立三类展示，地图关系提示后续承接。",
+                "当前关系：友好 1 / 敌对 1 / 中立 1。"
+              ],
+              "item_cards": [
+                {
+                  "title": "友好",
+                  "value": "1",
+                  "meta": "淡蓝提示",
+                  "description": "后续用于地图关系提示。"
+                },
+                {
+                  "title": "敌对",
+                  "value": "1",
+                  "meta": "深红提示",
+                  "description": "后续用于敌对格子提示。"
+                },
+                {
+                  "title": "中立",
+                  "value": "1",
+                  "meta": "默认关系",
+                  "description": "未签订外交协议。"
+                }
+              ],
+              "content_blocks": [
+                {
+                  "kind": "relation_board",
+                  "title": "外交关系",
+                  "node_name": "OrganizationDiplomacyRelationBoardBlock",
+                  "source_mode": "diplomacy_read_model_or_feedback_agreements_v1",
+                  "relation_counts": {
+                    "friendly": 1,
+                    "hostile": 1,
+                    "neutral": 1
+                  },
+                  "filters": [
+                    {
+                      "label": "全部",
+                      "value": "3",
+                      "active": true
+                    },
+                    {
+                      "label": "友好",
+                      "value": "1"
+                    },
+                    {
+                      "label": "敌对",
+                      "value": "1"
+                    },
+                    {
+                      "label": "中立",
+                      "value": "1"
+                    }
+                  ],
+                  "rows": [
+                    {
+                      "target": "平原盟军",
+                      "relation": "友好",
+                      "scope": "全域",
+                      "status": "已签订",
+                      "note": "共享行军警戒与资源州通行。"
+                    },
+                    {
+                      "target": "黄巾余部",
+                      "relation": "敌对",
+                      "scope": "边境郡",
+                      "status": "交战",
+                      "note": "边境格子后续显示敌对色。"
+                    },
+                    {
+                      "target": "济北游军",
+                      "relation": "中立",
+                      "scope": "邻郡",
+                      "status": "观望",
+                      "note": "未建立外交条约，地图保持默认色。"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "friendly_relation_count": 1,
+        "hostile_relation_count": 1,
+        "neutral_relation_count": 1,
+        "organization_log_count": 4
+      }
+    },
+    "founded_nation": {
+      "label": "已立国国家",
+      "snapshot": {
+        "alliance_name": "齐国",
+        "organization_kind": "nation",
+        "organization_lifecycle_stage": "nation",
+        "organization_state_name": "青州",
+        "organization_level": 24,
+        "organization_rank_stage": "kingdom",
+        "organization_exp": 82000,
+        "organization_exp_required": 98000,
+        "organization_power": 286400,
+        "owned_commandery_count": 3,
+        "owned_city_count": 14,
+        "territory_count": 14,
+        "goal_count": 5,
+        "member_count": 86,
+        "online_count": 27,
+        "announcement_title": "国家公告",
+        "announcement_body": "齐国已进入国家阶段，立国入口隐藏，政策、市井与国家建筑在国家页展示。",
+        "recent_log_lines": [
+          "国家政策：屯田令进入完成中。",
+          "市井补给已刷新库存。",
+          "官员调整：任命 治粟内史 负责资源政策。"
+        ],
+        "recent_report_lines": [
+          "北线国家战情：敌对同盟撤出外围据点。",
+          "国家战报：青州主力完成集结。"
+        ],
+        "found_nation_visible": false,
+        "found_nation_can_found": false,
+        "found_nation_requirement_lines": [
+          "已立国：立国入口隐藏。",
+          "国家能力：政策、市井、国家建筑进入国家页。"
+        ],
+        "empire_upgrade_requirement_lines": [
+          "帝国升级：王国等级 24 / 90",
+          "州治：0 / 1",
+          "郡城：3 / 10",
+          "成员：86 / 200（按总成员，不按在线人数）"
+        ],
+        "nation_profile_draft": {
+          "nation_name": "齐国",
+          "color_hex": "#c95f32",
+          "capital_tile_id": "tile_08",
+          "capital_name": "青石城",
+          "capital_options": [
+            {
+              "tile_id": "tile_08",
+              "name": "青石城",
+              "district": "青州",
+              "selected": true
+            },
+            {
+              "tile_id": "tile_13",
+              "name": "临淄城",
+              "district": "青州",
+              "selected": false
+            }
+          ],
+          "source_page": "nation/profile"
+        },
+        "nation_profile_update_draft": {
+          "nation_name": "齐国",
+          "color_hex": "#c95f32",
+          "capital_tile_id": "tile_08",
+          "capital_name": "青石城",
+          "capital_options": [
+            {
+              "tile_id": "tile_08",
+              "name": "青石城",
+              "district": "青州",
+              "selected": true
+            },
+            {
+              "tile_id": "tile_13",
+              "name": "临淄城",
+              "district": "青州",
+              "selected": false
+            }
+          ],
+          "source_page": "nation/profile"
+        },
+        "nation_profile_governance": {
+          "capital_tile_id": "tile_08",
+          "capital_name": "青石城",
+      "profile_lock_text": "国号和势力色已随都城锁定",
+      "capital_migration_text": "迁都后可重选都城、国号和势力色",
+      "capital_migration_cost_text": "200 玉符",
+          "rename_cooldown_until": "",
+          "rename_cooldown_text": "国号随都城锁定",
+          "historical_names": [
+            {
+              "nationName": "青州同盟",
+              "changedAt": "2026-06-01T00:00:00.000Z",
+              "changedTo": "齐国",
+              "sourceAction": "foundNation"
+            }
+          ],
+          "audit_log": [
+            {
+              "id": "fixture_nation_found_audit",
+              "action": "foundNation",
+              "changedAt": "2026-06-01T00:00:00.000Z",
+              "factionId": "player",
+              "changedFields": ["nationName", "color"],
+              "previousNationName": "青州同盟",
+              "nextNationName": "齐国",
+              "previousColor": "",
+              "nextColor": "#c95f32"
+            }
+          ],
+          "latest_rejection": {}
+        },
+        "section_payloads": {
+          "nation": {
+            "policy": {
+              "summary_lines": [
+                "国家阶段展示政策树，政策完成后在本赛季提供永久加成。",
+                "当前只展示 UI 结构，不结算政策效果。"
+              ],
+              "item_cards": [
+                {
+                  "title": "屯田令",
+                  "value": "进行中",
+                  "meta": "内政政策",
+                  "description": "本赛季粮食产出加成。"
+                },
+                {
+                  "title": "军府整备",
+                  "value": "待解锁",
+                  "meta": "军务政策",
+                  "description": "提升组织协同效率。"
+                }
+              ],
+              "content_blocks": [
+                {
+                  "kind": "policy_tree_canvas",
+                  "title": "政策树",
+                  "node_name": "OrganizationPolicyTreeCanvasBlock",
+                  "nodes": [
+                    {
+                      "id": "season_core",
+                      "title": "王制纲领",
+                      "name": "赛季总策",
+                      "seal": "王",
+                      "meta": "最高政策",
+                      "description": "高阶政策更少，承接下层政策完成状态。",
+                      "tier": 0,
+                      "x": 700,
+                      "y": 24,
+                      "width": 260,
+                      "height": 96
+                    },
+                    {
+                      "id": "military_core",
+                      "parent": "season_core",
+                      "title": "军府纲领",
+                      "name": "军务中枢",
+                      "seal": "军",
+                      "meta": "高阶政策",
+                      "description": "统合军团与战区加成。",
+                      "tier": 1,
+                      "x": 520,
+                      "y": 165,
+                      "width": 240,
+                      "height": 88
+                    },
+                    {
+                      "id": "civil_core",
+                      "parent": "season_core",
+                      "title": "民政纲领",
+                      "name": "内政中枢",
+                      "seal": "政",
+                      "meta": "高阶政策",
+                      "description": "统合资源、城池和建设加成。",
+                      "tier": 1,
+                      "x": 900,
+                      "y": 165,
+                      "width": 240,
+                      "height": 88
+                    },
+                    {
+                      "id": "mobilize",
+                      "parent": "military_core",
+                      "title": "征调整备",
+                      "name": "待解锁",
+                      "seal": "征",
+                      "meta": "中阶政策",
+                      "description": "提升组织调动效率。",
+                      "tier": 2,
+                      "x": 245,
+                      "y": 310,
+                      "width": 230,
+                      "height": 86
+                    },
+                    {
+                      "id": "frontline",
+                      "parent": "military_core",
+                      "title": "前线军略",
+                      "name": "待解锁",
+                      "seal": "略",
+                      "meta": "中阶政策",
+                      "description": "提升战区协同效率。",
+                      "tier": 2,
+                      "x": 535,
+                      "y": 310,
+                      "width": 230,
+                      "height": 86
+                    },
+                    {
+                      "id": "granary",
+                      "parent": "civil_core",
+                      "title": "屯田令",
+                      "name": "进行中",
+                      "seal": "屯",
+                      "meta": "中阶政策",
+                      "description": "本赛季粮食产出加成。",
+                      "tier": 2,
+                      "x": 825,
+                      "y": 310,
+                      "width": 230,
+                      "height": 86
+                    },
+                    {
+                      "id": "workshop",
+                      "parent": "civil_core",
+                      "title": "工坊令",
+                      "name": "待解锁",
+                      "seal": "工",
+                      "meta": "中阶政策",
+                      "description": "提升木材与铁矿收益。",
+                      "tier": 2,
+                      "x": 1115,
+                      "y": 310,
+                      "width": 230,
+                      "height": 86
+                    },
+                    {
+                      "id": "base_1",
+                      "parent": "mobilize",
+                      "title": "兵册清点",
+                      "name": "可研究",
+                      "seal": "兵",
+                      "meta": "底层政策",
+                      "description": "底层节点更多，便于赛季成长。",
+                      "tier": 3,
+                      "x": 80,
+                      "y": 470,
+                      "width": 200,
+                      "height": 80
+                    },
+                    {
+                      "id": "base_2",
+                      "parent": "mobilize",
+                      "title": "军粮预置",
+                      "name": "可研究",
+                      "seal": "粮",
+                      "meta": "底层政策",
+                      "description": "为上层军务政策铺路。",
+                      "tier": 3,
+                      "x": 315,
+                      "y": 470,
+                      "width": 200,
+                      "height": 80
+                    },
+                    {
+                      "id": "base_3",
+                      "parent": "frontline",
+                      "title": "斥候整备",
+                      "name": "可研究",
+                      "seal": "侦",
+                      "meta": "底层政策",
+                      "description": "提升前线情报效率。",
+                      "tier": 3,
+                      "x": 550,
+                      "y": 470,
+                      "width": 200,
+                      "height": 80
+                    },
+                    {
+                      "id": "base_4",
+                      "parent": "granary",
+                      "title": "仓廪修缮",
+                      "name": "可研究",
+                      "seal": "仓",
+                      "meta": "底层政策",
+                      "description": "提高城池资源承载。",
+                      "tier": 3,
+                      "x": 785,
+                      "y": 470,
+                      "width": 200,
+                      "height": 80
+                    },
+                    {
+                      "id": "base_5",
+                      "parent": "workshop",
+                      "title": "匠作调度",
+                      "name": "可研究",
+                      "seal": "匠",
+                      "meta": "底层政策",
+                      "description": "提高建设和供给效率。",
+                      "tier": 3,
+                      "x": 1020,
+                      "y": 470,
+                      "width": 200,
+                      "height": 80
+                    },
+                    {
+                      "id": "base_6",
+                      "parent": "workshop",
+                      "title": "市井税契",
+                      "name": "立国后",
+                      "seal": "市",
+                      "meta": "底层政策",
+                      "description": "连接市井与国家供给。",
+                      "tier": 3,
+                      "x": 1255,
+                      "y": 470,
+                      "width": 200,
+                      "height": 80
+                    }
+                  ],
+                  "source_mode": "nation_policy_read_model_tree_canvas_v1",
+                  "read_model_contract": "policy_tree_climb_zoom_canvas_v1"
+                }
+              ]
+            },
+            "market": {
+              "summary_lines": [
+                "市井供给来自国家 read model，展示库存、限购和消耗。",
+                "本阶段只做 UI 展示，不触发购买结算。"
+              ],
+              "item_cards": [
+                {
+                  "title": "军粮补给",
+                  "value": "粮食 120000",
+                  "meta": "库存 | 限购 6000",
+                  "description": "前线军团可兑换的战备粮。"
+                },
+                {
+                  "title": "木材调拨",
+                  "value": "木材 64000",
+                  "meta": "库存 | 限购 800",
+                  "description": "用于国家建筑建设。"
+                },
+                {
+                  "title": "铜币市税",
+                  "value": "铜币 2/5",
+                  "meta": "今日 | 冷却 120",
+                  "description": "市井税收 read model 示例。"
+                }
+              ],
+              "content_blocks": [
+                {
+                  "kind": "market_supply",
+                  "title": "国家供给",
+                  "node_name": "OrganizationMarketSupplyCardGridBlock",
+                  "source_mode": "market_supply_read_model_card_grid_v3",
+                  "columns": 3,
+                  "currency_line": "国库粮食 900000 / 木材 420000 / 铁矿 82000 / 铜币 3200",
+                  "categories": [
+                    {
+                      "label": "全部",
+                      "value": "3",
+                      "active": true
+                    },
+                    {
+                      "label": "资源",
+                      "value": "2"
+                    },
+                    {
+                      "label": "税收",
+                      "value": "1"
+                    },
+                    {
+                      "label": "限购",
+                      "value": "1"
+                    }
+                  ],
+                  "cards": [
+                    {
+                      "title": "军粮补给",
+                      "value": "粮食 120000",
+                      "meta": "库存 | 限购 6000",
+                      "description": "前线军团可兑换的战备粮。"
+                    },
+                    {
+                      "title": "木材调拨",
+                      "value": "木材 64000",
+                      "meta": "库存 | 限购 800",
+                      "description": "用于国家建筑建设。"
+                    },
+                    {
+                      "title": "铜币市税",
+                      "value": "铜币 2/5",
+                      "meta": "今日 | 冷却 120",
+                      "description": "市井税收 read model 示例。"
+                    }
+                  ]
+                }
+              ]
+            },
+            "buildings": {
+              "summary_lines": [
+                "国家建筑来自 read model，展示等级、状态和加成。",
+                "建筑效果仍由后端权威结算，本页只负责 UI 呈现。"
+              ],
+              "item_cards": [
+                {
+                  "title": "国府",
+                  "value": "Lv.4",
+                  "meta": "核心 | 生效中",
+                  "description": "提升国家成员与政策容量。"
+                },
+                {
+                  "title": "校场",
+                  "value": "Lv.3",
+                  "meta": "军务 | 生效中",
+                  "description": "提升军团调动效率。"
+                },
+                {
+                  "title": "工坊",
+                  "value": "Lv.3",
+                  "meta": "营造 | 升级中",
+                  "description": "提升木材与铁矿收益。"
+                },
+                {
+                  "title": "仓廪",
+                  "value": "Lv.2",
+                  "meta": "资源 | 待升级",
+                  "description": "提升粮食储备上限。"
+                }
+              ],
+              "content_blocks": [
+                {
+                  "kind": "building_grid",
+                  "title": "国家建筑",
+                  "node_name": "OrganizationNationBuildingReadModelBlock",
+                  "source_mode": "nation_building_read_model_card_grid_v1",
+                  "columns": 3,
+                  "filters": [
+                    {
+                      "label": "全部",
+                      "value": "4",
+                      "active": true
+                    },
+                    {
+                      "label": "核心",
+                      "value": "1"
+                    },
+                    {
+                      "label": "军务",
+                      "value": "1"
+                    },
+                    {
+                      "label": "营造",
+                      "value": "1"
+                    },
+                    {
+                      "label": "资源",
+                      "value": "1"
+                    }
+                  ],
+                  "cards": [
+                    {
+                      "title": "国府",
+                      "value": "Lv.4",
+                      "meta": "核心 | 生效中",
+                      "description": "提升国家成员与政策容量。"
+                    },
+                    {
+                      "title": "校场",
+                      "value": "Lv.3",
+                      "meta": "军务 | 生效中",
+                      "description": "提升军团调动效率。"
+                    },
+                    {
+                      "title": "工坊",
+                      "value": "Lv.3",
+                      "meta": "营造 | 升级中",
+                      "description": "提升木材与铁矿收益。"
+                    },
+                    {
+                      "title": "仓廪",
+                      "value": "Lv.2",
+                      "meta": "资源 | 待升级",
+                      "description": "提升粮食储备上限。"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "battle_reports": {
+            "latest": {
+              "summary_lines": [
+                "组织战报复用独立战报页的列表到详情交互。",
+                "本页只筛出同盟/国家战情，不修改个人战报页结构。"
+              ],
+              "content_blocks": [
+                {
+                  "kind": "battle_report_list",
+                  "title": "组织战报",
+                  "node_name": "OrganizationBattleReportListBlock",
+                  "navigation_contract": "organization_battle_report_list_then_detail_route_v1",
+                  "reports": [],
+                  "battleRecords": [
+                    {
+                      "id": "nation_real_human_jinan_win",
+                      "tick": 121,
+                      "reportKind": "resource_guard",
+                      "attacker": "玩家主控",
+                      "defender": "济南郡外围守军",
+                      "region": "济南郡",
+                      "result": "胜",
+                      "time": "第121刻",
+                      "location": "济南郡外围",
+                      "summary": "玩家主控完成济南郡外围据点清理，战报来自真实 battleRecords 字段。",
+                      "attackerFaction": "player",
+                      "attackerFactionId": "player",
+                      "defenderFactionId": "neutral",
+                      "ownerFactionId": "player",
+                      "attackerUnitId": "unit_player_main",
+                      "attackerTroops": 10400,
+                      "attackerMaxTroops": 12000,
+                      "attackerLoss": 1600,
+                      "defenderLoss": 4600,
+                      "tileId": "jining_resource_guard_001",
+                      "tileX": 4300,
+                      "tileY": 2538,
+                      "resourceTileLevel": 6,
+                      "rewards": [
+                        {
+                          "resource": "粮食",
+                          "amount": 15000
+                        },
+                        {
+                          "resource": "木材",
+                          "amount": 8000
+                        },
+                        {
+                          "resource": "铜币",
+                          "amount": 1200
+                        }
+                      ],
+                      "attackerUnit": {
+                        "unitId": "unit_player_main",
+                        "name": "玩家主控",
+                        "strength": 104,
+                        "currentTroops": 10400,
+                        "maxTroops": 12000,
+                        "lossTroops": 1600,
+                        "hero": {
+                          "heroId": "100451",
+                          "name": "关羽",
+                          "level": 43,
+                          "stars": 5,
+                          "currentTroops": 3600,
+                          "maxTroops": 4000,
+                          "lossTroops": 400,
+                          "portraitAssetKey": "formal_pack.portrait.guan_yu_mature_mounted_jingzhou_v1"
+                        },
+                        "coHeroes": [
+                          {
+                            "heroId": "100090",
+                            "name": "太史慈",
+                            "level": 42,
+                            "stars": 5,
+                            "currentTroops": 3400,
+                            "maxTroops": 4000,
+                            "lossTroops": 600,
+                            "portraitAssetKey": "formal_pack.portrait.tai_shi_ci_mature_yishi_v1"
+                          },
+                          {
+                            "heroId": "100017",
+                            "name": "诸葛亮",
+                            "level": 41,
+                            "stars": 5,
+                            "currentTroops": 3400,
+                            "maxTroops": 4000,
+                            "lossTroops": 600,
+                            "portraitAssetKey": "formal_pack.portrait.zhuge_liang_mature_beifa_v1"
+                          }
+                        ]
+                      },
+                      "defenderTroops": 5200,
+                      "defenderMaxTroops": 9800,
+                      "alliedSupport": 6,
+                      "organizationKind": "nation",
+                      "organizationName": "齐国",
+                      "organizationId": "player"
+                    },
+                    {
+                      "id": "nation_real_ai_supply_line",
+                      "tick": 122,
+                      "reportKind": "resource_guard",
+                      "attacker": "青州后勤官",
+                      "defender": "资源州敌对先遣",
+                      "region": "资源州",
+                      "result": "胜",
+                      "time": "第122刻",
+                      "location": "资源州粮道",
+                      "summary": "AI 玩家青州后勤官完成资源点护送战，归属玩家组织战报来源。",
+                      "attackerFaction": "player",
+                      "attackerFactionId": "player",
+                      "defenderFactionId": "enemy",
+                      "ownerFactionId": "player",
+                      "attackerUnitId": "unit_ai_logistics",
+                      "aiPlayerId": "ai_player_backend_report_alpha",
+                      "attackerAiPlayerId": "ai_player_backend_report_alpha",
+                      "attackerTroops": 8800,
+                      "attackerMaxTroops": 11800,
+                      "attackerUnit": {
+                        "unitId": "unit_ai_logistics",
+                        "name": "青州后勤官",
+                        "strength": 88,
+                        "hero": {
+                          "heroId": "100016",
+                          "name": "刘备",
+                          "level": 38,
+                          "stars": 5,
+                          "portraitAssetKey": "formal_pack.portrait.liu_bei_mature_hanzhong_sworddance_face_smile_v2"
+                        },
+                        "coHeroes": [
+                          {
+                            "heroId": "100021",
+                            "name": "赵云",
+                            "level": 37,
+                            "stars": 5,
+                            "portraitAssetKey": "formal_pack.portrait.zhao_yun_youth_changban_rescue_v1"
+                          },
+                          {
+                            "heroId": "100716",
+                            "name": "张飞",
+                            "level": 36,
+                            "stars": 5,
+                            "portraitAssetKey": "formal_pack.portrait.zhang_fei_mature_baxi_v1"
+                          }
+                        ]
+                      },
+                      "defenderTroops": 7600,
+                      "defenderMaxTroops": 10500,
+                      "alliedSupport": 4,
+                      "organizationKind": "nation",
+                      "organizationName": "齐国",
+                      "organizationId": "player"
+                    },
+                    {
+                      "id": "nation_real_commandery_front",
+                      "tick": 123,
+                      "reportKind": "field_battle",
+                      "attacker": "青州同盟",
+                      "defender": "济南守军",
+                      "region": "济南郡",
+                      "result": "胜",
+                      "time": "第123刻",
+                      "location": "济南郡治外围",
+                      "summary": "同盟主力军团接敌获胜，明确携带 organizationId 供同盟/国家战报过滤。",
+                      "attackerFaction": "player",
+                      "attackerFactionId": "player",
+                      "defenderFactionId": "enemy",
+                      "ownerFactionId": "player",
+                      "organizationId": "player",
+                      "organizationName": "齐国",
+                      "organizationKind": "nation",
+                      "attackerUnitId": "unit_alliance_main",
+                      "attackerTroops": 13200,
+                      "attackerMaxTroops": 15000,
+                      "attackerUnit": {
+                        "unitId": "unit_alliance_main",
+                        "name": "青州同盟主力",
+                        "strength": 132,
+                        "hero": {
+                          "heroId": "100001",
+                          "name": "曹操",
+                          "level": 45,
+                          "stars": 5,
+                          "portraitAssetKey": "formal_pack.portrait.cao_cao_fate_v1"
+                        },
+                        "coHeroes": [
+                          {
+                            "heroId": "100060",
+                            "name": "张辽",
+                            "level": 43,
+                            "stars": 5,
+                            "portraitAssetKey": "formal_pack.portrait.zhang_liao_mature_hefei_v1"
+                          },
+                          {
+                            "heroId": "100714",
+                            "name": "夏侯惇",
+                            "level": 42,
+                            "stars": 5,
+                            "portraitAssetKey": "formal_pack.portrait.xiahou_dun_mature_duyan_v1"
+                          }
+                        ]
+                      },
+                      "defenderTroops": 6400,
+                      "defenderMaxTroops": 11000,
+                      "alliedSupport": 8
+                    },
+                    {
+                      "id": "nation_real_foreign_filtered",
+                      "tick": 124,
+                      "reportKind": "field_battle",
+                      "attacker": "赤垒国",
+                      "defender": "外围斥候",
+                      "region": "兖州边境",
+                      "result": "胜",
+                      "time": "第124刻",
+                      "location": "兖州边境",
+                      "summary": "外部国家来袭样本用于验证敌对涉我战报仍进入当前同盟/国家战报列表。",
+                      "attackerFaction": "enemy",
+                      "attackerFactionId": "enemy",
+                      "defenderFactionId": "player",
+                      "ownerFactionId": "enemy",
+                      "organizationId": "player",
+                      "organizationName": "齐国",
+                      "organizationKind": "nation",
+                      "attackerUnitId": "unit_enemy_nation",
+                      "attackerTroops": 9600,
+                      "attackerMaxTroops": 12000,
+                      "attackerUnit": {
+                        "unitId": "unit_enemy_nation",
+                        "name": "赤垒国先遣",
+                        "strength": 96,
+                        "hero": {
+                          "heroId": "100023",
+                          "name": "曹操",
+                          "level": 40,
+                          "stars": 5,
+                          "portraitAssetKey": "formal_pack.portrait.cao_cao_fate_v1"
+                        },
+                        "coHeroes": [
+                          {
+                            "heroId": "100027",
+                            "name": "张辽",
+                            "level": 39,
+                            "stars": 5,
+                            "portraitAssetKey": "formal_pack.portrait.zhang_liao_mature_hefei_v1"
+                          },
+                          {
+                            "heroId": "100713",
+                            "name": "夏侯惇",
+                            "level": 38,
+                            "stars": 5,
+                            "portraitAssetKey": "formal_pack.portrait.xiahou_dun_mature_duyan_v1"
+                          }
+                        ]
+                      },
+                      "defenderTroops": 7000,
+                      "defenderMaxTroops": 10800,
+                      "alliedSupport": 2
+                    }
+                  ],
+                  "filter_contract": "battle_report_core_data_filter_no_visible_extra_strip_v1",
+                  "source_filter_contract": "organization_battle_report_source_filter_v1"
+                }
+              ]
+            },
+            "log": {
+              "summary_lines": [
+                "组织日志汇总成员、官员、外交和战报事件。",
+                "日志只展示 read model，不修改后端 authority。"
+              ],
+              "item_cards": [
+                {
+                  "title": "成员变动",
+                  "value": "1",
+                  "meta": "玩家/AI 加入",
+                  "description": "记录玩家与 AI 玩家进入组织。"
+                },
+                {
+                  "title": "官员任命",
+                  "value": "1",
+                  "meta": "官员调整",
+                  "description": "记录官员席位变更。"
+                },
+                {
+                  "title": "外交事件",
+                  "value": "1",
+                  "meta": "关系变更",
+                  "description": "记录外交关系调整。"
+                },
+                {
+                  "title": "战报归档",
+                  "value": "1",
+                  "meta": "战情同步",
+                  "description": "记录组织战报产生。"
+                }
+              ],
+              "content_blocks": [
+                {
+                  "kind": "timeline_cards",
+                  "title": "组织日志",
+                  "node_name": "OrganizationLogFilterTimelineBlock",
+                  "filter_contract": "organization_log_report_filter_strip_v1",
+                  "source_mode": "organization_log_read_model_or_feedback_actions_v1",
+                  "filters": [
+                    {
+                      "label": "全部",
+                      "value": "4",
+                      "active": true
+                    },
+                    {
+                      "label": "成员",
+                      "value": "1"
+                    },
+                    {
+                      "label": "官员",
+                      "value": "1"
+                    },
+                    {
+                      "label": "外交",
+                      "value": "1"
+                    },
+                    {
+                      "label": "战报",
+                      "value": "1"
+                    }
+                  ],
+                  "rows": [
+                    {
+                      "time": "今日 08:00",
+                      "type": "成员",
+                      "actor": "系统",
+                      "event": "玩家与 AI 玩家加入",
+                      "detail": "玩家携 AI 玩家进入青州同盟。"
+                    },
+                    {
+                      "time": "今日 08:20",
+                      "type": "官员",
+                      "actor": "盟主",
+                      "event": "任命前线指挥",
+                      "detail": "河东盟军进入前线指挥候选。"
+                    },
+                    {
+                      "time": "今日 09:10",
+                      "type": "外交",
+                      "actor": "外交官",
+                      "event": "标记敌对关系",
+                      "detail": "黄巾余部被标记为敌对 read model。"
+                    },
+                    {
+                      "time": "今日 09:40",
+                      "type": "战报",
+                      "actor": "战报系统",
+                      "event": "归档同盟战报",
+                      "detail": "济南郡外围战报已归档。"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "nation_building_count": 4,
+        "battle_report_real_source_count": 4,
+        "battle_report_raw_battle_record_count": 4,
+        "battle_report_raw_world_report_count": 0,
+        "organization_battle_report_source_filter_mode": "battle_records_only"
+      }
+    }
+  }
+}

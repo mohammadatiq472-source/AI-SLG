@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "packId": "slg_shell_minimal_svg_2026_04_18",
+  "baseSize": 64,
+  "palette": {
+    "gold": "#d8b56a",
+    "ink": "#241b12",
+    "paper": "#f2dfb3",
+    "copper": "#b87333",
+    "jade": "#73d76b",
+    "danger": "#d96a6a"
+  },
+  "icons": [
+    {
+      "id": "battle_report",
+      "file": "battle_report.svg",
+      "usage": "battle report / war log entry"
+    },
+    {
+      "id": "mail_notice",
+      "file": "mail_notice.svg",
+      "usage": "mail / inbox / notice"
+    },
+    {
+      "id": "task_board",
+      "file": "task_board.svg",
+      "usage": "task / mission / quest"
+    },
+    {
+      "id": "activity_seal",
+      "file": "activity_seal.svg",
+      "usage": "event / activity"
+    },
+    {
+      "id": "coin_copper",
+      "file": "coin_copper.svg",
+      "usage": "copper currency"
+    },
+    {
+      "id": "jade_token",
+      "file": "jade_token.svg",
+      "usage": "premium jade currency"
+    },
+    {
+      "id": "alliance_banner",
+      "file": "alliance_banner.svg",
+      "usage": "alliance / guild"
+    },
+    {
+      "id": "ai_emblem",
+      "file": "ai_emblem.svg",
+      "usage": "AI / automation / advisor"
+    },
+    {
+      "id": "help_badge",
+      "file": "help_badge.svg",
+      "usage": "help / tips / info"
+    },
+    {
+      "id": "close_badge",
+      "file": "close_badge.svg",
+      "usage": "close / dismiss"
+    },
+    {
+      "id": "back_badge",
+      "file": "back_badge.svg",
+      "usage": "back / return"
+    }
+  ]
+}

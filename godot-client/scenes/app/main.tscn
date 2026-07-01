@@ -1,0 +1,320 @@
+[gd_scene load_steps=9 format=3]
+
+[ext_resource type="Script" path="res://scripts/app/main.gd" id="1_main"]
+[ext_resource type="Script" path="res://scripts/map/map_grid.gd" id="2_map_grid"]
+[ext_resource type="Script" path="res://scripts/map/unit_view_layer.gd" id="3_unit_view_layer"]
+[ext_resource type="PackedScene" path="res://scenes/ui/native_slg_shell.tscn" id="4_native_shell"]
+[ext_resource type="PackedScene" path="res://scenes/ui/observability_panel.tscn" id="5_observability_panel"]
+[ext_resource type="PackedScene" path="res://scenes/ui/full_screen_panel_host.tscn" id="6_full_screen_panel_host"]
+[ext_resource type="PackedScene" path="res://scenes/ui/main_chat_overlay.tscn" id="7_main_chat_overlay"]
+[ext_resource type="Script" path="res://scripts/ui/main_city_hub_overlay.gd" id="8_main_city_hub"]
+
+[node name="Main" type="Node"]
+script = ExtResource("1_main")
+runtime_label_path = NodePath("HoverLayer/RuntimeLabel")
+refresh_button_path = NodePath("HoverLayer/RefreshWorldButton")
+advance_tick_button_path = NodePath("HoverLayer/AdvanceTickButton")
+
+[node name="MapGrid" type="Node2D" parent="."]
+visible = false
+script = ExtResource("2_map_grid")
+hover_label_path = NodePath("../HoverLayer/HoverInfo")
+perf_label_path = NodePath("../HoverLayer/PerfInfo")
+export_button_path = NodePath("../HoverLayer/ExportPerfButton")
+export_status_label_path = NodePath("../HoverLayer/ExportStatus")
+
+[node name="UnitViewLayer" type="Node2D" parent="."]
+visible = false
+script = ExtResource("3_unit_view_layer")
+
+[node name="HoverLayer" type="Control" parent="."]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="RuntimeLabel" type="Label" parent="HoverLayer"]
+visible = false
+layout_mode = 1
+offset_left = 16.0
+offset_top = 12.0
+offset_right = 560.0
+offset_bottom = 40.0
+theme_override_font_sizes/font_size = 13
+text = ""
+
+[node name="HoverInfo" type="Label" parent="HoverLayer"]
+visible = false
+layout_mode = 1
+offset_left = 16.0
+offset_top = 44.0
+offset_right = 360.0
+offset_bottom = 160.0
+theme_override_font_sizes/font_size = 13
+text = ""
+autowrap_mode = 3
+
+[node name="PerfInfo" type="Label" parent="HoverLayer"]
+visible = false
+layout_mode = 1
+offset_left = 16.0
+offset_top = 164.0
+offset_right = 360.0
+offset_bottom = 232.0
+theme_override_font_sizes/font_size = 12
+text = ""
+autowrap_mode = 3
+
+[node name="RefreshWorldButton" type="Button" parent="HoverLayer"]
+visible = false
+layout_mode = 1
+offset_left = 16.0
+offset_top = 240.0
+offset_right = 136.0
+offset_bottom = 272.0
+text = ""
+
+[node name="AdvanceTickButton" type="Button" parent="HoverLayer"]
+visible = false
+layout_mode = 1
+offset_left = 144.0
+offset_top = 240.0
+offset_right = 264.0
+offset_bottom = 272.0
+text = ""
+
+[node name="ExportPerfButton" type="Button" parent="HoverLayer"]
+visible = false
+layout_mode = 1
+offset_left = 272.0
+offset_top = 240.0
+offset_right = 392.0
+offset_bottom = 272.0
+text = ""
+
+[node name="ExportStatus" type="Label" parent="HoverLayer"]
+visible = false
+layout_mode = 1
+offset_left = 400.0
+offset_top = 240.0
+offset_right = 656.0
+offset_bottom = 272.0
+theme_override_font_sizes/font_size = 12
+text = ""
+autowrap_mode = 3
+
+[node name="UiLayer" type="CanvasLayer" parent="."]
+
+[node name="NativeShell" parent="UiLayer" instance=ExtResource("4_native_shell")]
+
+[node name="MainCityHubOverlay" type="Control" parent="UiLayer"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("8_main_city_hub")
+
+[node name="MainChatOverlay" parent="UiLayer" instance=ExtResource("7_main_chat_overlay")]
+
+[node name="TianxiaYutuOverviewRoot" type="Control" parent="UiLayer"]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 0
+
+[node name="Backdrop" type="ColorRect" parent="UiLayer/TianxiaYutuOverviewRoot"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.025, 0.03, 0.032, 0.92)
+
+[node name="Panel" type="PanelContainer" parent="UiLayer/TianxiaYutuOverviewRoot"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 48.0
+offset_top = 42.0
+offset_right = -48.0
+offset_bottom = -42.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Margin" type="MarginContainer" parent="UiLayer/TianxiaYutuOverviewRoot/Panel"]
+layout_mode = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 14
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 14
+
+[node name="Column" type="VBoxContainer" parent="UiLayer/TianxiaYutuOverviewRoot/Panel/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="Header" type="HBoxContainer" parent="UiLayer/TianxiaYutuOverviewRoot/Panel/Margin/Column"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="TitleLabel" type="Label" parent="UiLayer/TianxiaYutuOverviewRoot/Panel/Margin/Column/Header"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 20
+text = "天下舆图"
+
+[node name="JumpLuoyangButton" type="Button" parent="UiLayer/TianxiaYutuOverviewRoot/Panel/Margin/Column/Header"]
+custom_minimum_size = Vector2(118, 34)
+layout_mode = 2
+text = "跳转洛阳"
+
+[node name="CloseButton" type="Button" parent="UiLayer/TianxiaYutuOverviewRoot/Panel/Margin/Column/Header"]
+custom_minimum_size = Vector2(86, 34)
+layout_mode = 2
+text = "返回"
+
+[node name="Body" type="HBoxContainer" parent="UiLayer/TianxiaYutuOverviewRoot/Panel/Margin/Column"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 14
+
+[node name="PreviewFrame" type="PanelContainer" parent="UiLayer/TianxiaYutuOverviewRoot/Panel/Margin/Column/Body"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="PreviewTexture" type="TextureRect" parent="UiLayer/TianxiaYutuOverviewRoot/Panel/Margin/Column/Body/PreviewFrame"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+expand_mode = 1
+stretch_mode = 5
+
+[node name="InfoColumn" type="VBoxContainer" parent="UiLayer/TianxiaYutuOverviewRoot/Panel/Margin/Column/Body"]
+custom_minimum_size = Vector2(280, 0)
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="StatusLabel" type="Label" parent="UiLayer/TianxiaYutuOverviewRoot/Panel/Margin/Column/Body/InfoColumn"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 13
+text = "等待加载..."
+autowrap_mode = 3
+
+[node name="LayerLabel" type="Label" parent="UiLayer/TianxiaYutuOverviewRoot/Panel/Margin/Column/Body/InfoColumn"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 12
+text = ""
+autowrap_mode = 3
+
+[node name="MainMapCellActionRoot" type="Control" parent="UiLayer"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="MainMapCellActionPanel" type="PanelContainer" parent="UiLayer/MainMapCellActionRoot"]
+visible = false
+layout_mode = 1
+anchors_preset = 0
+offset_left = 0.0
+offset_top = 104.0
+offset_right = 420.0
+offset_bottom = 354.0
+
+[node name="ActionMargin" type="MarginContainer" parent="UiLayer/MainMapCellActionRoot/MainMapCellActionPanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 14
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 14
+theme_override_constants/margin_bottom = 12
+
+[node name="ActionColumn" type="VBoxContainer" parent="UiLayer/MainMapCellActionRoot/MainMapCellActionPanel/ActionMargin"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="TileActionHudTitleLabel" type="Label" parent="UiLayer/MainMapCellActionRoot/MainMapCellActionPanel/ActionMargin/ActionColumn"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = ""
+autowrap_mode = 3
+
+[node name="TileActionHudCoordinateLabel" type="Label" parent="UiLayer/MainMapCellActionRoot/MainMapCellActionPanel/ActionMargin/ActionColumn"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 15
+text = ""
+autowrap_mode = 3
+
+[node name="TileActionHudYieldLabel" type="Label" parent="UiLayer/MainMapCellActionRoot/MainMapCellActionPanel/ActionMargin/ActionColumn"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 16
+text = ""
+autowrap_mode = 3
+
+[node name="TileActionHudDefenderLabel" type="Label" parent="UiLayer/MainMapCellActionRoot/MainMapCellActionPanel/ActionMargin/ActionColumn"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 16
+text = ""
+autowrap_mode = 3
+
+[node name="TileActionHudTroopLabel" type="Label" parent="UiLayer/MainMapCellActionRoot/MainMapCellActionPanel/ActionMargin/ActionColumn"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 16
+text = ""
+autowrap_mode = 3
+
+[node name="CellSummaryLabel" type="Label" parent="UiLayer/MainMapCellActionRoot/MainMapCellActionPanel/ActionMargin/ActionColumn"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 16
+text = ""
+autowrap_mode = 3
+
+[node name="TileActionHudFeedbackLabel" type="Label" parent="UiLayer/MainMapCellActionRoot/MainMapCellActionPanel/ActionMargin/ActionColumn"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 16
+text = ""
+autowrap_mode = 3
+
+[node name="ActionRow" type="HBoxContainer" parent="UiLayer/MainMapCellActionRoot/MainMapCellActionPanel/ActionMargin/ActionColumn"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="TileExpeditionButton" type="Button" parent="UiLayer/MainMapCellActionRoot/MainMapCellActionPanel/ActionMargin/ActionColumn/ActionRow"]
+custom_minimum_size = Vector2(128, 46)
+layout_mode = 2
+text = "出征"
+
+[node name="ClaimCellButton" type="Button" parent="UiLayer/MainMapCellActionRoot/MainMapCellActionPanel/ActionMargin/ActionColumn/ActionRow"]
+custom_minimum_size = Vector2(96, 42)
+layout_mode = 2
+text = "占领"
+
+[node name="ReleaseCellButton" type="Button" parent="UiLayer/MainMapCellActionRoot/MainMapCellActionPanel/ActionMargin/ActionColumn/ActionRow"]
+custom_minimum_size = Vector2(96, 42)
+layout_mode = 2
+text = "放弃"
+
+[node name="MarkFrontlineButton" type="Button" parent="UiLayer/MainMapCellActionRoot/MainMapCellActionPanel/ActionMargin/ActionColumn/ActionRow"]
+custom_minimum_size = Vector2(112, 42)
+layout_mode = 2
+text = "标战线"
+
+[node name="FullScreenPanelHost" parent="UiLayer" instance=ExtResource("6_full_screen_panel_host")]
+visible = false
+
+[node name="ObservabilityPanel" parent="." instance=ExtResource("5_observability_panel")]

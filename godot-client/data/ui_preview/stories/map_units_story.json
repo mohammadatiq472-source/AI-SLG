@@ -1,0 +1,399 @@
+{
+  "schemaVersion": 1,
+  "storyId": "map_units",
+  "title": "Map Units Story",
+  "description": "Unit marker, movement, and engage preview over the persistent map stage.",
+  "dataSource": {
+    "requestedMode": "fixture",
+    "effectiveMode": "fixture",
+    "fallbackUsed": false,
+    "availableModes": [
+      "fixture"
+    ]
+  },
+  "captureTargets": [
+    "OverlayCanvas/OverlayRoot/StoryContentRoot/UnitsRosterPanel",
+    "OverlayCanvas/OverlayRoot/StoryContentRoot/UnitActionPanel"
+  ],
+  "validation": {
+    "kind": "ui_preview_story",
+    "captureTargets": [
+      "OverlayCanvas/OverlayRoot/StoryContentRoot/UnitsRosterPanel",
+      "OverlayCanvas/OverlayRoot/StoryContentRoot/UnitActionPanel"
+    ],
+    "expectedStateCount": 3,
+    "requiresDistinctScreenshots": true
+  },
+  "states": [
+    {
+      "id": "staging",
+      "label": "Staging",
+      "headline": "Map Units | staging roster",
+      "scope": "preview_units_staging",
+      "tick": 4096,
+      "worldVersion": 96,
+      "zoom": 0.42,
+      "hoverTileId": "city_player_base",
+      "hoverX": 1,
+      "hoverY": 5,
+      "accentColor": {
+        "r": 0.93,
+        "g": 0.63,
+        "b": 0.42,
+        "a": 1.0
+      },
+      "rosterLines": [
+        "Roster",
+        "Han Spear Block | infantry | selected",
+        "Blue River Riders | cavalry | ready",
+        "Western Crossbows | archer | watch"
+      ],
+      "actionLines": [
+        "Action Feed",
+        "This state checks faction banner tint and selected infantry framing.",
+        "The three unit silhouettes must remain distinct over the map terrain."
+      ],
+      "units": [
+        {
+          "id": "unit_infantry",
+          "name": "Han Spear Block",
+          "tileId": "city_player_base",
+          "faction": "player",
+          "status": "ready",
+          "strength": 100,
+          "mapVisual": {
+            "visualType": "infantry",
+            "primaryTroopType": "步兵",
+            "ownerType": "human",
+            "bannerColor": "#45b7ff",
+            "currentTileId": "city_player_base",
+            "status": "ready",
+            "label": "Han Spear",
+            "formationSlots": [
+              {
+                "role": "vanguard",
+                "heroId": "hero_preview_spear",
+                "heroName": "Spear Captain",
+                "troopType": "infantry",
+                "visualType": "infantry"
+              },
+              {
+                "role": "center",
+                "heroId": "hero_preview_rider",
+                "heroName": "Rider Captain",
+                "troopType": "cavalry",
+                "visualType": "cavalry"
+              },
+              {
+                "role": "camp",
+                "heroId": "hero_preview_bow",
+                "heroName": "Bow Captain",
+                "troopType": "archer",
+                "visualType": "archer"
+              }
+            ]
+          }
+        },
+        {
+          "id": "unit_cavalry",
+          "name": "Blue River Riders",
+          "tileId": "tile_03_05",
+          "faction": "player",
+          "status": "ready",
+          "strength": 82,
+          "mapVisual": {
+            "visualType": "cavalry",
+            "primaryTroopType": "骑兵",
+            "ownerType": "human",
+            "bannerColor": "#38d48b",
+            "currentTileId": "tile_03_05",
+            "status": "ready",
+            "label": "River Riders"
+          }
+        },
+        {
+          "id": "unit_archer",
+          "name": "Western Crossbows",
+          "tileId": "tile_07_04",
+          "faction": "enemy_west",
+          "status": "watch",
+          "strength": 92,
+          "mapVisual": {
+            "visualType": "archer",
+            "primaryTroopType": "弓兵",
+            "ownerType": "ai",
+            "bannerColor": "#f05c54",
+            "currentTileId": "tile_07_04",
+            "status": "watch",
+            "label": "Western Crossbow Watch Reserve"
+          },
+          "aiPlayerId": "ai_enemy_west"
+        }
+      ],
+      "selectedUnitId": "unit_infantry"
+    },
+    {
+      "id": "march",
+      "label": "March",
+      "headline": "Map Units | march and intercept",
+      "scope": "preview_units_march",
+      "tick": 4102,
+      "worldVersion": 97,
+      "zoom": 0.64,
+      "hoverTileId": "res_iron_units",
+      "hoverX": 5,
+      "hoverY": 5,
+      "accentColor": {
+        "r": 0.54,
+        "g": 0.81,
+        "b": 0.91,
+        "a": 1.0
+      },
+      "rosterLines": [
+        "Roster",
+        "Han Spear Block | infantry | marching",
+        "Blue River Riders | cavalry | escort",
+        "Western Crossbows | archer | intercept"
+      ],
+      "actionLines": [
+        "Action Feed",
+        "This state checks arrowed route lines, target markers, and live countdown labels.",
+        "The selected archer should show an independent ground selection frame."
+      ],
+      "units": [
+        {
+          "id": "unit_infantry",
+          "name": "Han Spear Block",
+          "tileId": "tile_04_05",
+          "faction": "player",
+          "status": "marching",
+          "strength": 98,
+          "mapVisual": {
+            "visualType": "infantry",
+            "primaryTroopType": "步兵",
+            "ownerType": "human",
+            "bannerColor": "#45b7ff",
+            "currentTileId": "tile_04_05",
+            "status": "marching",
+            "label": "Han Spear",
+            "targetTileId": "res_iron_units",
+            "currentPath": [
+              "tile_04_05",
+              "res_iron_units"
+            ],
+            "etaOffsetSec": 185,
+            "formationSlots": [
+              {
+                "role": "vanguard",
+                "heroId": "hero_preview_spear",
+                "heroName": "Spear Captain",
+                "troopType": "infantry",
+                "visualType": "infantry"
+              },
+              {
+                "role": "center",
+                "heroId": "hero_preview_rider",
+                "heroName": "Rider Captain",
+                "troopType": "cavalry",
+                "visualType": "cavalry"
+              },
+              {
+                "role": "camp",
+                "heroId": "hero_preview_bow",
+                "heroName": "Bow Captain",
+                "troopType": "archer",
+                "visualType": "archer"
+              }
+            ]
+          }
+        },
+        {
+          "id": "unit_cavalry",
+          "name": "Blue River Riders",
+          "tileId": "res_iron_units",
+          "faction": "player",
+          "status": "escort",
+          "strength": 80,
+          "mapVisual": {
+            "visualType": "cavalry",
+            "primaryTroopType": "骑兵",
+            "ownerType": "human",
+            "bannerColor": "#38d48b",
+            "currentTileId": "res_iron_units",
+            "status": "escort",
+            "label": "River Riders",
+            "targetTileId": "tile_06_05",
+            "currentPath": [
+              "res_iron_units",
+              "tile_06_05"
+            ],
+            "etaOffsetSec": 245
+          }
+        },
+        {
+          "id": "unit_archer",
+          "name": "Western Crossbows",
+          "tileId": "tile_06_03",
+          "faction": "enemy_west",
+          "status": "intercept",
+          "strength": 92,
+          "mapVisual": {
+            "visualType": "archer",
+            "primaryTroopType": "弓兵",
+            "ownerType": "ai",
+            "bannerColor": "#f05c54",
+            "currentTileId": "tile_06_03",
+            "status": "intercept",
+            "label": "West Bow",
+            "targetTileId": "res_iron_units",
+            "currentPath": [
+              "tile_06_03",
+              "tile_05_04",
+              "res_iron_units"
+            ],
+            "etaOffsetSec": 160
+          },
+          "aiPlayerId": "ai_enemy_west"
+        }
+      ],
+      "selectedUnitId": "unit_archer"
+    },
+    {
+      "id": "contest",
+      "label": "Contest",
+      "headline": "Map Units | contest and engage",
+      "scope": "preview_units_contest",
+      "tick": 4110,
+      "worldVersion": 98,
+      "zoom": 0.42,
+      "hoverTileId": "tile_05_03",
+      "hoverX": 5,
+      "hoverY": 3,
+      "accentColor": {
+        "r": 0.9,
+        "g": 0.38,
+        "b": 0.43,
+        "a": 1.0
+      },
+      "rosterLines": [
+        "Roster",
+        "Han Spear Block | infantry | far zoom",
+        "Blue River Riders | cavalry | selected at far zoom",
+        "Western Crossbows | archer | contest"
+      ],
+      "actionLines": [
+        "Action Feed",
+        "This state checks silhouette readability at a pulled-back map zoom.",
+        "Cavalry, infantry, and archer crops should remain visually distinct."
+      ],
+      "history": {
+        "executionReplays": [
+          {
+            "requestId": "preview_units_contest",
+            "frames": [
+              {
+                "tick": 4110,
+                "worldVersion": 98,
+                "label": "contest",
+                "highlights": [
+                  {
+                    "kind": "battle",
+                    "unitId": "unit_infantry",
+                    "fromTileId": "tile_04_05",
+                    "toTileId": "tile_05_03",
+                    "tileId": "tile_05_03"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "units": [
+        {
+          "id": "unit_infantry",
+          "name": "Han Spear Block",
+          "tileId": "tile_05_03",
+          "faction": "player",
+          "status": "fighting",
+          "strength": 72,
+          "mapVisual": {
+            "visualType": "infantry",
+            "primaryTroopType": "步兵",
+            "ownerType": "human",
+            "bannerColor": "#45b7ff",
+            "currentTileId": "tile_05_03",
+            "status": "fighting",
+            "label": "Han Spear",
+            "formationSlots": [
+              {
+                "role": "vanguard",
+                "heroId": "hero_preview_spear",
+                "heroName": "Spear Captain",
+                "troopType": "infantry",
+                "visualType": "infantry"
+              },
+              {
+                "role": "center",
+                "heroId": "hero_preview_rider",
+                "heroName": "Rider Captain",
+                "troopType": "cavalry",
+                "visualType": "cavalry"
+              },
+              {
+                "role": "camp",
+                "heroId": "hero_preview_bow",
+                "heroName": "Bow Captain",
+                "troopType": "archer",
+                "visualType": "archer"
+              }
+            ]
+          }
+        },
+        {
+          "id": "unit_cavalry",
+          "name": "Blue River Riders",
+          "tileId": "tile_04_05",
+          "faction": "player",
+          "status": "fallback",
+          "strength": 64,
+          "mapVisual": {
+            "visualType": "cavalry",
+            "primaryTroopType": "骑兵",
+            "ownerType": "human",
+            "bannerColor": "#38d48b",
+            "currentTileId": "tile_04_05",
+            "status": "fallback",
+            "label": "River Riders",
+            "targetTileId": "city_player_base",
+            "currentPath": [
+              "tile_04_05",
+              "tile_03_05",
+              "city_player_base"
+            ],
+            "etaOffsetSec": 320
+          }
+        },
+        {
+          "id": "unit_archer",
+          "name": "Western Crossbows",
+          "tileId": "tile_05_03",
+          "faction": "enemy_west",
+          "status": "contest",
+          "strength": 81,
+          "mapVisual": {
+            "visualType": "archer",
+            "primaryTroopType": "弓兵",
+            "ownerType": "ai",
+            "bannerColor": "#f05c54",
+            "currentTileId": "tile_05_03",
+            "status": "contest",
+            "label": "West Bow"
+          },
+          "aiPlayerId": "ai_enemy_west"
+        }
+      ],
+      "selectedUnitId": "unit_cavalry"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 2,
+  "kind": "unit_flag_atlas",
+  "assetStatus": "final_flag_atlas_v2",
+  "atlasPath": "res://assets/themes/slgclient/current/units/flags/unit_flag_final_atlas_v2.png",
+  "frameSize": {
+    "width": 64,
+    "height": 64
+  },
+  "flags": {
+    "blue": {
+      "assetStatus": "final_flag_atlas_v2",
+      "texturePath": "res://assets/themes/slgclient/current/units/flags/unit_flag_blue_v1.png",
+      "atlasIndex": 0,
+      "atlasRect": {
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      "tintable": true
+    },
+    "green": {
+      "assetStatus": "final_flag_atlas_v2",
+      "texturePath": "res://assets/themes/slgclient/current/units/flags/unit_flag_green_v1.png",
+      "atlasIndex": 1,
+      "atlasRect": {
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      "tintable": true
+    },
+    "red": {
+      "assetStatus": "final_flag_atlas_v2",
+      "texturePath": "res://assets/themes/slgclient/current/units/flags/unit_flag_red_v1.png",
+      "atlasIndex": 2,
+      "atlasRect": {
+        "x": 128,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      "tintable": true
+    },
+    "yellow": {
+      "assetStatus": "final_flag_atlas_v2",
+      "texturePath": "res://assets/themes/slgclient/current/units/flags/unit_flag_yellow_v1.png",
+      "atlasIndex": 3,
+      "atlasRect": {
+        "x": 192,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      "tintable": true
+    },
+    "purple": {
+      "assetStatus": "final_flag_atlas_v2",
+      "texturePath": "res://assets/themes/slgclient/current/units/flags/unit_flag_purple_v1.png",
+      "atlasIndex": 4,
+      "atlasRect": {
+        "x": 256,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      "tintable": true
+    },
+    "neutral": {
+      "assetStatus": "final_flag_atlas_v2",
+      "texturePath": "res://assets/themes/slgclient/current/units/flags/unit_flag_neutral_v1.png",
+      "atlasIndex": 5,
+      "atlasRect": {
+        "x": 320,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      "tintable": true
+    }
+  }
+}

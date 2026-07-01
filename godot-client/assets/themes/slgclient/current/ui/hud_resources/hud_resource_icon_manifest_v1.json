@@ -1,0 +1,98 @@
+{
+  "schema": "hud_resource_icon_manifest_v1",
+  "generatedAt": "2026-06-02T00:00:00+08:00",
+  "source": {
+    "generator": "built_in_image_model_chroma_key_sheet",
+    "sourceSheet": "tmp/ui_hud_resource_icons_20260602/model_resource_icon_sheet_source.png",
+    "originalGeneratedPath": "C:/Users/26739/.codex/generated_images/019e7c9b-3806-7d20-8a63-f463d079c869/ig_044a65ad994dc253016a1dc64101e8819989c7ac861b02137d.png"
+  },
+  "root": "godot-client/assets/themes/slgclient/current/ui/hud_resources",
+  "assetCount": 5,
+  "entries": [
+    {
+      "id": "grain",
+      "name": "hud_resource_grain_v1.png",
+      "relativePath": "icons/hud_resource_grain_v1.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/hud_resources/icons/hud_resource_grain_v1.png",
+      "extension": ".png",
+      "bytes": 72830,
+      "sha256": "ed94891bfcdfbe27dbc1a3da49885c1afd2642144714057d9182e84e4583a7a3",
+      "usage": "mainline_top_resource_hud_icon_model_generated_2026_06_02",
+      "componentRole": "top_resource_icon",
+      "outputSize": [
+        192,
+        192
+      ],
+      "textBaked": false,
+      "sourceSheet": "tmp/ui_hud_resource_icons_20260602/model_resource_icon_sheet_source.png"
+    },
+    {
+      "id": "wood",
+      "name": "hud_resource_wood_v1.png",
+      "relativePath": "icons/hud_resource_wood_v1.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/hud_resources/icons/hud_resource_wood_v1.png",
+      "extension": ".png",
+      "bytes": 72035,
+      "sha256": "fbff8f85401eaa29d3e9452019a82b418575943a35bf90d741a25f9637b1cd23",
+      "usage": "mainline_top_resource_hud_icon_model_generated_2026_06_02",
+      "componentRole": "top_resource_icon",
+      "outputSize": [
+        192,
+        192
+      ],
+      "textBaked": false,
+      "sourceSheet": "tmp/ui_hud_resource_icons_20260602/model_resource_icon_sheet_source.png"
+    },
+    {
+      "id": "stone",
+      "name": "hud_resource_stone_v1.png",
+      "relativePath": "icons/hud_resource_stone_v1.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/hud_resources/icons/hud_resource_stone_v1.png",
+      "extension": ".png",
+      "bytes": 70386,
+      "sha256": "3331cd8e495db433465e0527e7c94e983375d4bc74c5399319b63f9c4cb5ea00",
+      "usage": "mainline_top_resource_hud_icon_model_generated_2026_06_02",
+      "componentRole": "top_resource_icon",
+      "outputSize": [
+        192,
+        192
+      ],
+      "textBaked": false,
+      "sourceSheet": "tmp/ui_hud_resource_icons_20260602/model_resource_icon_sheet_source.png"
+    },
+    {
+      "id": "iron",
+      "name": "hud_resource_iron_v1.png",
+      "relativePath": "icons/hud_resource_iron_v1.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/hud_resources/icons/hud_resource_iron_v1.png",
+      "extension": ".png",
+      "bytes": 72039,
+      "sha256": "fc5b3cf66b59464a0a6ab3cd3e5ae021bd9ff4c63893e3e39075c59cd318768a",
+      "usage": "mainline_top_resource_hud_icon_model_generated_2026_06_02",
+      "componentRole": "top_resource_icon",
+      "outputSize": [
+        192,
+        192
+      ],
+      "textBaked": false,
+      "sourceSheet": "tmp/ui_hud_resource_icons_20260602/model_resource_icon_sheet_source.png"
+    },
+    {
+      "id": "copper",
+      "name": "hud_resource_copper_v1.png",
+      "relativePath": "icons/hud_resource_copper_v1.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/hud_resources/icons/hud_resource_copper_v1.png",
+      "extension": ".png",
+      "bytes": 73836,
+      "sha256": "5e900d5c21a92c74af0cb15e9296ad623e6f2fce759c1b156a23c5596016afdc",
+      "usage": "mainline_top_resource_hud_icon_model_generated_2026_06_02",
+      "componentRole": "top_resource_icon",
+      "outputSize": [
+        192,
+        192
+      ],
+      "textBaked": false,
+      "sourceSheet": "tmp/ui_hud_resource_icons_20260602/model_resource_icon_sheet_source.png"
+    }
+  ]
+}

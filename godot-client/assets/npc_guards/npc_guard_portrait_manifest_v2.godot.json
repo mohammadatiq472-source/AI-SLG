@@ -1,0 +1,138 @@
+{
+  "schema": "npc_guard_portrait_manifest_v2_godot",
+  "sourceManifest": "portrait_assets/npc_guards/npc_guard_portrait_manifest_v2.json",
+  "sourceManifestSchema": "npc_guard_portrait_manifest_v2",
+  "integrationScope": "godot_npc_guard_portrait_registry_only_no_formal_pack_no_backend_rule_changes",
+  "items": [
+    {
+      "portraitAssetKey": "npc_guard.portrait.npc_guard_yellow_turban_recruit.v2",
+      "assetKey": "npc_guard_yellow_turban_recruit",
+      "displayName": "黄巾小卒",
+      "resPath": "res://assets/npc_guards/portraits_v2_1265x1402/npc_guard_yellow_turban_recruit_v2_1265x1402.png",
+      "sourcePath": "portrait_assets/npc_guards/portraits_v2_1265x1402/npc_guard_yellow_turban_recruit_v2_1265x1402.png",
+      "sourceGeneratedPath": "portrait_assets/npc_guards/source_generated_v2/npc_guard_yellow_turban_recruit_v2_raw.png",
+      "outputImageSize": {
+        "width": 1265,
+        "height": 1402
+      },
+      "sha256": "98e167120c4d430b012329d5c8b52e48487437f3829a6a70f1ae03508ae74375"
+    },
+    {
+      "portraitAssetKey": "npc_guard.portrait.npc_guard_yellow_turban_spearman.v2",
+      "assetKey": "npc_guard_yellow_turban_spearman",
+      "displayName": "黄巾枪卒",
+      "resPath": "res://assets/npc_guards/portraits_v2_1265x1402/npc_guard_yellow_turban_spearman_v2_1265x1402.png",
+      "sourcePath": "portrait_assets/npc_guards/portraits_v2_1265x1402/npc_guard_yellow_turban_spearman_v2_1265x1402.png",
+      "sourceGeneratedPath": "portrait_assets/npc_guards/source_generated_v2/npc_guard_yellow_turban_spearman_v2_raw.png",
+      "outputImageSize": {
+        "width": 1265,
+        "height": 1402
+      },
+      "sha256": "ce6adcb8057d0989d6290f64697a7f11e30575a1fe7eb71545e25b72d71730c8"
+    },
+    {
+      "portraitAssetKey": "npc_guard.portrait.npc_guard_bandit_scout.v2",
+      "assetKey": "npc_guard_bandit_scout",
+      "displayName": "流寇斥候",
+      "resPath": "res://assets/npc_guards/portraits_v2_1265x1402/npc_guard_bandit_scout_v2_1265x1402.png",
+      "sourcePath": "portrait_assets/npc_guards/portraits_v2_1265x1402/npc_guard_bandit_scout_v2_1265x1402.png",
+      "sourceGeneratedPath": "portrait_assets/npc_guards/source_generated_v2/npc_guard_bandit_scout_v2_raw.png",
+      "outputImageSize": {
+        "width": 1265,
+        "height": 1402
+      },
+      "sha256": "1a1faee4e237b58c4b40bbaae93cea78d717e47774ee919c897ef451ccf57f4d"
+    },
+    {
+      "portraitAssetKey": "npc_guard.portrait.npc_guard_yellow_turban_archer.v2",
+      "assetKey": "npc_guard_yellow_turban_archer",
+      "displayName": "黄巾弓手",
+      "resPath": "res://assets/npc_guards/portraits_v2_1265x1402/npc_guard_yellow_turban_archer_v2_1265x1402.png",
+      "sourcePath": "portrait_assets/npc_guards/portraits_v2_1265x1402/npc_guard_yellow_turban_archer_v2_1265x1402.png",
+      "sourceGeneratedPath": "portrait_assets/npc_guards/source_generated_v2/npc_guard_yellow_turban_archer_v2_raw.png",
+      "outputImageSize": {
+        "width": 1265,
+        "height": 1402
+      },
+      "sha256": "eeef2201b2b3b266c7555d9bc1306ab3f5816eacc7f35d37d074591b989974c2"
+    },
+    {
+      "portraitAssetKey": "npc_guard.portrait.npc_guard_bandit_leader.v2",
+      "assetKey": "npc_guard_bandit_leader",
+      "displayName": "山贼头目",
+      "resPath": "res://assets/npc_guards/portraits_v2_1265x1402/npc_guard_bandit_leader_v2_1265x1402.png",
+      "sourcePath": "portrait_assets/npc_guards/portraits_v2_1265x1402/npc_guard_bandit_leader_v2_1265x1402.png",
+      "sourceGeneratedPath": "portrait_assets/npc_guards/source_generated_v2/npc_guard_bandit_leader_v2_raw.png",
+      "outputImageSize": {
+        "width": 1265,
+        "height": 1402
+      },
+      "sha256": "815b9e788c9faad8b5bb64d58c181185652489ad9aca0662f0710b4a1045f3ed"
+    },
+    {
+      "portraitAssetKey": "npc_guard.portrait.npc_guard_yellow_turban_brute.v2",
+      "assetKey": "npc_guard_yellow_turban_brute",
+      "displayName": "黄巾力士",
+      "resPath": "res://assets/npc_guards/portraits_v2_1265x1402/npc_guard_yellow_turban_brute_v2_1265x1402.png",
+      "sourcePath": "portrait_assets/npc_guards/portraits_v2_1265x1402/npc_guard_yellow_turban_brute_v2_1265x1402.png",
+      "sourceGeneratedPath": "portrait_assets/npc_guards/source_generated_v2/npc_guard_yellow_turban_brute_v2_raw.png",
+      "outputImageSize": {
+        "width": 1265,
+        "height": 1402
+      },
+      "sha256": "e6b7ca94570756c8ae095474abfae5fa3abc628a4a9f176c91947c11c9b7623c"
+    },
+    {
+      "portraitAssetKey": "npc_guard.portrait.npc_guard_local_militia.v2",
+      "assetKey": "npc_guard_local_militia",
+      "displayName": "豪强私兵",
+      "resPath": "res://assets/npc_guards/portraits_v2_1265x1402/npc_guard_local_militia_v2_1265x1402.png",
+      "sourcePath": "portrait_assets/npc_guards/portraits_v2_1265x1402/npc_guard_local_militia_v2_1265x1402.png",
+      "sourceGeneratedPath": "portrait_assets/npc_guards/source_generated_v2/npc_guard_local_militia_v2_raw.png",
+      "outputImageSize": {
+        "width": 1265,
+        "height": 1402
+      },
+      "sha256": "c94f8d2940da4830857b3800cab753f831727eee9536b7d85f5f65b4c2b184ec"
+    },
+    {
+      "portraitAssetKey": "npc_guard.portrait.npc_guard_rebel_vanguard.v2",
+      "assetKey": "npc_guard_rebel_vanguard",
+      "displayName": "叛军先锋",
+      "resPath": "res://assets/npc_guards/portraits_v2_1265x1402/npc_guard_rebel_vanguard_v2_1265x1402.png",
+      "sourcePath": "portrait_assets/npc_guards/portraits_v2_1265x1402/npc_guard_rebel_vanguard_v2_1265x1402.png",
+      "sourceGeneratedPath": "portrait_assets/npc_guards/source_generated_v2/npc_guard_rebel_vanguard_v2_raw.png",
+      "outputImageSize": {
+        "width": 1265,
+        "height": 1402
+      },
+      "sha256": "33bad624ddbcd5929b7be6cefc468bece152d2a441c12b1c530840bbba181559"
+    },
+    {
+      "portraitAssetKey": "npc_guard.portrait.npc_guard_border_veteran.v2",
+      "assetKey": "npc_guard_border_veteran",
+      "displayName": "边郡悍卒",
+      "resPath": "res://assets/npc_guards/portraits_v2_1265x1402/npc_guard_border_veteran_v2_1265x1402.png",
+      "sourcePath": "portrait_assets/npc_guards/portraits_v2_1265x1402/npc_guard_border_veteran_v2_1265x1402.png",
+      "sourceGeneratedPath": "portrait_assets/npc_guards/source_generated_v2/npc_guard_border_veteran_v2_raw.png",
+      "outputImageSize": {
+        "width": 1265,
+        "height": 1402
+      },
+      "sha256": "b8fe68b6f7585226302ea8a2f4a81a2676ad299269959b8f266e2852d13756b1"
+    },
+    {
+      "portraitAssetKey": "npc_guard.portrait.npc_guard_elite_rebel.v2",
+      "assetKey": "npc_guard_elite_rebel",
+      "displayName": "精锐叛军",
+      "resPath": "res://assets/npc_guards/portraits_v2_1265x1402/npc_guard_elite_rebel_v2_1265x1402.png",
+      "sourcePath": "portrait_assets/npc_guards/portraits_v2_1265x1402/npc_guard_elite_rebel_v2_1265x1402.png",
+      "sourceGeneratedPath": "portrait_assets/npc_guards/source_generated_v2/npc_guard_elite_rebel_v2_raw.png",
+      "outputImageSize": {
+        "width": 1265,
+        "height": 1402
+      },
+      "sha256": "edc7e4b202684bc9118b0e5e0056f00c1e06f2136c3248056a1cde7ff8c292ac"
+    }
+  ]
+}

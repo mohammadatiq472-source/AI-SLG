@@ -1,0 +1,1269 @@
+{
+  "schemaVersion": 1,
+  "theme": "slgclient",
+  "importedAt": "2026-04-12T18:04:29+00:00",
+  "source": {
+    "repo": "https://github.com/llr104/slgclient",
+    "commit": "767065453e358abc1b463f9396079d8026d0baf4",
+    "root": "tmp/third_party/slgclient/assets/texure/ui"
+  },
+  "target": {
+    "root": "godot-client/assets/themes/slgclient/current/ui",
+    "preservedRoots": [],
+    "prunedOldUi": true,
+    "prunedAt": "2026-04-28T10:15:21.845963+00:00",
+    "policy": "old slgclient UI root/btn/tactics/hud_v1 assets removed; only native_shell_* generated assets and skill_type_*.svg remain",
+    "cleanHanMobileCommandButtonTextPolicy": "real Godot Button text, no baked labels",
+    "whiteScrollNineCommandButtonPoc": "mainline_command_button_white_scroll_nine_poc_2026_05_31",
+    "scrollComponentPipelinePoc": "mainline_command_button_scroll_component_pipeline_poc_2026_06_01",
+    "commandButtonComponentPolicy": "runtime uses real Godot Button text over deterministic background+icon composites; components kept separately for follow-up iteration",
+    "assetDeliveryAudit20260603": {
+      "policy": "current/ui PNG files are manifest-managed; runtime loaders must support ResourceLoader and Image.load fallback until Godot import metadata is produced.",
+      "pngCount": 74,
+      "missingAdjacentImportCount": 70,
+      "missingAdjacentImportSample": [
+        "command_buttons/components/backgrounds/mainline_command_button_scroll_bg_bamboo_v1.png",
+        "command_buttons/components/backgrounds/mainline_command_button_scroll_bg_blank_v1.png",
+        "command_buttons/components/backgrounds/mainline_command_button_scroll_bg_city_wall_v1.png",
+        "command_buttons/components/backgrounds/mainline_command_button_scroll_bg_clouds_v1.png",
+        "command_buttons/components/backgrounds/mainline_command_button_scroll_bg_compass_v1.png",
+        "command_buttons/components/backgrounds/mainline_command_button_scroll_bg_dragon_v1.png",
+        "command_buttons/components/backgrounds/mainline_command_button_scroll_bg_mountains_v1.png",
+        "command_buttons/components/backgrounds/mainline_command_button_scroll_bg_tech_v1.png",
+        "command_buttons/components/backgrounds/mainline_command_button_scroll_bg_waves_v1.png",
+        "command_buttons/components/icons/mainline_command_button_icon_activity_v1.png",
+        "command_buttons/components/icons/mainline_command_button_icon_ai_hub_v1.png",
+        "command_buttons/components/icons/mainline_command_button_icon_ai_switch_v1.png"
+      ],
+      "coveredFolders": [
+        "godot-client"
+      ]
+    }
+  },
+  "fileCount": 90,
+  "folderCounts": {
+    "command_buttons": 44,
+    "drill_ground": 1,
+    "hud_resources": 5,
+    "left_troop_rail": 20,
+    "root": 16,
+    "skill": 4
+  },
+  "extensionCounts": {
+    ".import": 8,
+    ".png": 74,
+    ".svg": 8
+  },
+  "files": [
+    {
+      "name": "mainline_command_button_scroll_bg_bamboo_v1.png",
+      "relativePath": "command_buttons/components/backgrounds/mainline_command_button_scroll_bg_bamboo_v1.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/command_buttons/components/backgrounds/mainline_command_button_scroll_bg_bamboo_v1.png",
+      "topLevelFolder": "command_buttons",
+      "extension": ".png",
+      "bytes": 822937,
+      "sha256": "6e72891834f0982674a7399c131693cb7122206d222bdf7bb1486494f819bc08",
+      "usage": "mainline_command_button_scroll_background_component_poc_2026_06_01",
+      "componentRole": "scroll_background",
+      "textBaked": false,
+      "outputSize": [
+        920,
+        860
+      ],
+      "visualNotes": "normalized single-frame scroll-paper background component; motifs are inner texture only"
+    },
+    {
+      "name": "mainline_command_button_scroll_bg_blank_v1.png",
+      "relativePath": "command_buttons/components/backgrounds/mainline_command_button_scroll_bg_blank_v1.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/command_buttons/components/backgrounds/mainline_command_button_scroll_bg_blank_v1.png",
+      "topLevelFolder": "command_buttons",
+      "extension": ".png",
+      "bytes": 803188,
+      "sha256": "16fc057fe5c673aa07b9a2b2f332e0666b3f24dd100cf19feef8e9d8dd0be6c8",
+      "usage": "mainline_command_button_scroll_background_component_poc_2026_06_01",
+      "componentRole": "scroll_background",
+      "textBaked": false,
+      "outputSize": [
+        920,
+        860
+      ],
+      "visualNotes": "normalized single-frame scroll-paper background component; motifs are inner texture only"
+    },
+    {
+      "name": "mainline_command_button_scroll_bg_city_wall_v1.png",
+      "relativePath": "command_buttons/components/backgrounds/mainline_command_button_scroll_bg_city_wall_v1.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/command_buttons/components/backgrounds/mainline_command_button_scroll_bg_city_wall_v1.png",
+      "topLevelFolder": "command_buttons",
+      "extension": ".png",
+      "bytes": 824705,
+      "sha256": "f35725ac7a5246ec3fd15b9b07dd122d5aa0186cbd5711af1088aad25143d02b",
+      "usage": "mainline_command_button_scroll_background_component_poc_2026_06_01",
+      "componentRole": "scroll_background",
+      "textBaked": false,
+      "outputSize": [
+        920,
+        860
+      ],
+      "visualNotes": "normalized single-frame scroll-paper background component; motifs are inner texture only"
+    },
+    {
+      "name": "mainline_command_button_scroll_bg_clouds_v1.png",
+      "relativePath": "command_buttons/components/backgrounds/mainline_command_button_scroll_bg_clouds_v1.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/command_buttons/components/backgrounds/mainline_command_button_scroll_bg_clouds_v1.png",
+      "topLevelFolder": "command_buttons",
+      "extension": ".png",
+      "bytes": 813960,
+      "sha256": "09314c8c89054f4b82edad884ab11de22579ff3b1c8b0ec2b62ed8ae81b0c1d7",
+      "usage": "mainline_command_button_scroll_background_component_poc_2026_06_01",
+      "componentRole": "scroll_background",
+      "textBaked": false,
+      "outputSize": [
+        920,
+        860
+      ],
+      "visualNotes": "normalized single-frame scroll-paper background component; motifs are inner texture only"
+    },
+    {
+      "name": "mainline_command_button_scroll_bg_compass_v1.png",
+      "relativePath": "command_buttons/components/backgrounds/mainline_command_button_scroll_bg_compass_v1.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/command_buttons/components/backgrounds/mainline_command_button_scroll_bg_compass_v1.png",
+      "topLevelFolder": "command_buttons",
+      "extension": ".png",
+      "bytes": 827751,
+      "sha256": "5f7ea2f6bd30cf426823abf5ce12da3b4cbbf7b3c1fd7c75b6818bf21d12950e",
+      "usage": "mainline_command_button_scroll_background_component_poc_2026_06_01",
+      "componentRole": "scroll_background",
+      "textBaked": false,
+      "outputSize": [
+        920,
+        860
+      ],
+      "visualNotes": "normalized single-frame scroll-paper background component; motifs are inner texture only"
+    },
+    {
+      "name": "mainline_command_button_scroll_bg_dragon_v1.png",
+      "relativePath": "command_buttons/components/backgrounds/mainline_command_button_scroll_bg_dragon_v1.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/command_buttons/components/backgrounds/mainline_command_button_scroll_bg_dragon_v1.png",
+      "topLevelFolder": "command_buttons",
+      "extension": ".png",
+      "bytes": 823202,
+      "sha256": "fc69ca7da83ee69733e34f7f4f357226ad705983dae8a263905462bd7e2a30b7",
+      "usage": "mainline_command_button_scroll_background_component_poc_2026_06_01",
+      "componentRole": "scroll_background",
+      "textBaked": false,
+      "outputSize": [
+        920,
+        860
+      ],
+      "visualNotes": "normalized single-frame scroll-paper background component; motifs are inner texture only"
+    },
+    {
+      "name": "mainline_command_button_scroll_bg_mountains_v1.png",
+      "relativePath": "command_buttons/components/backgrounds/mainline_command_button_scroll_bg_mountains_v1.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/command_buttons/components/backgrounds/mainline_command_button_scroll_bg_mountains_v1.png",
+      "topLevelFolder": "command_buttons",
+      "extension": ".png",
+      "bytes": 817432,
+      "sha256": "0937ec5a4b01433e5a3fe0894cc8c6fd932c4806d4818fadbe47193861efca6c",
+      "usage": "mainline_command_button_scroll_background_component_poc_2026_06_01",
+      "componentRole": "scroll_background",
+      "textBaked": false,
+      "outputSize": [
+        920,
+        860
+      ],
+      "visualNotes": "normalized single-frame scroll-paper background component; motifs are inner texture only"
+    },
+    {
+      "name": "mainline_command_button_scroll_bg_tech_v1.png",
+      "relativePath": "command_buttons/components/backgrounds/mainline_command_button_scroll_bg_tech_v1.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/command_buttons/components/backgrounds/mainline_command_button_scroll_bg_tech_v1.png",
+      "topLevelFolder": "command_buttons",
+      "extension": ".png",
+      "bytes": 812327,
+      "sha256": "939ffb09112311a88009a2569492fae29e1242c04501e254d00c4c6dbc32b708",
+      "usage": "mainline_command_button_scroll_background_component_poc_2026_06_01",
+      "componentRole": "scroll_background",
+      "textBaked": false,
+      "outputSize": [
+        920,
+        860
+      ],
+      "visualNotes": "normalized single-frame scroll-paper background component; motifs are inner texture only"
+    },
+    {
+      "name": "mainline_command_button_scroll_bg_waves_v1.png",
+      "relativePath": "command_buttons/components/backgrounds/mainline_command_button_scroll_bg_waves_v1.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/command_buttons/components/backgrounds/mainline_command_button_scroll_bg_waves_v1.png",
+      "topLevelFolder": "command_buttons",
+      "extension": ".png",
+      "bytes": 820960,
+      "sha256": "7bdadb5ff23de68e1997e87f56bdb98510168bf0bdc3e0bf55adbc96483d866c",
+      "usage": "mainline_command_button_scroll_background_component_poc_2026_06_01",
+      "componentRole": "scroll_background",
+      "textBaked": false,
+      "outputSize": [
+        920,
+        860
+      ],
+      "visualNotes": "normalized single-frame scroll-paper background component; motifs are inner texture only"
+    },
+    {
+      "name": "mainline_command_button_icon_activity_v1.png",
+      "relativePath": "command_buttons/components/icons/mainline_command_button_icon_activity_v1.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/command_buttons/components/icons/mainline_command_button_icon_activity_v1.png",
+      "topLevelFolder": "command_buttons",
+      "extension": ".png",
+      "bytes": 6883,
+      "sha256": "274710de45f6435af73fcdd205824586b9844287250c6b2172cc3d1ea82c3bd9",
+      "usage": "mainline_command_button_scroll_component_pipeline_poc_2026_06_01",
+      "componentRole": "generated_icon_component",
+      "textBaked": false,
+      "buttonTextSource": "native_godot_button_text",
+      "visualNotes": "utility command button component for mail/activity/help; real Godot Button text remains live"
+    },
+    {
+      "name": "mainline_command_button_icon_ai_hub_v1.png",
+      "relativePath": "command_buttons/components/icons/mainline_command_button_icon_ai_hub_v1.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/command_buttons/components/icons/mainline_command_button_icon_ai_hub_v1.png",
+      "topLevelFolder": "command_buttons",
+      "extension": ".png",
+      "bytes": 187408,
+      "sha256": "137498848c8f95e96370f96cc9148b2f26fc4b439e490dc953e43c41778e79ec",
+      "usage": "mainline_command_button_generated_icon_component_poc_2026_06_01",
+      "componentRole": "command_icon",
+      "textBaked": false,
+      "visualNotes": "generated icon component, chroma-key removed and alpha component cleaned"
+    },
+    {
+      "name": "mainline_command_button_icon_ai_switch_v1.png",
+      "relativePath": "command_buttons/components/icons/mainline_command_button_icon_ai_switch_v1.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/command_buttons/components/icons/mainline_command_button_icon_ai_switch_v1.png",
+      "topLevelFolder": "command_buttons",
+      "extension": ".png",
+      "bytes": 121804,
+      "sha256": "edf1c163d855f0e145043cd80b08f2f6106121ececb772217b6bed67e4114c77",
+      "usage": "mainline_command_button_art_component_v1",
+      "componentRole": "command_button_art",
+      "textBaked": false
+    },
+    {
+      "name": "mainline_command_button_icon_alliance_v1.png",
+      "relativePath": "command_buttons/components/icons/mainline_command_button_icon_alliance_v1.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/command_buttons/components/icons/mainline_command_button_icon_alliance_v1.png",
+      "topLevelFolder": "command_buttons",
+      "extension": ".png",
+      "bytes": 203823,
+      "sha256": "2d1be158e7d986f56c0ed6ac29802bb67fffa85193ca6e40752328e3f1c42e2d",
+      "usage": "mainline_command_button_generated_icon_component_poc_2026_06_01",
+      "componentRole": "command_icon",
+      "textBaked": false,
+      "visualNotes": "generated icon component, chroma-key removed and alpha component cleaned"
+    },
+    {
+      "name": "mainline_command_button_icon_battle_report_v1.png",
+      "relativePath": "command_buttons/components/icons/mainline_command_button_icon_battle_report_v1.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/command_buttons/components/icons/mainline_command_button_icon_battle_report_v1.png",
+      "topLevelFolder": "command_buttons",
+      "extension": ".png",
+      "bytes": 211128,
+      "sha256": "95f037d056ebd0d00a69b2885fce44289f18b8afe25aad6ec4915b394fdfb3a3",
+      "usage": "mainline_command_button_generated_icon_component_poc_2026_06_01",
+      "componentRole": "command_icon",
+      "textBaked": false,
+      "visualNotes": "generated icon component, chroma-key removed and alpha component cleaned"
+    },
+    {
+      "name": "mainline_command_button_icon_chat_v1.png",
+      "relativePath": "command_buttons/components/icons/mainline_command_button_icon_chat_v1.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/command_buttons/components/icons/mainline_command_button_icon_chat_v1.png",
+      "topLevelFolder": "command_buttons",
+      "extension": ".png",
+      "bytes": 213665,
+      "sha256": "4ac917bb265582fe1d9674fcf08bdd5d4e426a6131dd41d9649a0da3b5d1d139",
+      "usage": "mainline_command_button_generated_icon_component_poc_2026_06_01",
+      "componentRole": "command_icon",
+      "textBaked": false,
+      "visualNotes": "generated icon component, chroma-key removed and alpha component cleaned"
+    },
+    {
+      "name": "mainline_command_button_icon_generals_v1.png",
+      "relativePath": "command_buttons/components/icons/mainline_command_button_icon_generals_v1.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/command_buttons/components/icons/mainline_command_button_icon_generals_v1.png",
+      "topLevelFolder": "command_buttons",
+      "extension": ".png",
+      "bytes": 168408,
+      "sha256": "8f377656f38f23b36131f3d11f1b46b5b81402cb641348b538feaaf1edc31bc7",
+      "usage": "mainline_command_button_generated_icon_component_poc_2026_06_01",
+      "componentRole": "command_icon",
+      "textBaked": false,
+      "visualNotes": "generated icon component, chroma-key removed and alpha component cleaned"
+    },
+    {
+      "name": "mainline_command_button_icon_help_v1.png",
+      "relativePath": "command_buttons/components/icons/mainline_command_button_icon_help_v1.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/command_buttons/components/icons/mainline_command_button_icon_help_v1.png",
+      "topLevelFolder": "command_buttons",
+      "extension": ".png",
+      "bytes": 3752,
+      "sha256": "90f232244b1c33257fe5a896d2f98dbef39a59b7f7cccf3119c9a63be2e880df",
+      "usage": "mainline_command_button_scroll_component_pipeline_poc_2026_06_01",
+      "componentRole": "generated_icon_component",
+      "textBaked": false,
+      "buttonTextSource": "native_godot_button_text",
+      "visualNotes": "utility command button component for mail/activity/help; real Godot Button text remains live"
+    },
+    {
+      "name": "mainline_command_button_icon_interior_v1.png",
+      "relativePath": "command_buttons/components/icons/mainline_command_button_icon_interior_v1.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/command_buttons/components/icons/mainline_command_button_icon_interior_v1.png",
+      "topLevelFolder": "command_buttons",
+      "extension": ".png",
+      "bytes": 245091,
+      "sha256": "53ab1fe068588b3642a6712f0ea0c5c17c86ab6f8f967dade0c1aceec647747f",
+      "usage": "mainline_command_button_generated_icon_component_poc_2026_06_01",
+      "componentRole": "command_icon",
+      "textBaked": false,
+      "visualNotes": "generated icon component, chroma-key removed and alpha component cleaned"
+    },
+    {
+      "name": "mainline_command_button_icon_mail_v1.png",
+      "relativePath": "command_buttons/components/icons/mainline_command_button_icon_mail_v1.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/command_buttons/components/icons/mainline_command_button_icon_mail_v1.png",
+      "topLevelFolder": "command_buttons",
+      "extension": ".png",
+      "bytes": 3588,
+      "sha256": "f5861ce96d87847ad8658205322a81bc1422ac3a6ddc35eebb56d3b70f23ddec",
+      "usage": "mainline_command_button_scroll_component_pipeline_poc_2026_06_01",
+      "componentRole": "generated_icon_component",
+      "textBaked": false,
+      "buttonTextSource": "native_godot_button_text",
+      "visualNotes": "utility command button component for mail/activity/help; real Godot Button text remains live"
+    },
+    {
+      "name": "mainline_command_button_icon_recruit_v1.png",
+      "relativePath": "command_buttons/components/icons/mainline_command_button_icon_recruit_v1.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/command_buttons/components/icons/mainline_command_button_icon_recruit_v1.png",
+      "topLevelFolder": "command_buttons",
+      "extension": ".png",
+      "bytes": 171083,
+      "sha256": "d86db1e69c0b69b5d2fbd89ae0543619cf66353d8f6bdcddef60314660b16ddf",
+      "usage": "mainline_command_button_generated_icon_component_poc_2026_06_01",
+      "componentRole": "command_icon",
+      "textBaked": false,
+      "visualNotes": "generated icon component, chroma-key removed and alpha component cleaned"
+    },
+    {
+      "name": "mainline_command_button_icon_settings_v1.png",
+      "relativePath": "command_buttons/components/icons/mainline_command_button_icon_settings_v1.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/command_buttons/components/icons/mainline_command_button_icon_settings_v1.png",
+      "topLevelFolder": "command_buttons",
+      "extension": ".png",
+      "bytes": 219460,
+      "sha256": "16d2439c9b6ec88650b657e31c213d443b8c4807c941e59215a23ef9e6360d63",
+      "usage": "mainline_command_button_generated_icon_component_poc_2026_06_01",
+      "componentRole": "command_icon",
+      "textBaked": false,
+      "visualNotes": "generated icon component, chroma-key removed and alpha component cleaned"
+    },
+    {
+      "name": "mainline_command_button_icon_skill_library_v1.png",
+      "relativePath": "command_buttons/components/icons/mainline_command_button_icon_skill_library_v1.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/command_buttons/components/icons/mainline_command_button_icon_skill_library_v1.png",
+      "topLevelFolder": "command_buttons",
+      "extension": ".png",
+      "bytes": 216267,
+      "sha256": "9a5817f63177b917d04761c76526b90959c33444fc6eeb380d8c293bb8a843d1",
+      "usage": "mainline_command_button_generated_icon_component_poc_2026_06_01",
+      "componentRole": "command_icon",
+      "textBaked": false,
+      "visualNotes": "generated icon component, chroma-key removed and alpha component cleaned"
+    },
+    {
+      "name": "mainline_command_button_activity_scroll_component_v1.png",
+      "relativePath": "command_buttons/mainline_command_button_activity_scroll_component_v1.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/command_buttons/mainline_command_button_activity_scroll_component_v1.png",
+      "topLevelFolder": "command_buttons",
+      "extension": ".png",
+      "bytes": 790888,
+      "sha256": "8d989eb2975ea4e7a4f9368bdcee3eca5dfd80fef912a9a78a23bf76f4a2fae7",
+      "usage": "mainline_command_button_scroll_component_pipeline_poc_2026_06_01",
+      "componentRole": "scroll_command_button",
+      "textBaked": false,
+      "buttonTextSource": "native_godot_button_text",
+      "outputSize": [
+        920,
+        860
+      ],
+      "visualNotes": "utility command button component for mail/activity/help; real Godot Button text remains live"
+    },
+    {
+      "name": "mainline_command_button_ai_hub_scroll_component_v1.png",
+      "relativePath": "command_buttons/mainline_command_button_ai_hub_scroll_component_v1.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/command_buttons/mainline_command_button_ai_hub_scroll_component_v1.png",
+      "topLevelFolder": "command_buttons",
+      "extension": ".png",
+      "bytes": 963885,
+      "sha256": "9a4457dba6e63f51fb2f106972cf5bb7143d06bc95a0e1e80760c7de145c0079",
+      "usage": "mainline_command_button_scroll_component_pipeline_poc_2026_06_01",
+      "textBaked": false,
+      "buttonTextSource": "native_godot_button_text",
+      "outputSize": [
+        920,
+        860
+      ],
+      "visualNotes": "runtime command button composite from one normalized scroll frame plus separate generated icon; real Godot Button text retained"
+    },
+    {
+      "name": "mainline_command_button_ai_hub_white_scroll_v5.png",
+      "relativePath": "command_buttons/mainline_command_button_ai_hub_white_scroll_v5.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/command_buttons/mainline_command_button_ai_hub_white_scroll_v5.png",
+      "topLevelFolder": "command_buttons",
+      "extension": ".png",
+      "bytes": 384516,
+      "sha256": "c5fc41b9781e7e9c162e65e9c8baa703c885ca01b0d815b264d87a1d87198db9",
+      "usage": "mainline_command_button_white_scroll_nine_poc_2026_05_31",
+      "textBaked": false,
+      "buttonTextSource": "native_godot_button_text",
+      "supersededBy": "mainline_command_button_scroll_component_pipeline_poc_2026_06_01",
+      "visualNotes": "previous full-card white scroll POC retained for comparison, not referenced by mainline command skin paths"
+    },
+    {
+      "name": "mainline_command_button_ai_switch_scroll_component_v1.png",
+      "relativePath": "command_buttons/mainline_command_button_ai_switch_scroll_component_v1.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/command_buttons/mainline_command_button_ai_switch_scroll_component_v1.png",
+      "topLevelFolder": "command_buttons",
+      "extension": ".png",
+      "bytes": 916654,
+      "sha256": "e1238a38f7cd6b22a09e87c7c571e054b5a2992dae9df5df2fbf1cef1127e09a",
+      "usage": "mainline_command_button_art_component_v1",
+      "componentRole": "command_button_art",
+      "textBaked": false
+    },
+    {
+      "name": "mainline_command_button_alliance_scroll_component_v1.png",
+      "relativePath": "command_buttons/mainline_command_button_alliance_scroll_component_v1.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/command_buttons/mainline_command_button_alliance_scroll_component_v1.png",
+      "topLevelFolder": "command_buttons",
+      "extension": ".png",
+      "bytes": 966778,
+      "sha256": "5c4723ac8b63dc10c90b76e0b03dd28f69cfc7b0d53d90bba75783b553060e59",
+      "usage": "mainline_command_button_scroll_component_pipeline_poc_2026_06_01",
+      "textBaked": false,
+      "buttonTextSource": "native_godot_button_text",
+      "outputSize": [
+        920,
+        860
+      ],
+      "visualNotes": "runtime command button composite from one normalized scroll frame plus separate generated icon; real Godot Button text retained"
+    },
+    {
+      "name": "mainline_command_button_alliance_white_scroll_v5.png",
+      "relativePath": "command_buttons/mainline_command_button_alliance_white_scroll_v5.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/command_buttons/mainline_command_button_alliance_white_scroll_v5.png",
+      "topLevelFolder": "command_buttons",
+      "extension": ".png",
+      "bytes": 610839,
+      "sha256": "f9ca1415367391aba80e2880df03f13eaf28ee3ef24d1dd2cfdf6cf4b5e8ae5d",
+      "usage": "mainline_command_button_white_scroll_nine_poc_2026_05_31",
+      "textBaked": false,
+      "buttonTextSource": "native_godot_button_text",
+      "supersededBy": "mainline_command_button_scroll_component_pipeline_poc_2026_06_01",
+      "visualNotes": "previous full-card white scroll POC retained for comparison, not referenced by mainline command skin paths"
+    },
+    {
+      "name": "mainline_command_button_battle_report_scroll_component_v1.png",
+      "relativePath": "command_buttons/mainline_command_button_battle_report_scroll_component_v1.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/command_buttons/mainline_command_button_battle_report_scroll_component_v1.png",
+      "topLevelFolder": "command_buttons",
+      "extension": ".png",
+      "bytes": 987366,
+      "sha256": "59794745aaeed09a53c0713ac17ccdc9bf5bd11f336613cb39ff180487ec1fcb",
+      "usage": "mainline_command_button_scroll_component_pipeline_poc_2026_06_01",
+      "textBaked": false,
+      "buttonTextSource": "native_godot_button_text",
+      "outputSize": [
+        920,
+        860
+      ],
+      "visualNotes": "runtime command button composite from one normalized scroll frame plus separate generated icon; real Godot Button text retained"
+    },
+    {
+      "name": "mainline_command_button_battle_report_white_scroll_v5.png",
+      "relativePath": "command_buttons/mainline_command_button_battle_report_white_scroll_v5.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/command_buttons/mainline_command_button_battle_report_white_scroll_v5.png",
+      "topLevelFolder": "command_buttons",
+      "extension": ".png",
+      "bytes": 393939,
+      "sha256": "5ceb44a146f2867985ae550dc8cb792a99a852e48bb7f4606cfcabf6688d96b0",
+      "usage": "mainline_command_button_white_scroll_nine_poc_2026_05_31",
+      "textBaked": false,
+      "buttonTextSource": "native_godot_button_text",
+      "supersededBy": "mainline_command_button_scroll_component_pipeline_poc_2026_06_01",
+      "visualNotes": "previous full-card white scroll POC retained for comparison, not referenced by mainline command skin paths"
+    },
+    {
+      "name": "mainline_command_button_chat_scroll_component_v1.png",
+      "relativePath": "command_buttons/mainline_command_button_chat_scroll_component_v1.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/command_buttons/mainline_command_button_chat_scroll_component_v1.png",
+      "topLevelFolder": "command_buttons",
+      "extension": ".png",
+      "bytes": 950417,
+      "sha256": "1950602a73187ab0262c4fc89d0c38b1bb19ab345f3bb5cc02b343df0309b12c",
+      "usage": "mainline_command_button_scroll_component_pipeline_poc_2026_06_01",
+      "textBaked": false,
+      "buttonTextSource": "native_godot_button_text",
+      "outputSize": [
+        920,
+        860
+      ],
+      "visualNotes": "runtime command button composite from one normalized scroll frame plus separate generated icon; real Godot Button text retained"
+    },
+    {
+      "name": "mainline_command_button_chat_white_scroll_v5.png",
+      "relativePath": "command_buttons/mainline_command_button_chat_white_scroll_v5.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/command_buttons/mainline_command_button_chat_white_scroll_v5.png",
+      "topLevelFolder": "command_buttons",
+      "extension": ".png",
+      "bytes": 377048,
+      "sha256": "3a051703aad4d114660b687a3c3816249cdb74651732dbae715eda17d9820f14",
+      "usage": "mainline_command_button_white_scroll_nine_poc_2026_05_31",
+      "textBaked": false,
+      "buttonTextSource": "native_godot_button_text",
+      "supersededBy": "mainline_command_button_scroll_component_pipeline_poc_2026_06_01",
+      "visualNotes": "previous full-card white scroll POC retained for comparison, not referenced by mainline command skin paths"
+    },
+    {
+      "name": "mainline_command_button_generals_scroll_component_v1.png",
+      "relativePath": "command_buttons/mainline_command_button_generals_scroll_component_v1.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/command_buttons/mainline_command_button_generals_scroll_component_v1.png",
+      "topLevelFolder": "command_buttons",
+      "extension": ".png",
+      "bytes": 958095,
+      "sha256": "d49669c9a889a4fc24a45ddb35af4372980a6805f4e3d34089cee1e820c804d9",
+      "usage": "mainline_command_button_scroll_component_pipeline_poc_2026_06_01",
+      "textBaked": false,
+      "buttonTextSource": "native_godot_button_text",
+      "outputSize": [
+        920,
+        860
+      ],
+      "visualNotes": "runtime command button composite from one normalized scroll frame plus separate generated icon; real Godot Button text retained"
+    },
+    {
+      "name": "mainline_command_button_generals_white_scroll_v5.png",
+      "relativePath": "command_buttons/mainline_command_button_generals_white_scroll_v5.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/command_buttons/mainline_command_button_generals_white_scroll_v5.png",
+      "topLevelFolder": "command_buttons",
+      "extension": ".png",
+      "bytes": 387328,
+      "sha256": "06ba218a9e7a7c16644496401b127eb098d42d4cb46f7dd3ff9a22aae233f73c",
+      "usage": "mainline_command_button_white_scroll_nine_poc_2026_05_31",
+      "textBaked": false,
+      "buttonTextSource": "native_godot_button_text",
+      "supersededBy": "mainline_command_button_scroll_component_pipeline_poc_2026_06_01",
+      "visualNotes": "previous full-card white scroll POC retained for comparison, not referenced by mainline command skin paths"
+    },
+    {
+      "name": "mainline_command_button_help_scroll_component_v1.png",
+      "relativePath": "command_buttons/mainline_command_button_help_scroll_component_v1.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/command_buttons/mainline_command_button_help_scroll_component_v1.png",
+      "topLevelFolder": "command_buttons",
+      "extension": ".png",
+      "bytes": 781667,
+      "sha256": "e7ad078011b9ff7214f13488baf568f73e7618caa5dc70bb1790e5c11bc25bbc",
+      "usage": "mainline_command_button_scroll_component_pipeline_poc_2026_06_01",
+      "componentRole": "scroll_command_button",
+      "textBaked": false,
+      "buttonTextSource": "native_godot_button_text",
+      "outputSize": [
+        920,
+        860
+      ],
+      "visualNotes": "utility command button component for mail/activity/help; real Godot Button text remains live"
+    },
+    {
+      "name": "mainline_command_button_interior_scroll_component_v1.png",
+      "relativePath": "command_buttons/mainline_command_button_interior_scroll_component_v1.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/command_buttons/mainline_command_button_interior_scroll_component_v1.png",
+      "topLevelFolder": "command_buttons",
+      "extension": ".png",
+      "bytes": 1000837,
+      "sha256": "ea2067c24a69159800d4db186f030a9d2d33c3e2e3af33f203db7f301a38c757",
+      "usage": "mainline_command_button_scroll_component_pipeline_poc_2026_06_01",
+      "textBaked": false,
+      "buttonTextSource": "native_godot_button_text",
+      "outputSize": [
+        920,
+        860
+      ],
+      "visualNotes": "runtime command button composite from one normalized scroll frame plus separate generated icon; real Godot Button text retained"
+    },
+    {
+      "name": "mainline_command_button_interior_white_scroll_v5.png",
+      "relativePath": "command_buttons/mainline_command_button_interior_white_scroll_v5.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/command_buttons/mainline_command_button_interior_white_scroll_v5.png",
+      "topLevelFolder": "command_buttons",
+      "extension": ".png",
+      "bytes": 614948,
+      "sha256": "77602569e650fa0aa30fd795aeba44e44c2ffa89c301c889647e98bdda4bd641",
+      "usage": "mainline_command_button_white_scroll_nine_poc_2026_05_31",
+      "textBaked": false,
+      "buttonTextSource": "native_godot_button_text",
+      "supersededBy": "mainline_command_button_scroll_component_pipeline_poc_2026_06_01",
+      "visualNotes": "previous full-card white scroll POC retained for comparison, not referenced by mainline command skin paths"
+    },
+    {
+      "name": "mainline_command_button_mail_scroll_component_v1.png",
+      "relativePath": "command_buttons/mainline_command_button_mail_scroll_component_v1.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/command_buttons/mainline_command_button_mail_scroll_component_v1.png",
+      "topLevelFolder": "command_buttons",
+      "extension": ".png",
+      "bytes": 780826,
+      "sha256": "41acd8294e3b539601b3dd35c66c3586f7c5e86040f3f2968515a89a25e57e88",
+      "usage": "mainline_command_button_scroll_component_pipeline_poc_2026_06_01",
+      "componentRole": "scroll_command_button",
+      "textBaked": false,
+      "buttonTextSource": "native_godot_button_text",
+      "outputSize": [
+        920,
+        860
+      ],
+      "visualNotes": "utility command button component for mail/activity/help; real Godot Button text remains live"
+    },
+    {
+      "name": "mainline_command_button_recruit_scroll_component_v1.png",
+      "relativePath": "command_buttons/mainline_command_button_recruit_scroll_component_v1.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/command_buttons/mainline_command_button_recruit_scroll_component_v1.png",
+      "topLevelFolder": "command_buttons",
+      "extension": ".png",
+      "bytes": 953559,
+      "sha256": "1cea6035e81fc40b9b3a31404b6796f14b2e44198de29515cca9420ef20ad33b",
+      "usage": "mainline_command_button_scroll_component_pipeline_poc_2026_06_01",
+      "textBaked": false,
+      "buttonTextSource": "native_godot_button_text",
+      "outputSize": [
+        920,
+        860
+      ],
+      "visualNotes": "runtime command button composite from one normalized scroll frame plus separate generated icon; real Godot Button text retained"
+    },
+    {
+      "name": "mainline_command_button_recruit_white_scroll_v5.png",
+      "relativePath": "command_buttons/mainline_command_button_recruit_white_scroll_v5.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/command_buttons/mainline_command_button_recruit_white_scroll_v5.png",
+      "topLevelFolder": "command_buttons",
+      "extension": ".png",
+      "bytes": 380845,
+      "sha256": "35a8084a14bf26faccf1d2746445dc37900d52f0686841f0cee554321c61da5d",
+      "usage": "mainline_command_button_white_scroll_nine_poc_2026_05_31",
+      "textBaked": false,
+      "buttonTextSource": "native_godot_button_text",
+      "supersededBy": "mainline_command_button_scroll_component_pipeline_poc_2026_06_01",
+      "visualNotes": "previous full-card white scroll POC retained for comparison, not referenced by mainline command skin paths"
+    },
+    {
+      "name": "mainline_command_button_settings_scroll_component_v1.png",
+      "relativePath": "command_buttons/mainline_command_button_settings_scroll_component_v1.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/command_buttons/mainline_command_button_settings_scroll_component_v1.png",
+      "topLevelFolder": "command_buttons",
+      "extension": ".png",
+      "bytes": 987412,
+      "sha256": "f8d8715c6df6d784e91125a7125982ff38760261526d9f5961405455ae850305",
+      "usage": "mainline_command_button_scroll_component_pipeline_poc_2026_06_01",
+      "textBaked": false,
+      "buttonTextSource": "native_godot_button_text",
+      "outputSize": [
+        920,
+        860
+      ],
+      "visualNotes": "runtime command button composite from one normalized scroll frame plus separate generated icon; real Godot Button text retained"
+    },
+    {
+      "name": "mainline_command_button_settings_white_scroll_v5.png",
+      "relativePath": "command_buttons/mainline_command_button_settings_white_scroll_v5.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/command_buttons/mainline_command_button_settings_white_scroll_v5.png",
+      "topLevelFolder": "command_buttons",
+      "extension": ".png",
+      "bytes": 385005,
+      "sha256": "dc1be59db31b92753cb2243915821dd23d2b13f7a16111fe8ed2abc45ce4129d",
+      "usage": "mainline_command_button_white_scroll_nine_poc_2026_05_31",
+      "textBaked": false,
+      "buttonTextSource": "native_godot_button_text",
+      "supersededBy": "mainline_command_button_scroll_component_pipeline_poc_2026_06_01",
+      "visualNotes": "previous full-card white scroll POC retained for comparison, not referenced by mainline command skin paths"
+    },
+    {
+      "name": "mainline_command_button_skill_library_scroll_component_v1.png",
+      "relativePath": "command_buttons/mainline_command_button_skill_library_scroll_component_v1.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/command_buttons/mainline_command_button_skill_library_scroll_component_v1.png",
+      "topLevelFolder": "command_buttons",
+      "extension": ".png",
+      "bytes": 978260,
+      "sha256": "9ea1c3f272c1490ab3513d28ecfdfa7612fcada5a18408c8b112c05483fccdcb",
+      "usage": "mainline_command_button_scroll_component_pipeline_poc_2026_06_01",
+      "textBaked": false,
+      "buttonTextSource": "native_godot_button_text",
+      "outputSize": [
+        920,
+        860
+      ],
+      "visualNotes": "runtime command button composite from one normalized scroll frame plus separate generated icon; real Godot Button text retained"
+    },
+    {
+      "name": "mainline_command_button_skill_library_white_scroll_v5.png",
+      "relativePath": "command_buttons/mainline_command_button_skill_library_white_scroll_v5.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/command_buttons/mainline_command_button_skill_library_white_scroll_v5.png",
+      "topLevelFolder": "command_buttons",
+      "extension": ".png",
+      "bytes": 614991,
+      "sha256": "f69f3c4ded189b4064c42880a46d72e0c6d1b213e32747ae1efbb78bcbf37465",
+      "usage": "mainline_command_button_white_scroll_nine_poc_2026_05_31",
+      "textBaked": false,
+      "buttonTextSource": "native_godot_button_text",
+      "supersededBy": "mainline_command_button_scroll_component_pipeline_poc_2026_06_01",
+      "visualNotes": "previous full-card white scroll POC retained for comparison, not referenced by mainline command skin paths"
+    },
+    {
+      "name": "drill_ground_empty_yard_bg_v2_2x1.png",
+      "relativePath": "drill_ground/drill_ground_empty_yard_bg_v2_2x1.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/drill_ground/drill_ground_empty_yard_bg_v2_2x1.png",
+      "topLevelFolder": "drill_ground",
+      "extension": ".png",
+      "bytes": 4146512,
+      "sha256": "4742a28a7f748a3b9c49a300d02bd0bf10db41735f3817133b3daa68e7c1677f",
+      "usage": "drill_ground_commercial_reference_background_v1",
+      "componentRole": "drill_ground_background",
+      "textBaked": false
+    },
+    {
+      "name": "hud_resource_copper_v1.png",
+      "relativePath": "hud_resources/icons/hud_resource_copper_v1.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/hud_resources/icons/hud_resource_copper_v1.png",
+      "topLevelFolder": "hud_resources",
+      "extension": ".png",
+      "bytes": 73836,
+      "sha256": "5e900d5c21a92c74af0cb15e9296ad623e6f2fce759c1b156a23c5596016afdc",
+      "usage": "mainline_top_resource_hud_icon_model_generated_2026_06_02",
+      "componentRole": "top_resource_icon",
+      "textBaked": false,
+      "outputSize": [
+        192,
+        192
+      ],
+      "visualNotes": "built-in image model generated HUD resource icon; transparent PNG; no baked text"
+    },
+    {
+      "name": "hud_resource_grain_v1.png",
+      "relativePath": "hud_resources/icons/hud_resource_grain_v1.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/hud_resources/icons/hud_resource_grain_v1.png",
+      "topLevelFolder": "hud_resources",
+      "extension": ".png",
+      "bytes": 72830,
+      "sha256": "ed94891bfcdfbe27dbc1a3da49885c1afd2642144714057d9182e84e4583a7a3",
+      "usage": "mainline_top_resource_hud_icon_model_generated_2026_06_02",
+      "componentRole": "top_resource_icon",
+      "textBaked": false,
+      "outputSize": [
+        192,
+        192
+      ],
+      "visualNotes": "built-in image model generated HUD resource icon; transparent PNG; no baked text"
+    },
+    {
+      "name": "hud_resource_iron_v1.png",
+      "relativePath": "hud_resources/icons/hud_resource_iron_v1.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/hud_resources/icons/hud_resource_iron_v1.png",
+      "topLevelFolder": "hud_resources",
+      "extension": ".png",
+      "bytes": 72039,
+      "sha256": "fc5b3cf66b59464a0a6ab3cd3e5ae021bd9ff4c63893e3e39075c59cd318768a",
+      "usage": "mainline_top_resource_hud_icon_model_generated_2026_06_02",
+      "componentRole": "top_resource_icon",
+      "textBaked": false,
+      "outputSize": [
+        192,
+        192
+      ],
+      "visualNotes": "built-in image model generated HUD resource icon; transparent PNG; no baked text"
+    },
+    {
+      "name": "hud_resource_stone_v1.png",
+      "relativePath": "hud_resources/icons/hud_resource_stone_v1.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/hud_resources/icons/hud_resource_stone_v1.png",
+      "topLevelFolder": "hud_resources",
+      "extension": ".png",
+      "bytes": 70386,
+      "sha256": "3331cd8e495db433465e0527e7c94e983375d4bc74c5399319b63f9c4cb5ea00",
+      "usage": "mainline_top_resource_hud_icon_model_generated_2026_06_02",
+      "componentRole": "top_resource_icon",
+      "textBaked": false,
+      "outputSize": [
+        192,
+        192
+      ],
+      "visualNotes": "built-in image model generated HUD resource icon; transparent PNG; no baked text"
+    },
+    {
+      "name": "hud_resource_wood_v1.png",
+      "relativePath": "hud_resources/icons/hud_resource_wood_v1.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/hud_resources/icons/hud_resource_wood_v1.png",
+      "topLevelFolder": "hud_resources",
+      "extension": ".png",
+      "bytes": 72035,
+      "sha256": "fbff8f85401eaa29d3e9452019a82b418575943a35bf90d741a25f9637b1cd23",
+      "usage": "mainline_top_resource_hud_icon_model_generated_2026_06_02",
+      "componentRole": "top_resource_icon",
+      "textBaked": false,
+      "outputSize": [
+        192,
+        192
+      ],
+      "visualNotes": "built-in image model generated HUD resource icon; transparent PNG; no baked text"
+    },
+    {
+      "name": "left_troop_rail_card_disabled_v1.png",
+      "relativePath": "left_troop_rail/cards/left_troop_rail_card_disabled_v1.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/left_troop_rail/cards/left_troop_rail_card_disabled_v1.png",
+      "topLevelFolder": "left_troop_rail",
+      "extension": ".png",
+      "bytes": 24288,
+      "sha256": "9fb47559c686c0bcb030564274c3771f092cd2fbc3b20283d4feae2349846908",
+      "usage": "left_troop_rail_card_skin_v1_2026_06_03",
+      "componentRole": "left_troop_rail_card_skin",
+      "textBaked": false,
+      "outputSize": [
+        408,
+        152
+      ],
+      "sliceMargin": 32,
+      "visualNotes": "dedicated parchment slot-card skin for StyleBoxTexture nine-slice use; labels and values remain real Godot UI text"
+    },
+    {
+      "name": "left_troop_rail_card_marching_v1.png",
+      "relativePath": "left_troop_rail/cards/left_troop_rail_card_marching_v1.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/left_troop_rail/cards/left_troop_rail_card_marching_v1.png",
+      "topLevelFolder": "left_troop_rail",
+      "extension": ".png",
+      "bytes": 22046,
+      "sha256": "9dd6c25a54443453789f35ef57f564825d86f5ed26d48a185d0bd646f97bd38f",
+      "usage": "left_troop_rail_card_skin_v1_2026_06_03",
+      "componentRole": "left_troop_rail_card_skin",
+      "textBaked": false,
+      "outputSize": [
+        408,
+        152
+      ],
+      "sliceMargin": 32,
+      "visualNotes": "dedicated parchment slot-card skin for StyleBoxTexture nine-slice use; labels and values remain real Godot UI text"
+    },
+    {
+      "name": "left_troop_rail_card_normal_v1.png",
+      "relativePath": "left_troop_rail/cards/left_troop_rail_card_normal_v1.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/left_troop_rail/cards/left_troop_rail_card_normal_v1.png",
+      "topLevelFolder": "left_troop_rail",
+      "extension": ".png",
+      "bytes": 21583,
+      "sha256": "bb5f3021a5969295210bdca5b61856ac2686058a9f809a9dfd920833caad5688",
+      "usage": "left_troop_rail_card_skin_v1_2026_06_03",
+      "componentRole": "left_troop_rail_card_skin",
+      "textBaked": false,
+      "outputSize": [
+        408,
+        152
+      ],
+      "sliceMargin": 32,
+      "visualNotes": "dedicated parchment slot-card skin for StyleBoxTexture nine-slice use; labels and values remain real Godot UI text"
+    },
+    {
+      "name": "left_troop_rail_card_selected_v1.png",
+      "relativePath": "left_troop_rail/cards/left_troop_rail_card_selected_v1.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/left_troop_rail/cards/left_troop_rail_card_selected_v1.png",
+      "topLevelFolder": "left_troop_rail",
+      "extension": ".png",
+      "bytes": 21422,
+      "sha256": "710adcdabe4726eb09c52921c3b1f911d7bff7f79bf458bf5d601c3dc4969a59",
+      "usage": "left_troop_rail_card_skin_v1_2026_06_03",
+      "componentRole": "left_troop_rail_card_skin",
+      "textBaked": false,
+      "outputSize": [
+        408,
+        152
+      ],
+      "sliceMargin": 32,
+      "visualNotes": "dedicated parchment slot-card skin for StyleBoxTexture nine-slice use; labels and values remain real Godot UI text"
+    },
+    {
+      "name": "left_troop_rail_icon_squad_empty_v1.png",
+      "relativePath": "left_troop_rail/icons/left_troop_rail_icon_squad_empty_v1.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/left_troop_rail/icons/left_troop_rail_icon_squad_empty_v1.png",
+      "topLevelFolder": "left_troop_rail",
+      "extension": ".png",
+      "bytes": 4825,
+      "sha256": "ff476f0d2270f254e19d97478d6e54d7dcfae484c7214ad23cffef9496cddc85",
+      "usage": "left_troop_rail_commercial_roster_icon_v1",
+      "componentRole": "left_troop_rail_icon",
+      "textBaked": false
+    },
+    {
+      "name": "left_troop_rail_icon_squad_mobile_v1.png",
+      "relativePath": "left_troop_rail/icons/left_troop_rail_icon_squad_mobile_v1.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/left_troop_rail/icons/left_troop_rail_icon_squad_mobile_v1.png",
+      "topLevelFolder": "left_troop_rail",
+      "extension": ".png",
+      "bytes": 5297,
+      "sha256": "5ba9dcb251cef91564c4100d29fffae4a43c73a66e8cefc52eebed957c6b1241",
+      "usage": "left_troop_rail_commercial_roster_icon_v1",
+      "componentRole": "left_troop_rail_icon",
+      "textBaked": false
+    },
+    {
+      "name": "left_troop_rail_icon_squad_primary_v1.png",
+      "relativePath": "left_troop_rail/icons/left_troop_rail_icon_squad_primary_v1.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/left_troop_rail/icons/left_troop_rail_icon_squad_primary_v1.png",
+      "topLevelFolder": "left_troop_rail",
+      "extension": ".png",
+      "bytes": 4339,
+      "sha256": "fc9e455fcc8fa6c4bfb43848797d542b9f2e69f848ce231cb3409b9d9ae723c5",
+      "usage": "left_troop_rail_commercial_roster_icon_v1",
+      "componentRole": "left_troop_rail_icon",
+      "textBaked": false
+    },
+    {
+      "name": "left_troop_rail_icon_squad_reserve_v1.png",
+      "relativePath": "left_troop_rail/icons/left_troop_rail_icon_squad_reserve_v1.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/left_troop_rail/icons/left_troop_rail_icon_squad_reserve_v1.png",
+      "topLevelFolder": "left_troop_rail",
+      "extension": ".png",
+      "bytes": 3816,
+      "sha256": "d902f355add8e1c73f2d4fea4c573c40a7b776b350abd886714b9922d1cfae9a",
+      "usage": "left_troop_rail_commercial_roster_icon_v1",
+      "componentRole": "left_troop_rail_icon",
+      "textBaked": false
+    },
+    {
+      "name": "left_troop_rail_icon_status_garrison_v1.png",
+      "relativePath": "left_troop_rail/icons/left_troop_rail_icon_status_garrison_v1.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/left_troop_rail/icons/left_troop_rail_icon_status_garrison_v1.png",
+      "topLevelFolder": "left_troop_rail",
+      "extension": ".png",
+      "bytes": 4086,
+      "sha256": "2afb613b1b5cdca0eff7202836d0f3b5b24633bc43cd31eecb63fe86e61bce47",
+      "usage": "left_troop_rail_commercial_roster_icon_v1",
+      "componentRole": "left_troop_rail_icon",
+      "textBaked": false
+    },
+    {
+      "name": "left_troop_rail_icon_status_healing_v1.png",
+      "relativePath": "left_troop_rail/icons/left_troop_rail_icon_status_healing_v1.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/left_troop_rail/icons/left_troop_rail_icon_status_healing_v1.png",
+      "topLevelFolder": "left_troop_rail",
+      "extension": ".png",
+      "bytes": 4753,
+      "sha256": "13c9cb5fdc4737905ef355f4acac89df50ef630d86c91732540441e1b036cb81",
+      "usage": "left_troop_rail_commercial_roster_icon_v1",
+      "componentRole": "left_troop_rail_icon",
+      "textBaked": false
+    },
+    {
+      "name": "left_troop_rail_icon_status_idle_v1.png",
+      "relativePath": "left_troop_rail/icons/left_troop_rail_icon_status_idle_v1.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/left_troop_rail/icons/left_troop_rail_icon_status_idle_v1.png",
+      "topLevelFolder": "left_troop_rail",
+      "extension": ".png",
+      "bytes": 4117,
+      "sha256": "378d650c95267efd65937ab58a13866d26cf1f2fb366e725cd154d1173caa0bd",
+      "usage": "left_troop_rail_commercial_roster_icon_v1",
+      "componentRole": "left_troop_rail_icon",
+      "textBaked": false
+    },
+    {
+      "name": "left_troop_rail_icon_status_locked_v1.png",
+      "relativePath": "left_troop_rail/icons/left_troop_rail_icon_status_locked_v1.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/left_troop_rail/icons/left_troop_rail_icon_status_locked_v1.png",
+      "topLevelFolder": "left_troop_rail",
+      "extension": ".png",
+      "bytes": 4273,
+      "sha256": "0b1f48e9aadd0a6733cc8bdec6c64c8223c615295fcf1682d76f01f4815c9c24",
+      "usage": "left_troop_rail_commercial_roster_icon_v1",
+      "componentRole": "left_troop_rail_icon",
+      "textBaked": false
+    },
+    {
+      "name": "left_troop_rail_icon_status_low_morale_v1.png",
+      "relativePath": "left_troop_rail/icons/left_troop_rail_icon_status_low_morale_v1.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/left_troop_rail/icons/left_troop_rail_icon_status_low_morale_v1.png",
+      "topLevelFolder": "left_troop_rail",
+      "extension": ".png",
+      "bytes": 4401,
+      "sha256": "eb54bbda9b8d37b532f71c1c815895e9c5cf6ffc338c849e202c3499c570e289",
+      "usage": "left_troop_rail_commercial_roster_icon_v1",
+      "componentRole": "left_troop_rail_icon",
+      "textBaked": false
+    },
+    {
+      "name": "left_troop_rail_icon_status_marching_v1.png",
+      "relativePath": "left_troop_rail/icons/left_troop_rail_icon_status_marching_v1.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/left_troop_rail/icons/left_troop_rail_icon_status_marching_v1.png",
+      "topLevelFolder": "left_troop_rail",
+      "extension": ".png",
+      "bytes": 4819,
+      "sha256": "0778119b1f832368f462153059060ae41ccd5ec8b007e2cc209efcfcd544c28d",
+      "usage": "left_troop_rail_commercial_roster_icon_v1",
+      "componentRole": "left_troop_rail_icon",
+      "textBaked": false
+    },
+    {
+      "name": "left_troop_rail_icon_status_recruiting_v1.png",
+      "relativePath": "left_troop_rail/icons/left_troop_rail_icon_status_recruiting_v1.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/left_troop_rail/icons/left_troop_rail_icon_status_recruiting_v1.png",
+      "topLevelFolder": "left_troop_rail",
+      "extension": ".png",
+      "bytes": 4740,
+      "sha256": "66543d396ba03de54970c39ee764ec2f385d71b8977fea2e92182d8acbca5fd2",
+      "usage": "left_troop_rail_commercial_roster_icon_v1",
+      "componentRole": "left_troop_rail_icon",
+      "textBaked": false
+    },
+    {
+      "name": "left_troop_rail_icon_status_returning_v1.png",
+      "relativePath": "left_troop_rail/icons/left_troop_rail_icon_status_returning_v1.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/left_troop_rail/icons/left_troop_rail_icon_status_returning_v1.png",
+      "topLevelFolder": "left_troop_rail",
+      "extension": ".png",
+      "bytes": 5619,
+      "sha256": "5dbaac1720f72f8f77299acbaddf6c00bcb265ab18b2baee3b72fdd9d99e37ac",
+      "usage": "left_troop_rail_commercial_roster_icon_v1",
+      "componentRole": "left_troop_rail_icon",
+      "textBaked": false
+    },
+    {
+      "name": "left_troop_rail_icon_troop_archer_v1.png",
+      "relativePath": "left_troop_rail/icons/left_troop_rail_icon_troop_archer_v1.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/left_troop_rail/icons/left_troop_rail_icon_troop_archer_v1.png",
+      "topLevelFolder": "left_troop_rail",
+      "extension": ".png",
+      "bytes": 5056,
+      "sha256": "e2675c1ac9de94f08f56b1aecf57f0dbfd273d3f07dc002dc35a098ab7cc611e",
+      "usage": "left_troop_rail_commercial_roster_icon_v1",
+      "componentRole": "left_troop_rail_icon",
+      "textBaked": false
+    },
+    {
+      "name": "left_troop_rail_icon_troop_cavalry_v1.png",
+      "relativePath": "left_troop_rail/icons/left_troop_rail_icon_troop_cavalry_v1.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/left_troop_rail/icons/left_troop_rail_icon_troop_cavalry_v1.png",
+      "topLevelFolder": "left_troop_rail",
+      "extension": ".png",
+      "bytes": 5378,
+      "sha256": "4829da0f654edd80feb44176963fbd6ea881b8f01642e0437389261b0fb52c79",
+      "usage": "left_troop_rail_commercial_roster_icon_v1",
+      "componentRole": "left_troop_rail_icon",
+      "textBaked": false
+    },
+    {
+      "name": "left_troop_rail_icon_troop_infantry_v1.png",
+      "relativePath": "left_troop_rail/icons/left_troop_rail_icon_troop_infantry_v1.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/left_troop_rail/icons/left_troop_rail_icon_troop_infantry_v1.png",
+      "topLevelFolder": "left_troop_rail",
+      "extension": ".png",
+      "bytes": 5261,
+      "sha256": "9f5c4b89fab74dd66928e4ceb86c0487f1dcf9fd949f42083ca81864daa75931",
+      "usage": "left_troop_rail_commercial_roster_icon_v1",
+      "componentRole": "left_troop_rail_icon",
+      "textBaked": false
+    },
+    {
+      "name": "left_troop_rail_icon_troop_siege_v1.png",
+      "relativePath": "left_troop_rail/icons/left_troop_rail_icon_troop_siege_v1.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/left_troop_rail/icons/left_troop_rail_icon_troop_siege_v1.png",
+      "topLevelFolder": "left_troop_rail",
+      "extension": ".png",
+      "bytes": 4722,
+      "sha256": "6cee036279a3f6e7786d3a84fc0009aa0ce1458a6dd715d49348500f724c4caa",
+      "usage": "left_troop_rail_commercial_roster_icon_v1",
+      "componentRole": "left_troop_rail_icon",
+      "textBaked": false
+    },
+    {
+      "name": "native_shell_main_nav_button_base_v1.png",
+      "relativePath": "native_shell_main_nav_button_base_v1.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/native_shell_main_nav_button_base_v1.png",
+      "topLevelFolder": "root",
+      "extension": ".png",
+      "bytes": 54647,
+      "sha256": "ca586eaf13e5dd394826e4d40e1b16e775bf178d304b3a00cb09272041065e4a"
+    },
+    {
+      "name": "native_shell_main_nav_button_base_v1.png.import",
+      "relativePath": "native_shell_main_nav_button_base_v1.png.import",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/native_shell_main_nav_button_base_v1.png.import",
+      "topLevelFolder": "root",
+      "extension": ".import",
+      "bytes": 1047,
+      "sha256": "c8f695cc630d3580b98fb1846c6071bc7515da40381fe8678a648d759b4b5c43"
+    },
+    {
+      "name": "native_shell_main_nav_button_base_v1.svg",
+      "relativePath": "native_shell_main_nav_button_base_v1.svg",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/native_shell_main_nav_button_base_v1.svg",
+      "topLevelFolder": "root",
+      "extension": ".svg",
+      "bytes": 4266,
+      "sha256": "fe691a7be43a849d119b0c4fbff88280cd23a801888427a54f75b1f7afb5897e"
+    },
+    {
+      "name": "native_shell_main_nav_button_base_v1.svg.import",
+      "relativePath": "native_shell_main_nav_button_base_v1.svg.import",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/native_shell_main_nav_button_base_v1.svg.import",
+      "topLevelFolder": "root",
+      "extension": ".import",
+      "bytes": 1144,
+      "sha256": "10e2fca67ac43ead7e3a201ecd4d141077ee5c623e1d9afe1e3c1f8e501d4f92"
+    },
+    {
+      "name": "native_shell_main_nav_button_pressed_v1.png",
+      "relativePath": "native_shell_main_nav_button_pressed_v1.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/native_shell_main_nav_button_pressed_v1.png",
+      "topLevelFolder": "root",
+      "extension": ".png",
+      "bytes": 52084,
+      "sha256": "d2a03946ef4e07ab536f745c90e969955f62b39d2e417eca91399d61938349ab"
+    },
+    {
+      "name": "native_shell_main_nav_button_pressed_v1.png.import",
+      "relativePath": "native_shell_main_nav_button_pressed_v1.png.import",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/native_shell_main_nav_button_pressed_v1.png.import",
+      "topLevelFolder": "root",
+      "extension": ".import",
+      "bytes": 1056,
+      "sha256": "61b48d46e97d4b93ebfae4febeedfa5df7a3d9ece298aeaeb4e73e44ce1a9703"
+    },
+    {
+      "name": "native_shell_main_nav_button_pressed_v1.svg",
+      "relativePath": "native_shell_main_nav_button_pressed_v1.svg",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/native_shell_main_nav_button_pressed_v1.svg",
+      "topLevelFolder": "root",
+      "extension": ".svg",
+      "bytes": 4443,
+      "sha256": "5c3f8705a6711e70cd25d828fe99dd1e1ab2977cf8d3566614155abcd60bf77e"
+    },
+    {
+      "name": "native_shell_main_nav_button_pressed_v1.svg.import",
+      "relativePath": "native_shell_main_nav_button_pressed_v1.svg.import",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/native_shell_main_nav_button_pressed_v1.svg.import",
+      "topLevelFolder": "root",
+      "extension": ".import",
+      "bytes": 1153,
+      "sha256": "35214ef56ce3f483d8809e367aa1e35628e8226df9db575ee44502edbfdeb727"
+    },
+    {
+      "name": "native_shell_main_nav_button_selected_v1.png",
+      "relativePath": "native_shell_main_nav_button_selected_v1.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/native_shell_main_nav_button_selected_v1.png",
+      "topLevelFolder": "root",
+      "extension": ".png",
+      "bytes": 69303,
+      "sha256": "ddfbdbed33fa22bd428a3f185ca8bc20e095a1800ea65adaef77e7bfd05612a4"
+    },
+    {
+      "name": "native_shell_main_nav_button_selected_v1.png.import",
+      "relativePath": "native_shell_main_nav_button_selected_v1.png.import",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/native_shell_main_nav_button_selected_v1.png.import",
+      "topLevelFolder": "root",
+      "extension": ".import",
+      "bytes": 1059,
+      "sha256": "c82f9f820a4b2d28c2c856f0c914dcbc67a0838d73b4a1faa689732a3071c544"
+    },
+    {
+      "name": "native_shell_main_nav_button_selected_v1.svg",
+      "relativePath": "native_shell_main_nav_button_selected_v1.svg",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/native_shell_main_nav_button_selected_v1.svg",
+      "topLevelFolder": "root",
+      "extension": ".svg",
+      "bytes": 5119,
+      "sha256": "1fcf2fc2c4da3302a9e9ae8131a83b71938242c37dd39cdb5bcfca0cc2589e82"
+    },
+    {
+      "name": "native_shell_main_nav_button_selected_v1.svg.import",
+      "relativePath": "native_shell_main_nav_button_selected_v1.svg.import",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/native_shell_main_nav_button_selected_v1.svg.import",
+      "topLevelFolder": "root",
+      "extension": ".import",
+      "bytes": 1155,
+      "sha256": "58862ad2eb8518bf4101a9035928fc48351ac08eff94cd82a1d67d4a3bf28b11"
+    },
+    {
+      "name": "native_shell_troop_row_base_v1.png",
+      "relativePath": "native_shell_troop_row_base_v1.png",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/native_shell_troop_row_base_v1.png",
+      "topLevelFolder": "root",
+      "extension": ".png",
+      "bytes": 25427,
+      "sha256": "8c114efdc6fb41506979613a729e0a164b276e183c6fd851d9a7ab17c1a19d6d"
+    },
+    {
+      "name": "native_shell_troop_row_base_v1.png.import",
+      "relativePath": "native_shell_troop_row_base_v1.png.import",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/native_shell_troop_row_base_v1.png.import",
+      "topLevelFolder": "root",
+      "extension": ".import",
+      "bytes": 1029,
+      "sha256": "7bd7c8f928f6ceda68dcd9ac181e0d8a4a0053c091d035e33b5d48cff5b74336"
+    },
+    {
+      "name": "native_shell_troop_row_base_v1.svg",
+      "relativePath": "native_shell_troop_row_base_v1.svg",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/native_shell_troop_row_base_v1.svg",
+      "topLevelFolder": "root",
+      "extension": ".svg",
+      "bytes": 5925,
+      "sha256": "967ea4ca5360db8efdc89ce5d7527c30404cd4475517cc8ea7290d4763b26960"
+    },
+    {
+      "name": "native_shell_troop_row_base_v1.svg.import",
+      "relativePath": "native_shell_troop_row_base_v1.svg.import",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/native_shell_troop_row_base_v1.svg.import",
+      "topLevelFolder": "root",
+      "extension": ".import",
+      "bytes": 1126,
+      "sha256": "2be602dd218a230f071927a7391c340124420e790681a8f795f5120ecc977f81"
+    },
+    {
+      "name": "skill_type_active.svg",
+      "relativePath": "skill/skill_type_active.svg",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/skill/skill_type_active.svg",
+      "topLevelFolder": "skill",
+      "extension": ".svg",
+      "bytes": 308,
+      "sha256": "f799e2cadcbfd0be5a16dcc25de3e6d86805d0faeb23388f04d9bdfef892b391"
+    },
+    {
+      "name": "skill_type_chase.svg",
+      "relativePath": "skill/skill_type_chase.svg",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/skill/skill_type_chase.svg",
+      "topLevelFolder": "skill",
+      "extension": ".svg",
+      "bytes": 565,
+      "sha256": "a76ed9ab8fd28e0ee91cf24b9093af16dee8d13a5c3dd5cec8be2f257b82ede4"
+    },
+    {
+      "name": "skill_type_command.svg",
+      "relativePath": "skill/skill_type_command.svg",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/skill/skill_type_command.svg",
+      "topLevelFolder": "skill",
+      "extension": ".svg",
+      "bytes": 508,
+      "sha256": "453eb47b87e53dfa50f5735045fc12fcb30159d8b160731c52b53d1758a3db18"
+    },
+    {
+      "name": "skill_type_passive.svg",
+      "relativePath": "skill/skill_type_passive.svg",
+      "targetPath": "godot-client/assets/themes/slgclient/current/ui/skill/skill_type_passive.svg",
+      "topLevelFolder": "skill",
+      "extension": ".svg",
+      "bytes": 466,
+      "sha256": "747e9b4ffa69b75b0d1c33ca3791a67cdf784f636e379d295b7177826555a188"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "situationTags": [
+      "phase:early",
+      "luoyang:neutral",
+      "pressure:medium",
+      "scenario:u2_于_tile_04"
+    ],
+    "tacticSummary": "u2 于 tile_04 取胜，战损 A8/D22，协同 4。；u1 于 grid_153_1 取胜，战损 A8/D26，协同 0。",
+    "prototypeOrders": [
+      {
+        "action": "garrison",
+        "context": "稳守既有阵地，等待反击机会"
+      }
+    ],
+    "outcomeScore": 1,
+    "tickRecorded": 3,
+    "factionId": "player",
+    "id": "9662250b-6ebd-4f61-a5fd-c5a2ed29f399",
+    "uses": 37
+  },
+  {
+    "situationTags": [
+      "phase:early",
+      "luoyang:neutral",
+      "pressure:low",
+      "scenario:东境屯垦军_推进_eas"
+    ],
+    "tacticSummary": "东境屯垦军 推进 East Expansion Belt: 东境屯垦军 在 司隶 Resource 165-156 展开同盟先遣推进，为我方打开发展或接敌空间。",
+    "prototypeOrders": [
+      {
+        "action": "garrison",
+        "context": "稳守既有阵地，等待反击机会"
+      }
+    ],
+    "outcomeScore": 0.4000087798707608,
+    "tickRecorded": 2,
+    "factionId": "player",
+    "id": "acc3e80d-7d38-4fe6-ae11-70291f70ee76",
+    "uses": 78
+  }
+]

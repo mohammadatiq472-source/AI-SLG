@@ -1,0 +1,23 @@
+{
+  "contractId": "ai_avatar_status_frame_family_v1",
+  "styleDirection": "ai_player_living_world_avatar_status_identity",
+  "assetRoot": "res://assets/themes/slgclient/current/ui/avatars",
+  "assets": {
+    "activeFrame": {
+      "path": "res://assets/themes/slgclient/current/ui/avatars/ai_avatar_status_frame_active_v1.png",
+      "role": "ai_avatar_status_frame_active"
+    },
+    "queuedFrame": {
+      "path": "res://assets/themes/slgclient/current/ui/avatars/ai_avatar_status_frame_queued_v1.png",
+      "role": "ai_avatar_status_frame_queued"
+    },
+    "failedFrame": {
+      "path": "res://assets/themes/slgclient/current/ui/avatars/ai_avatar_status_frame_failed_v1.png",
+      "role": "ai_avatar_status_frame_failed"
+    },
+    "combatIntentBadge": {
+      "path": "res://assets/themes/slgclient/current/ui/avatars/ai_avatar_intent_badge_combat_v1.png",
+      "role": "ai_avatar_intent_badge_combat"
+    }
+  }
+}

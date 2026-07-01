@@ -1,0 +1,78 @@
+{
+  "schemaVersion": "slgclient_map_marker_manifest_v1",
+  "contractId": "tianxia_yutu_ai_hotspot_visual_asset_v1",
+  "infoContractId": "tianxia_yutu_ai_hotspot_info_asset_v1",
+  "routeIntentContractId": "tianxia_yutu_ai_route_intent_asset_v1",
+  "routeStateVariantContractId": "tianxia_yutu_ai_route_state_variant_v1",
+  "styleDirection": "ai_player_living_world_eastern_han_tactical_beacon",
+  "assets": {
+    "hotspotBeacon": {
+      "role": "ai_activity_hotspot_beacon",
+      "path": "res://assets/themes/slgclient/current/ui/map_markers/tianxia_yutu_ai_hotspot_beacon_v1.png",
+      "sizePx": [
+        64,
+        64
+      ],
+      "safeDrawPx": [
+        28,
+        28
+      ]
+    },
+    "labelPlate": {
+      "role": "ai_activity_hotspot_label_plate",
+      "path": "res://assets/themes/slgclient/current/ui/map_markers/tianxia_yutu_ai_hotspot_label_plate_v1.png",
+      "sizePx": [
+        192,
+        42
+      ],
+      "safeTextPx": [
+        52,
+        28,
+        170,
+        18
+      ]
+    },
+    "clusterBadge": {
+      "role": "ai_activity_hotspot_cluster_badge",
+      "path": "res://assets/themes/slgclient/current/ui/map_markers/tianxia_yutu_ai_hotspot_cluster_badge_v1.png",
+      "sizePx": [
+        42,
+        30
+      ],
+      "safeNumberPx": [
+        11,
+        8,
+        26,
+        16
+      ]
+    },
+    "routeArrow": {
+      "role": "ai_activity_route_intent_arrow",
+      "path": "res://assets/themes/slgclient/current/ui/map_markers/tianxia_yutu_ai_hotspot_route_arrow_v1.png",
+      "sizePx": [
+        72,
+        24
+      ],
+      "safeDrawPx": [
+        8,
+        5,
+        64,
+        19
+      ]
+    },
+    "routeQueuedArrow": {
+      "role": "ai_activity_route_queued_arrow",
+      "path": "res://assets/themes/slgclient/current/ui/map_markers/tianxia_yutu_ai_hotspot_route_arrow_queued_v1.png",
+      "sizePx": [
+        72,
+        24
+      ],
+      "safeDrawPx": [
+        8,
+        5,
+        64,
+        19
+      ]
+    }
+  }
+}

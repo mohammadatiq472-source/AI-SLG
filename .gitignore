@@ -1,0 +1,96 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+.codex-harness-home/
+.vs/
+.playwright-cli/
+tmp/
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+.env
+.env.*
+!.env.example
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# === 发布快照排除规则（release-snapshot 分支专用） ===
+# AI 协作提示词 / Agent 配置 / 内部 handoff —— 不进公开仓库
+.github/
+.claude/
+.claudian/
+.copilot/
+.obsidian/
+prompts/
+00-OpenClaw-Hub/
+
+# 旧资产包 / 历史素材 —— 体积大且非运行链必需
+Isometric Medieval Pack (1)/
+Isometric Nature Pack 2.0/
+234/
+portrait_assets/
+world_resource_png_exports/
+exports/
+UI_SCREENSHOT_PACK_2026_05_28/
+UI_SCREENSHOT_REVIEW_2026_05_28_ACTIVITY/
+
+# 实验数据 / 运维工具 / 临时产物
+experiments/
+ops/
+tools/
+val_out2.txt
+tmp_*.txt
+twitter_response.html
+godot-mcp-*.zip
+横向部队行卡底壳.zip
+scripts/横向部队行卡底壳.zip
+
+# 散落媒体文件（非运行链引用的根目录素材）
+/*.mp4
+/*.png
+/*.jpg
+/*.webp
+/*.docx
+/*.zip
+/0
+/3434.txt
+/query
+/未命名*.canvas
+/未命名*.base
+/风华*.png
+
+# 系统缓存路径（历史误提交）
+%SystemDrive%/
+
+# 根目录 tsx 美术导出源（非运行链，Godot 不依赖）
+/*.tsx
+
+# Godot 编辑器缓存
+godot-client/.godot/
+
+# 内部设计/提示词文档（运行链不依赖，避免泄露内部口径）
+docs/
+
+# 后端运行时数据（本地状态，不入库）
+tmp/

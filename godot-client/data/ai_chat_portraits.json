@@ -1,0 +1,539 @@
+{
+  "schema_version": 1,
+  "source_directory": "portrait_assets/locked_images",
+  "output_directory": "res://assets/portraits/ai_chat",
+  "avatar_size": [
+    160,
+    160
+  ],
+  "selection_rule": "Only clear single-subject portraits are selectable. Group or back-facing compositions stay excluded.",
+  "excluded": [
+    {
+      "source_file": "portrait_assets/locked_images/sun_quan_succession_entrustment_v1_locked.png",
+      "selectable": false,
+      "reason": "Excluded by request: not a clear single-person portrait; composition contains a back-facing entrustment scene."
+    }
+  ],
+  "portraits": [
+    {
+      "id": "cai_wenji_fate_frontier_qin_v1",
+      "display_name": "Cai Wenji",
+      "selectable": true,
+      "fit": "usable_clear",
+      "fit_note": "clear single subject; head and upper body readable",
+      "source_file": "portrait_assets/locked_images/cai_wenji_fate_frontier_qin_v1_locked.png",
+      "image": "res://assets/portraits/ai_chat/cai_wenji_fate_frontier_qin_v1_avatar_160.png",
+      "output_file": "godot-client/assets/portraits/ai_chat/cai_wenji_fate_frontier_qin_v1_avatar_160.png",
+      "pixel_size": [
+        160,
+        160
+      ],
+      "crop_box": [
+        150,
+        40,
+        910,
+        800
+      ]
+    },
+    {
+      "id": "cao_cao_fate_v1",
+      "display_name": "Cao Cao",
+      "selectable": true,
+      "fit": "usable_clear",
+      "fit_note": "clear single subject; centered upper body",
+      "source_file": "portrait_assets/locked_images/cao_cao_fate_v1_locked.png",
+      "image": "res://assets/portraits/ai_chat/cao_cao_fate_v1_avatar_160.png",
+      "output_file": "godot-client/assets/portraits/ai_chat/cao_cao_fate_v1_avatar_160.png",
+      "pixel_size": [
+        160,
+        160
+      ],
+      "crop_box": [
+        200,
+        110,
+        920,
+        830
+      ]
+    },
+    {
+      "id": "cao_pi_mature_shanrang_v1",
+      "display_name": "Cao Pi",
+      "selectable": true,
+      "fit": "usable_clear",
+      "fit_note": "clear seated single subject",
+      "source_file": "portrait_assets/locked_images/cao_pi_mature_shanrang_v1_locked.png",
+      "image": "res://assets/portraits/ai_chat/cao_pi_mature_shanrang_v1_avatar_160.png",
+      "output_file": "godot-client/assets/portraits/ai_chat/cao_pi_mature_shanrang_v1_avatar_160.png",
+      "pixel_size": [
+        160,
+        160
+      ],
+      "crop_box": [
+        240,
+        60,
+        960,
+        780
+      ]
+    },
+    {
+      "id": "dian_wei_mature_huzhu_v1",
+      "display_name": "Dian Wei",
+      "selectable": true,
+      "fit": "usable_clear",
+      "fit_note": "clear single subject; armor and face readable",
+      "source_file": "portrait_assets/locked_images/dian_wei_mature_huzhu_v1_locked.png",
+      "image": "res://assets/portraits/ai_chat/dian_wei_mature_huzhu_v1_avatar_160.png",
+      "output_file": "godot-client/assets/portraits/ai_chat/dian_wei_mature_huzhu_v1_avatar_160.png",
+      "pixel_size": [
+        160,
+        160
+      ],
+      "crop_box": [
+        250,
+        70,
+        970,
+        790
+      ]
+    },
+    {
+      "id": "dong_zhuo_early_xiliang_campaign_v1",
+      "display_name": "Dong Zhuo",
+      "selectable": true,
+      "fit": "usable_clear",
+      "fit_note": "clear frontal single subject",
+      "source_file": "portrait_assets/locked_images/dong_zhuo_early_xiliang_campaign_v1_locked.png",
+      "image": "res://assets/portraits/ai_chat/dong_zhuo_early_xiliang_campaign_v1_avatar_160.png",
+      "output_file": "godot-client/assets/portraits/ai_chat/dong_zhuo_early_xiliang_campaign_v1_avatar_160.png",
+      "pixel_size": [
+        160,
+        160
+      ],
+      "crop_box": [
+        210,
+        60,
+        930,
+        780
+      ]
+    },
+    {
+      "id": "gan_ning_mature_jinfan_raid_v1",
+      "display_name": "Gan Ning",
+      "selectable": true,
+      "fit": "usable_low_light",
+      "fit_note": "single subject; face readable but shadowed",
+      "source_file": "portrait_assets/locked_images/gan_ning_mature_jinfan_raid_v1_locked.png",
+      "image": "res://assets/portraits/ai_chat/gan_ning_mature_jinfan_raid_v1_avatar_160.png",
+      "output_file": "godot-client/assets/portraits/ai_chat/gan_ning_mature_jinfan_raid_v1_avatar_160.png",
+      "pixel_size": [
+        160,
+        160
+      ],
+      "crop_box": [
+        90,
+        100,
+        850,
+        860
+      ]
+    },
+    {
+      "id": "guan_yu_mature_mounted_jingzhou_v1",
+      "display_name": "Guan Yu",
+      "selectable": true,
+      "fit": "usable_profile",
+      "fit_note": "single subject; side-facing but iconic face and beard readable",
+      "source_file": "portrait_assets/locked_images/guan_yu_mature_mounted_jingzhou_v1_locked.png",
+      "image": "res://assets/portraits/ai_chat/guan_yu_mature_mounted_jingzhou_v1_avatar_160.png",
+      "output_file": "godot-client/assets/portraits/ai_chat/guan_yu_mature_mounted_jingzhou_v1_avatar_160.png",
+      "pixel_size": [
+        160,
+        160
+      ],
+      "crop_box": [
+        160,
+        60,
+        920,
+        820
+      ]
+    },
+    {
+      "id": "guo_jia_mature_fate_liaodong_v1",
+      "display_name": "Guo Jia",
+      "selectable": true,
+      "fit": "usable_clear",
+      "fit_note": "clear seated single subject",
+      "source_file": "portrait_assets/locked_images/guo_jia_mature_fate_liaodong_v1_locked.png",
+      "image": "res://assets/portraits/ai_chat/guo_jia_mature_fate_liaodong_v1_avatar_160.png",
+      "output_file": "godot-client/assets/portraits/ai_chat/guo_jia_mature_fate_liaodong_v1_avatar_160.png",
+      "pixel_size": [
+        160,
+        160
+      ],
+      "crop_box": [
+        210,
+        70,
+        930,
+        790
+      ]
+    },
+    {
+      "id": "han_xiandi_disempowered_v1",
+      "display_name": "Han Xiandi",
+      "selectable": true,
+      "fit": "usable_clear",
+      "fit_note": "clear seated single subject",
+      "source_file": "portrait_assets/locked_images/han_xiandi_disempowered_v1_selected.png",
+      "image": "res://assets/portraits/ai_chat/han_xiandi_disempowered_v1_avatar_160.png",
+      "output_file": "godot-client/assets/portraits/ai_chat/han_xiandi_disempowered_v1_avatar_160.png",
+      "pixel_size": [
+        160,
+        160
+      ],
+      "crop_box": [
+        230,
+        40,
+        950,
+        760
+      ]
+    },
+    {
+      "id": "jia_xu_mature_duoshi_v1",
+      "display_name": "Jia Xu",
+      "selectable": true,
+      "fit": "usable_clear",
+      "fit_note": "clear single subject; upper body readable",
+      "source_file": "portrait_assets/locked_images/jia_xu_mature_duoshi_v1_locked.png",
+      "image": "res://assets/portraits/ai_chat/jia_xu_mature_duoshi_v1_avatar_160.png",
+      "output_file": "godot-client/assets/portraits/ai_chat/jia_xu_mature_duoshi_v1_avatar_160.png",
+      "pixel_size": [
+        160,
+        160
+      ],
+      "crop_box": [
+        300,
+        80,
+        1000,
+        780
+      ]
+    },
+    {
+      "id": "liu_bei_mature_hanzhong_sworddance_face_smile_v2",
+      "display_name": "Liu Bei",
+      "selectable": true,
+      "fit": "usable_clear",
+      "fit_note": "clear single subject; face and sword pose readable",
+      "source_file": "portrait_assets/locked_images/liu_bei_mature_hanzhong_sworddance_face_smile_v2_locked.png",
+      "image": "res://assets/portraits/ai_chat/liu_bei_mature_hanzhong_sworddance_face_smile_v2_avatar_160.png",
+      "output_file": "godot-client/assets/portraits/ai_chat/liu_bei_mature_hanzhong_sworddance_face_smile_v2_avatar_160.png",
+      "pixel_size": [
+        160,
+        160
+      ],
+      "crop_box": [
+        150,
+        20,
+        910,
+        780
+      ]
+    },
+    {
+      "id": "lu_bu_mature_wenhou_v1",
+      "display_name": "Lu Bu",
+      "selectable": true,
+      "fit": "usable_clear",
+      "fit_note": "clear armored single subject",
+      "source_file": "portrait_assets/locked_images/lu_bu_mature_wenhou_v1_selected.png",
+      "image": "res://assets/portraits/ai_chat/lu_bu_mature_wenhou_v1_avatar_160.png",
+      "output_file": "godot-client/assets/portraits/ai_chat/lu_bu_mature_wenhou_v1_avatar_160.png",
+      "pixel_size": [
+        160,
+        160
+      ],
+      "crop_box": [
+        160,
+        40,
+        920,
+        800
+      ]
+    },
+    {
+      "id": "ma_chao_mature_xiliang_retreat_v1",
+      "display_name": "Ma Chao",
+      "selectable": true,
+      "fit": "usable_profile",
+      "fit_note": "single subject; profile and helmet readable",
+      "source_file": "portrait_assets/locked_images/ma_chao_mature_xiliang_retreat_v1_locked.png",
+      "image": "res://assets/portraits/ai_chat/ma_chao_mature_xiliang_retreat_v1_avatar_160.png",
+      "output_file": "godot-client/assets/portraits/ai_chat/ma_chao_mature_xiliang_retreat_v1_avatar_160.png",
+      "pixel_size": [
+        160,
+        160
+      ],
+      "crop_box": [
+        230,
+        110,
+        950,
+        830
+      ]
+    },
+    {
+      "id": "sima_yi_fate_gaopingling_v1",
+      "display_name": "Sima Yi",
+      "selectable": true,
+      "fit": "usable_clear",
+      "fit_note": "clear seated single subject",
+      "source_file": "portrait_assets/locked_images/sima_yi_fate_gaopingling_v1_selected.png",
+      "image": "res://assets/portraits/ai_chat/sima_yi_fate_gaopingling_v1_avatar_160.png",
+      "output_file": "godot-client/assets/portraits/ai_chat/sima_yi_fate_gaopingling_v1_avatar_160.png",
+      "pixel_size": [
+        160,
+        160
+      ],
+      "crop_box": [
+        250,
+        60,
+        950,
+        760
+      ]
+    },
+    {
+      "id": "sun_ce_young_founder_v1",
+      "display_name": "Sun Ce",
+      "selectable": true,
+      "fit": "usable_clear",
+      "fit_note": "clear single subject; energetic face readable",
+      "source_file": "portrait_assets/locked_images/sun_ce_young_founder_v1_selected.png",
+      "image": "res://assets/portraits/ai_chat/sun_ce_young_founder_v1_avatar_160.png",
+      "output_file": "godot-client/assets/portraits/ai_chat/sun_ce_young_founder_v1_avatar_160.png",
+      "pixel_size": [
+        160,
+        160
+      ],
+      "crop_box": [
+        330,
+        0,
+        1050,
+        720
+      ]
+    },
+    {
+      "id": "sun_quan_mature_successor_v1",
+      "display_name": "Sun Quan",
+      "selectable": true,
+      "fit": "usable_clear",
+      "fit_note": "clear seated single subject",
+      "source_file": "portrait_assets/locked_images/sun_quan_mature_successor_v1_locked.png",
+      "image": "res://assets/portraits/ai_chat/sun_quan_mature_successor_v1_avatar_160.png",
+      "output_file": "godot-client/assets/portraits/ai_chat/sun_quan_mature_successor_v1_avatar_160.png",
+      "pixel_size": [
+        160,
+        160
+      ],
+      "crop_box": [
+        150,
+        20,
+        870,
+        740
+      ]
+    },
+    {
+      "id": "tai_shi_ci_mature_yishi_v1",
+      "display_name": "Tai Shi Ci",
+      "selectable": true,
+      "fit": "usable_clear",
+      "fit_note": "clear armored single subject",
+      "source_file": "portrait_assets/locked_images/tai_shi_ci_mature_yishi_v1_locked.png",
+      "image": "res://assets/portraits/ai_chat/tai_shi_ci_mature_yishi_v1_avatar_160.png",
+      "output_file": "godot-client/assets/portraits/ai_chat/tai_shi_ci_mature_yishi_v1_avatar_160.png",
+      "pixel_size": [
+        160,
+        160
+      ],
+      "crop_box": [
+        200,
+        60,
+        920,
+        780
+      ]
+    },
+    {
+      "id": "xiahou_dun_mature_duyan_v1",
+      "display_name": "Xiahou Dun",
+      "selectable": true,
+      "fit": "usable_clear",
+      "fit_note": "clear armored single subject",
+      "source_file": "portrait_assets/locked_images/xiahou_dun_mature_duyan_v1_locked.png",
+      "image": "res://assets/portraits/ai_chat/xiahou_dun_mature_duyan_v1_avatar_160.png",
+      "output_file": "godot-client/assets/portraits/ai_chat/xiahou_dun_mature_duyan_v1_avatar_160.png",
+      "pixel_size": [
+        160,
+        160
+      ],
+      "crop_box": [
+        260,
+        50,
+        980,
+        770
+      ]
+    },
+    {
+      "id": "xun_yu_youth_wangzuo_v1",
+      "display_name": "Xun Yu",
+      "selectable": true,
+      "fit": "usable_profile",
+      "fit_note": "single subject; profile readable against light clothing",
+      "source_file": "portrait_assets/locked_images/xun_yu_youth_wangzuo_v1_locked.png",
+      "image": "res://assets/portraits/ai_chat/xun_yu_youth_wangzuo_v1_avatar_160.png",
+      "output_file": "godot-client/assets/portraits/ai_chat/xun_yu_youth_wangzuo_v1_avatar_160.png",
+      "pixel_size": [
+        160,
+        160
+      ],
+      "crop_box": [
+        340,
+        40,
+        1020,
+        720
+      ]
+    },
+    {
+      "id": "yuan_shao_mature_coalition_oath_v1",
+      "display_name": "Yuan Shao",
+      "selectable": true,
+      "fit": "usable_clear",
+      "fit_note": "clear frontal single subject",
+      "source_file": "portrait_assets/locked_images/yuan_shao_mature_coalition_oath_v1_locked.png",
+      "image": "res://assets/portraits/ai_chat/yuan_shao_mature_coalition_oath_v1_avatar_160.png",
+      "output_file": "godot-client/assets/portraits/ai_chat/yuan_shao_mature_coalition_oath_v1_avatar_160.png",
+      "pixel_size": [
+        160,
+        160
+      ],
+      "crop_box": [
+        170,
+        50,
+        930,
+        810
+      ]
+    },
+    {
+      "id": "zhang_fei_mature_baxi_v1",
+      "display_name": "Zhang Fei",
+      "selectable": true,
+      "fit": "usable_clear",
+      "fit_note": "clear single subject; strong face read",
+      "source_file": "portrait_assets/locked_images/zhang_fei_mature_baxi_v1_locked.png",
+      "image": "res://assets/portraits/ai_chat/zhang_fei_mature_baxi_v1_avatar_160.png",
+      "output_file": "godot-client/assets/portraits/ai_chat/zhang_fei_mature_baxi_v1_avatar_160.png",
+      "pixel_size": [
+        160,
+        160
+      ],
+      "crop_box": [
+        230,
+        90,
+        990,
+        850
+      ]
+    },
+    {
+      "id": "zhang_liao_mature_hefei_v1",
+      "display_name": "Zhang Liao",
+      "selectable": true,
+      "fit": "usable_clear",
+      "fit_note": "clear armored single subject",
+      "source_file": "portrait_assets/locked_images/zhang_liao_mature_hefei_v1_locked.png",
+      "image": "res://assets/portraits/ai_chat/zhang_liao_mature_hefei_v1_avatar_160.png",
+      "output_file": "godot-client/assets/portraits/ai_chat/zhang_liao_mature_hefei_v1_avatar_160.png",
+      "pixel_size": [
+        160,
+        160
+      ],
+      "crop_box": [
+        200,
+        60,
+        920,
+        780
+      ]
+    },
+    {
+      "id": "zhao_yun_youth_changban_rescue_v1",
+      "display_name": "Zhao Yun",
+      "selectable": true,
+      "fit": "usable_profile",
+      "fit_note": "single mounted subject; profile face readable",
+      "source_file": "portrait_assets/locked_images/zhao_yun_youth_changban_rescue_v1_locked.png",
+      "image": "res://assets/portraits/ai_chat/zhao_yun_youth_changban_rescue_v1_avatar_160.png",
+      "output_file": "godot-client/assets/portraits/ai_chat/zhao_yun_youth_changban_rescue_v1_avatar_160.png",
+      "pixel_size": [
+        160,
+        160
+      ],
+      "crop_box": [
+        130,
+        40,
+        890,
+        800
+      ]
+    },
+    {
+      "id": "zhou_tai_mature_victory_shout_v1",
+      "display_name": "Zhou Tai",
+      "selectable": true,
+      "fit": "usable_expression",
+      "fit_note": "single subject; shouting expression but face readable",
+      "source_file": "portrait_assets/locked_images/zhou_tai_mature_victory_shout_v1_locked.png",
+      "image": "res://assets/portraits/ai_chat/zhou_tai_mature_victory_shout_v1_avatar_160.png",
+      "output_file": "godot-client/assets/portraits/ai_chat/zhou_tai_mature_victory_shout_v1_avatar_160.png",
+      "pixel_size": [
+        160,
+        160
+      ],
+      "crop_box": [
+        330,
+        90,
+        1030,
+        790
+      ]
+    },
+    {
+      "id": "zhou_yu_mature_chibi_v1",
+      "display_name": "Zhou Yu",
+      "selectable": true,
+      "fit": "usable_clear",
+      "fit_note": "clear single subject; sword pose readable",
+      "source_file": "portrait_assets/locked_images/zhou_yu_mature_chibi_v1_locked.png",
+      "image": "res://assets/portraits/ai_chat/zhou_yu_mature_chibi_v1_avatar_160.png",
+      "output_file": "godot-client/assets/portraits/ai_chat/zhou_yu_mature_chibi_v1_avatar_160.png",
+      "pixel_size": [
+        160,
+        160
+      ],
+      "crop_box": [
+        230,
+        0,
+        950,
+        720
+      ]
+    },
+    {
+      "id": "zhuge_liang_mature_beifa_v1",
+      "display_name": "Zhuge Liang",
+      "selectable": true,
+      "fit": "usable_clear",
+      "fit_note": "clear single subject; face and robe readable",
+      "source_file": "portrait_assets/locked_images/zhuge_liang_mature_beifa_v1_selected_4x5.png",
+      "image": "res://assets/portraits/ai_chat/zhuge_liang_mature_beifa_v1_avatar_160.png",
+      "output_file": "godot-client/assets/portraits/ai_chat/zhuge_liang_mature_beifa_v1_avatar_160.png",
+      "pixel_size": [
+        160,
+        160
+      ],
+      "crop_box": [
+        160,
+        70,
+        920,
+        830
+      ]
+    }
+  ]
+}

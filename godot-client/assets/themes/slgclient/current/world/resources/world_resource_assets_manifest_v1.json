@@ -1,0 +1,345 @@
+{
+  "schema": "world_resource_assets_manifest_v1",
+  "source_canvas": [
+    384,
+    384
+  ],
+  "effective_footprint": [
+    320,
+    160
+  ],
+  "fit_footprint": [
+    320,
+    160
+  ],
+  "projection": {
+    "type": "isometric_2_to_1",
+    "tile_width_reference": 60,
+    "tile_height_reference": 30,
+    "anchor_rule": "bottom_center",
+    "anchor_pixel": [
+      192,
+      310
+    ]
+  },
+  "level_policy": {
+    "min": 1,
+    "max": 9,
+    "base_level": 5,
+    "strategy": "accepted_imagegen_series_import_from_diagnostic_resource_cell_art"
+  },
+  "art_source": {
+    "source": "resource_cell_art_restart_2026_05_26_user_visual_accepted",
+    "runtime_status": "accepted_runtime_candidate_pending_godot_mixed_review",
+    "imported_on": "2026-05-27",
+    "conversion": {
+      "diagnostic_source_size": [
+        256,
+        160
+      ],
+      "runtime_canvas": [
+        384,
+        384
+      ],
+      "scaled_art_size": [
+        320,
+        200
+      ],
+      "scaled_art_offset": [
+        32,
+        130
+      ],
+      "anchor_pixel": [
+        192,
+        310
+      ],
+      "source_floor_center_after_conversion": [
+        192,
+        230
+      ],
+      "source_south_tip_after_conversion": [
+        192,
+        310
+      ]
+    },
+    "accepted_candidates": {
+      "grain": {
+        "review_dir": "tmp/resource_cell_art_restart_2026_05_26/grain_lv01_lv09_grid_review_attempt02_05_05",
+        "manifest": "tmp/resource_cell_art_restart_2026_05_26/grain_lv01_lv09_grid_review_attempt02_05_05/manifest_grain_lv01_lv09_grid_review.json",
+        "review_status": "user_visual_accepted_tmp_candidate_not_imagegen_redo",
+        "levels": {
+          "l01": {
+            "source": "tmp/resource_cell_art_restart_2026_05_26/grain_lv01_lv03_attempt02/source/grain_lv01_attempt02_source.png",
+            "normal": "tmp/resource_cell_art_restart_2026_05_26/grain_lv01_lv03_attempt02/normal/grain_lv01_attempt02_normal.png"
+          },
+          "l02": {
+            "source": "tmp/resource_cell_art_restart_2026_05_26/grain_lv01_lv03_attempt02/source/grain_lv02_attempt02_source.png",
+            "normal": "tmp/resource_cell_art_restart_2026_05_26/grain_lv01_lv03_attempt02/normal/grain_lv02_attempt02_normal.png"
+          },
+          "l03": {
+            "source": "tmp/resource_cell_art_restart_2026_05_26/grain_lv01_lv03_attempt02/source/grain_lv03_attempt02_source.png",
+            "normal": "tmp/resource_cell_art_restart_2026_05_26/grain_lv01_lv03_attempt02/normal/grain_lv03_attempt02_normal.png"
+          },
+          "l04": {
+            "source": "tmp/resource_cell_art_restart_2026_05_26/grain_lv04_lv06_attempt05/source/grain_lv04_attempt05_source.png",
+            "normal": "tmp/resource_cell_art_restart_2026_05_26/grain_lv04_lv06_attempt05/normal/grain_lv04_attempt05_normal.png"
+          },
+          "l05": {
+            "source": "tmp/resource_cell_art_restart_2026_05_26/grain_lv04_lv06_attempt05/source/grain_lv05_attempt05_source.png",
+            "normal": "tmp/resource_cell_art_restart_2026_05_26/grain_lv04_lv06_attempt05/normal/grain_lv05_attempt05_normal.png"
+          },
+          "l06": {
+            "source": "tmp/resource_cell_art_restart_2026_05_26/grain_lv04_lv06_attempt05/source/grain_lv06_attempt05_source.png",
+            "normal": "tmp/resource_cell_art_restart_2026_05_26/grain_lv04_lv06_attempt05/normal/grain_lv06_attempt05_normal.png"
+          },
+          "l07": {
+            "source": "tmp/resource_cell_art_restart_2026_05_26/grain_lv07_lv09_attempt05/source/grain_lv07_attempt05_source.png",
+            "normal": "tmp/resource_cell_art_restart_2026_05_26/grain_lv07_lv09_attempt05/normal/grain_lv07_attempt05_normal.png"
+          },
+          "l08": {
+            "source": "tmp/resource_cell_art_restart_2026_05_26/grain_lv07_lv09_attempt05/source/grain_lv08_attempt05_source.png",
+            "normal": "tmp/resource_cell_art_restart_2026_05_26/grain_lv07_lv09_attempt05/normal/grain_lv08_attempt05_normal.png"
+          },
+          "l09": {
+            "source": "tmp/resource_cell_art_restart_2026_05_26/grain_lv07_lv09_attempt05/source/grain_lv09_attempt05_source.png",
+            "normal": "tmp/resource_cell_art_restart_2026_05_26/grain_lv07_lv09_attempt05/normal/grain_lv09_attempt05_normal.png"
+          }
+        }
+      },
+      "wood": {
+        "review_dir": "tmp/resource_cell_art_restart_2026_05_26/wood_lv01_lv09_grid_review_attempt06_06_09_late_han_low_wide",
+        "manifest": "tmp/resource_cell_art_restart_2026_05_26/wood_lv01_lv09_grid_review_attempt06_06_09_late_han_low_wide/manifest_wood_lv01_lv09_grid_review.json",
+        "review_status": "user_visual_accepted_tmp_candidate_not_imagegen_redo",
+        "levels": {
+          "l01": {
+            "source": "tmp/resource_cell_art_restart_2026_05_26/wood_lv01_lv03_attempt06_managed_forest/source/wood_lv01_attempt06_managed_forest_source.png",
+            "normal": "tmp/resource_cell_art_restart_2026_05_26/wood_lv01_lv03_attempt06_managed_forest/normal/wood_lv01_attempt06_managed_forest_normal.png"
+          },
+          "l02": {
+            "source": "tmp/resource_cell_art_restart_2026_05_26/wood_lv01_lv03_attempt06_managed_forest/source/wood_lv02_attempt06_managed_forest_source.png",
+            "normal": "tmp/resource_cell_art_restart_2026_05_26/wood_lv01_lv03_attempt06_managed_forest/normal/wood_lv02_attempt06_managed_forest_normal.png"
+          },
+          "l03": {
+            "source": "tmp/resource_cell_art_restart_2026_05_26/wood_lv01_lv03_attempt06_managed_forest/source/wood_lv03_attempt06_managed_forest_source.png",
+            "normal": "tmp/resource_cell_art_restart_2026_05_26/wood_lv01_lv03_attempt06_managed_forest/normal/wood_lv03_attempt06_managed_forest_normal.png"
+          },
+          "l04": {
+            "source": "tmp/resource_cell_art_restart_2026_05_26/wood_lv04_lv06_attempt06_managed_forest/source/wood_lv04_attempt06_managed_forest_source.png",
+            "normal": "tmp/resource_cell_art_restart_2026_05_26/wood_lv04_lv06_attempt06_managed_forest/normal/wood_lv04_attempt06_managed_forest_normal.png"
+          },
+          "l05": {
+            "source": "tmp/resource_cell_art_restart_2026_05_26/wood_lv04_lv06_attempt06_managed_forest/source/wood_lv05_attempt06_managed_forest_source.png",
+            "normal": "tmp/resource_cell_art_restart_2026_05_26/wood_lv04_lv06_attempt06_managed_forest/normal/wood_lv05_attempt06_managed_forest_normal.png"
+          },
+          "l06": {
+            "source": "tmp/resource_cell_art_restart_2026_05_26/wood_lv04_lv06_attempt06_managed_forest/source/wood_lv06_attempt06_managed_forest_source.png",
+            "normal": "tmp/resource_cell_art_restart_2026_05_26/wood_lv04_lv06_attempt06_managed_forest/normal/wood_lv06_attempt06_managed_forest_normal.png"
+          },
+          "l07": {
+            "source": "tmp/resource_cell_art_restart_2026_05_26/wood_lv07_lv09_attempt09_late_han_low_wide/source/wood_lv07_attempt09_late_han_low_wide_source.png",
+            "normal": "tmp/resource_cell_art_restart_2026_05_26/wood_lv07_lv09_attempt09_late_han_low_wide/normal/wood_lv07_attempt09_late_han_low_wide_normal.png"
+          },
+          "l08": {
+            "source": "tmp/resource_cell_art_restart_2026_05_26/wood_lv07_lv09_attempt09_late_han_low_wide/source/wood_lv08_attempt09_late_han_low_wide_source.png",
+            "normal": "tmp/resource_cell_art_restart_2026_05_26/wood_lv07_lv09_attempt09_late_han_low_wide/normal/wood_lv08_attempt09_late_han_low_wide_normal.png"
+          },
+          "l09": {
+            "source": "tmp/resource_cell_art_restart_2026_05_26/wood_lv07_lv09_attempt09_late_han_low_wide/source/wood_lv09_attempt09_late_han_low_wide_source.png",
+            "normal": "tmp/resource_cell_art_restart_2026_05_26/wood_lv07_lv09_attempt09_late_han_low_wide/normal/wood_lv09_attempt09_late_han_low_wide_normal.png"
+          }
+        }
+      },
+      "stone": {
+        "review_dir": "tmp/resource_cell_art_restart_2026_05_26/stone_lv01_lv09_grid_review_attempt08_redgap_managed",
+        "manifest": "tmp/resource_cell_art_restart_2026_05_26/stone_lv01_lv09_grid_review_attempt08_redgap_managed/manifest_stone_lv01_lv09_grid_review.json",
+        "review_status": "user_visual_accepted_tmp_candidate_not_imagegen_redo",
+        "levels": {
+          "l01": {
+            "source": "tmp/resource_cell_art_restart_2026_05_26/stone_lv01_lv03_attempt08_redgap_managed/source/stone_lv01_attempt08_redgap_managed_source.png",
+            "normal": "tmp/resource_cell_art_restart_2026_05_26/stone_lv01_lv03_attempt08_redgap_managed/normal/stone_lv01_attempt08_redgap_managed_normal.png"
+          },
+          "l02": {
+            "source": "tmp/resource_cell_art_restart_2026_05_26/stone_lv01_lv03_attempt08_redgap_managed/source/stone_lv02_attempt08_redgap_managed_source.png",
+            "normal": "tmp/resource_cell_art_restart_2026_05_26/stone_lv01_lv03_attempt08_redgap_managed/normal/stone_lv02_attempt08_redgap_managed_normal.png"
+          },
+          "l03": {
+            "source": "tmp/resource_cell_art_restart_2026_05_26/stone_lv01_lv03_attempt08_redgap_managed/source/stone_lv03_attempt08_redgap_managed_source.png",
+            "normal": "tmp/resource_cell_art_restart_2026_05_26/stone_lv01_lv03_attempt08_redgap_managed/normal/stone_lv03_attempt08_redgap_managed_normal.png"
+          },
+          "l04": {
+            "source": "tmp/resource_cell_art_restart_2026_05_26/stone_lv04_lv06_attempt08_redgap_managed/source/stone_lv04_attempt08_redgap_managed_source.png",
+            "normal": "tmp/resource_cell_art_restart_2026_05_26/stone_lv04_lv06_attempt08_redgap_managed/normal/stone_lv04_attempt08_redgap_managed_normal.png"
+          },
+          "l05": {
+            "source": "tmp/resource_cell_art_restart_2026_05_26/stone_lv04_lv06_attempt08_redgap_managed/source/stone_lv05_attempt08_redgap_managed_source.png",
+            "normal": "tmp/resource_cell_art_restart_2026_05_26/stone_lv04_lv06_attempt08_redgap_managed/normal/stone_lv05_attempt08_redgap_managed_normal.png"
+          },
+          "l06": {
+            "source": "tmp/resource_cell_art_restart_2026_05_26/stone_lv04_lv06_attempt08_redgap_managed/source/stone_lv06_attempt08_redgap_managed_source.png",
+            "normal": "tmp/resource_cell_art_restart_2026_05_26/stone_lv04_lv06_attempt08_redgap_managed/normal/stone_lv06_attempt08_redgap_managed_normal.png"
+          },
+          "l07": {
+            "source": "tmp/resource_cell_art_restart_2026_05_26/stone_lv07_lv09_attempt08_redgap_managed/source/stone_lv07_attempt08_redgap_managed_source.png",
+            "normal": "tmp/resource_cell_art_restart_2026_05_26/stone_lv07_lv09_attempt08_redgap_managed/normal/stone_lv07_attempt08_redgap_managed_normal.png"
+          },
+          "l08": {
+            "source": "tmp/resource_cell_art_restart_2026_05_26/stone_lv07_lv09_attempt08_redgap_managed/source/stone_lv08_attempt08_redgap_managed_source.png",
+            "normal": "tmp/resource_cell_art_restart_2026_05_26/stone_lv07_lv09_attempt08_redgap_managed/normal/stone_lv08_attempt08_redgap_managed_normal.png"
+          },
+          "l09": {
+            "source": "tmp/resource_cell_art_restart_2026_05_26/stone_lv07_lv09_attempt08_redgap_managed/source/stone_lv09_attempt08_redgap_managed_source.png",
+            "normal": "tmp/resource_cell_art_restart_2026_05_26/stone_lv07_lv09_attempt08_redgap_managed/normal/stone_lv09_attempt08_redgap_managed_normal.png"
+          }
+        }
+      },
+      "iron": {
+        "review_dir": "tmp/resource_cell_art_restart_2026_05_26/iron_lv01_lv09_grid_review_attempt09_11_11_redgap_high",
+        "manifest": "tmp/resource_cell_art_restart_2026_05_26/iron_lv01_lv09_grid_review_attempt09_11_11_redgap_high/manifest_iron_lv01_lv09_grid_review.json",
+        "review_status": "user_visual_accepted_tmp_candidate_not_imagegen_redo",
+        "levels": {
+          "l01": {
+            "source": "tmp/resource_cell_art_restart_2026_05_26/iron_lv01_lv03_attempt09_cluster_only/source/iron_01_attempt09_source.png",
+            "normal": "tmp/resource_cell_art_restart_2026_05_26/iron_lv01_lv03_attempt09_cluster_only/normal/iron_01_attempt09_normal.png"
+          },
+          "l02": {
+            "source": "tmp/resource_cell_art_restart_2026_05_26/iron_lv01_lv03_attempt09_cluster_only/source/iron_02_attempt09_source.png",
+            "normal": "tmp/resource_cell_art_restart_2026_05_26/iron_lv01_lv03_attempt09_cluster_only/normal/iron_02_attempt09_normal.png"
+          },
+          "l03": {
+            "source": "tmp/resource_cell_art_restart_2026_05_26/iron_lv01_lv03_attempt09_cluster_only/source/iron_03_attempt09_source.png",
+            "normal": "tmp/resource_cell_art_restart_2026_05_26/iron_lv01_lv03_attempt09_cluster_only/normal/iron_03_attempt09_normal.png"
+          },
+          "l04": {
+            "source": "tmp/resource_cell_art_restart_2026_05_26/iron_lv04_lv06_attempt11_redgap_high/source/iron_04_attempt11_source.png",
+            "normal": "tmp/resource_cell_art_restart_2026_05_26/iron_lv04_lv06_attempt11_redgap_high/normal/iron_04_attempt11_normal.png"
+          },
+          "l05": {
+            "source": "tmp/resource_cell_art_restart_2026_05_26/iron_lv04_lv06_attempt11_redgap_high/source/iron_05_attempt11_source.png",
+            "normal": "tmp/resource_cell_art_restart_2026_05_26/iron_lv04_lv06_attempt11_redgap_high/normal/iron_05_attempt11_normal.png"
+          },
+          "l06": {
+            "source": "tmp/resource_cell_art_restart_2026_05_26/iron_lv04_lv06_attempt11_redgap_high/source/iron_06_attempt11_source.png",
+            "normal": "tmp/resource_cell_art_restart_2026_05_26/iron_lv04_lv06_attempt11_redgap_high/normal/iron_06_attempt11_normal.png"
+          },
+          "l07": {
+            "source": "tmp/resource_cell_art_restart_2026_05_26/iron_lv07_lv09_attempt11_redgap_high/source/iron_07_attempt11_source.png",
+            "normal": "tmp/resource_cell_art_restart_2026_05_26/iron_lv07_lv09_attempt11_redgap_high/normal/iron_07_attempt11_normal.png"
+          },
+          "l08": {
+            "source": "tmp/resource_cell_art_restart_2026_05_26/iron_lv07_lv09_attempt11_redgap_high/source/iron_08_attempt11_source.png",
+            "normal": "tmp/resource_cell_art_restart_2026_05_26/iron_lv07_lv09_attempt11_redgap_high/normal/iron_08_attempt11_normal.png"
+          },
+          "l09": {
+            "source": "tmp/resource_cell_art_restart_2026_05_26/iron_lv07_lv09_attempt11_redgap_high/source/iron_09_attempt11_source.png",
+            "normal": "tmp/resource_cell_art_restart_2026_05_26/iron_lv07_lv09_attempt11_redgap_high/normal/iron_09_attempt11_normal.png"
+          }
+        }
+      },
+      "copper": {
+        "review_dir": "tmp/resource_cell_art_restart_2026_05_26/copper_lv01_lv09_grid_review_attempt14_13_13_no_stumps",
+        "manifest": "tmp/resource_cell_art_restart_2026_05_26/copper_lv01_lv09_grid_review_attempt14_13_13_no_stumps/manifest_copper_lv01_lv09_grid_review.json",
+        "review_status": "user_visual_accepted_tmp_candidate_not_imagegen_redo",
+        "levels": {
+          "l01": {
+            "source": "tmp/resource_cell_art_restart_2026_05_26/copper_lv01_lv03_attempt14_no_stumps/source/copper_lv01_attempt14_no_stumps_source.png",
+            "normal": "tmp/resource_cell_art_restart_2026_05_26/copper_lv01_lv03_attempt14_no_stumps/normal/copper_lv01_attempt14_no_stumps_normal.png"
+          },
+          "l02": {
+            "source": "tmp/resource_cell_art_restart_2026_05_26/copper_lv01_lv03_attempt14_no_stumps/source/copper_lv02_attempt14_no_stumps_source.png",
+            "normal": "tmp/resource_cell_art_restart_2026_05_26/copper_lv01_lv03_attempt14_no_stumps/normal/copper_lv02_attempt14_no_stumps_normal.png"
+          },
+          "l03": {
+            "source": "tmp/resource_cell_art_restart_2026_05_26/copper_lv01_lv03_attempt14_no_stumps/source/copper_lv03_attempt14_no_stumps_source.png",
+            "normal": "tmp/resource_cell_art_restart_2026_05_26/copper_lv01_lv03_attempt14_no_stumps/normal/copper_lv03_attempt14_no_stumps_normal.png"
+          },
+          "l04": {
+            "source": "tmp/resource_cell_art_restart_2026_05_26/copper_lv04_lv06_attempt13_eastern_han_no_rails/source/copper_lv04_attempt13_eastern_han_no_rails_source.png",
+            "normal": "tmp/resource_cell_art_restart_2026_05_26/copper_lv04_lv06_attempt13_eastern_han_no_rails/normal/copper_lv04_attempt13_eastern_han_no_rails_normal.png"
+          },
+          "l05": {
+            "source": "tmp/resource_cell_art_restart_2026_05_26/copper_lv04_lv06_attempt13_eastern_han_no_rails/source/copper_lv05_attempt13_eastern_han_no_rails_source.png",
+            "normal": "tmp/resource_cell_art_restart_2026_05_26/copper_lv04_lv06_attempt13_eastern_han_no_rails/normal/copper_lv05_attempt13_eastern_han_no_rails_normal.png"
+          },
+          "l06": {
+            "source": "tmp/resource_cell_art_restart_2026_05_26/copper_lv04_lv06_attempt13_eastern_han_no_rails/source/copper_lv06_attempt13_eastern_han_no_rails_source.png",
+            "normal": "tmp/resource_cell_art_restart_2026_05_26/copper_lv04_lv06_attempt13_eastern_han_no_rails/normal/copper_lv06_attempt13_eastern_han_no_rails_normal.png"
+          },
+          "l07": {
+            "source": "tmp/resource_cell_art_restart_2026_05_26/copper_lv07_lv09_attempt13_eastern_han_no_rails/source/copper_lv07_attempt13_eastern_han_no_rails_source.png",
+            "normal": "tmp/resource_cell_art_restart_2026_05_26/copper_lv07_lv09_attempt13_eastern_han_no_rails/normal/copper_lv07_attempt13_eastern_han_no_rails_normal.png"
+          },
+          "l08": {
+            "source": "tmp/resource_cell_art_restart_2026_05_26/copper_lv07_lv09_attempt13_eastern_han_no_rails/source/copper_lv08_attempt13_eastern_han_no_rails_source.png",
+            "normal": "tmp/resource_cell_art_restart_2026_05_26/copper_lv07_lv09_attempt13_eastern_han_no_rails/normal/copper_lv08_attempt13_eastern_han_no_rails_normal.png"
+          },
+          "l09": {
+            "source": "tmp/resource_cell_art_restart_2026_05_26/copper_lv07_lv09_attempt13_eastern_han_no_rails/source/copper_lv09_attempt13_eastern_han_no_rails_source.png",
+            "normal": "tmp/resource_cell_art_restart_2026_05_26/copper_lv07_lv09_attempt13_eastern_han_no_rails/normal/copper_lv09_attempt13_eastern_han_no_rails_normal.png"
+          }
+        }
+      }
+    }
+  },
+  "resources": {
+    "grain": {
+      "base": "world_resource_grain_base_v1.png",
+      "l01": "world_resource_grain_l01_v1.png",
+      "l02": "world_resource_grain_l02_v1.png",
+      "l03": "world_resource_grain_l03_v1.png",
+      "l04": "world_resource_grain_l04_v1.png",
+      "l05": "world_resource_grain_l05_v1.png",
+      "l06": "world_resource_grain_l06_v1.png",
+      "l07": "world_resource_grain_l07_v1.png",
+      "l08": "world_resource_grain_l08_v1.png",
+      "l09": "world_resource_grain_l09_v1.png"
+    },
+    "wood": {
+      "base": "world_resource_wood_base_v1.png",
+      "l01": "world_resource_wood_l01_v1.png",
+      "l02": "world_resource_wood_l02_v1.png",
+      "l03": "world_resource_wood_l03_v1.png",
+      "l04": "world_resource_wood_l04_v1.png",
+      "l05": "world_resource_wood_l05_v1.png",
+      "l06": "world_resource_wood_l06_v1.png",
+      "l07": "world_resource_wood_l07_v1.png",
+      "l08": "world_resource_wood_l08_v1.png",
+      "l09": "world_resource_wood_l09_v1.png"
+    },
+    "stone": {
+      "base": "world_resource_stone_base_v1.png",
+      "l01": "world_resource_stone_l01_v1.png",
+      "l02": "world_resource_stone_l02_v1.png",
+      "l03": "world_resource_stone_l03_v1.png",
+      "l04": "world_resource_stone_l04_v1.png",
+      "l05": "world_resource_stone_l05_v1.png",
+      "l06": "world_resource_stone_l06_v1.png",
+      "l07": "world_resource_stone_l07_v1.png",
+      "l08": "world_resource_stone_l08_v1.png",
+      "l09": "world_resource_stone_l09_v1.png"
+    },
+    "iron": {
+      "base": "world_resource_iron_base_v1.png",
+      "l01": "world_resource_iron_l01_v1.png",
+      "l02": "world_resource_iron_l02_v1.png",
+      "l03": "world_resource_iron_l03_v1.png",
+      "l04": "world_resource_iron_l04_v1.png",
+      "l05": "world_resource_iron_l05_v1.png",
+      "l06": "world_resource_iron_l06_v1.png",
+      "l07": "world_resource_iron_l07_v1.png",
+      "l08": "world_resource_iron_l08_v1.png",
+      "l09": "world_resource_iron_l09_v1.png"
+    },
+    "copper": {
+      "base": "world_resource_copper_base_v1.png",
+      "l01": "world_resource_copper_l01_v1.png",
+      "l02": "world_resource_copper_l02_v1.png",
+      "l03": "world_resource_copper_l03_v1.png",
+      "l04": "world_resource_copper_l04_v1.png",
+      "l05": "world_resource_copper_l05_v1.png",
+      "l06": "world_resource_copper_l06_v1.png",
+      "l07": "world_resource_copper_l07_v1.png",
+      "l08": "world_resource_copper_l08_v1.png",
+      "l09": "world_resource_copper_l09_v1.png"
+    }
+  }
+}
