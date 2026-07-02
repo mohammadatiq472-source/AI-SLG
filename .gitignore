@@ -56,9 +56,9 @@ UI_SCREENSHOT_PACK_2026_05_28/
 UI_SCREENSHOT_REVIEW_2026_05_28_ACTIVITY/
 
 # 实验数据 / 运维工具 / 临时产物
-experiments/
-ops/
-tools/
+/experiments/
+/ops/
+/tools/
 val_out2.txt
 tmp_*.txt
 twitter_response.html
